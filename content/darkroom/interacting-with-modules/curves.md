@@ -5,7 +5,7 @@ weight: 50
 draft: false
 ---
 
-Trois modules de traitement d'images([courbe de base](../../module-reference/processing-modules/base-curve.md), [tone curve](../../module-reference/processing-modules/tone-curve.md) et [courbe rvb](../../module-reference/processing-modules/rgb-curve.md)) utilisent des courbes pour contrôler les tonalités d'une image. Ces modules ont des caractéristiques communes qui méritent une discussion séparée.
+Trois modules de traitement d'images([courbe de base](../../module-reference/processing-modules/base-curve.md), [courbe des tonalités](../../module-reference/processing-modules/tone-curve.md) et [courbe rvb](../../module-reference/processing-modules/rgb-curve.md)) utilisent des courbes pour contrôler les tonalités d'une image. Ces modules ont des caractéristiques communes qui méritent une discussion séparée.
 
 ![courbe](./curves/curve.png#w33)
 
