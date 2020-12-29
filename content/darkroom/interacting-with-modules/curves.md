@@ -36,7 +36,7 @@ préservation des couleurs
 : - _max RVB_
 : - _moyenne RVB_
 : - _somme RVB_
-: - _norme RGB_
+: - _norme RVB_
 : - _puissance de base_
 
 échelle graphique 
