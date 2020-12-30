@@ -1,5 +1,5 @@
 ---
-title: user interface
+title: interface utilisateur
 id: user-interface
 draft: false
 weight: 10

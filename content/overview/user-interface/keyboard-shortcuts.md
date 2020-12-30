@@ -1,11 +1,11 @@
 ---
-title: keyboard shortcuts
+title: raccourcis clavier
 id: keyboard-shortcuts
 draft: false
 weight: 50
 author: "people"
 ---
 
-Much of the functionality in darktable can be controlled via keyboard shortcuts which can be customised in [preferences > shortcuts](../../preferences-settings/shortcuts.md).
+La plupart des fonctionnalités de darktable peuvent être contrôlées via des raccourcis clavier qui peuvent être personnalisés dans [préférences](../../preferences-settings/shortcuts.md).
 
-Press the H key (for help) in any darktable view to show a list of all shortcuts that are applicable to the current view.
+Appuyez sur la touche H (pour obtenir de l'aide) dans n'importe quelle vue de darktable pour afficher une liste de tous les raccourcis applicables à cette vue.

@@ -1,13 +1,13 @@
 ---
-title: filmstrip
+title: pellicule
 id: filmstrip
 draft: false
 weight: 30
 author: "people"
 ---
 
-The filmstrip, when enabled, is shown at the bottom of the screen (except in the lighttable view, where it is replaced with the [timeline](../../module-reference/utility-modules/lighttable/timeline.md) module) and displays the images from the collection that is currently selected in the lighttable view. You can navigate along the filmstrip by scrolling with the mouse wheel. 
+La pellicule, lorsqu'elle est activée, est affichée en bas de l'écran (sauf dans la vue table lumineuse, où elle est remplacée par le module [timeline](../../module-reference/utility-modules/lighttable/timeline.md)). Elle affiche les images de la collection actuellement sélectionnée dans la vue table lumineuse. Vous pouvez naviguer le long de la pellicule en faisant défiler avec la molette de la souris.
 
-The filmstrip allows you to interact with images while you are not in the lighttable view. For example, while developing an image in darkroom mode, you can switch to another image to by clicking its thumbnail in the filmstrip. You can also rate and color-classify the images as you do in lighttable, as well as copy & paste the history stack using keyboard shortcuts.
+La pellicule vous permet d'interagir avec les images lorsque vous n'êtes pas dans la vue table lumineuse. Par exemple, lors du développement d'une image en mode chambre noire, vous pouvez passer à une autre image en cliquant sur sa miniature dans la pellicule. Vous pouvez également évaluer et classer par couleur les images comme vous le faites dans la vue table lumineuse, ainsi que copier et coller la pile de l'historique à l'aide de raccourcis clavier.
 
-See the [filmstrip](../../module-reference/utility-modules/shared/filmstrip.md) module documentation for more information.
+Voir la documentation du module [filmstrip](../../module-reference/utility-modules/shared/filmstrip.md) pour plus d'informations.

@@ -1,39 +1,39 @@
 ---
-title: views
+title: vues
 id: views
 draft: false
 weight: 10
 author: "people"
 ---
 
-There are five different views available in darktable:
+Cinq vues différentes sont disponibles dans darktable :
 
-[lighttable](../../lighttable/_index.md)
-: Manage images and collections.
+[table lumineuse](../../lighttable/_index.md)
+: Gérer les images et les collections.
 
-[darkroom](../../darkroom/_index.md)
-: Develop a single image.
+[chambre noire](../../darkroom/_index.md)
+: Développer une seule image.
 
-[map](../../map/_index.md)
-: Show images with a geo-tag data on a map and manually geo-tag new images.
+[carte](../../map/_index.md)
+: Montrer sur une carte les images contenant des données de géolocalisation et des nouvelles images géolocalisées manuellemnt.
 
-[print](../../print/_index.md)
-: Send images to your printer.
+[impression](../../print/_index.md)
+: Envoyer des images à votre imprimante.
 
-[slideshow](../../slideshow/_index.md)
-: Display images as a slideshow, processing them on-the-fly.
+[diaporama](../../slideshow/_index.md)
+: Affichez les images sous forme de diaporama, en les traitant à la volée.
 
-[tethering](../../tethering/_index.md)
-: Remotely capture and save images taken with a connected camera.
+[capture](../../tethering/_index.md)
+: Capturez à distance et enregistrer des images prises avec un appareil photo connecté.
 
-You can switch between views by clicking the view name at the top of the right panel (the currently active view is highlighted) or by using one of the following keyboard shortcuts:
+Vous pouvez basculer entre les vues en cliquant sur le nom de la vue en haut du panneau de droite (la vue actuellement active est mise en surbrillance) ou en utilisant l'un des raccourcis clavier suivants :
 
 ```
-L 	switch to lighttable
-D 	switch to darkroom
-M 	switch to map
-P 	switch to print
-S 	switch to slideshow
-T 	switch to tethering
+L 	basculer vers table lumineuse
+D 	basculer vers chambre noire
+M 	basculer vers carte
+P 	basculer vers impression
+S 	basculer vers diaporama
+T 	basculer vers capture
 ```
 

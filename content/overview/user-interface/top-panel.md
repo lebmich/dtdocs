@@ -1,37 +1,37 @@
 ---
-title: top panel
+title: panneau supérieur
 id: top-panel
 draft: false
 weight: 40
 author: "people"
 ---
 
-The top panel is common to all darktable views and provides a number of common utility functions.
+Le panneau supérieur est commun à toutes les vues darktable et fournit un certain nombre de fonctions utilitaires courantes.
 
-![top-panel](./top-panel/top-panel.png#w100)
+![panneau supérieur](./top-panel/top-panel.png#w100)
 
-# On the left-hand-side
+# Sur le côté gauche
 
-view
-: Choose which images to view in the lighttable/filmstrip, based on star rating and reject status.
+afficher
+: Choisir les images à afficher dans la table lumineuse / la pellicule, en fonction du nombre d'étoiles et du statut de rejet.
 
-sort by
-: Choose the property to sort by from the dropdown.
+trier par
+: Choisir le critère de tri dans la liste déroulante.
 
-![top-panel_sort-order icon](./top-panel/top-panel_sort-order.png#icon) sort order
-: Switch the sort order (ascending / descending) with the arrow-toggle.
+![top-panel_sort-order icon](./top-panel/top-panel_sort-order.png#icon) ordre de tri
+: Changer l'ordre de tri (croissant / décroissant) avec la bascule flèche.
 
-# On the right-hand-side
+# Sur le côté droit
 
-![top panel_grouping icon](./top-panel/top-panel_grouping.png#icon) grouping
-: Expand or collapse grouped images
+![top panel_grouping icon](./top-panel/top-panel_grouping.png#icon) groupement
+: Montrer ou cacher les images groupées
 
-![top panel_overlays icon](./top-panel/top-panel_overlays.png#icon) thumbnail overlays
-: Define what information is displayed over thumbnails in the lighttable/filmstrip.
-: You can define different settings depending on the thumbnail size in [preferences > lighttable](../../preferences-settings/lighttable.md)
+![top panel_overlays icon](./top-panel/top-panel_overlays.png#icon) surimpression des miniatures
+: Définir les informations à afficher en surimpression sur les miniatures dans la table lumineuse / la pellicule.
+: Vous pouvez définir différents paramètres en fonction de la taille des miniatures dans [préférences > table lumineuse](../../preferences-settings/lighttable.md)
 
-![top panel_help icon](./top-panel/top-panel_help.png#icon) context-sensitive help
-: Click on this icon and then click on a control element to be directed to the appropriate online help page.
+![top panel_help icon](./top-panel/top-panel_help.png#icon) aide contextuelle
+: Cliquez sur cette icône puis sur un élément de contrôle pour être dirigé vers la page d'aide en ligne correspondante
 
-![top panel_preferences icon](./top-panel/top-panel_preferences.png#icon) preferences
-: Open the [preferences & settings](../../preferences-settings/_index.md) dialog
+![top panel_preferences icon](./top-panel/top-panel_preferences.png#icon) préférences
+: Ouvrir la boîte de dialogue [préférences](../../preferences-settings/_index.md)
