@@ -1,19 +1,23 @@
 ---
-title: local copies
+title: copies locales
 id: local-copies
 weight: 30
 draft: false
 author: "people"
 ---
 
-Many users have huge image collections stored on extra hard drives in their desktop computer, or on an external storage medium like a RAID NAS, etc.
+Assez souvent les utilisateurs ont d'énormes collections d’images qu'ils stockent sur des disques durs supplémentaires de leur ordinateur de bureau ou sur un support externe comme un NAS en RAID, etc.
 
-It is a common requirement to be able to develop a number of images while travelling using a laptop and then later synchronize them back to the original storage medium. However, copying images manually from the main storage to the laptop and back is cumbersome and prone to errors. The “local copies” feature of darktable has been designed to directly support these use cases. 
+Ils souhaitent fréquemment développer des images lors d’un voyage en utilisant un ordinateur portable et les synchroniser plus tard vers leur stockage externe. Mais copier les fichiers manuellement du stockage principal vers l’ordinateur portable et inversement est fastidieux et source d’erreurs.
 
-You can create local copies of selected images from within the lighttable. Local copies are always used when present, giving continued access to images even if the external storage is no longer connected. At a later point, when your primary storage medium has been reconnected, you can synchronize the XMP sidecar files back to this storage, deleting any local copies. These operations can be found in the [selected images](../../module-reference/utility-modules/lighttable/selected-image.md) module in the lighttable.
+La fonctionnalité de « copies locales » de darktable a été conçue pour prendre en charge ces cas d’utilisation.
 
-For safety reasons, if local copies exist and the external storage is available, the local XMP sidecars are automatically synchronized at start up.
+Vous pouvez créer sur le disque local de votre ordinateur une copie locale des images sélectionnées dans la table lumineuse. Cette copie locale est toujours utilisée quand elle est présente, donnant accès aux images lorsque le stockage externe n'est plus connecté. Ultérieurement, lorsque votre support de stockage principal est de nouveau connecté, vous pouvez synchroniser les fichiers xmp liés et supprimer la copie locale de vos images d'entrée. Ces opérations se trouvent sur le panneau images sélectionnées (voir Section 2.3.8, « Images sélectionnées »). 
 
-Local copies are stored within the `$HOME/.cache/darktable` directory and named `img-<SIGNATURE>.<EXT>` (where `SIGNATURE` is a hash signature (MD5) of the full pathname, and `EXT` is the original filename extension).
+Ces opérations se trouvent sur le panneau [images sélectionnées](../../module-reference/utility-modules/lighttable/selected-image.md) de la table lumi module in the lighttable.
 
-Local copies can be identified in the lighttable view by a white marker on the top right of the thumbnail. In addition, all local copies carry the `darktable|local-copy` tag to allow them to be easily selected.
+Pour des raisons de sécurité, s’il existe des copies locales et que le stockage externe est disponible, alors les fichiers liés xmp locaux seront automatiquement synchronisés au démarrage.
+
+Les copies locales sont enregistrées dans le répertoire `HOME/.cache/darktable` et s’appellent `img-<SIGNATURE>.<EXT>` (où `SIGNATURE` est une signature de hachage (MD5) du chemin complet et `EXT` est l'extension du fichier d'origine.
+
+Une copie locale est identifiée dans la vue table lumineuse par une marque blanche dans le coin supérieur droit de la miniature. De plus toutes les copies locales possèdent le mot-clé `darktable|local-copy` pour pouvoir être sélectionnées rapidement.
