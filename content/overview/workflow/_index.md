@@ -1,5 +1,5 @@
 ---
-title: Flux de travail de base
+title: flux de travail de base
 id: workflow
 draft: false
 weight: 40

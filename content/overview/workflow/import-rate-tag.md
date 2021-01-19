@@ -1,17 +1,17 @@
 ---
-title: import, rate & tag images
+title: importation, évaluation et labels de couleur
 id: import-rate-tag
 draft: false
 weight: 10
 author: "people"
 ---
 
-When you want to edit some new images in darktable, the first step is to [import](../../module-reference/utility-modules/lighttable/import.md) them. This will create entries for the imported images in darktable's library database so it can keep track of the changes you make to them. There are two main methods for importing images:
+Quand vous souhaitez développer de nouvelles images dans darktable, la première étape est de les [importer](../../module-reference/utility-modules/lighttable/import.md). Ceci créera des entrées pour les nouvelles images importées dans la base de données de darktable. Il pourra ainsi suivre les modifications que vous leurs apporterez. Il existe deux méthodes principales pour importer des images : 
 
-import images from the filesystem
-: You can import a single image or a directory full of images (optionally recursing through subdirectories) from the filesystem. When importing images, darktable will read the image's internal metadata and any accompanying [XMP sidecar file](../../overview/sidecar-files/_index.md). If an image has already been imported, it will be ignored (though any updates to the sidecar file will be loaded). The location of each image is recorded in the library database, but darktable will not copy or move the files anywhere. If you want a program that will copy files into a specific directory, you can use a separate program like [rapid photo downloader](https://damonlynch.net/rapid/) for this.
+importer des images depuis le système de fichiers
+: Vous pouvez importer depuis le système de fichier une seule image ou un dossier contenant des images (optionnellement importer les dossiers récursivement). Quand il importe des images, darktable lit les métadonnées qu'elles contiennent et tous les [fichiers liés xmp](../../overview/sidecar-files/_index.md) qui, éventuellement, les accompagnent. Si une image a déjà été importée, elle sera ignorée (bien que toute mise à jour du fichier lié sera chargée). L'emplacement de chaque image est enregistré dans la base de données, mais darktable ne copiera ni ne déplacera les fichiers. Si vous souhaitez un programme qui copie des fichiers dans un dossier spécifique, vous pouvez utiliser un programme comme [rapid photo downloader](https://damonlynch.net/rapid/) pour faire cela.
 
-import images from a camera
+importer des images depuis un boîtier
 : To import images from a camera, first connect the camera to your system with a USB cable. If your system tries to automount the camera's files, you should choose to abort the mount operation, otherwise the camera cannot be accessed from within darktable. If you don't see your camera listed in the import module, press the "scan for devices" button. Once your camera is detected the import module should offer the ability to _import_ images or _tether_ your camera while shooting. Unlike when importing of images from the filesystem, darktable will physically copy files imported from the camera into a specified directory following the file naming pattern defined in [preferences > import](../../preferences-settings/import.md).
 
 Once images are imported, they will appear in the lighttable view. By default, the images will all be given a one-star rating.
