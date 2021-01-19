@@ -1,22 +1,22 @@
 ---
-title: "editing an image: workflow overview"
+title: "développer une image: aperçu d'un flux de travail"
 id: workflow-overview
 draft: false
 weight: 20
 author: "people"
 ---
 
-This section will guide you through the basics of developing an image in the [darkroom](../../darkroom/_index.md) view, where an arsenal of modules is at hand to help you reach your creative goals.
+Cette section va vous guider à travers les bases du développement d'une image dans la vue [chambre noire](../../darkroom/_index.md), où un arsenal de modules est à votre disposition pour vous aider à atteindre vos objectifs créatifs.
 
-To begin, open an image in the darkroom by double clicking an image thumbnail in the [lighttable](../../lighttable/_index.md) view. 
+Pour commencer, ouvrez une image dans la chambre noire en double-cliquant sur la miniature d'une image dans la vue [table lumineuse](../../lighttable/_index.md).
 
-Each change you make to the image in the darkroom is turned into a history stack item. The history is stored in a database and in an XMP sidecar file for that image. All changes are stored automatically when you switch images or go from one darktable view to another. You can safely leave darkroom mode or quit darktable at any time and come back later to continue your work. For this reason darktable does not need a “save” button and it does not have one.
+Chaque modification que vous apportez à l'image de la chambre noire est transformée en un élément de l'historique. L'historique est stocké dans une base de données et dans un fichier lié XMP pour cette image. Toutes les modifications sont sauvegardées automatiquement lorsque vous changez d'images ou passez d'une vue de darktable à une autre. Vous pouvez quitter le mode chambre noire en toute sécurité ou quitter darktable à tout moment et revenir plus tard pour continuer votre travail. Pour cette raison, darktable n'a pas besoin d'un bouton «enregistrer» et il n'en a pas.
 
-On the left panel in darkroom mode is the [history stack](../../module-reference/utility-modules/darkroom/history-stack.md) module, listing the changes you have made, starting from the bottom -- each edit adds a new item to the top of the stack. You can select an earlier point in this history to show how the image looked at that point, for comparison between changes. The stack can be compressed to remove redundant intermediate points in your edits -- when you are happy with what you have done, just compress the history stack. Note that all edits above the selected history entry are permanently deleted when compressing the history stack.
+En mode chambre noire, sur le panneau de gauche se trouve l'[historique](../../module-reference/utility-modules/darkroom/history-stack.md). Il liste les modifications que vous avez apportées, en commençant par le bas -- chaque modification ajoute un nouvel élément au sommet de l'historique.  À des fins de comparaison entre les modifications, vous pouvez sélectionner, en cliquant dessus, un point quelconque de cet historique pour voir à quoi ressemblait l'image en ce point. L'historique peut être compressé pour supprimer les points intermédiaires redondants dans votre développement. Lorsque vous êtes satisfait de ce que vous avez fait, compressez simplement l'historique. Notez que lors de la compression de l'historique, sont définitivement supprimées toutes les modifications situées au-dessus de l'entrée d'historique sélectionnée.
 
-A large number of [processing modules](../../module-reference/processing-modules/_index.md) are shipped with darktable, arranged into [module groups](../../darkroom/interacting-with-modules/search-and-group.md). These groups are accessed via toggle buttons at the top of the right panel, just below the [histogram](../../module-reference/utility-modules/shared/histogram.md).
+Un grand nombre de [modules de traitement](../../module-reference/processing-modules/_index.md) sont fournis avec darktable. Ils sont organisés en [groupes de modules](../../darkroom/interacting-with-modules/search-and-group.md). Ces groupes sont accessibles via les boutons-bascule en haut du panneau de droite, juste en dessous de l'[histogramme](../../module-reference/utility-modules/shared/histogram.md).
 
-# choosing a workflow
+# choisir un flux de travail
 
 When processing an image, we apply a sequence of modules, known as the [pixelpipe](../../darkroom/processing-modules-and-pixelpipe/_index.md). 
 
