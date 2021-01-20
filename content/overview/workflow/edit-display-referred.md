@@ -1,14 +1,14 @@
 ---
-title: "editing an image: display-referred workflow"
+title: "développer une image: flux de travail relatif à l'affichage"
 id: edit-display-referred
 draft: false
 weight: 40
 author: "people"
 ---
 
-This is a legacy mode which is retained to provide backward-compatibility with edits in older darktable versions, and to allows users to continue with their former way of working without forcing them to use the newer _scene-referred_ workflow. 
+This is a legacy mode which is retained to provide backward-compatibility with edits in older darktable versions, and to allows users to continue with their former way of working without forcing them to use the newer _scene-referred_ workflow.
 
-The _display-referred_ workflow places more emphasis on performing image processing in the non-linear _display-referred_ part of the [pixelpipe](../../darkroom/processing-modules-and-pixelpipe/_index.md). By default it uses the [_base curve_](../../module-reference/processing-modules/base-curve.md) module to tone map images from the linear _scene-referred_ space into _display-referred_ space, although other tone-mapping tools (such as the [_tone curve_](../../module-reference/processing-modules/tone-curve) module) can also be used. Many modules are moved later in the pipeline (after this tone mapping transition) so that they work with gamma-encoded (_display-referred_) pixel values rather than linearly-encoded (_scene-referred_) pixel values. 
+The _display-referred_ workflow places more emphasis on performing image processing in the non-linear _display-referred_ part of the [pixelpipe](../../darkroom/processing-modules-and-pixelpipe/_index.md). By default it uses the [_base curve_](../../module-reference/processing-modules/base-curve.md) module to tone map images from the linear _scene-referred_ space into _display-referred_ space, although other tone-mapping tools (such as the [_tone curve_](../../module-reference/processing-modules/tone-curve) module) can also be used. Many modules are moved later in the pipeline (after this tone mapping transition) so that they work with gamma-encoded (_display-referred_) pixel values rather than linearly-encoded (_scene-referred_) pixel values.
 
 Most of the basic steps required to develop images under the _display-referred_ workflow are quite similar to the _scene-referred_ workflow. The main differences lie in the choice of modules, and the order in which they appear in the pixelpipe.  To see the difference in the ordering of the modules between the _display-referred_ and _scene-referred_ workflows, please refer to the [default module order](../../special-topics/module-order.md) section.
 
@@ -24,7 +24,7 @@ white balance
 exposure correction
 : The [_exposure_](../../module-reference/processing-modules/exposure.md) module works the same as in _scene-referred_ mode, but the way you use it is a little different. In _display-referred_ mode, you need to make sure you don't blow out your highlights too much, and use the [_base curve_](../../module-reference/processing-modules/base-curve.md) module to adjust the middle tones if needed.
 
-: While you can use the _exposure_ module to tweak the black level to supply more contrast, you need to be very careful doing this as you can end up with negative RGB values. It is better to increase the contrast by adjusting the toe of the _base curve_, however this can be a little fiddly and it is one of the reasons why the [_filmic rgb_](../../module-reference/processing-modules/filmic-rgb.md) module was introduced to darktable. 
+: While you can use the _exposure_ module to tweak the black level to supply more contrast, you need to be very careful doing this as you can end up with negative RGB values. It is better to increase the contrast by adjusting the toe of the _base curve_, however this can be a little fiddly and it is one of the reasons why the [_filmic rgb_](../../module-reference/processing-modules/filmic-rgb.md) module was introduced to darktable.
 
 noise reduction
 : As with the _scene-referred_ workflow, the best starting point for noise reduction is the [_denoise (profiled)_](../../module-reference/processing-modules/denoise-profiled.md) module.  Similarly, you may also choose to use [_raw denoise_](../../module-reference/processing-modules/raw-denoise.mf), [_surface blur_](../../module-reference/processing-modules/surface-blur.md), [_astrophoto denoise_](../../module-reference/processing-modules/astrophoto-denoise.md), or the [_contrast equalizer_](../../module-reference/processing-modules/contrast-equalizer.md) module.
@@ -52,4 +52,3 @@ sharpening
 
 artistic effects
 : darktable comes with a rich set of artistic effect modules. For example you can use the [_watermark_](../../module-reference/processing-modules/watermark.md) module to add a watermark to your image. The [_grain_](../../module-reference/processing-modules/grain.md) module simulates the typical noise of classical analogue footage. Use the [_color mapping_](../../module-reference/processing-modules/color-mapping.md) module to transfer the look and feel of one color image onto another. The [_low light_](../../module-reference/processing-modules/lowlight-vision.md) module allows you to simulate human vision to make lowlight pictures look closer to reality. The [_graduated density filter_](../../module-reference/processing-modules/graduated-density.md) adds a neutral or colored gradient to your image for exposure and color correction.  
-
