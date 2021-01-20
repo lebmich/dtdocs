@@ -6,9 +6,9 @@ weight: 30
 author: "traduction : Michel Leblond"
 ---
 
-Le flux de travail _relatif à la scène_ met l'accent sur l'exécution du traitement d'image dans la partie linéaire relative à la scène du pipeline graphique. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs de pixels non linéaires. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il est plus facile d'adapter votre travail à l'avenir à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.
+Le flux de travail _relatif à la scène_ met l'accent sur l'exécution du traitement d'image dans la partie linéaire relative à la scène du pipeline graphique. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs non linéaires des pixels. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il sera plus facile d'adapter ultérieurement votre travail à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.
 
-Ceci étant la méthode recommandée pour traiter les images dans les versions 3.0 et supérieures, cette section fournira un aperçu beaucoup plus complet que la section suivante sur le flux de travail _relatif à l'écran_.
+Ceci étant la méthode recommandée pour traiter les images dans les versions 3.0 et supérieures, cette section fournira un aperçu beaucoup plus complet que la section suivante sur le flux de travail _relatif à l'affichage_.
 
 # étapes basiques
 Le traitement de base d'une image dans le flux de travail relatif à la scène demande, au minimum, de prendre en compte les étapes suivantes pour rendre à l'écran une image correcte :
@@ -26,19 +26,19 @@ prendre une photo
 [_balance des blancs_](../../module-reference/processing-modules/white-balance.md)
 : Il est important que la balance des blancs soit correctement réglée pour former une base solide pour le traitement ultérieur. Le boîtier stockera normalement dans les métadonnées du fichier Raw, le réglage de la balance des blancs sélectionnée et darktable l'utilisera comme point de départ. Pour obtenir une balance des blancs plus précise, vous pouvez soit utiliser la pipette à couleurs pour sélectionner dans l'image un ton de gris neutre, soit, le cas échéant, passer à un autre préréglage de la balance des blancs de votre boîtier. Des ajustements fins de la balance des blancs globale sont effectués à l'aide du curseur _température_ et, moins souvent, du curseur _teinte_. Déplacer le curseur _température_ vers la gauche rend l'image plus froide (plus bleue), et le déplacer vers la droite la rend plus chaude (plus orange).
 
-: Le module _balance des blancs_ ne peut effectuer que des réglages _globaux_ de la balance des blancs de l'image. Le module [_balance couleur_](../../module-reference/processing-modules/color-balance.md), entre autres, vous donne plus de contrôle dans les cas où une scène a été éclairée par plusieurs sources de lumière à différentes températures de couleur.
+: Le module _balance des blancs_ ne peut effectuer que des réglages _globaux_ de la balance des blancs de l'image. Le module [_balance couleur_](../../module-reference/processing-modules/color-balance.md), entre autres, vous donne plus de contrôle dans les cas où une scène a été éclairée par plusieurs sources de lumière avec différentes températures de couleur.
 
 [_filmique rvb_](../../module-reference/processing-modules/filmic-rgb.md)
-: Ce module effectue un mappage avec compression des tonalités de la plage dynamique élevée de l'image capturée vers la plage dynamique inférieure du support d'affichage. Le niveau de ton gris moyen a déjà été réglé (ci-dessus) avec le module _exposition_. Filmique proposera, sur son onglet _scène_, un point blanc et un point noir appropriés pour l'image - vous devrez peut-être les ajuster pour une scène particulière. Sur l'onglet _look_, vous pouvez ajuster les paramètres de contraste et de saturation des tons moyens si nécessaire.
+: Ce module effectue un mappage avec compression des tonalités de la plage dynamique élevée de l'image capturée vers la plage dynamique moins élevée du support d'affichage. Le niveau de ton gris moyen a déjà été réglé (ci-dessus) avec le module _exposition_. Filmique proposera, sur son onglet _scène_, un point blanc et un point noir appropriés pour l'image - vous devrez peut-être les ajuster pour une scène particulière. Sur l'onglet _look_, vous pouvez ajuster les paramètres de contraste et de saturation des tons moyens si nécessaire.
 
 # autres modules recommandés
-In addition to the basic modules described above, you may want to consider using the following modules to make your image look even prettier. These modules are known to work well with the scene-referred workflow:
+En plus des modules de base décrits ci-dessus, vous pouvez envisager d'utiliser les modules suivants pour rendre votre image encore plus jolie. Ces modules sont connus pour fonctionner correctement avec le flux de travail relatif à la scène :
 
-[_crop and rotate_](../../module-reference/processing-modules/crop-rotate.md) / [_perspective correction_](../../module-reference/processing-modules/perspective-correction.md)
-: Quite frequently you want to only show part of the captured scene in your image, e.g. to take away some disturbing feature close to the frame. In other cases, the horizon in the image may need levelling, or there may be perspective distortions. All of this can be corrected with full manual control in the _crop and rotate_ module. For a fully automatic correction of perspective distortions you may alternatively visit the _perspective correction_ module.
+[_recadrer et pivoter_](../../module-reference/processing-modules/crop-rotate.md) / [_correction de perspective_](../../module-reference/processing-modules/perspective-correction.md)
+: Très souvent, vous souhaitez afficher uniquement une partie de la scène capturée dans votre image, par exemple pour enlever des détails dérangeants près de son pourtour. Dans d'autres cas, l'horizon de l'image peut nécessiter une mise à niveau ou il peut y avoir des distorsions de perspective. Tout cela peut être corrigé avec un contrôle manuel complet dans le module _recadrer et pivoter_. Pour une correction entièrement automatique des distorsions de perspective, vous pouvez également visiter le module _correction de perspective_.
 
-[_retouch_](../../module-reference/processing-modules/retouch.md) / [_spot removal_](../../module-reference/processing-modules/spot-removal.md) / [_hot pixels_](../../module-reference/processing-modules/hot-pixels.md)
-: Sometimes you will need to remove spots caused by sensor dirt. The new _retouch_ and the older _spot removal_ modules are at hand for this and can also correct other disturbing elements like skin blemishes. If your camera has stuck pixels or tends to produce hot pixels at high ISO values or longer exposure times, take a look at the _hot pixels_ module for automatic correction.
+[_retouche_](../../module-reference/processing-modules/retouch.md) / [_correction des taches_](../../module-reference/processing-modules/spot-removal.md) / [_pixels chauds_](../../module-reference/processing-modules/hot-pixels.md)
+: Parfois, vous devrez supprimer les taches causées par les poussières du capteur. Le nouveau module _retouche_ et l'ancien module _correction des taches_ sont faits pour cela et peuvent également corriger d'autres éléments perturbants comme les imperfections cutanées. Si votre appareil photo a des pixels défectueux ou a tendance à produire des pixels chauds à des valeurs ISO élevées ou pour des temps d'exposition plus longs, jetez un œil au module _pixels chauds_ pour une correction automatique.
 
 [_color balance_](../../module-reference/processing-modules/color-balance.md)
 : This is a versatile module that can be used to further adjust the contrast and saturation of an image, and can also be used to perform color grading (e.g. emulate "orange and teal" grading used in hollywood films, remove redness in skin tones, adjust for uneven color balance in shadows/midtones/highlights, etc.). The [_color zones_](../../module-reference/processing-modules/color-zones.md) module can also be helpful in some cases where you are unable to achieve the desired effect using the _color balance_ module.
@@ -65,7 +65,7 @@ In addition to the basic modules described above, you may want to consider using
 [_lens correction_](../../module-reference/processing-modules/lens-correction.md)
 : If your camera/lens combination is supported, use this module to correct for standard lens distortions, where corrections have not already been performed in-camera. The [_crop and rotate_](../../module-reference/processing-modules/crop-rotate.md) or [_perspective correction_](../../module-reference/processing-modules/perspective-correction.md) modules can also be used to simulate the effects of a tilt-shift lens.
 
-# modules to be used with care
+# modules à utiliser avec précaution
 
 There are some modules for which there is not yet an alternative that is well-suited to the scene-referred workflow. If required, these modules should be used sparingly and with care.
 
@@ -84,7 +84,7 @@ There are some modules for which there is not yet an alternative that is well-su
 
 ---
 
-# other artistic effects
+# autres modules à effets artistiques
 
 There are also a number of artistic effect modules available in darktable. To name just a few:
 
@@ -96,7 +96,7 @@ There are also a number of artistic effect modules available in darktable. To na
 
 Please see the [processing module reference](../../module-reference/processing-modules/_index.md) for a list of the available modules.
 
-# modules to avoid
+# modules à éviter
 
 There are a number of modules which are no longer recommended for use within a scene-referred workflow. This doesn't mean they can't be used, but they can produce undesirable effects when their sliders are pushed too far, and there are better alternatives. In each case, the preferred alternative module is listed along with a brief explanation.
 

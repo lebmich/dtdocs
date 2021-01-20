@@ -1,9 +1,9 @@
 ---
-title: "développer une image: flux de travail relatif à l'écran"
+title: "développer une image: flux de travail relatif à l'affichage"
 id: edit-display-referred
 draft: false
 weight: 40
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
 This is a legacy mode which is retained to provide backward-compatibility with edits in older darktable versions, and to allows users to continue with their former way of working without forcing them to use the newer _scene-referred_ workflow.
