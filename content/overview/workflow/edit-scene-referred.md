@@ -8,31 +8,30 @@ author: "traduction : Michel Leblond"
 
 Le flux de travail _relatif à la scène_ met l'accent sur l'exécution du traitement d'image dans la partie linéaire relative à la scène du pipeline graphique. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs de pixels non linéaires. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il est plus facile d'adapter votre travail à l'avenir à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.
 
-This being the recommended way to process images in versions 3.0 and above, this section will provide a much more comprehensive overview than the next section on the _display-referred_ workflow.
+Ceci étant la méthode recommandée pour traiter les images dans les versions 3.0 et supérieures, cette section fournira un aperçu beaucoup plus complet que la section suivante sur le flux de travail _relatif à l'écran_.
 
-# basic steps
-Basic image processing in scene-referred workflow requires you, as a minimum, to consider the following steps in order to render a reasonable image on your display:
+# étapes basiques
+Le traitement de base d'une image dans le flux de travail relatif à la scène demande, au minimum, de prendre en compte les étapes suivantes pour rendre à l'écran une image correcte :
 
-capture an image
-: Use your camera to take a properly exposed image. Normally you can rely on the camera's metering and automatic exposure features. However, for some scenes you may need to use the camera's exposure compensation dial or manual settings to get an optimal exposure. In general, you want to make the exposure in camera as bright as possible without clipping the highlights. This is known as "exposing to the right" (ETTR), and it ensures you take best advantage of the sensor's dynamic range. Many cameras have features like "zebras" or "blinkies" to warn you when you are in danger of clipping.
+prendre une photo
+: Utilisez votre appareil photo pour prendre une photo correctement exposée. Normalement, vous pouvez compter sur les fonctions de mesure et d'exposition automatiques du boîtier. Cependant, pour certaines scènes, vous devrez peut-être utiliser la molette de compensation d'exposition du boîtier ou les réglages manuels pour obtenir une exposition optimale. En général, vous souhaitez rendre l'exposition de l'appareil photo aussi lumineuse que possible sans tronquer les hautes lumières. Ceci est connu sous le nom d '«exposition à droite» (ETTR) et vous permet de tirer le meilleur parti de la plage dynamique du capteur. De nombreux appareils photo ont des fonctionnalités telles que "zébrures" ou "clignotements" pour vous avertir lorsque vous êtes en danger d'écrêtage.
 
-[_exposure_](../../module-reference/processing-modules/exposure.md)
-: This module is enabled by default, and it will include an initial exposure boost of +0.5EV to mimic the standard processing of most in-camera JPEGs. The metering systems in cameras vary, and some camera models might need a slightly larger exposure boost (eg. +0.8EV ~ 1.5EV), in which case you can create an auto-apply [preset](../../darkroom/interacting-with-modules/presets.md) as required. The exposure module will detect if the camera's exposure compensation dial was used (see above remarks about ETTR), and will re-adjust the exposure accordingly.
+[_exposition_](../../module-reference/processing-modules/exposure.md)
+: Ce module est activé par défaut. Il inclura une augmentation d'exposition initiale de +0,5 IL pour imiter le traitement standard de la plupart des boîtiers fournissant des JPEG intégrés. Les systèmes de mesure des boîtiers varient et certains modèles peuvent nécessiter une augmentation d'exposition légèrement plus importante (par exemple + 0,8 IL ~ 1,5 IL), auquel cas vous pouvez créer un  [préréglage](../../darkroom/interacting-with-modules/presets.md) automatique adéquat. Le module d'exposition détectera si la molette de compensation d'exposition du boîtier a été utilisée (voir les remarques ci-dessus sur l'ETTR) et réajustera l'exposition en conséquence.
 
-: Use the exposure slider to adjust the midtones in the image to an appropriate brightness level. At this stage, don't worry about highlights and shadows -- these will be handled later.
+: Utilisez le curseur d'exposition pour régler les demi-tons de l'image à un niveau de luminosité approprié. À ce stade, ne vous inquiétez pas des hautes lumières et des ombres - elles seront traitées plus tard.
 
-: You can also click+drag on the histogram to change the exposure, but this gives less control than using the _exposure_ module slider. While you can use the _exposure_ module to tweak the black level to supply more contrast, you need to be very careful doing this as you can end up with negative RGB values.
+: Vous pouvez également cliquer et faire glisser sur l'histogramme pour modifier l'exposition, mais cela donne moins de contrôle que d'utiliser le curseur du module _exposition_. Bien que vous puissiez utiliser le module _exposition_ pour ajuster le niveau de noir pour fournir plus de contraste, vous devez faire très attention en faisant cela car vous pouvez vous retrouver avec des valeurs RVB négatives.
 
-[_white balance_](../../module-reference/processing-modules/white-balance.md)
-: It is important that the white balance is set correctly to form a solid basis for subsequent processing. The camera will normally store the selected white balance setting inside the raw file's metadata, and darktable will use this as a starting point. To get a more accurate white balance, you can either use the color picker to select a neutral grey tone in the image, or you can switch to a different white balance preset from your camera, where available. Fine adjustments to the global white balance are made using the _temperature_ slider and, less often, the _tint_ slider. Moving the _temperature_ slider to the left makes the image cooler (more blue), and moving it to the right makes it warmer (more orange).
+[_balance des blancs_](../../module-reference/processing-modules/white-balance.md)
+: Il est important que la balance des blancs soit correctement réglée pour former une base solide pour le traitement ultérieur. Le boîtier stockera normalement dans les métadonnées du fichier Raw, le réglage de la balance des blancs sélectionnée et darktable l'utilisera comme point de départ. Pour obtenir une balance des blancs plus précise, vous pouvez soit utiliser la pipette à couleurs pour sélectionner dans l'image un ton de gris neutre, soit, le cas échéant, passer à un autre préréglage de la balance des blancs de votre boîtier. Des ajustements fins de la balance des blancs globale sont effectués à l'aide du curseur _température_ et, moins souvent, du curseur _teinte_. Déplacer le curseur _température_ vers la gauche rend l'image plus froide (plus bleue), et le déplacer vers la droite la rend plus chaude (plus orange).
 
-: The _white balance_ module is only able to make _global_ adjustments to the white balance of the image. The [_color balance_](../../module-reference/processing-modules/color-balance.md) module, among other things, gives you even more control in cases where a scene was illuminated by multiple light sources at different color temperatures.
+: Le module _balance des blancs_ ne peut effectuer que des réglages _globaux_ de la balance des blancs de l'image. Le module [_balance couleur_](../../module-reference/processing-modules/color-balance.md), entre autres, vous donne plus de contrôle dans les cas où une scène a été éclairée par plusieurs sources de lumière à différentes températures de couleur.
 
-[_filmic rgb_](../../module-reference/processing-modules/filmic-rgb.md)
-: This module performs tone mapping compression from the high-dynamic-range of the captured image, to the lower dynamic range of the display medium. The mid-grey tone level has already been set (above) with the _exposure_ module. Filmic will propose, on its _scene_ tab, an appropriate white point and black point for the image -- you may need to adjust these for a particular scene. On the _look_ tab you can adjust the midtone contrast and saturation settings if required.
+[_filmique rvb_](../../module-reference/processing-modules/filmic-rgb.md)
+: Ce module effectue un mappage avec compression des tonalités de la plage dynamique élevée de l'image capturée vers la plage dynamique inférieure du support d'affichage. Le niveau de ton gris moyen a déjà été réglé (ci-dessus) avec le module _exposition_. Filmique proposera, sur son onglet _scène_, un point blanc et un point noir appropriés pour l'image - vous devrez peut-être les ajuster pour une scène particulière. Sur l'onglet _look_, vous pouvez ajuster les paramètres de contraste et de saturation des tons moyens si nécessaire.
 
-
-# other recommended modules
+# autres modules recommandés
 In addition to the basic modules described above, you may want to consider using the following modules to make your image look even prettier. These modules are known to work well with the scene-referred workflow:
 
 [_crop and rotate_](../../module-reference/processing-modules/crop-rotate.md) / [_perspective correction_](../../module-reference/processing-modules/perspective-correction.md)

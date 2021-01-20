@@ -1,5 +1,5 @@
 ---
-title: "développer une image: flux de travail relatif à l'affichage"
+title: "développer une image: flux de travail relatif à l'écran"
 id: edit-display-referred
 draft: false
 weight: 40
