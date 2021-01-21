@@ -6,7 +6,7 @@ weight: 30
 author: "traduction : Michel Leblond"
 ---
 
-Le flux de travail _relatif à la scène_ met l'accent sur l'exécution du traitement d'image dans la partie linéaire relative à la scène du pipeline graphique. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs non linéaires des pixels. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il sera plus facile d'adapter ultérieurement votre travail à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.
+Le flux de travail _relatif à la scène_ met l'accent sur l'exécution, par pipeline graphique, du traitement d'image dans la partie linéaire relative à la scène. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs non linéaires des pixels. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il sera plus facile d'adapter ultérieurement votre travail à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.
 
 Ceci étant la méthode recommandée pour traiter les images dans les versions 3.0 et supérieures, cette section fournira un aperçu beaucoup plus complet que la section suivante sur le flux de travail _relatif à l'affichage_.
 
@@ -17,7 +17,7 @@ prendre une photo
 : Utilisez votre appareil photo pour prendre une photo correctement exposée. Normalement, vous pouvez compter sur les fonctions de mesure et d'exposition automatiques du boîtier. Cependant, pour certaines scènes, vous devrez peut-être utiliser la molette de compensation d'exposition du boîtier ou les réglages manuels pour obtenir une exposition optimale. En général, vous souhaitez rendre l'exposition de l'appareil photo aussi lumineuse que possible sans tronquer les hautes lumières. Ceci est connu sous le nom d '«exposition à droite» (ETTR) et vous permet de tirer le meilleur parti de la plage dynamique du capteur. De nombreux appareils photo ont des fonctionnalités telles que "zébrures" ou "clignotements" pour vous avertir lorsque vous êtes en danger d'écrêtage.
 
 [_exposition_](../../module-reference/processing-modules/exposure.md)
-: Ce module est activé par défaut. Il inclura une augmentation d'exposition initiale de +0,5 IL pour imiter le traitement standard de la plupart des boîtiers fournissant des JPEG intégrés. Les systèmes de mesure des boîtiers varient et certains modèles peuvent nécessiter une augmentation d'exposition légèrement plus importante (par exemple + 0,8 IL ~ 1,5 IL), auquel cas vous pouvez créer un  [préréglage](../../darkroom/interacting-with-modules/presets.md) automatique adéquat. Le module d'exposition détectera si la molette de compensation d'exposition du boîtier a été utilisée (voir les remarques ci-dessus sur l'ETTR) et réajustera l'exposition en conséquence.
+: Ce module est activé par défaut. Il inclura une augmentation d'exposition initiale de +0,5&nbsp;IL pour imiter le traitement standard de la plupart des boîtiers fournissant des JPEG intégrés. Les systèmes de mesure des boîtiers varient et certains modèles peuvent nécessiter une augmentation d'exposition légèrement plus importante (par exemple +0,8&nbsp;IL à +1,5&nbsp;IL), auquel cas vous pouvez créer un  [préréglage](../../darkroom/interacting-with-modules/presets.md) automatique adéquat. Le module d'exposition détectera si la molette de compensation d'exposition du boîtier a été utilisée (voir les remarques ci-dessus sur l'ETTR) et réajustera l'exposition en conséquence.
 
 : Utilisez le curseur d'exposition pour régler les demi-tons de l'image à un niveau de luminosité approprié. À ce stade, ne vous inquiétez pas des hautes lumières et des ombres - elles seront traitées plus tard.
 
@@ -40,47 +40,48 @@ En plus des modules de base décrits ci-dessus, vous pouvez envisager d'utiliser
 [_retouche_](../../module-reference/processing-modules/retouch.md) / [_correction des taches_](../../module-reference/processing-modules/spot-removal.md) / [_pixels chauds_](../../module-reference/processing-modules/hot-pixels.md)
 : Parfois, vous devrez supprimer les taches causées par les poussières du capteur. Le nouveau module _retouche_ et l'ancien module _correction des taches_ sont faits pour cela et peuvent également corriger d'autres éléments perturbants comme les imperfections cutanées. Si votre appareil photo a des pixels défectueux ou a tendance à produire des pixels chauds à des valeurs ISO élevées ou pour des temps d'exposition plus longs, jetez un œil au module _pixels chauds_ pour une correction automatique.
 
-[_color balance_](../../module-reference/processing-modules/color-balance.md)
-: This is a versatile module that can be used to further adjust the contrast and saturation of an image, and can also be used to perform color grading (e.g. emulate "orange and teal" grading used in hollywood films, remove redness in skin tones, adjust for uneven color balance in shadows/midtones/highlights, etc.). The [_color zones_](../../module-reference/processing-modules/color-zones.md) module can also be helpful in some cases where you are unable to achieve the desired effect using the _color balance_ module.
+[_balance couleur_](../../module-reference/processing-modules/color-balance.md)
+: Il s'agit d'un module polyvalent qui peut être utilisé pour ajuster davantage le contraste et la saturation d'une image. Il peut également être utilisé pour effectuer un étalonnage des couleurs (par exemple, émuler l'étalonnage "orange et bleu sarcelle" (Orange&Teal) utilisé dans les films hollywoodiens, supprimer les rougeurs dans les tons de peau, régler une balance des couleurs inégale dans les ombres/demi-tons/hautes lumières, etc.). Le module [_zone de couleurs_](../../module-reference/processing-modules/color-zones.md) peut également être utile dans les cas où vous ne pouvez pas obtenir l'effet souhaité en utilisant le module _balance couleur_.
 
-[_tone equalizer_](../../module-reference/processing-modules/tone-equalizer.md)
-: Use this module to perform "dodging and burning" operations and recover detail in the shadows and highlights. This module generates a mask to average out the luminance in different parts of the image, and the equalizer allows you to selectively increase and decrease luminance levels using that mask. It is recommended that you first check the mask is set up appropriately, then you can use the sliders or the spline curve to adjust the various brightness levels. You can also place the mouse cursor over different parts of the image to see the EV level of the mask at that point, and then use the mouse wheel to adjust the brightness of that EV level accordingly.
+[_égaliseur de ton_](../../module-reference/processing-modules/tone-equalizer.md)
+: Utilisez ce module pour effectuer des opérations «éclaircir et assombrir» (dodging and burning) et récupérer des détails dans les ombres et les hautes lumières. Ce module génère un masque pour faire la moyenne de la luminance dans différentes parties de l'image, et l'égaliseur vous permet d'augmenter et de diminuer sélectivement les niveaux de luminance à l'aide de ce masque. Il est recommandé de vérifier d'abord que le masque est correctement configuré, puis vous pouvez utiliser les curseurs ou la courbe spline pour ajuster les différents niveaux de luminosité. Vous pouvez également placer le curseur de la souris sur différentes parties de l'image pour voir le niveau IL du masque à ce point, puis utiliser la molette de la souris pour ajuster la luminosité de ce niveau IL en conséquence.
 
-[_local contrast_](../../module-reference/processing-modules/local-contrast.md)
-: This module can emphasise detail and improve clarity, and is a good way to improve the general sharpness of an image. It is recommended that you use this module in _local laplacian_ mode.
+[_contraste local_](../../module-reference/processing-modules/local-contrast.md)
+: Ce module peut mettre l'accent sur les détails et améliorer la clarté, et constitue un bon moyen d'améliorer la netteté générale d'une image. Il est recommandé d'utiliser ce module en mode _filtre laplacien local_.
 
-: A more versatile but also more complex technique is to use the [_contrast equalizer_](../../module-reference/processing-modules/contrast-equalizer.md) module, which is very useful for making adjustments where spatial dimension plays a role. It has a number of pre-defined presets that may be helpful as a starting point in understanding this module.
+[_égaliseur de contraste_](../../module-reference/processing-modules/contrast-equalizer.md)
+: Une technique plus polyvalente mais aussi plus complexe consiste à utiliser ce module. Il est très utile pour faire des ajustements où la dimension spatiale joue un rôle. Il a un certain nombre de préréglages qui peuvent être utiles comme point de départ pour comprendre ce module.
 
-[_denoise (profiled)_](../../module-reference/processing-modules/denoise-profiled.md)
-: The _denoise (profiled)_ module is usually your best option for reducing noise in an image. This module offers an almost “single-click” solution to remove noise. From a user perspective the effect only depends on camera type and ISO value, both derived from Exif data. All other settings are taken from a database of noise profiles that the darktable team has collected -- now covering well above 300 popular camera models. The simplest way to use this module is _non-local means (auto)_ mode. The wavelet feature of this module is also quite effective against color noise. It is recommended that you use this module at 100% zoom so that you can accurately see the effects of your changes.
+[_réduction du bruit (profil)_](../../module-reference/processing-modules/denoise-profiled.md)
+: Le module _réduction du bruit(profil)_ est généralement votre meilleure option pour réduire le bruit dans une image. Ce module offre une solution quasiment «en un seul clic» pour supprimer le bruit. Du point de vue de l'utilisateur, l'effet dépend uniquement du type de boîtier et de la valeur ISO, tous deux dérivés des données Exif. Tous les autres paramètres sont extraits d'une base de données de profils de bruit que l'équipe de darktable a collectée - couvrant désormais bien plus de 300 modèles d'appareils photo populaires. La manière la plus simple d'utiliser ce module est le mode _moyennes non-locales auto_. Le mode _ondelettes_ de ce module est également assez efficace contre le bruit de couleur. Il est recommandé d'utiliser ce module avec un zoom de 100% afin de pouvoir voir avec précision les effets de vos modifications.
 
-: Other modules that allow for image denoising include [_raw denoise_](../../module-reference/processing-modules/raw-denoise.mf), [_surface blur_](../../module-reference/processing-modules/surface-blur.md), [_astrophoto denoise_](../../module-reference/processing-modules/astrophoto-denoise.md), and the [_contrast equalizer_](../../module-reference/processing-modules/contrast-equalizer.md) module, which is based on wavelets. If your camera is not yet supported by _denoise (profiled)_, _astrophoto denoise_ is probably the most convenient alternative, as it allows you to treat color and luminance noise separately.
+: D'autres modules qui permettent le débruitage d'image incluent [_réduction du bruit RAW_](../../module-reference/processing-modules/raw-denoise.mf), [_flou de surface_](../../module-reference/processing-modules/surface-blur.md), [_réduction du bruit photo astro_](../../module-reference/processing-modules/astrophoto-denoise.md), et le module [_égaliseur de contraste_](../../module-reference/processing-modules/contrast-equalizer.md), qui est basé sur les ondelettes. Si votre boîtier n'est pas encore pris en charge par le module _réduction du bruit (profil)_, alors le module _réduction du bruit photo astro_ est probablement l'alternative la plus pratique, car elle vous permet de traiter séparément le bruit de couleur et de luminance.
 
-[_haze removal_](../../module-reference/processing-modules/haze-removal.md)
-: Does what is says on the tin -- removes atmospheric haze.
+[_suppression de la brume_](../../module-reference/processing-modules/haze-removal.md)
+: Ce module fait exactement ce que son nom indique -- il élimine la brume atmosphérique.
 
-[_color calibration_](../../module-reference/processing-modules/color-calibration.md)
-: This module offers a range of presets for making black and white images emulating classic film. It can also be used to tweak your color profile matrices, for example, to deal with color gamut issues.
+[_calibration des couleurs_](../../module-reference/processing-modules/color-calibration.md)
+: Ce module propose une gamme de préréglages pour créer des images noir et blanc imitant un film classique. Il peut également être utilisé pour modifier vos matrices de profils de couleurs, par exemple, pour résoudre les problèmes de gamut.
 
-[_lens correction_](../../module-reference/processing-modules/lens-correction.md)
-: If your camera/lens combination is supported, use this module to correct for standard lens distortions, where corrections have not already been performed in-camera. The [_crop and rotate_](../../module-reference/processing-modules/crop-rotate.md) or [_perspective correction_](../../module-reference/processing-modules/perspective-correction.md) modules can also be used to simulate the effects of a tilt-shift lens.
+[_correction des objectifs_](../../module-reference/processing-modules/lens-correction.md)
+: Si votre combinaison boîtier/objectif est prise en charge, utilisez ce module pour corriger les distorsions d'objectif standard, lorsque les corrections n'ont pas déjà été effectuées par le boîtier. Les modules [_recadrer et pivoter_](../../module-reference/processing-modules/crop-rotate.md) et [_correction de perspective_](../../module-reference/processing-modules/perspective-correction.md) peuvent également être utilisés pour simuler les effets d'un objectif à bascule et décentrement.
 
 # modules à utiliser avec précaution
 
-There are some modules for which there is not yet an alternative that is well-suited to the scene-referred workflow. If required, these modules should be used sparingly and with care.
+Il y a certains modules pour lesquels il n'existe pas encore d'alternative bien adaptée au flux de travail relatif à la scène. Si nécessaire, ces modules doivent être utilisés avec parcimonie et prudence.
 
 [_vibrance_](../../module-reference/processing-modules/vibrance.md)
-: Tends to darken colors. Consider using [_color zones_](../../module-reference/processing-modules/color-zones.md) with a saturation parametric mask to give more control.
+: A tendance à assombrir les couleurs. Pour plus de contrôle, pensez à utiliser le module [_zones de couleurs_](../../module-reference/processing-modules/color-zones.md) avec un masque paramétrique de saturation.
 
-[_color zones_](../../module-reference/processing-modules/color-zones.md)
-: Transitions may not be graceful. An alternative can be to use [_color balance_](../../module-reference/processing-modules/color-balance.md) with a parameteric mask.
+[_zones de couleurs_](../../module-reference/processing-modules/color-zones.md)
+: Les transitions peuvent ne pas être gracieuses. Une alternative peut être d'utiliser le module [_balance couleur_](../../module-reference/processing-modules/color-balance.md) avec un masque paramétrique.
 
-[_vignetting_](../../module-reference/processing-modules/vignetting.md)
-: This module can produce unnatural-looking results with too strong a fall-off. You may be better off using the [_exposure_](../../module-reference/processing-modules/exposure.md) module with an elliptical mask with large transition area, and perhaps adding [_color balance_](../../module-reference/processing-modules/color-balance.md) with the same mask to reduce saturation at the edges.
+[_vignetage_](../../module-reference/processing-modules/vignetting.md)
+: Ce module peut produire des résultats d'apparence non naturelle avec une décroissance trop brutale. Vous feriez peut-être mieux d'utiliser le module [_exposition_](../../module-reference/processing-modules/exposure.md) avec un masque elliptique ayant une grande zone de transition, et peut-être en activant en plus le module [_balance couleur_](../../module-reference/processing-modules/color-balance.md) avec le même masque pour réduire la saturation sur les bords.
 
 ---
 
-**Note:** When using [blend modes](../../darkroom/masking-and-blending/blend-modes.md) on any module, you should be aware that many of the blend modes are optimized for display-referred space and assume a mid-gray value of 50%. For the linear scene-referred space, stick with blend modes based on arithmetic operations (addition, multiplication, division, subtraction, average), on maximum/minimum comparisons (screen) or on channel separations (hue, color, chroma, etc.).
+**Note:** En utilisant les [modes de fusion](../../darkroom/masking-and-blending/blend-modes.md) sur n'importe quel module, vous devez savoir que de nombreux modes de fusion sont optimisés pour l'espace relatif à l'affichage et supposent une valeur de gris moyen de 50%. Pour l'espace linéaire relatif à la scène, respectez les modes de fusion basés sur des opérations arithmétiques (addition, multiplication, division, soustraction, moyenne), sur des comparaisons maximum/minimum (écran) ou sur des séparations de canaux (teinte, couleur, chroma, etc.).
 
 ---
 
