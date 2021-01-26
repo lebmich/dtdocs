@@ -92,10 +92,10 @@ Il existe également un certain nombre de modules d'effets artistiques disponibl
 - Utilisez le module [_filigrane_](../../module-reference/processing-modules/watermark.md) pour ajouter un filigrane à votre image.
 - Utilisez le module [_grain_](../../module-reference/processing-modules/grain.md) pour simuler le bruit typique des photos analogiques.
 - Utilisez le module [_mappage des couleurs_](../../module-reference/processing-modules/color-mapping.md) pour transférer l'apparence d'une image couleur sur une autre.
-- Utilisez le module [_lowlight vision_](../../module-reference/processing-modules/lowlight-vision.md) pour simuler la vision humaine en rapprochant de la réalité les images en basse lumière.
-- Use the [_graduated density_](../../module-reference/processing-modules/graduated-density.md) filter to add a neutral or colored gradient to your image for exposure and color correction.
+- Utilisez le module [_faible lumière_](../../module-reference/processing-modules/lowlight-vision.md) pour simuler la vision de nuit humaine en rapprochant de la réalité les images en basse lumière.
+- Utilisez le module [_filtre dégradé_](../../module-reference/processing-modules/graduated-density.md) pour ajouter un dégradé neutre ou coloré à votre image pour corriger l'exposition et les couleurs.
 
-Please see the [processing module reference](../../module-reference/processing-modules/_index.md) for a list of the available modules.
+Veuillez consulter [la référence des modules de traitement](../../module-reference/processing-modules/_index.md) pour une liste des modules disponibles.
 
 # modules à éviter
 
