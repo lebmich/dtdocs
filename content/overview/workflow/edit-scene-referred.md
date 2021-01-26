@@ -87,12 +87,12 @@ Il y a certains modules pour lesquels il n'existe pas encore d'alternative bien 
 
 # autres modules à effets artistiques
 
-There are also a number of artistic effect modules available in darktable. To name just a few:
+Il existe également un certain nombre de modules d'effets artistiques disponibles dans darktable. Pour en nommer quelques uns :
 
-- Use the [_watermark_](../../module-reference/processing-modules/watermark.md) module to add an individual watermark to your image.
-- Use the [_grain_](../../module-reference/processing-modules/grain.md) module to simulate the typical noise of classical analogue photos.
-- Use the [_color mapping_](../../module-reference/processing-modules/color-mapping.md) module to transfer the look and feel of one color image onto another.
-- Use the [_lowlight vision_](../../module-reference/processing-modules/lowlight-vision.md) module to simulate human vision making low light pictures look closer to reality.
+- Utilisez le module [_filigrane_](../../module-reference/processing-modules/watermark.md) pour ajouter un filigrane à votre image.
+- Utilisez le module [_grain_](../../module-reference/processing-modules/grain.md) pour simuler le bruit typique des photos analogiques.
+- Utilisez le module [_mappage des couleurs_](../../module-reference/processing-modules/color-mapping.md) pour transférer l'apparence d'une image couleur sur une autre.
+- Utilisez le module [_lowlight vision_](../../module-reference/processing-modules/lowlight-vision.md) pour simuler la vision humaine en rapprochant de la réalité les images en basse lumière.
 - Use the [_graduated density_](../../module-reference/processing-modules/graduated-density.md) filter to add a neutral or colored gradient to your image for exposure and color correction.
 
 Please see the [processing module reference](../../module-reference/processing-modules/_index.md) for a list of the available modules.
