@@ -104,7 +104,7 @@ Il existe un certain nombre de modules qui ne sont plus recommandés pour une ut
 [_local tone mapping (deprecated)_](../../module-reference/processing-modules/tone-mapping.md)
 : _prefer [tone equalizer](../../module-reference/processing-modules/tone-equalizer.md)_
 
-: This module applies a bilateral blur over a non-linear (log) mapping that can provoke halos and fringing. This is common issue for modules performing blurs and occlusions that operate over a non-linear encoding.
+: Ce module applies a bilateral blur over a non-linear (log) mapping that can provoke halos and fringing. This is common issue for modules performing blurs and occlusions that operate over a non-linear encoding.
 
 [_global tonemap (deprecated)_](../../module-reference/processing-modules/global-tonemap.md)
 : _prefer [filmic rgb](../../module-reference/processing-modules/filmic-rgb.md)_
