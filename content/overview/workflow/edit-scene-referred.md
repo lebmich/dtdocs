@@ -99,7 +99,7 @@ Veuillez consulter [la référence des modules de traitement](../../module-refer
 
 # modules à éviter
 
-There are a number of modules which are no longer recommended for use within a scene-referred workflow. This doesn't mean they can't be used, but they can produce undesirable effects when their sliders are pushed too far, and there are better alternatives. In each case, the preferred alternative module is listed along with a brief explanation.
+Il existe un certain nombre de modules qui ne sont plus recommandés pour une utilisation dans un flux de travail relatif à la scène. Cela ne signifie pas qu'ils ne peuvent pas être utilisés, mais ils peuvent produire des effets indésirables lorsque leurs curseurs sont poussés trop loin, et il existe de meilleures alternatives. Dans chaque cas, le module alternatif préférable est répertorié avec une brève explication.
 
 [_local tone mapping (deprecated)_](../../module-reference/processing-modules/tone-mapping.md)
 : _prefer [tone equalizer](../../module-reference/processing-modules/tone-equalizer.md)_
