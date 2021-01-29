@@ -3,7 +3,7 @@ title: "développer une image : flux de travail relatif à la scène"
 id: edit-scene-referred
 draft: false
 weight: 30
-author: "traduction : Michel Leblond"
+author: "traducteur : Michel Leblond"
 ---
 
 Le flux de travail _relatif à la scène_ met l'accent sur l'exécution, par pipeline graphique, du traitement d'image dans la partie linéaire relative à la scène. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs non linéaires des pixels. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il sera plus facile d'adapter ultérieurement votre travail à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.
@@ -174,4 +174,4 @@ Il existe un certain nombre de modules qui ne sont plus recommandés pour une ut
 [_contraste luminosité saturation_](../../module-reference/processing-modules/contrast-brightness-saturation.md)
 : _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_
 
-: Ce module fonctionne dans l'espace colorimétrique Lab (avec les limitations que cela implique) et duplique essentiellement les fonctions déjà fournies par le module _color balance_. 
+: Ce module fonctionne dans l'espace colorimétrique Lab (avec les limitations que cela implique) et duplique essentiellement les fonctions déjà fournies par le module _color balance_.
