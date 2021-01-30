@@ -3,7 +3,7 @@ title: copies locales
 id: local-copies
 weight: 30
 draft: false
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
 Assez souvent les utilisateurs ont d'énormes collections d’images qu'ils stockent sur des disques durs supplémentaires de leur ordinateur de bureau ou sur un support externe comme un NAS en RAID, etc.
@@ -12,7 +12,7 @@ Ils souhaitent fréquemment développer des images lors d’un voyage en utilisa
 
 La fonctionnalité de « copies locales » de darktable a été conçue pour prendre en charge ces cas d’utilisation.
 
-Vous pouvez créer sur le disque local de votre ordinateur une copie locale des images sélectionnées dans la table lumineuse. Cette copie locale est toujours utilisée quand elle est présente, donnant accès aux images lorsque le stockage externe n'est plus connecté. Ultérieurement, lorsque votre support de stockage principal est de nouveau connecté, vous pouvez synchroniser les fichiers xmp liés et supprimer la copie locale de vos images d'entrée. Ces opérations se trouvent sur le panneau images sélectionnées (voir Section 2.3.8, « Images sélectionnées »). 
+Vous pouvez créer sur le disque local de votre ordinateur une copie locale des images sélectionnées dans la table lumineuse. Cette copie locale est toujours utilisée quand elle est présente, donnant accès aux images lorsque le stockage externe n'est plus connecté. Ultérieurement, lorsque votre support de stockage principal est de nouveau connecté, vous pouvez synchroniser les fichiers xmp liés et supprimer la copie locale de vos images d'entrée. Ces opérations se trouvent sur le panneau images sélectionnées (voir Section 2.3.8, « Images sélectionnées »).
 
 Ces opérations se trouvent sur le panneau [images sélectionnées](../../module-reference/utility-modules/lighttable/selected-image.md) de la table lumi module in the lighttable.
 

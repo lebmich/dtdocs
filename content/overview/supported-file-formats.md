@@ -3,7 +3,7 @@ title: formats de fichier supportés
 id: supported-file-formats
 draft: false
 weight: 20
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
 darktable prend en charge un grand nombre de formats de divers fabricants d’appareils. De plus, il peut lire des images de petite plage dynamique et de grande plage
@@ -31,4 +31,3 @@ La plupart des appareils modernes sont pris en charge et la tendance est d'ajout
 darktable lit de manière native les images « ordinaires » dans les formats JPEG, PNG 8-bit/16-bit et TIFF 8-bit/16-bit, aussi bien que dans les formats TIFF en nombres à virgule flottante 16-bit/23-bit. Le format JPEG2000 est aussi pris en charge si les bibliothèques nécessaires sont présentes lors de la compilation. De la même manière, si darktable a été compilé avec la prise en charge de GraphicsMagick, un certain nombre de formats d’importation supplémentaires sont disponibles, comme GIF, Dicom DCM , des formats TIFF exotiques et certains formats de la famille « portable xyz-map » de Sun.
 
 darktable lit les images à grande plage dynamique dans les formats OpenEXR, RVBE et PFM.
-

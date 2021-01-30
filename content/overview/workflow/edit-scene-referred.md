@@ -81,7 +81,7 @@ Il y a certains modules pour lesquels il n'existe pas encore d'alternative bien 
 
 ---
 
-**Note:** En utilisant les [modes de fusion](../../darkroom/masking-and-blending/blend-modes.md) sur n'importe quel module, vous devez savoir que de nombreux modes de fusion sont optimisés pour l'espace relatif à l'affichage et supposent une valeur de gris moyen de 50%. Pour l'espace linéaire relatif à la scène, respectez les modes de fusion basés sur des opérations arithmétiques (addition, multiplication, division, soustraction, moyenne), sur des comparaisons maximum/minimum (écran) ou sur des séparations de canaux (teinte, couleur, chroma, etc.).
+**Remarque :** En utilisant les [modes de fusion](../../darkroom/masking-and-blending/blend-modes.md) sur n'importe quel module, vous devez savoir que de nombreux modes de fusion sont optimisés pour l'espace relatif à l'affichage et supposent une valeur de gris moyen de 50%. Pour l'espace linéaire relatif à la scène, respectez les modes de fusion basés sur des opérations arithmétiques (addition, multiplication, division, soustraction, moyenne), sur des comparaisons maximum/minimum (écran) ou sur des séparations de canaux (teinte, couleur, chroma, etc.).
 
 ---
 
