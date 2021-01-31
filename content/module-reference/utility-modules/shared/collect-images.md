@@ -1,9 +1,10 @@
 ---
-title: collect images
+title: filtres de collection
 id: collect-images
-applicable-verison: 3.2.1
-tags: 
+applicable-version: 3.2.1
+tags:
 view: lighttable, tethering, map
+authors: "traducteur : Michel Leblond"
 ---
 
 Filter the images shown in the lighttable view and filmstrip panel using image attributes. This set of filtered images is known as a _collection_.
@@ -18,39 +19,39 @@ The images in a collection can be filtered using the following image attributes:
 
 ## files
 
-film roll 
+film roll
 : The name of the film roll to which the image belongs (which is the same as the name of the folder in which the image resides)
 
-folders 
+folders
 : The folder (file path) where the image file is located
 
-filename 
+filename
 : The filename of the image
 
 ## metadata
 
-tag 
+tag
 : Any tag that is attached to the image. When activated a hierarchical list of known tags is displayed
 
-creator 
+creator
 : The image's metadata “creator” field
 
-publisher 
+publisher
 : The image's metadata “publisher” field
 
-title 
+title
 : The image's metadata “title” field
 
-description 
+description
 : The image's metadata “description” field
 
-rights 
+rights
 : The image's metadata “rights” field
 
 notes
 : The image's metadata "notes" field
 
-color label 
+color label
 : Any color label attached to the image (“red”, “yellow”, “green”, “blue”, “purple”)
 
 geotagging
@@ -78,22 +79,22 @@ print timestamp
 
 ## capture details
 
-camera 
+camera
 : The Exif data entry describing the camera make and model
 
-lens 
+lens
 : The description of the lens, as derived from Exif data
 
-aperture 
+aperture
 : The aperture, as derived from Exif data
 
 exposure
 : The shutter speed, as derived from Exif data
 
-focal length 
+focal length
 : The focal length, as derived from Exif data
 
-ISO 
+ISO
 : The ISO, as derived from Exif data
 
 aspect ratio
@@ -107,7 +108,7 @@ grouping
 local copy
 : Show files that are, or are not copied locally
 
-history 
+history
 : Choose images whose history stacks have been altered or not
 
 module
@@ -161,7 +162,6 @@ The logical operators defining how rules are combined are indicated with icons t
 
 While it is best to not touch imported files behind darktable's back, this module can help you recover from situations when you have moved or renamed image folders after importing them. The collect images module has a feature that allows you to update darktable's library database with the new folder location. The process is as follows:
 
-1. Set the _image attribute_ combobox to "folders" 
-1. Locate the original folder name in the tree. The folder name will be displayed struck-through to emphasize that it is no longer present. 
+1. Set the _image attribute_ combobox to "folders"
+1. Locate the original folder name in the tree. The folder name will be displayed struck-through to emphasize that it is no longer present.
 1. Right-click on the folder name, select “search filmroll...”, and then select the new location of the folder.
-

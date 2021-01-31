@@ -1,58 +1,58 @@
 ---
-title: lighttable
+title: table lumineuse
 id: lighttable
 weight: 40
 draft: false
+author: "traducteur : Michel Leblond"
 ---
 
-The following options control functionality in the [lighttable](../lighttable/_index.md) view and modules.
+Les options suivantes contrôlent les fonctionnalités de la vue [table lumineuse](../lighttable/_index.md).
 
-# general
+# général
 
-number of folder levels to show in lists
-: The number of folder levels to show in film roll names, starting from the right (default 1).
+nombre de niveaux de dossiers à afficher
+: Le nombre de niveaux de dossier à afficher dans les noms de pellicule, en partant de la droite (par défaut 1).
 
-sort film rolls by
-: Sort film rolls by either the "folder" (path) or the "id" (roughly equivalent to the date the film rolls were first imported) in the [collect images](../module-reference/utility-modules/shared/collect-images.md) module (default "id").
+trier les pellicules par
+: Trier les pellicules par "dossier" (chemin) ou "numéro" (à peu près équivalent à la date à laquelle les pellicules ont été importées pour la première fois) dans le module [filtres de collection](../module-reference/utility-modules/shared/collect-images.md) module (par défaut "numéro").
 
-sort collection recent to older
-: When selecting folders and dates/times within the [collect images](../module-reference/utility-modules/shared/collect-images.md) module, sort items from recent to older (default on).
+trier les collections de la plus récente à la plus ancienne
+: Lors de la sélection des dossiers et des dates/heures dans le module [filtres de collection](../module-reference/utility-modules/shared/collect-images.md), trier les éléments des plus récents aux plus anciens (par défaut activé).
 
-hide built-in presets for utility modules
-: If enabled, only user-defined presets will be shown in presets menu for utility modules -- built-in presets will be hidden (default off).
+cacher les préréglages internes des modules utilitaires
+: Si cette option est activée, seuls les préréglages définis par l'utilisateur seront affichés dans le menu des préréglages des modules utilitaires -- les préréglages intégrés seront masqués (par défaut désactivé).
 
-use single-click in the collect module
-: Enable "single click" mode in the [collect images](../module-reference/utility-modules/shared/collect-images.md) module, which allows ranges to be selected (default off).
+utiliser un seul clic pour les collections
+: Activer le mode "simple clic" dans le module [filtres de collection](../module-reference/utility-modules/shared/collect-images.md). Cela permet aussi de sélectionner des plages de dates et de valeurs numériques (désactivée par défaut).
 
-expand a single utility module at a time
-: Controls how utility modules are expanded. If this option is enabled, expanding a module by clicking collapses any other currently expanded panel. If you want to expand a panel without collapsing the others you can do so with Shift+click. Disabling this option inverts the meaning of click and Shift+click (default off).
+déplier un seul module utilitaire de la table lumineuse à la fois
+: Contrôle la façon dont les modules utilitaires sont dépliés. Si cette option est activée, déplier un module en cliquant dessus replie tout autre module actuellement déplié. Si vous souhaitez déplier un module sans replier les autres, vous pouvez le faire avec Maj+clic. La désactivation de cette option inverse la signification de Clic et de Maj+clic (désactivé par défaut).
 
-scroll to utility modules when expanded/collapsed
-: With this option enabled the side panels will scroll a utility module to the top of the panel when it is expanded or collapsed (default off).
+positionne les modules utilitaires lorsqu'ils sont dépliés/repliés
+: Lorsque cette option est activée darktable essaiera de positionner le module pour qu'il soit entièrement visible (désactivée par défaut).
 
-rating an image one star twice will not zero out the rating
-: Normally clicking a one star rating twice will set a zero star rating to that image. Check this option to disable this functionality (default off).
+appliquer une étoile deux fois à une image ne supprimera pas l'étoile
+: Appliquer une étoile deux fois à une image ne positionnera aucune étoile (par défaut désactivé).
 
-show scrollbars for center view
-: Should scrollbars be shown in the center view of the lighttable (default on).
+afficher les barres de défilement pour la zone centrale
+: Si activé les barres de défilement seront affichées dans la zone centrale de la table lumineuse (activé par défaut).
 
-# thumbnails 
+# miniatures
 
-color manage cached thumbnails
-: If activated, darktable generates thumbnails in a general color space (AdobeRGB) in order to render them independently of the individual monitor. Conversion to the monitor color space is undertaken at display time. If this option is not activated thumbnails are stored directly in a monitor-specific color space at generation time and are subsequently displayed without further corrections (default on).
+miniatures avec gestion de la couleur
+: Si activé, darktable génère les miniatures dans un espace colorimétrique général (AdobeRGB) afin de les rendre indépendamment du moniteur utilisé. La conversion vers l'espace colorimétrique du moniteur est effectuée au moment de l'affichage. Si cette option n'est pas activée, les miniatures sont stockées directement dans un espace colorimétrique spécifique au moniteur au moment de la génération et sont ensuite affichées sans autre correction (activé par défaut).
 
-don't use embedded preview JPEG but half-size raw
-: If activated, darktable will process the raw image data in order to generate all images in the lighttable. If deactivated, darktable will use the JPEG preview embedded in the raw file until the image has been processed in the darkroom (default off).
+ne pas utiliser les aperçus JPEG intégrés, toujours utiliser les RAW réduits
+: Si activé, darktable traitera les données RAW de l'image pour générer toutes les images de la table lumineuse. Si désactivé, darktable utilisera l'aperçu JPEG intégré dans le fichier RAW jusqu'à ce que l'image ait été traitée dans la chambre noire (désactivé par défaut).
 
-high quality thumbnail processing from size
-: If the thumbnails size is greater than this value, it will be processed using the full quality rendering path, which is better but slower (default 720p).
+miniatures de haute qualité à partir de la taille
+: Si la taille de la miniature est plus grande que cette valeur, elle sera crée en utilisant le développement de haute qualité (meilleur mais plus lent) (par défaut 720p)
 
-delimiters for size categories
-: Size categories are used to allow different thumbnail overlays to be shown depending on the thumbnail size. A pipe delimited set of values defines at what image sizes the categories change. The default value of "120|400" means that there will be 3 categories of thumbnails: 0-120px, 120-400px and >400px. 
+séparateurs de catégories des tailles
+: Size categories are used to allow different thumbnail overlays to be shown depending on the thumbnail size. A pipe delimited set of values defines at what image sizes the categories change. The default value of "120|400" means that there will be 3 categories of thumbnails: 0-120px, 120-400px and >400px.
 
-pattern for the thumbnail extended overlay text
+patron pour les surimpressions des miniatures
 : If the user has chosen to show extended overlay text over thumbnail images, this setting allows the user to define what information is displayed. This pattern can use any of the variables defined in the [variables](../special-topics/variables.md) section.
 
-pattern for the thumbnail tooltip (empty to disable)
+patron pour les infos bulles des miniatures (vide pour désactiver)
 : Defines what information is displayed in the tooltip when the mouse hovers over image thumbnails. This pattern can use any of the variables defined in the [variables](../special-topics/variables.md) section.
-
