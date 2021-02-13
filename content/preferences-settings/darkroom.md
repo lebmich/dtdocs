@@ -1,84 +1,85 @@
 ---
-title: darkroom
+title: chambre noire
 id: darkroom
 weight: 50
 draft: false
+author: "Michel Leblond"
 ---
 
-The following options control functionality in the [darkroom](../darkroom/_index.md) view and associated modules.
+Les options suivantes contrôlent les fonctionnalités de la vue [chambre noire](../darkroom/_index.md).
 
-# general
+# général
 
-pen pressure control for brush masks
-: Controls how the pressure reading of a graphics tablet impacts newly generated [drawn mask](../darkroom/masking-and-blending/masks/drawn.md) brush strokes. You can control the brush width, hardness and opacity. “Absolute” control means that the pressure reading directly defines the attribute with a value between 0% and 100%. “Relative” means that the pressure reading adjusts the attribute between zero and the pre-defined default value (default off).
+contrôle de la pression du pinceau du masque
+: Contrôle comment la lecture de pression d'une tablette graphique impacte les coups de pinceau sur un [masque dessiné](../darkroom/masking-and-blending/masks/drawn.md) nouvellement généré. Vous pouvez contrôler la taille, la dureté et l'opacité du pinceau. La valeur «absolue» signifie que la lecture de pression définit directement l'attribut avec une valeur comprise entre 0% et 100%. La valeur «relative» signifie que la lecture de pression ajuste l'attribut entre zéro et la valeur par défaut prédéfinie (désactivée par défaut).
 
-smoothing of brush strokes
-: Sets the level for smoothing of [drawn mask](../darkroom/masking-and-blending/masks/drawn.md) brush strokes. Stronger smoothing leads to fewer nodes and easier editing at the expense of lower accuracy.
+lissage du pinceau
+: Définit le niveau de lissage des traits de pinceau du [masque dessiné](../darkroom/masking-and-blending/masks/drawn.md). Un lissage plus fort entraîne moins de nœuds et une édition plus facile au détriment d'une précision moindre.
 
-pattern for the image information line
-: Set the information to be displayed in the [image information line](../module-reference/utility-modules/darkroom/image-info-line.md). You can use any variables in the [variables](../special-topics/variables.md) section as well as `$(NL)` for a new line.
+format de la ligne d'information sur l'image
+: Définit les informations à afficher dans [ligne d'information de l'image](../module-reference/utility-modules/darkroom/image-info-line.md). Vous pouvez utiliser toute variable définie dans la section [substitution de variable](../special-topics/variables.md) ainsi que `$(NL)` pour une nouvelle ligne.
 
-position of the image information line
-: Choose the darkroom panel in which the [image information line](../module-reference/utility-modules/darkroom/image-info-line.md) is displayed. Choose between “top left” “top right” “top center” “bottom” and “hidden” (default "bottom").
+position de la ligne d'information de l'image
+: Choisir le panneau de la vue chambre noire sur lequel sera affiché [la ligne d'information de l'image](../module-reference/utility-modules/darkroom/image-info-line.md). Choix possibles : “haut/gauche”, “haut/droite”, “haut/centre”, “bas” et “caché” ("bas" par défaut).
 
-border around image in darkroom mode
-: Process the center image in darkroom mode with a border of the given number of pixels (default 20). 
+bordure autour de l'image dans la vue chambre noire
+: Traiter l'image centrale en mode chambre noire avec une bordure du nombre de pixels donné (par défaut 20).
 
-show scrollbars for center view
-: Should scrollbars be shown in the center view of the darkroom (default off).
+affiche les barres de défilement de la zone centrale
+: Définit si les barres de défilement doivent être affichées dans la vue centrale de la chambre noire (désactivé par défaut).
 
-demosaicing for zoomed out darkroom mode
-: Choose how to demosaic images in the darkroom view when not viewing the image at 1:1 zoom scale
-: - _always bilinear (fast)_ is fastest, but not as sharp
-: - _at most PPG (reasonable)_ uses PPG + interpolation modes
-: - _full (possibly slow)_ will use exactly the settings for full-size export 
-: (default "_at most ppg (reasonable)_"). 
+méthode de dématriçage pour la vue chambre noire
+: Choisir la méthode pour dématricer les images de la vue chambre noire qui ne sont pas affichées à l'échelle de zoom 1:1
+: - _toujours bilinéaire (rapide)_ est la plus rapide, mais donne des résultats peu netste
+: - _au mieux PPG (raisonnable)_ utilise PPG plus les modes d'interpolation
+: - _full (possibly slow)_ utilise exactement les paramètres définis pour l'exportation en taille réelle
+: (par défaut "_au mieux PPG (raisonnable)_").
 
-reduce resolution of preview image
-: Reduce the resolution of the [navigation preview](../module-reference/utility-modules/darkroom/navigation.md) image (choose from "original", "1/2", "1/3" or "1/4" size). This may improve the speed of the rendering but take care as it can also hinder accurate color-picking and masking (default "original").
+réduire la résolution de la pré-visualisation
+: Réduire la résolution de l'image de [prévisualisation dans la navigation](../module-reference/utility-modules/darkroom/navigation.md) (choisir la taille entre "original", "1/2", "1/3" ou "1/4"). Cela peut améliorer la vitesse du rendu, mais attention car cela peut également gêner la sélection précise des couleurs et le masquage ("original" par défaut).
 
-show right-side buttons in processing module headers
-: Choose whether to show the three buttons (multi-instance, reset, presets) on the right-hand-side of the [module header](../darkroom/interacting-with-modules/module-header.md) for processing modules. These buttons will always appear when the mouse is over the module. At other times they will be shown or hidden according to this preference selection: 
-: - _always_: always show all buttons
-: - _active_: only show the buttons when the mouse is over the module
-: - _dim_: buttons are dimmed when mouse is away
-: - _auto_: hide the buttons when the panel is narrow
-: - _fade_: fade out all buttons when the panel narrows
-: - _fit_: hide all the buttons if the module name doesn't fit
-: - _smooth_: fade out all buttons in one header simultaneously
-: - _glide_: gradually hide individual buttons as needed
-: (default _always_)
+affichage des boutons sur la droite des modules de développement
+: Choisissez d'afficher les trois boutons (instances multiples, réinitialiser, préréglages) sur le côté droit [de l'entête](../darkroom/interacting-with-modules/module-header.md) des modules de traitement. Ces boutons apparaîtront toujours lorsque la souris survolera le module. D'autres fois, ils seront affichés ou masqués selon le choix fait entre :
+: - _toujours_ : toujours afficher tous les boutons,
+: - _actif_ : n'afficher les boutons que lorsque la souris est au-dessus du module,
+: - _atténué_ : les boutons sont grisés lorsque la souris est éloignée,
+: - _auto_ : masquer les boutons lorsque le panneau est étroit,
+: - _estompé_ : atténuer tous les boutons quand le panneau est étroit,
+: - _ajusté_ : masquer tous les boutons si le nom du module n'a pas assez de place,
+: - _doux_ : atténuer tous les boutons d'un module simultanément,
+: - _glisser_ : cacher progressivement les boutons lorsque nécessaire.
+: (par défault _toujours_).
 
 # modules
 
-display of individual color channels
-: Controls how individual color channels are displayed when activated in the [parametric masks](../darkroom/masking-and-blending/masks/parametric.md) feature. You can choose between “false color” and “grey scale” (default "false color").
+affiche les différents canaux de couleur
+: Contrôle la façon dont les canaux de couleur sont affichés lorsqu'ils sont activés dans les [masques paramétriques](../darkroom/masking-and-blending/masks/parametric.md). Vous pouvez choisir entre “fausse couleur” et “échelle de gris” (par défaut "fausse couleur").
 
-hide built-in presets for processing modules
-: If enabled, only user-defined presets will be shown in presets menu for processing modules -- built-in presets will be hidden (default off).
+cacher les préréglages internes des modules de développement
+: Si cette option est activée, seuls les préréglages définis par l'utilisateur seront affichés dans le menu des préréglages pour le traitement des modules -- les préréglages intégrés seront masqués (désactivée par défaut).
 
-expand a single processing module at a time
-: Controls how [processing modules](../module-reference/processing-modules) are expanded in the darkroom. If this option is enabled, expanding a module by clicking collapses any currently expanded module. If you want to expand a module without collapsing the others you can do so with Shift+click. Disabling this option inverts the meaning of click and Shift+click (default on).
+déplier un seul module de développement à la fois
+: Contrôle comment sont dépliés les [modules de développement](../module-reference/processing-modules) dans la chambre noire. Si cette option est activée, développer un module en cliquant dessus replie tout module actuellement déplié. Si vous souhaitez déplier un module sans replier les autres, vous pouvez le faire avec Maj+clic. La désactivation de cette option inverse la signification de Clic et Maj+clic (activé par défaut).
 
-only collapse modules in current group
-: When choosing to expand a single processing module at a time (using the logic defined in the previous setting), only collapse other modules that appear in the current visible group. Disable this option to ensure that modules in non-visible groups are also collapsed (default on).
+replier les modules du groupe actuel seulement
+: Lorsque vous choisissez de déplier un seul module de développement à la fois (en utilisant la logique définie dans le paramètre précédent), ne replie que les autres modules apparaissant dans le groupe visible actuel. Désactivez cette option pour vous assurer que les modules des groupes non visibles sont également repliés (activé par défaut).
 
-expand the module when it is activated, and collapse it when disabled
-: Select this option for the darkroom to automatically expand or collapse [processing modules](../module-reference/processing-modules) when they are enabled or disabled. (default off)
+déplier le module quand il est activé, et le replier quand il est désactivé
+: Sélectionnez cette option pour que darktable déplie ou replie automatiquement [les modules de développemnt](../module-reference/processing-modules) selon qu'ils sont activés ou désactivés (désactivée par défaut)
 
-scroll to processing modules when expanded/collapsed
-: With this option enabled the darkroom side panel will scroll a [processing module](../module-reference/processing-modules) to the top when it is expanded or collapsed (default on).
+positionne les modules de développement lorsqu'ils sont dépliés/repliés
+: Lorsque cette option est activée darktable essaiera de positionner [le module de développement](../module-reference/processing-modules) pour qu'il soit entièrement visible (activée par défaut).
 
-white balance slider colors
-: Controls the appearance of the sliders in the [white balance](../module-reference/processing-modules/white-balance.md) module.
-: - _no color_: background of the sliders is not colored at all.
-: - _illuminant color_: slider colors represent the color of the light source, i.e. the color you are adjusting to in order to achieve neutral white
-: - _effect emulation_: slider colors represent the effect the adjustment would have had on the scene. This is how most other raw processors show temperature/tint sliders colors.
-: (default _no color_)
+couleurs du curseur de balance des blancs
+: Contrôle l'apparence des curseurs dans le module [balance des blancs](../module-reference/processing-modules/white-balance.md).
+: - _sans couleur_ : l'arrière-plan des curseurs n'est pas du tout coloré,
+: - _couleur de l'illuminant_ : les couleurs du curseur représentent la couleur de la source lumineuse, c'est-à-dire la couleur que vous ajustez pour obtenir un blanc neutre,
+: - _effet d'émulation_ : les couleurs du curseur représentent l'effet que l'ajustement aurait eu sur la scène. C'est ainsi que la plupart des autres processeurs de fichiers RAW affichent les couleurs des curseurs de température/teinte.
+: (_sans couleur_ par défaut)
 
-colorbalance slider block layout
-: Controls the appearance of the shadows/mid-tones/highlights sections in the [color balance](../module-reference/processing-modules/color-balance.md) module.
-: - _list_: all sliders are shown in one long list (with headers)
-: - _tabs_: use tabs to switch between the blocks of sliders
-: - _columns_: the blocks of sliders are shown next to each other (in narrow columns)
-: (default _list_)
+disposition des contrôles du module balance couleur
+: Contrôle l'apparence des sections ombres/tons moyens/hautes lumières dans le module [balance couleur](../module-reference/processing-modules/color-balance.md).
+: - _liste_ : tous les curseurs sont affichés dans une longue liste (avec en-têtes),
+: - _onglets_ : utiliser les onglets pour basculer entre les blocs de curseurs,
+: - _colonnes_ : les blocs de curseurs sont affichés les uns à côté des autres (dans des colonnes étroites).
+: (_liste_ par défaut)

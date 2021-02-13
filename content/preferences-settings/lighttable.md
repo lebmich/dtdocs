@@ -42,17 +42,17 @@ afficher les barres de défilement pour la zone centrale
 miniatures avec gestion de la couleur
 : Si activé, darktable génère les miniatures dans un espace colorimétrique général (AdobeRGB) afin de les rendre indépendamment du moniteur utilisé. La conversion vers l'espace colorimétrique du moniteur est effectuée au moment de l'affichage. Si cette option n'est pas activée, les miniatures sont stockées directement dans un espace colorimétrique spécifique au moniteur au moment de la génération et sont ensuite affichées sans autre correction (activé par défaut).
 
-ne pas utiliser les aperçus JPEG intégrés, toujours utiliser les RAW réduits
+ne pas utiliser les JPEG intégrés aux images, toujours utiliser les RAW réduits
 : Si activé, darktable traitera les données RAW de l'image pour générer toutes les images de la table lumineuse. Si désactivé, darktable utilisera l'aperçu JPEG intégré dans le fichier RAW jusqu'à ce que l'image ait été traitée dans la chambre noire (désactivé par défaut).
 
 miniatures de haute qualité à partir de la taille
 : Si la taille de la miniature est plus grande que cette valeur, elle sera crée en utilisant le développement de haute qualité (meilleur mais plus lent) (par défaut 720p)
 
 séparateurs de catégories des tailles
-: Size categories are used to allow different thumbnail overlays to be shown depending on the thumbnail size. A pipe delimited set of values defines at what image sizes the categories change. The default value of "120|400" means that there will be 3 categories of thumbnails: 0-120px, 120-400px and >400px.
+: Les catégories de taille permettent d'afficher différentes superpositions des miniatures en fonction de la taille des miniatures. Un ensemble de valeurs délimitées par  une barre verticale définit à quelles tailles d'image les catégories changent. La valeur par défaut "120|400" signifie qu'il y aura trois catégories de miniatures : 0-120px, 120-400px et> 400px.
 
 patron pour les surimpressions des miniatures
-: If the user has chosen to show extended overlay text over thumbnail images, this setting allows the user to define what information is displayed. This pattern can use any of the variables defined in the [variables](../special-topics/variables.md) section.
+: Si l'utilisateur a choisi de superposer aux miniatures le texte étendu, ce paramètre lui permet de définir les informations à afficher. Ce patron peut utiliser n'importe laquelle des variables définies dans la section [substitution de variable](../special-topics/variables.md).
 
 patron pour les infos bulles des miniatures (vide pour désactiver)
-: Defines what information is displayed in the tooltip when the mouse hovers over image thumbnails. This pattern can use any of the variables defined in the [variables](../special-topics/variables.md) section.
+: Définit les informations affichées dans l'info-bulle lorsque la souris survole les miniatures d'image. Ce patron peut utiliser n'importe laquelle des variables définies dans la section [substitution de variable](../special-topics/variables.md).
