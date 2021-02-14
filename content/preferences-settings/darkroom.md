@@ -3,7 +3,7 @@ title: chambre noire
 id: darkroom
 weight: 50
 draft: false
-author: "Michel Leblond"
+author: "traducteur : Michel Leblond"
 ---
 
 Les options suivantes contrôlent les fonctionnalités de la vue [chambre noire](../darkroom/_index.md).
