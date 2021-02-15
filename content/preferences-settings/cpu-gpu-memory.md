@@ -1,35 +1,36 @@
 ---
-title: cpu/gpu/memory
+title: cpu/gpu/mémoire
 id: cpu-gpu-memory
 weight: 90
 draft: false
+author: "traducteur : Michel Leblond"
 ---
 
-This preference tab contains mostly performance-related settings:
+Cet onglet des préférences contient principalement des paramètres liés aux performances :
 
-memory in megabytes to use for thumbnail cache
-: In order to speed-up the display of film rolls, darktable stores image thumbnails in a cache file on disk (primary cache) and loads it into memory at startup. This setting controls the size of the cache in megabytes. It needs a restart if changed (default 256MB).
+mémoire en mégaoctets à utiliser pour le cache des miniatures
+: Afin d'accélérer l'affichage des pellicules, darktable stocke les miniatures dans un fichier cache sur le disque (cache principal) et le charge en mémoire au démarrage. Ce paramètre contrôle la taille du cache en mégaoctets. Un redémarrage est nécessaire en cas de modification (256 Mo par défaut).
 
-enable disk backend for thumbnail cache
-: If activated, darktable stores all thumbnails on disk as a secondary cache, and thereby keeps thumbnails accessible if they get dropped from the primary cache. This needs more disk space but speeds up the [lighttable](../lighttable/_index.md) view as it avoids reprocessing of thumbnails (default on).
+utilisation du disque dur pour le cache des miniatures
+: Si activé, darktable stocke toutes les miniatures sur le disque dur en tant que cache secondaire, et les garde ainsi accessibles si elles sont supprimées du cache principal. Cela nécessite plus d'espace disque mais accélère la vue [lighttable](../lighttable/_index.md) car cela évite le retraitement des miniatures (activé par défaut).
 
-enable disk backend for full preview cache
-: If enabled, darktable writes full preview images to disk (`.cache/darktable/`) when evicted from the memory cache. Note that this can take a lot of storage (several gigabytes for 20k images) and darktable will never delete cached images. It's safe to delete these manually if you want. Enabling this option will greatly improve lighttable performance when zooming an image in full preview mode (default off).
+utilisation du disque dur pour le cache des images 100%
+: Si activé, darktable écrit les images de prévisualisation complètes sur le disque (`.cache/darktable/`) lorsqu'elles sont supprimées du cache mémoire. Notez que cela peut prendre beaucoup de stockage (plusieurs gigaoctets pour 20000 images) et darktable ne supprimera jamais les images mises en cache. Vous pouvez les supprimer manuellement si vous le souhaitez. L'activation de cette option améliorera considérablement les performances de la table lumineuse lors du zoom sur une image en mode d'aperçu complet (désactivé par défaut).
 
-number of background threads
-: This controls how many parallel threads are used to create thumbnails during import. Needs a restart if changed (default 2).
+nombre de fils d'exécution
+: C'est le nombre de fils d'exécution en parallèle utilisés pour créer des miniatures lors de l'importation. Nécessite un redémarrage en cas de modification (par défaut 2).
 
-host memory limit (in MB) for tiling
-: In order to manage large images on systems with limited memory darktable does tile-wise processing. This variable controls the maximum amount of memory (in MB) a module may use during image processing. Lower values will force memory-hungry modules to process an image with increasing number of tiles. Setting this to 0 will omit any limits. Values below 500 will be treated as 500. Needs a restart if changed (default 1500).
+mémoire limite (en mégaoctets) pour le tuilage
+: Afin de gérer de grandes images sur des systèmes avec une mémoire limitée, darktable effectue un traitement par tuiles. Cette variable contrôle la quantité maximale de mémoire (en Mo) qu'un module peut utiliser pendant le développement. Des petites valeurs forceront les modules gourmands en mémoire à utiliser de nombreuses tuiles. Mettre cette variable à 0 pour une infinité de tuiles. Les valeurs inférieures à 500 seront traitées comme 500. Nécessite un redémarrage en cas de modification (par défaut 1500).
 
-minimum amount of memory (in MB) for a single buffer in tiling
-: If set to a positive, non-zero value, this variable defines the minimum amount of memory (in MB) that darktable should take for a single tile. Needs a restart if changed (default 16).
+quantité minimale de mémoire (en Mo) pour la mémoire tampon d'une tuile
+: Une valeur strictement positive définit la quantité de mémoire minimale (en Mo) que darktable doit utiliser pour une tuile. Nécessite un redémarrage en cas de modification (par défaut 16).
 
-activate [OpenCL](../special-topics/opencl/_index.md) support
-: _darktable_ can use your GPU to significantly speed up processing. The OpenCL interface requires suitable hardware and matching OpenCL drivers on your system. If one of those is not found the option is greyed out. Can be switched on and off at any time and takes immediate effect (default on).
+activer le support d'[OpenCL](../special-topics/opencl/_index.md)
+: _darktable_ peut utiliser votre GPU pour accélérer considérablement le développement. L'interface OpenCL nécessite un matériel approprié et les pilotes OpenCL correspondants sur votre système. Si l'un de ceux-ci n'est pas trouvé, l'option est grisée. Peut être activé et désactivé à tout moment et prend effet immédiatement (activé par défaut).
 
-OpenCL scheduling profile
-: Defines how preview and full pixelpipe tasks are scheduled on OpenCL enabled systems: 
-: - _default_: the GPU processes the center view pixelpipe; the CPU processes the preview pipe; 
-: - _multiple GPUs_: both pixelpipes are processed in parallel on two different GPUs; 
-: - _very fast GPU_: both pixelpipes are processed sequentially on the GPU. 
+profile de planification OpenCL
+: Defines how preview and full pixelpipe tasks are scheduled on OpenCL enabled systems:
+: - _default_: the GPU processes the center view pixelpipe; the CPU processes the preview pipe;
+: - _multiple GPUs_: both pixelpipes are processed in parallel on two different GPUs;
+: - _very fast GPU_: both pixelpipes are processed sequentially on the GPU.

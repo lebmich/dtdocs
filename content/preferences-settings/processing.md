@@ -3,7 +3,7 @@ title: traitement
 id: processing
 weight: 70
 draft: false
-author : "traducteur : Michel Leblond"
+author: "traducteur : Michel Leblond"
 ---
 
 Les options suivantes contrôlent le traitement des images.

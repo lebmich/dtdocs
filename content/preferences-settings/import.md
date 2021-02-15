@@ -3,7 +3,7 @@ title: importer
 id: import
 weight: 30
 draft: false
-author: "traducteur Michel Leblond"
+author: "traducteur : Michel Leblond"
 ---
 
 Cet onglet contient un certain nombre de paramètres par défaut pour le module importer de la table lumineuse [importer](../module-reference/utility-modules/lighttable/import.md).
