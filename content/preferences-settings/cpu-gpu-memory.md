@@ -30,7 +30,7 @@ activer le support d'[OpenCL](../special-topics/opencl/_index.md)
 : _darktable_ peut utiliser votre GPU pour accélérer considérablement le développement. L'interface OpenCL nécessite un matériel approprié et les pilotes OpenCL correspondants sur votre système. Si l'un de ceux-ci n'est pas trouvé, l'option est grisée. Peut être activé et désactivé à tout moment et prend effet immédiatement (activé par défaut).
 
 profile de planification OpenCL
-: Defines how preview and full pixelpipe tasks are scheduled on OpenCL enabled systems:
-: - _default_: the GPU processes the center view pixelpipe; the CPU processes the preview pipe;
-: - _multiple GPUs_: both pixelpipes are processed in parallel on two different GPUs;
-: - _very fast GPU_: both pixelpipes are processed sequentially on the GPU.
+: Définit comment l'image complète et la prévisualisation sont traitées sur les systèmes avec support OpenCL :
+: - _défaut_ : le GPU est utilisé pour le rendu de l'image complète ; le CPU pour la prévisualisation,
+: - _GPUs multiples_ : l'image complète et la prévisualisation sont traitées en parallèle sur des GPUs différents,
+: - _GPU très rapide_ : l'image complète et la prévisualisation sont traitées séquentiellement sur le GPU.
