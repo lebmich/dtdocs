@@ -1,3 +1,16 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"X-Generator: Poedit 2.4.2\n"
+
 #. type: YAML Front Matter: title
 #: content/print/print-view-layout.md
 #, no-wrap
@@ -16243,7 +16256,7 @@ msgstr ""
 #: content/overview/_index.md
 #, no-wrap
 msgid "Overview"
-msgstr ""
+msgstr "Présentation générale"
 
 #. type: YAML Front Matter: title
 #: content/overview/supported-file-formats.md
@@ -24457,7 +24470,7 @@ msgstr ""
 #: content/_index.md
 #, no-wrap
 msgid "darktable 3.4"
-msgstr ""
+msgstr "darktable 3.4"
 
 #. type: Plain text
 #: content/_index.md
@@ -24475,10 +24488,10 @@ msgstr ""
 #: content/_index.md
 #, no-wrap
 msgid "The source repository for this documentation may be found at [https://github.com/darktable-org/dtdocs.git](https://github.com/darktable-org/dtdocs.git). Any feedback relating to this documentation can be provided by creating a [ticket](https://github.com/darktable-org/dtdocs/issues/new) or a pull request against this repository.\n"
-msgstr ""
+msgstr "Le dépôt source de cette documentation peut être trouvé à l'adresse [https://github.com/darktable-org/dtdocs.git](https://github.com/darktable-org/dtdocs.git). Tout commentaire relatif à cette documentation peut être fourni en créant un [ticket](https://github.com/darktable-org/dtdocs/issues/new) ou une pull request sur ce dépôt.\n"
 
 #. type: Plain text
 #: content/_index.md
 #, no-wrap
 msgid "<span class=\"webonly\">You can obtain this manual in PDF format [here](darktable_user_manual.pdf).</span>\n"
-msgstr ""
+msgstr "<span class=\"webonly\">Vous pouvez obtenir ce manuel au format PDF [ici](darktable_user_manual.pdf).</span>\n"
