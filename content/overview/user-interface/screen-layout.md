@@ -3,10 +3,10 @@ title: disposition de l'affichage
 id: screen-layout
 draft: false
 weight: 20
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
-La disposition de l'affichage est la même pour toutes les vues. Elle consiste en une zone centrale bordée par des panneaux : 
+La disposition de l'affichage est la même pour toutes les vues. Elle consiste en une zone centrale bordée par des panneaux :
 
 ![disposition de l'affichage](./screen-layout/screen-layout.png#w100)
 
@@ -32,12 +32,12 @@ La disposition de l'affichage est la même pour toutes les vues. Elle consiste e
 
 # taille d'un panneau et sa visibilité
 
-Les panneaux gauche, droit et pellicule / chronologie peuvent être redimensionnés en faisant glisser leurs bordures intérieures. 
+Les panneaux gauche, droit et pellicule / chronologie peuvent être redimensionnés en faisant glisser leurs bordures intérieures.
 
 Chacun de ces panneaux peut être affiché ou masqué en appuyant sur un triangle situé sur le bord extérieur du panneau. La visibilité du panneau peut également être ajustée à l'aide de raccourcis clavier, comme suit :
 
 ```
-TAB             Étendre temporairement la vue centrale pour remplir toute la fenêtre 
+TAB             Étendre temporairement la vue centrale pour remplir toute la fenêtre
                 Appuyez à nouveau pour revenir à la vue précédente
 F11             Basculer en mode plein écran
 Shift+Ctrl+t    Afficher/masquer le panneau supérieur (entre l'image et la bannière du haut)

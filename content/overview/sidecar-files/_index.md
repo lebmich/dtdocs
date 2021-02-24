@@ -3,5 +3,5 @@ title: fichiers liés et édition non destructive
 id: concepts
 weight: 30
 draft: false
-author: "traduction : Michel Leblond"
+author: "traducteur : Michel Leblond"
 ---

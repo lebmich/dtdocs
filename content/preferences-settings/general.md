@@ -1,36 +1,37 @@
 ---
-title: general
+title: général
 id: general
 weight: 20
 draft: false
+author: "traducteur : Michel Leblond"
 ---
 
-The preferences in this tab control the overall look and feel of darktable.
+Les préférences de cet onglet contrôlent l'aspect général de darktable.
 
-interface language
-: Set the language of the user interface. The system default is marked with an * (needs a restart)
+langue pour l'interface
+: Définissez la langue de l'interface utilisateur. La valeur par défaut du système est marquée d'un * (nécessite un redémarrage)
 
-theme
-: Set the theme for the user interface. Apart from any aesthetic considerations, the recommended interface color for color evaluation is middle grey. Indeed, visual perception is affected by ambient brightness, and a low brightness of the interface causes all kinds of illusions. Using a dark interface to retouch photos can therefore lead to excessive retouching (abuse of contrast and saturation) and to a photo that is too dark once printed. It is therefore highly recommended that you use one of the "grey" themes for retouching work as these are designed so that the user interface approximates middle grey (default "darktable").
+thème
+: Définissez le thème de l'interface utilisateur. Indépendamment de toute considération esthétique, la couleur d'interface recommandée pour l'évaluation des couleurs est le gris moyen. En effet, la perception visuelle est affectée par la luminosité ambiante, et une faible luminosité de l'interface provoque toutes sortes d'illusions. Utiliser une interface sombre pour retoucher les photos peut donc conduire à des retouches excessives (abus de contraste et de saturation) et à une photo trop sombre une fois imprimée. Il est donc fortement recommandé d'utiliser l'un des thèmes "gris" pour les travaux de retouche car ils sont conçus pour que l'interface utilisateur se rapproche du gris moyen ("darktable" par défaut).
 
-performance mode
-: Enable this option to render thumbnails and previews at a lower quality. This increases the rendering speed by a factor of 4, and is useful when working on slower computers (default off). This also improves the performance of the slideshow image rendering.
+favoriser la performance à la qualité
+: Activez cette option pour afficher les miniatures et les aperçus avec une qualité inférieure. Cela augmente la vitesse de rendu d'un facteur 4, et est utile lorsque vous travaillez sur des ordinateurs plus lents (désactivé par défaut). Cela améliore également les performances du rendu d'image du diaporama.
 
-use system font size
-: Select this option to use the font size defined by your system. If unchecked, you may enter a custom font size in the box below (default on).
+utiliser la taille de la police système
+: Sélectionnez cette option pour utiliser la taille de police définie par votre système. Si elle n'est pas cochée, vous pouvez saisir une taille de police personnalisée dans la case ci-dessous (activée par défaut).
 
-font size in points
-: If the "use system font size" option is switched off, enter a font size (in points) for darktable to use. The font size will be changed immediately.
+taille de la police en points
+: Si l'option «utiliser la taille de la police système» est désactivée, entrez une taille de police (en points) que darktable doit utiliser. La taille de la police sera modifiée immédiatement.
 
-GUI controls and text DPI
-: Adjust the global GUI resolution to rescale controls, buttons, labels, etc. Increase for a magnified GUI, decrease to fit more content in the window. Set to -1 to use the system-defined global resolution. Default is 96 DPI on most systems. (needs a restart)
+contrôles et texte DPI
+: Ajustez la résolution globale de l'interface graphique pour redimensionner les contrôles, les boutons, les étiquettes, etc. Augmentez pour une interface graphique agrandie, diminuez pour ajuster plus de contenu dans la fenêtre. Défini sur -1 pour utiliser la résolution globale définie par le système. La valeur par défaut est 96 PPP sur la plupart des systèmes. (nécessite un redémarrage)
 
-# CSS Theme Modifications
+# modifier le thème via les ajustements CSS ci-dessous
 
-In addition to selecting a pre-built theme you can also apply additional CSS customisations of your own to tweak the look-and-feel of darktable. A text entry box is provided for this purpose.
+En plus de sélectionner un thème pré-construit vous pouvez également appliquer vos propres personnalisations CSS pour modifier l'aspect général de darktable. Une zone de saisie de texte est prévue à cet effet.
 
-When you have finished entering your CSS tweaks, click on the 'save and apply' button. This will save your CSS to a file (`$HOME/.config/darktable/user.css`) and immediately apply it to the current darktable session.
+Lorsque vous avez terminé de saisir vos modifications CSS, cliquez sur le bouton «sauvegarder et appliquer». Cela enregistrera votre CSS dans un fichier (`$HOME/.config/darktable/user.css`) et l'appliquera immédiatement à la session actuelle de darktable.
 
-If your changes cause any issues, you can uncheck the "modify selected theme with CSS tweaks below" check box. This will immediately restore the base theme but will leave your tweaks in the editor so that you can re-edit and try again. Simply press "save and apply" again when you are ready to retry. This will automatically re-check the "modify selected theme with CSS tweaks below" checkbox and apply the new CSS.
+Si vos modifications posent des problèmes, vous pouvez décocher la case "modifier le thème via les ajustements CSS ci-dessous". Cela restaurera immédiatement le thème de base, mais laissera vos réglages dans l'éditeur afin que vous puissiez rééditer et réessayer. Appuyez simplement sur "sauvegarder et appliquer" à nouveau lorsque vous êtes prêt à réessayer. Cela revérifiera automatiquement la case à cocher "modifier le thème via les ajustements CSS ci-dessous" et appliquera le nouveau CSS.
 
-If you have any issues with darktable please retry with this option unchecked to be certain that they were not caused by any of your changes.
+Si vous rencontrez des problèmes avec darktable, veuillez réessayer avec cette option décochée pour être certain qu'ils n'ont été causés par l'une de vos modifications.

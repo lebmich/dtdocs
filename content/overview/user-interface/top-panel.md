@@ -3,7 +3,7 @@ title: panneau supérieur
 id: top-panel
 draft: false
 weight: 40
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
 Le panneau supérieur est commun à toutes les vues darktable et fournit un certain nombre de fonctions utilitaires courantes.

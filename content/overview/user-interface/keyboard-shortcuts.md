@@ -3,7 +3,7 @@ title: raccourcis clavier
 id: keyboard-shortcuts
 draft: false
 weight: 50
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
 La plupart des fonctionnalités de darktable peuvent être contrôlées via des raccourcis clavier qui peuvent être personnalisés dans [préférences->raccourcis](../../preferences-settings/shortcuts.md).

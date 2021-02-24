@@ -1,38 +1,39 @@
 ---
-title: security
+title: sécurité
 id: security
 weight: 80
 draft: false
+author: "traducteur : Michel Leblond"
 ---
 
-The following options allow the user to switch on warnings when certain activities are undertaken.
+Les options suivantes permettent à l'utilisateur d'activer les avertissements lorsque certaines activités sont entreprises.
 
-ask before removing images from database
-: Always ask the user before any image is removed from the database (default on).
+demander avant d'enlever des images de la base de données
+: Toujours demander à l'utilisateur avant de supprimer une image de la base de données (activé par défaut).
 
-ask before erasing images from disk
-: Always ask the user before any image file is deleted (default on).
+demander avant de supprimer des images du disque
+: Toujours demander à l'utilisateur avant de supprimer des images du disque (activé par défaut).
 
-ask before discarding history stack
-: Always ask the user before the history stack of an image is discarded (default on).
+demander avant de supprimer l'historique
+: Toujours demander à l'utilisateur avant de supprimer l'historique d'une image 'activé par défaut).
 
-send files to trash when erasing images
-: Instead of physically deleting images from disk put them into the system's trash bin (default on).
+déplace les fichiers vers la poubelle lors de l'effacement
+: Au lieu de supprimer physiquement les images du disque, les placer dans la corbeille du système (activé par défaut).
 
-ask before moving images from film roll folder
-: Always ask the user before any image file is moved (default on).
+demander avant de déplacer des images d'un dossier pellicule
+: Toujours demander à l'utilisateur avant de déplacer un fichier image (activé par défaut).
 
-ask before copying images to new film roll folder
-: Always ask the user before any image file is copied (default on).
+demander avant de copier des images dans un nouveau dossier pellicule
+: Toujours demander à l'utilisateur avant de copier un fichier image (activé par défaut).
 
-ask before removing empty folders
-: Always ask the user before removing any empty folder. This can happen after moving or deleting images (default off).
+demander avant de supprimer des répertoires vides
+: Toujours demander à l'utilisateur avant de supprimer un dossier vide. Cela peut se produire après le déplacement ou la suppression d'images (désactivé par défaut).
 
-ask before deleting a tag
-: Always ask user before deleting a tag from an image (default on).
+demander avant de supprimer un mot-clé
+: Toujours demander à l'utilisateur avant de supprimer un mot-clé d'une image (activé par défaut).
 
-ask before deleting a style
-: Always ask user before deleting a style (default on). 
+demander avant de supprimer un style
+: Toujours demander à l'utilisateur avant de supprimer un style (activé par défaut).
 
-ask before deleting a preset
-: Always ask user before deleting a preset (default on). 
+demander avant de supprimer un préréglage
+: Toujours demander à l'utilisateur avant de supprimer un préréglage (activé par défaut).

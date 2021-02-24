@@ -3,7 +3,7 @@ title: "développer une image : flux de travail relatif à la scène"
 id: edit-scene-referred
 draft: false
 weight: 30
-author: "traduction : Michel Leblond"
+author: "traducteur : Michel Leblond"
 ---
 
 Le flux de travail _relatif à la scène_ met l'accent sur l'exécution, par pipeline graphique, du traitement d'image dans la partie linéaire relative à la scène. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs non linéaires des pixels. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il sera plus facile d'adapter ultérieurement votre travail à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.
@@ -81,7 +81,7 @@ Il y a certains modules pour lesquels il n'existe pas encore d'alternative bien 
 
 ---
 
-**Note:** En utilisant les [modes de fusion](../../darkroom/masking-and-blending/blend-modes.md) sur n'importe quel module, vous devez savoir que de nombreux modes de fusion sont optimisés pour l'espace relatif à l'affichage et supposent une valeur de gris moyen de 50%. Pour l'espace linéaire relatif à la scène, respectez les modes de fusion basés sur des opérations arithmétiques (addition, multiplication, division, soustraction, moyenne), sur des comparaisons maximum/minimum (écran) ou sur des séparations de canaux (teinte, couleur, chroma, etc.).
+**Remarque :** En utilisant les [modes de fusion](../../darkroom/masking-and-blending/blend-modes.md) sur n'importe quel module, vous devez savoir que de nombreux modes de fusion sont optimisés pour l'espace relatif à l'affichage et supposent une valeur de gris moyen de 50%. Pour l'espace linéaire relatif à la scène, respectez les modes de fusion basés sur des opérations arithmétiques (addition, multiplication, division, soustraction, moyenne), sur des comparaisons maximum/minimum (écran) ou sur des séparations de canaux (teinte, couleur, chroma, etc.).
 
 ---
 
@@ -101,77 +101,77 @@ Veuillez consulter [la référence des modules de traitement](../../module-refer
 
 Il existe un certain nombre de modules qui ne sont plus recommandés pour une utilisation dans un flux de travail relatif à la scène. Cela ne signifie pas qu'ils ne peuvent pas être utilisés, mais ils peuvent produire des effets indésirables lorsque leurs curseurs sont poussés trop loin, et il existe de meilleures alternatives. Dans chaque cas, le module alternatif préférable est répertorié avec une brève explication.
 
-[_local tone mapping (deprecated)_](../../module-reference/processing-modules/tone-mapping.md)
-: _prefer [tone equalizer](../../module-reference/processing-modules/tone-equalizer.md)_
+[_mappage local des tonalités (déprécié)_](../../module-reference/processing-modules/tone-mapping.md)
+: _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md)_
 
-: Ce module applies a bilateral blur over a non-linear (log) mapping that can provoke halos and fringing. This is common issue for modules performing blurs and occlusions that operate over a non-linear encoding.
+: Ce module applique un flou bilatéral sur un mappage non linéaire (log) qui peut provoquer des halos et des franges. C'est un problème courant pour les modules exécutant des flous et des occlusions qui opèrent sur un codage non linéaire.
 
-[_global tonemap (deprecated)_](../../module-reference/processing-modules/global-tonemap.md)
-: _prefer [filmic rgb](../../module-reference/processing-modules/filmic-rgb.md)_
+[_mappage global des tonalités (déprécié)_](../../module-reference/processing-modules/global-tonemap.md)
+: _préférez [filmique rvb](../../module-reference/processing-modules/filmic-rgb.md)_
 
-: This module tries to deal with HDR images using the Lab color space, which is not well suited for high dyanamic ranges. The _filmic rgb_ module operates in a linear space and can easily scale over a wide range of input values from the scene and fit them into the narrower dynamic range demanded by display and printing devices.
+: Ce module tente de traiter les images HDR en utilisant l'espace colorimétrique Lab, qui n'est pas bien adapté aux grandes plages dynamiques. Le module _filmique rvb_ fonctionne dans un espace linéaire et peut facilement traiter une large plage de valeurs d'entrée provenant de la scène et les adapter aux plages dynamiques moins grandes exigées par les dispositifs d'affichage et d'impression.
 
-[_shadows and highlights_](../../module-reference/processing-modules/shadows-and-highlights.md)
-: _prefer [tone equalizer](../../module-reference/processing-modules/tone-equalizer.md)_
+[_ombres et hautes lumières_](../../module-reference/processing-modules/shadows-and-highlights.md)
+: _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md)_
 
-: This module works with blurs in Lab color space, resulting in problems including halos, high local contrast in highlights and hue shifts towards blue in the shadows.
+: Ce module utilise des flous dans l'espace colorimétrique Lab, ce qui entraîne des problèmes tels que des halos, un contraste local élevé dans les hautes lumières et des décalages de teinte vers le bleu dans les ombres.
 
-[_lowpass_](../../module-reference/processing-modules/lowpass.md)
-: _prefer [contrast equalizer](../../module-reference/processing-modules/contrast-equalizer.md) or [tone equalizer](../../module-reference/processing-modules/tone-equalizer.md)_
+[_filtre passe-bas_](../../module-reference/processing-modules/lowpass.md)
+: _préférez [égaliseur de contraste](../../module-reference/processing-modules/contrast-equalizer.md) ou [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md)_
 
-: Another module doing blurs in Lab space. Prefer the _contrast equalizer_ for blurring, or the _tone equalizer_ if local dynamic range compression is needed.
+: Un autre module faisant des flous dans l'espace Lab. Préférez l'_égaliseur de contraste_ pour le flou, ou l'_égaliseur de ton_ si la compression de la plage dynamique locale est nécessaire.
 
-[_highpass_](../../module-reference/processing-modules/highpass.md)
-: _prefer [contrast equalizer](../../module-reference/processing-modules/contrast-equalizer.md) or [local contrast](../../module-reference/processing-modules/local-contrast.md)_
+[_filtre passe-haut_](../../module-reference/processing-modules/highpass.md)
+: _préférez [égaliseur de contraste](../../module-reference/processing-modules/contrast-equalizer.md) ou [contraste local](../../module-reference/processing-modules/local-contrast.md)_
 
-: Uses a blur performed in Lab space, so has the same problems as with the [_lowpass_](../../module-reference/processing-modules/lowpass.md) module. Use _contrast equalizer_ for fine sharpness, or _local contrast_ for general sharpness.
+: Ce module utilise un flou qu'il réalise dans l'espace colorimétrique Lab. Il en résulte les mêmes problèmes qu'avec le module [_filtre passe-bas_](../../module-reference/processing-modules/lowpass.md). Utilisez _égaliseur de contraste_ pour une netteté fine, ou _contraste local_ pour une netteté générale.
 
-[_sharpen_](../../module-reference/processing-modules/sharpen.md)
-: _prefer [contrast equalizer](../../module-reference/processing-modules/contrast-equalizer.md) or [local contrast](../../module-reference/processing-modules/local-contrast.md)_
+[_renforcer la netteté_](../../module-reference/processing-modules/sharpen.md)
+: _préférez [égaliseur de contraste](../../module-reference/processing-modules/contrast-equalizer.md) ou [contraste local](../../module-reference/processing-modules/local-contrast.md)_
 
-: The USM algorithm used in the _sharpen_ module suffers from same issues as the _highpass_ module, and can easily cause artifacts. Use the presets offered by the _contrast equalizer_ for de-blurring, or _local contrast_ for general sharpness.
+: L'algorithme  USM (UnSharp Mask) utilisé dans le module _renforcer la netteté_ souffre des mêmes problèmes que le module _filtre passe-haut_, et peut facilement provoquer des artefacts. Utilisez les préréglages fournis par le module _égaliseur de contraste_ pour atténuer le flou, ou _contraste local_ pour une netteté générale.
 
 [_monochrome_](../../module-reference/processing-modules/monochrome.md)
-: _prefer [color calibration](../../module-reference/processing-modules/color-calibration.md) (or [color balance](../../module-reference/processing-modules/color-balance.md))_
+: _préférez [calibration des couleurs](../../module-reference/processing-modules/color-calibration.md) (ou [balance couleur](../../module-reference/processing-modules/color-balance.md))_
 
-: The _monochrome_ module can be quite fiddly to use. The _color calibration_ presets better emulate what physically happens with film, or you can set the _output saturation_ slider in the _color balance_ module to 0% for a more perceptual approach.
+: Le module _monochrome_ peut être assez compliqué à utiliser. Les préréglages du module _calibration des couleurs_ émulent mieux ce qui se passe physiquement avec un film. Vous pouvez aussi définir à 0 le curseur _saturation en sortie_ du module _balance couleur_ pour une approche plus perceptuelle.
 
-[_fill light (deprecated)_](../../module-reference/processing-modules/fill-light.md)
-: _prefer [tone equalizer](../../module-reference/processing-modules/tone-equalizer.md) (or [exposure](../../module-reference/processing-modules/exposure.md))_
+[_lumière d'appoint (déprécié)_](../../module-reference/processing-modules/fill-light.md)
+: _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md) (ou [exposition](../../module-reference/processing-modules/exposure.md))_
 
-: Used to add light to a scene, this module again uses blurs in Lab space. The _tone equalizer_ works in linear space, or you can also achieve a similar effect by using the _exposure_ module with a [drawn mask](../../darkroom/masking-and-blending/masks/drawn.md).
+: Utilisé pour ajouter de la lumière à une scène, ce module utilise à nouveau des flous dans l'espace Lab. L'_égaliseur de ton_ lui fonctionne dans un espace linéaire. Vous pouvez également obtenir un effet similaire en utilisant le module _exposition_ avec un [masque dessiné](../../darkroom/masking-and-blending/masks/drawn.md).
 
-[_bloom_](../../module-reference/processing-modules/bloom.md)
-: _prefer [tone equalizer](../../module-reference/processing-modules/tone-equalizer.md) (or [exposure](../../module-reference/processing-modules/exposure.md))_
+[_lumière d'arrière plan_](../../module-reference/processing-modules/bloom.md)
+: _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md) (ou [exposure](../../module-reference/processing-modules/exposure.md))_
 
-: Again, this module uses blurs in Lab space. Either use the _tone equalizer_ module or the _exposure_ module with a [parametric mask](../../darkroom/masking-and-blending/masks/parametric.md), both of which operate with linear encodings.
+: Encore une fois, ce module utilise des flous dans l'espace Lab. Utilisez soit le module _égaliseur de ton_, soit le module _exposition_ avec un [masque paramétrique](../../darkroom/masking-and-blending/masks/parametric.md). Ces deux modules fonctionnent avec des encodages linéaires.
 
-[_zone system (deprecated)_](../../module-reference/processing-modules/zone-system.md)
-: _prefer [tone equalizer](../../module-reference/processing-modules/tone-equalizer.md) (or [exposure](../../module-reference/processing-modules/exposure.md))_
+[_zones (déprécié)_](../../module-reference/processing-modules/zone-system.md)
+: _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md) (ou [exposition](../../module-reference/processing-modules/exposure.md))_
 
-: This module again operates in Lab space, and becomes problematic if you push it too far. It is better to use the _tone equalizer_ or multiple instances of the _exposure_ module with parametric masks to narrow down on a zone.
+: Ce module fonctionne à nouveau dans l'espace Lab, et devient problématique si vous le poussez trop loin. Il est préférable d'utiliser l '_égaliseur de ton_ ou plusieurs instances du module _exposition_ avec des masques paramétriques pour définir une zone.
 
-[_color correction_](../../module-reference/processing-modules/color-correction.md)
-: _prefer [color balance](../../module-reference/processing-modules/color-balance.md)_
+[_correction des couleurs_](../../module-reference/processing-modules/color-correction.md)
+: _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_
 
-: Prefer the _color balance_ module, which works in RGB color space and allows easy adjustment of the white balance in shadows (_offset_), midtones (_power_) and highlights (_slope_). Note the _offset_, _power_ and _slope_ that we normally use in linear spaces roughly correspond to the _lift_, _gamma_ and _gain_ parameters used in non-linear gamma-encoded spaces.
+: Préférez le module _balance couleur_, qui fonctionne dans l'espace colorimétrique RVB et permet un réglage facile de la balance des blancs dans les ombres (_offset_), les demi-tons (_power_) et les hautes lumières (_slope_). Notez que les paramètres _offset_, _power_ et _slope_ que nous utilisons normalement dans les espaces linéaires correspondent à peu près aux paramètres _lift_, _gamma_ et _gain_ utilisés dans les espaces non linéaires à encodage gamma.
 
 [_velvia_](../../module-reference/processing-modules/velvia.md)
-: _prefer [color balance](../../module-reference/processing-modules/color-balance.md)_
+: _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_
 
-: The _output saturation_ slider of the _color balance_ module uses similar logic as the _velvia_ module, but without the hue and brightness shifts, which can be difficult to manage.
+: Le curseur _saturation en sortie_ du module _balance couleur_ utilise une logique similaire à celle du module _velvia_, mais sans les décalages de teinte et de luminosité qui peuvent être difficile à gérer.
 
-[_levels_](../../module-reference/processing-modules/levels.md)/[rgb levels](../../module-reference/processing-modules/rgb-levels.md)
-: _prefer [color balance](../../module-reference/processing-modules/color-balance.md)_
+[_niveaux_](../../module-reference/processing-modules/levels.md)/[niveaux rvb](../../module-reference/processing-modules/rgb-levels.md)
+: _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_
 
-: These modules basically implement a subset of the functions of the _color balance_ module, which pretty much makes them redundant.
+: Ces modules implémentent essentiellement un sous-ensemble des fonctions du module _balance couleur_, ce qui les rend à peu près redondants.
 
-[_tone curve_](../../module-reference/processing-modules/tone-curve.md)/[rgb curve](../../module-reference/processing-modules/rgb-curve.md)
-: _prefer [color balance](../../module-reference/processing-modules/color-balance.md)_
+[_courbe des tonalités_](../../module-reference/processing-modules/tone-curve.md)/[courbe rvb](../../module-reference/processing-modules/rgb-curve.md)
+: _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_
 
-: These modules are normally used to adjust contrast. Their user interface assumes the mid-grey level is around 50%, but in linear scene-referred space mid-grey is much lower at around 18%. It is better to adjust the contrast in _color balance_ module, where the mid-grey reference point can be set with the _contrast fulcrum_ slider.
+: Ces modules sont normalement utilisés pour régler le contraste. Leur interface utilisateur suppose que le niveau de gris moyen est d'environ 50%, mais dans l'espace linéaire relatif à une scène, le gris moyen est beaucoup plus bas à environ 18%. Il est préférable d'ajuster le contraste dans le module _balance couleur_, où le point de référence gris moyen peut être défini avec le curseur _pivot du contraste_.
 
-[_contrast brightness saturation_](../../module-reference/processing-modules/contrast-brightness-saturation.md)
-: _prefer [color balance](../../module-reference/processing-modules/color-balance.md)_
+[_contraste luminosité saturation_](../../module-reference/processing-modules/contrast-brightness-saturation.md)
+: _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_
 
-: This module works in Lab color space (with the limitations that implies) and basically duplicates functions already provided by _color balance_.
+: Ce module fonctionne dans l'espace colorimétrique Lab (avec les limitations que cela implique) et duplique essentiellement les fonctions déjà fournies par le module _color balance_.

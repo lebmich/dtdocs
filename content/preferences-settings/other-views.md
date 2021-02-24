@@ -1,21 +1,22 @@
 ---
-title: other views
+title: autres vues
 id: other-views
 weight: 60
 draft: false
+author: "traducteur Michel Leblond"
 ---
 
-The following options control functionality in the [map](../map/_index.md) and [slideshow](../slideshow/_index.md) views.
+Les options suivantes contrôlent les fonctionnalités des vues [carte](../map/_index.md) et [diaporama](../slideshow/_index.md).
 
-# map / geolocalisation
+# carte / géolocalisation
 
-maximum number of images drawn on map
-: The maximum number of geotagged images drawn on the map. Increasing this number can slow down the drawing of the map. Needs a restart if changed (default 100).
+nombre maximum d'images affichées sur la carte
+: Le nombre maximum d'images géolocalisées dessinées sur la carte. L'augmentation de ce nombre peut ralentir le dessin de la carte. Nécessite un redémarrage en cas de modification (par défaut 100).
 
-pretty print the image location
-: Show a more readable representation of the geo-location in the [image information](../module-reference/utility-modules/shared/image-information.md) module (default on). 
+affichage plus clair de la localisation d'image
+: Afficher une représentation plus lisible de la géolocalisation dans le module [informations de l'image](../module-reference/utility-modules/shared/image-information.md) (activé par défaut).
 
-# slideshow
+# diaporama
 
-waiting time before each picture in slideshow
-: The number of seconds before displaying the next image (default 5). 
+temporisation entre chaque image du diaporama
+: Le nombre de secondes avant d'afficher l'image suivante (5 par défaut).

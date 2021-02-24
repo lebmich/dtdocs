@@ -1,7 +1,7 @@
 ---
-title: Preferences & Settings
+title: Préférences et réglages
 id: preferences-settings
 weight: 90
 draft: false
-author: "people"
+author: "traducteur : Michel Leblond"
 ---

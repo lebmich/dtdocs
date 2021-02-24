@@ -3,7 +3,7 @@ title: fichiers liés
 id: sidecar
 weight: 10
 draft: false
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
 darktable est un éditeur d’images non destructif. Il ouvre les images en lecture seule. Toutes les donnés créées dans darktable (métadonnées, mots-clés et étapes du traitement d'image) sont enregistrées dans un fichier séparé `.xmp` appelé _fichier lié_. Ces fichiers permettent à darktable de stocker des informations concernant les images ainsi que l'historique complet de développement sans toucher aux fichiers RAW originaux. Lorsque vous importez une image pour la première fois dans darktable, un fichier lié xmp est automatiquement créé en utilisant des paramètres par défaut. La génération automatiqe de ces fichiers liés xmp peut être désactivée dans [préférences > stockage](../../preferences-settings/storage.md) mais ceci n'est pas recommandé dans un usage normal.

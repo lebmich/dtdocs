@@ -3,7 +3,7 @@ title: vues
 id: views
 draft: false
 weight: 10
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
 Cinq vues différentes sont disponibles dans darktable :

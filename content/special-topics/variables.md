@@ -1,9 +1,9 @@
 ---
-title: variables
+title: substitution de variable
 id: variables
 weight: 60
 draft: false
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
 darktable supports variable substitution in a number of modules and preference settings. For example:
@@ -77,29 +77,29 @@ $(JOBCODE)                 internal jobcode of current job
 
 # string substitution
 
-All of the variables support basic string substitution inspired by bash though some of the details differ. 
+All of the variables support basic string substitution inspired by bash though some of the details differ.
 
-All patterns are treated as simple string comparisons. There is no regex support. 
+All patterns are treated as simple string comparisons. There is no regex support.
 
 The following string replacement functions are provided, where `var` is one of the variables listed above:
 
 ```
 $(var-default)                   If var is empty, return "default"
 $(var+alt_value)                 If var is set, return "alt_value" else return empty string
-$(var:offset)                    Return var starting from offset 
+$(var:offset)                    Return var starting from offset
                                  If offset is negative count from the end of the string
 $(var:offset:length)             Starting from offset, return at most length characters of var
                                  If offset is negative the length is counted from the end of var
-                                 If length is negative this indicates the end of the result, 
+                                 If length is negative this indicates the end of the result,
                                   counted from the end of var, and not an actual length
-$(var#pattern)                   Remove "pattern" from the start of var 
-$(var%pattern)                   Remove "pattern" from the end of var 
+$(var#pattern)                   Remove "pattern" from the start of var
+$(var%pattern)                   Remove "pattern" from the end of var
 $(var/pattern/replacement)       Replace the first occurrence of "pattern" in var with "replacement"
                                  If "replacement" is empty then "pattern" will be removed
 $(var//pattern/replacement)      Replace all occurrences of "pattern" in var with "replacement"
                                  If "replacement" is empty then "pattern" will be removed
-$(var/#pattern/replacement)      If var starts with "pattern then "pattern" is replaced with "replacement" 
-$(var/%pattern/replacement)      If var ends with "pattern" then "pattern" is replaced with "replacement" 
+$(var/#pattern/replacement)      If var starts with "pattern then "pattern" is replaced with "replacement"
+$(var/%pattern/replacement)      If var ends with "pattern" then "pattern" is replaced with "replacement"
 $(var^)                          Make the first character of var uppercase
 $(var^^)                         Make all characters of var uppercase
 $(var,)                          Make the first character of var lowercase

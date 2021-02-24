@@ -3,7 +3,7 @@ title: importer des fichiers liés générés par d'autres applications
 id: sidecar-import
 weight: 20
 draft: false
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
 
 Lorsqu'il importe une image, darktable teste automatiquement s'il est accompagné d'un fichier lié. En plus de rechercher les fichiers nommés `<basename>.<extension>.xmp` et `<basename>_nn.<extension>.xmp` (les formats de dénomination des fichiers xmp de darktable), il vérifie également la présence d'un fichier sous la forme `<basename> .xmp` (le format de dénomination des fichiers lié xmp de Lighroom). Les fichiers avec ce dernier format de dénomination seront lus par darktable mais il n'y écrira pas. Une fois l'image importée, darktable générera un fichier xmp supplémentaire en utilisant sa propre convention de dénomination.

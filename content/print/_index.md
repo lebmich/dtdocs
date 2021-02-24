@@ -1,7 +1,7 @@
 ---
-title: Print
+title: Impression
 id: print
 weight: 70
 draft: false
-author: "people"
+author: "traducteur : Michel Leblond"
 ---
