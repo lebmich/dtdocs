@@ -20,8 +20,8 @@ Les étapes les plus courantes seraient donc :
 
 1. Sélectionnez une ou plusieurs images dans la vue table lumineuse
 
-2.  Choisissez le stockage cible et le format de fichier
+2. Choisissez le stockage cible et le format de fichier
 
-3.  Définissez les dimensions limites de l'image en largeur et en hauteur. Laissez les limites de largeur et de hauteur à zéro pour exporter en pleine résolution.
+3. Définissez les dimensions limites de l'image en largeur et en hauteur. Laissez les limites de largeur et de hauteur à zéro pour exporter en pleine résolution.
 
 Par défaut, une image sera enregistrée sur le disque local en tant que JPEG de haute qualité à pleine résolution. Pour plus d'informations sur toutes les options d'exportation disponibles, veuillez consulter la référence [exporter sélection](../../module-reference/utility-modules/lighttable/export-selected.md)

@@ -1,5 +1,5 @@
 ---
-title: "développer une image: flux de travail relatif à l'affichage"
+title: "développer une image : flux de travail relatif à l'affichage"
 id: edit-display-referred
 draft: false
 weight: 40
@@ -8,13 +8,13 @@ author: "traducteur : Michel Leblond"
 
 Ceci est un mode traditionnel. Il est conservé pour fournir une rétrocompatibilité avec les développements effectués dans les anciennes versions de darktable et pour permettre aux utilisateurs de continuer avec leur ancienne méthode de travail sans les forcer à utiliser le nouveau flux de travail _relatif à la scène_.
 
-Le flux de travail _relatif à l'affichage_ met davantage l'accent sur l'exécution du traitement d'image dans la partie non-linéaire _relatif à l'affichage_ du [pipeline graphique](../../darkroom/processing-modules-and-pixelpipe/_index.md). Par défaut il utilise le module [_courbe de base_](../../module-reference/processing-modules/base-curve.md) pour mapper les images de l'espace linéaire  _relatif à la scène_ vers l'espace _relatif à l'affichage_, bien que d'autres outils de mappage des tonalités (tel que le module [_courbe des tonalités_](../../module-reference/processing-modules/tone-curve)) puissent aussi être utilisés. De nombreux modules sont déplacés plus tard dans le pipeline graphique (après ce mappage des tonalités) de telle sorte qu'ils travaillent avec des valeurs de pixel (_relatives à l'affichage_) gamma-encodées plutôt qu'avec des valeurs de pixel linéairement-encodées (_relatives à la scène_).
+Le flux de travail _relatif à l'affichage_ met davantage l'accent sur l'exécution du traitement d'image dans la partie non-linéaire _relatif à l'affichage_ du [pipeline graphique](../../darkroom/processing-modules-and-pixelpipe/_index.md). Par défaut il utilise le module [_courbe de base_](../../module-reference/processing-modules/base-curve.md) pour mapper les images de l'espace linéaire _relatif à la scène_ vers l'espace _relatif à l'affichage_, bien que d'autres outils de mappage des tonalités (tel que le module [_courbe des tonalités_](../../module-reference/processing-modules/tone-curve)) puissent aussi être utilisés. De nombreux modules sont déplacés plus tard dans le pipeline graphique (après ce mappage des tonalités) de telle sorte qu'ils travaillent avec des valeurs de pixel (_relatives à l'affichage_) gamma-encodées plutôt qu'avec des valeurs de pixel linéairement-encodées (_relatives à la scène_).
 
 La plupart des étapes de base requises pour développer des images dans le cadre du flux de travail _relatif à l'affichage_ sont assez similaires à celles requises pour le flux de travail _relatif à la scène_. Les principales différences résident dans le choix des modules et dans leur ordre d'apparition dans le pipeline graphique. Pour voir la différence dans l'ordre des modules entre flux de travail _relatif à l'affichage_ et flux de travail _relatif à la scène_, veuillez vous référer à la section [ordre des modules](../../special-topics/module-order.md).
 
 ---
 
-**Remarque:** Cette section décrit un certain nombre de modules originels qui ne sont plus recommandés pour une utilisation dans le flux de travail relatif à la scène. Il est recommandé aux nouveaux utilisateurs de se référer à la section [développement d'une image : flux de travail relatif à la scène](./edit-scene-referred.md) pour obtenir un guide sur la meilleure façon de traiter les images dans darktable.
+**Remarque :** Cette section décrit un certain nombre de modules originels qui ne sont plus recommandés pour une utilisation dans le flux de travail relatif à la scène. Il est recommandé aux nouveaux utilisateurs de se référer à la section [développement d'une image : flux de travail relatif à la scène](./edit-scene-referred.md) pour obtenir un guide sur la meilleure façon de traiter les images dans darktable.
 
 ---
 

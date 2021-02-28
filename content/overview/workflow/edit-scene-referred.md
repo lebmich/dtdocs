@@ -6,7 +6,7 @@ weight: 30
 author: "traducteur : Michel Leblond"
 ---
 
-Le flux de travail _relatif à la scène_ met l'accent sur l'exécution, par pipeline graphique, du traitement d'image dans la partie linéaire relative à la scène. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs non linéaires des pixels. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il sera plus facile d'adapter ultérieurement votre travail à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.
+Le flux de travail _relatif à la scène_ met l'accent sur l'exécution du traitement d'image dans la partie linéaire relative à la scène du pipeline graphique. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs non linéaires des pixels. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il sera plus facile d'adapter ultérieurement votre travail à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.
 
 Ceci étant la méthode recommandée pour traiter les images dans les versions 3.0 et supérieures, cette section fournira un aperçu beaucoup plus complet que la section suivante sur le flux de travail _relatif à l'affichage_.
 
@@ -19,7 +19,7 @@ prendre une photo
 [_exposition_](../../module-reference/processing-modules/exposure.md)
 : Ce module est activé par défaut. Il inclura une augmentation d'exposition initiale de +0,5&nbsp;IL pour imiter le traitement standard de la plupart des boîtiers fournissant des JPEG intégrés. Les systèmes de mesure des boîtiers varient et certains modèles peuvent nécessiter une augmentation d'exposition légèrement plus importante (par exemple +0,8&nbsp;IL à +1,5&nbsp;IL), auquel cas vous pouvez créer un  [préréglage](../../darkroom/interacting-with-modules/presets.md) automatique adéquat. Le module d'exposition détectera si la molette de compensation d'exposition du boîtier a été utilisée (voir les remarques ci-dessus sur l'ETTR) et réajustera l'exposition en conséquence.
 
-: Utilisez le curseur d'exposition pour régler les demi-tons de l'image à un niveau de luminosité approprié. À ce stade, ne vous inquiétez pas des hautes lumières et des ombres - elles seront traitées plus tard.
+: Utilisez le curseur exposition pour régler les tons-moyens de l'image à un niveau de luminosité approprié. À ce stade, ne vous inquiétez pas des hautes lumières et des ombres - elles seront traitées plus tard.
 
 : Vous pouvez également cliquer et faire glisser sur l'histogramme pour modifier l'exposition, mais cela donne moins de contrôle que d'utiliser le curseur du module _exposition_. Bien que vous puissiez utiliser le module _exposition_ pour ajuster le niveau de noir pour fournir plus de contraste, vous devez faire très attention en faisant cela car vous pouvez vous retrouver avec des valeurs RVB négatives.
 
