@@ -15,7 +15,7 @@ Cinq vues différentes sont disponibles dans darktable :
 : Développer une seule image.
 
 [carte](../../map/_index.md)
-: Montrer sur une carte les images contenant des données de géolocalisation et des nouvelles images géolocalisées manuellemnt.
+: Montrer sur une carte les images contenant des données de géolocalisation et des nouvelles images géolocalisées manuellement.
 
 [impression](../../print/_index.md)
 : Envoyer des images à votre imprimante.
