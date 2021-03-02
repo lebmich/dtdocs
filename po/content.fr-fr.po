@@ -15,7 +15,7 @@ msgstr ""
 #: content/print/print-view-layout.md
 #, no-wrap
 msgid "print view layout"
-msgstr ""
+msgstr "disposition de la vue impression"
 
 #. type: Plain text
 #: content/print/print-view-layout.md
