@@ -68,7 +68,7 @@ déplier le module quand il est activé, et le replier quand il est désactivé
 : Sélectionnez cette option pour que darktable déplie ou replie automatiquement [les modules de développemnt](../module-reference/processing-modules) selon qu'ils sont activés ou désactivés (désactivée par défaut)
 
 positionne les modules de développement lorsqu'ils sont dépliés/repliés
-: Lorsque cette option est activée darktable essaiera de positionner [le module de développement](../module-reference/processing-modules) pour qu'il soit entièrement visible (activée par défaut).
+: Lorsque cette option est activée darktable essaiera de positionner un [module de développement](../module-reference/processing-modules) pour qu'il soit entièrement visible (activée par défaut).
 
 couleurs du curseur de balance des blancs
 : Contrôle l'apparence des curseurs dans le module [balance des blancs](../module-reference/processing-modules/white-balance.md).
