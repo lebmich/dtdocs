@@ -54,6 +54,7 @@ for section in content; do
 [po4a_alias:markdown] text opt:"--option markdown" opt:"--option yfm_keys=title" opt:"--addendum-charset=UTF-8" opt:"--localized-charset=UTF-8" opt:"--master-charset=UTF-8" opt:"--option neverwrap"
 
 EOF
+
     # for f in $section/*.md; do
     for f in  $(find content -type f -name '*.md'); do
 	echo "[type: markdown] $f \$lang:$(dirname $f)/$(basename $f .md).\$lang.md" >> $po4a_conf
