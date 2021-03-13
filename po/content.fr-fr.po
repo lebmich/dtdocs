@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: French (darktable)\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-13 06:10+0100\n"
-"PO-Revision-Date: 2021-03-13 06:55+0100\n"
+"PO-Revision-Date: 2021-03-13 10:44+0100\n"
 "Language-Team: French <https://weblate.pixls.us/projects/darktable/dtdocs/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -5287,7 +5287,7 @@ msgstr ""
 #: content/map/map-view-layout.md
 #, no-wrap
 msgid "map view layout"
-msgstr ""
+msgstr "disposition de la vue carte"
 
 #. type: Title #
 #: content/map/map-view-layout.md content/lighttable/lighttable-view-layout.md
@@ -5327,6 +5327,8 @@ msgid ""
 "[image information](../module-reference/utility-modules/shared/image-information.md)\n"
 ": Display image information.\n"
 msgstr ""
+"[informations de l'image](../module-reference/utility-modules/shared/image-information.md)\n"
+": Display image information.\n"
 
 #. type: Title #
 #: content/map/map-view-layout.md content/lighttable/lighttable-view-layout.md
@@ -11530,13 +11532,13 @@ msgstr ""
 #: content/module-reference/utility-modules/map/find-location.md
 #, no-wrap
 msgid "find location"
-msgstr ""
+msgstr "trouver la localisation"
 
 #. type: Plain text
 #: content/module-reference/utility-modules/map/find-location.md
 #, no-wrap
 msgid "Search for a location on the map. You must be connected to the internet to use this feature.\n"
-msgstr ""
+msgstr "Rechercher la localisation sur la carte. Vous devez être connecté à internet pour utiliser cette fonctionnalité.\n"
 
 #. type: Plain text
 #: content/module-reference/utility-modules/map/find-location.md
