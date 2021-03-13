@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-12 11:19+0100\n"
+"POT-Creation-Date: 2021-03-12 15:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,89 +15,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#. type: YAML Front Matter: title
-#: content/preferences-settings/storage.fr-fr.md
-#, no-wrap
-msgid "stockage"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/storage.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les options suivantes sont relatives à la base de données de darktable et aux [fichiers liés XMP](../overview/sidecar-files/_index.md).\n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/storage.fr-fr.md
-#, markdown-text, no-wrap
-msgid "base de données"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/storage.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"vérifier pour la maintenance de la base de données\n"
-": Indique quand darktable doit vérifier la fragmentation de la base de données et effectuer la maintenance. Les options sont \"jamais\", \"au démarrage\", \"à la fermeture\", et \"au deux\". Chacun de ceux-ci est également disponible avec une option supplémentaire \"(sans confirmation)\" pour effectuer les vérifications automatiquement et sans invite (par défaut \"à la fermeture\").\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/storage.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"seuil de fragmentation de la base de données\n"
-": Taux de fragmentation (en pourcentage) au-dessus duquel la maintenance de la base de données doit être effectuée (sous réserve de la sélection effectuée dans l'option ci-dessus) (par défaut 25).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/storage.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"faire une sauvegarde de la base de données\n"
-": Spécifie la fréquence des sauvegardes de la base de données. Les options sont «jamais», «une fois par mois», «une fois par semaine», «une fois par jour» et «à la fermeture» (par défaut «une fois par semaine»)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/storage.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"nombre de sauvegarde à conserver\n"
-": Nombre de sauvegardes à conserver après la création d'une nouvelle sauvegarde, sans compter les sauvegardes de base de données effectuées lors du passage d'une version de darktable à une autre. Entrez \"-1\" pour stocker un nombre illimité de sauvegardes. (par défaut 10)\n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/storage.fr-fr.md
-#: content/preferences-settings/storage.md
-#, markdown-text, no-wrap
-msgid "xmp"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/storage.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"écrire un fichier XMP redondant pour chaque image\n"
-": Les fichiers XMP fournissent une méthode redondante pour enregistrer les modifications que vous avez apportées à une image, indépendamment de la base de données de darktable. Les fichiers XMP peuvent être réimportés ultérieurement dans une autre base de données, en préservant les modifications apportées à l'image. Il est fortement recommandé de laisser cette option activée afin de ne pas perdre de données si votre base de données est corrompue. La sauvegarde de votre fichier RAW et du fichier XMP qui l'accompagne vous permettra de restaurer complètement votre travail (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/storage.fr-fr.md
-#: content/preferences-settings/storage.md
-#, markdown-text, no-wrap
-msgid ""
-"store xmp tags in compressed format\n"
-": Entries in XMP tags can get rather large and may exceed the available space to store the history stack in some output files on export. This option allows binary XMP tags to be compressed in order to save space. Available options are “never”, “always”, and “only large entries” (default).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/storage.fr-fr.md
-#: content/preferences-settings/storage.md
-#, markdown-text, no-wrap
-msgid ""
-"look for updated xmp files on startup\n"
-": Scan all XMP files on startup and check if any have been updated in the meantime by some other software. If updated XMP files are found, a menu is opened for the user to choose which of the XMP files to reload (replacing darktable's database entries by the XMP file contents) and which of the XMP to overwrite from darktable's database. Activating this option also causes darktable to check for text sidecar files that have been added after import time – see [preferences > lighttable > overlay txt sidecar over zoomed images](./lighttable.md) (default off). \n"
-msgstr ""
 
 #. type: YAML Front Matter: title
 #: content/preferences-settings/security.md
@@ -189,12 +106,6 @@ msgstr ""
 msgid ""
 "ask before deleting a preset\n"
 ": Always ask user before deleting a preset (default on). \n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/preferences-settings/_index.fr-fr.md
-#, no-wrap
-msgid "Préférences et réglages"
 msgstr ""
 
 #. type: Title #
@@ -414,228 +325,6 @@ msgid "See the [creating and editing presets](../darkroom/processing-modules/pre
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: content/preferences-settings/import.fr-fr.md
-#, no-wrap
-msgid "importer"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Cet onglet contient un certain nombre de paramètres par défaut pour le module importer de la table lumineuse [importer](../module-reference/utility-modules/lighttable/import.md).\n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "options de session"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Ces options définissent un modèle de nommage pour organiser les images sur le disque lors de l'importation à partir d'un appareil photo connecté et lors de la prise de photos dans la vue [capture](../tethering/_index.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Le modèle de nommage se compose de trois parties : une partie de base définissant le dossier parent, une partie session définissant un sous-répertoire (qui est spécifique à la session d'importation individuelle) et une partie nom de fichier définissant la structure de nom de fichier pour chaque image importée.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Plusieurs variables prédéfinies peuvent être utilisées dans le modèle comme variables de substitution :\n"
-msgstr ""
-
-#. type: Fenced code block
-#: content/preferences-settings/import.fr-fr.md
-#: content/preferences-settings/import.md
-#, no-wrap
-msgid ""
-"$(HOME)              the home folder as defined by the system\n"
-"$(PICTURES_FOLDER)   the pictures folder as defined by the system (usually “$HOME/Pictures”)\n"
-"$(DESKTOP)           the desktop folder as defined by the system (usually “$HOME/Desktop”)\n"
-"$(USERNAME)          your user account name on the system\n"
-"$(FILE_NAME)         basename of the imported image\n"
-"$(FILE_EXTENSION)    extension of the imported image\n"
-"$(JOBCODE)           unique identifier of the import job\n"
-"$(SEQUENCE)          a sequence number within the import job\n"
-"$(MAX_WIDTH)         maximum image width to limit within export session\n"
-"$(MAX_HEIGHT)        maximum image height to limit within export session\n"
-"$(ID)                unique identification number of the image in darktable's database\n"
-"$(YEAR)              year at the date of import\n"
-"$(MONTH)             month at the date of import\n"
-"$(DAY)               day at the date of import\n"
-"$(HOUR)              hour at the time of import\n"
-"$(MINUTE)            minute at the time of import\n"
-"$(SECOND)            second at the time of import\n"
-"$(EXIF_YEAR)         year the photo was taken (from Exif data)\n"
-"$(EXIF_MONTH)        month the photo was taken (from Exif data)\n"
-"$(EXIF_DAY)          day the photo was taken (from Exif data)\n"
-"$(EXIF_HOUR)         hour the photo was taken (from Exif data)\n"
-"$(EXIF_MINUTE)       minute the photo was taken (from Exif data)\n"
-"$(EXIF_SECOND)       seconds the photo was taken (from Exif data)\n"
-"$(EXIF_ISO)          ISO value of the photo (from Exif data)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/import.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"nommage du répertoire de base\n"
-": La partie répertoire de base du modèle de nommage (par défaut `$(PICTURES_FOLDER)/Darktable`).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/import.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"nommage du sous répertoire\n"
-": La partie sous-répertoire du modèle de nommage (par défaut `$(YEAR)$(MONTH)$(DAY)_$(JOBCODE)`).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/import.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"garder le nom d'origine\n"
-": Cochez cette case pour conserver le nom de fichier d'origine au lieu d'utiliser le modèle ci-dessous lors de l'importation depuis un appareil photo ou une carte (désactivé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/import.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"nommage des fichiers\n"
-": La partie nom de fichier du modèle de nommage (par défaut `$(YEAR)$(MONTH)$(DAY)_$(SEQUENCE).$(FILE_EXTENSION`).\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/preferences-settings/lighttable.fr-fr.md
-#: content/module-reference/utility-modules/lighttable/_index.fr-fr.md
-#, no-wrap
-msgid "table lumineuse"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les options suivantes contrôlent les fonctionnalités de la vue et des modules de la [table lumineuse](../lighttable/_index.md).\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/preferences-settings/lighttable.fr-fr.md
-#: content/preferences-settings/darkroom.fr-fr.md
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid "général"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"cacher les préréglages internes des modules utilitaires\n"
-": Si cette option est activée, seuls les préréglages définis par l'utilisateur seront affichés dans le menu des préréglages des modules utilitaires -- les préréglages intégrés seront masqués (par défaut désactivé).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"utiliser un seul clic pour les collections\n"
-": Activer le mode \"simple clic\" dans le module [filtres de collection](../module-reference/utility-modules/shared/collect-images.md). Cela permet aussi de sélectionner des plages de dates et de valeurs numériques (désactivée par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"déplier un seul module utilitaire de la table lumineuse à la fois\n"
-": Contrôle la façon dont les modules utilitaires sont dépliés. Si cette option est activée, déplier un module en cliquant dessus replie tout autre module actuellement déplié. Si vous souhaitez déplier un module sans replier les autres, vous pouvez le faire avec Maj+clic. La désactivation de cette option inverse la signification de Clic et de Maj+clic (désactivé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"positionne les modules utilitaires lorsqu'ils sont dépliés/repliés\n"
-": Lorsque cette option est activée darktable essaiera de positionner le module pour qu'il soit entièrement visible (désactivée par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"appliquer une étoile deux fois à une image ne supprimera pas l'étoile\n"
-": Appliquer une étoile deux fois à une image ne positionnera aucune étoile (par défaut désactivé).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"afficher les barres de défilement pour la zone centrale\n"
-": Si activé les barres de défilement seront affichées dans la zone centrale de la table lumineuse (activé par défaut).\n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid "miniatures"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"miniatures avec gestion de la couleur\n"
-": Si activé, darktable génère les miniatures dans un espace colorimétrique général (AdobeRGB) afin de les rendre indépendamment du moniteur utilisé. La conversion vers l'espace colorimétrique du moniteur est effectuée au moment de l'affichage. Si cette option n'est pas activée, les miniatures sont stockées directement dans un espace colorimétrique spécifique au moniteur au moment de la génération et sont ensuite affichées sans autre correction (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"ne pas utiliser les JPEG intégrés aux images, toujours utiliser les RAW réduits\n"
-": Si activé, darktable traitera les données RAW de l'image pour générer toutes les images de la table lumineuse. Si désactivé, darktable utilisera l'aperçu JPEG intégré dans le fichier RAW jusqu'à ce que l'image ait été traitée dans la chambre noire (désactivé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"miniatures de haute qualité à partir de la taille\n"
-": Si la taille de la miniature est plus grande que cette valeur, elle sera crée en utilisant le développement de haute qualité (meilleur mais plus lent) (par défaut 720p).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"séparateurs de catégories des tailles\n"
-": Les catégories de taille permettent d'afficher différentes superpositions des miniatures en fonction de la taille des miniatures. Un ensemble de valeurs délimitées par une barre verticale définit à quelles tailles d'image les catégories changent. La valeur par défaut \"120|400\" signifie qu'il y aura trois catégories de miniatures : 0-120px, 120-400px et> 400px.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"patron pour les surimpressions des miniatures\n"
-": Si l'utilisateur a choisi de superposer aux miniatures le texte étendu, ce paramètre lui permet de définir les informations à afficher. Ce patron peut utiliser n'importe laquelle des variables définies dans la section [substitution de variable](../special-topics/variables.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lighttable.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"patron pour les infos bulles des miniatures (vide pour désactiver)\n"
-": Définit les informations affichées dans l'info-bulle lorsque la souris survole les miniatures d'image. Ce patron peut utiliser n'importe laquelle des variables définies dans la section [substitution de variable](../special-topics/variables.md).\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
 #: content/preferences-settings/darkroom.md
 #: content/module-reference/utility-modules/darkroom/_index.md
 #, no-wrap
@@ -650,7 +339,6 @@ msgstr ""
 
 #. type: Plain text
 #: content/preferences-settings/darkroom.md
-#: content/preferences-settings/darkroom.fr-fr.md
 #, markdown-text, no-wrap
 msgid ""
 "pen pressure control for brush masks\n"
@@ -675,7 +363,6 @@ msgstr ""
 
 #. type: Plain text
 #: content/preferences-settings/darkroom.md
-#: content/preferences-settings/darkroom.fr-fr.md
 #, markdown-text, no-wrap
 msgid ""
 "position of the image information line\n"
@@ -737,14 +424,12 @@ msgstr ""
 
 #. type: Title #
 #: content/preferences-settings/darkroom.md
-#: content/preferences-settings/darkroom.fr-fr.md
 #, markdown-text, no-wrap
 msgid "modules"
 msgstr ""
 
 #. type: Plain text
 #: content/preferences-settings/darkroom.md
-#: content/preferences-settings/darkroom.fr-fr.md
 #, markdown-text, no-wrap
 msgid ""
 "display of individual color channels\n"
@@ -817,7 +502,6 @@ msgstr ""
 
 #. type: Plain text
 #: content/preferences-settings/darkroom.md
-#: content/preferences-settings/darkroom.fr-fr.md
 #, markdown-text, no-wrap
 msgid ""
 "show mask indicator in module headers\n"
@@ -989,85 +673,6 @@ msgid ""
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, no-wrap
-msgid "cpu/gpu/mémoire"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Cet onglet des préférences contient principalement des paramètres liés aux performances :\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"mémoire en mégaoctets à utiliser pour le cache des miniatures\n"
-": Afin d'accélérer l'affichage des pellicules, darktable stocke les miniatures dans un fichier cache sur le disque (cache principal) et le charge en mémoire au démarrage. Ce paramètre contrôle la taille du cache en mégaoctets. Un redémarrage est nécessaire en cas de modification (256 Mo par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"utilisation du disque dur pour le cache des miniatures\n"
-": Si activé, darktable stocke toutes les miniatures sur le disque dur en tant que cache secondaire, et les garde ainsi accessibles si elles sont supprimées du cache principal. Cela nécessite plus d'espace disque mais accélère la vue [lighttable](../lighttable/_index.md) car cela évite le retraitement des miniatures (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"utilisation du disque dur pour le cache des images 100%\n"
-": Si activé, darktable écrit les images de prévisualisation complètes sur le disque (`.cache/darktable/`) lorsqu'elles sont supprimées du cache mémoire. Notez que cela peut prendre beaucoup de stockage (plusieurs gigaoctets pour 20000 images) et darktable ne supprimera jamais les images mises en cache. Vous pouvez les supprimer manuellement si vous le souhaitez. L'activation de cette option améliorera considérablement les performances de la table lumineuse lors du zoom sur une image en mode d'aperçu complet (désactivé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"nombre de fils d'exécution\n"
-": C'est le nombre de fils d'exécution en parallèle utilisés pour créer des miniatures lors de l'importation. Nécessite un redémarrage en cas de modification (par défaut 2).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"mémoire limite (en mégaoctets) pour le tuilage\n"
-": Afin de gérer de grandes images sur des systèmes avec une mémoire limitée, darktable effectue un traitement par tuiles. Cette variable contrôle la quantité maximale de mémoire (en Mo) qu'un module peut utiliser pendant le développement. Des petites valeurs forceront les modules gourmands en mémoire à utiliser de nombreuses tuiles. Mettre cette variable à 0 pour une infinité de tuiles. Les valeurs inférieures à 500 seront traitées comme 500. Nécessite un redémarrage en cas de modification (par défaut 1500).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"quantité minimale de mémoire (en Mo) pour la mémoire tampon d'une tuile\n"
-": Une valeur strictement positive définit la quantité de mémoire minimale (en Mo) que darktable doit utiliser pour une tuile. Nécessite un redémarrage en cas de modification (par défaut 16).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"activer le support d'[OpenCL](../special-topics/opencl/_index.md)\n"
-": _darktable_ peut utiliser votre GPU pour accélérer considérablement le développement. L'interface OpenCL nécessite un matériel approprié et les pilotes OpenCL correspondants sur votre système. Si l'un de ceux-ci n'est pas trouvé, l'option est grisée. Peut être activé et désactivé à tout moment et prend effet immédiatement (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/cpu-gpu-memory.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"profile de planification OpenCL\n"
-": Définit comment l'image complète et la prévisualisation sont traitées sur les systèmes avec support OpenCL :\n"
-": - _défaut_ : le GPU est utilisé pour le rendu de l'image complète ; le CPU pour la prévisualisation,\n"
-": - _GPUs multiples_ : l'image complète et la prévisualisation sont traitées en parallèle sur des GPUs différents,\n"
-": - _GPU très rapide_ : l'image complète et la prévisualisation sont traitées séquentiellement sur le GPU. \n"
-msgstr ""
-
-#. type: YAML Front Matter: title
 #: content/preferences-settings/overview.md
 #: content/special-topics/color-management/overview.md
 #: content/special-topics/darktable-chart/overview.md content/map/overview.md
@@ -1156,6 +761,36 @@ msgstr ""
 msgid "Several pre-defined variables can be used in the pattern as placeholders:\n"
 msgstr ""
 
+#. type: Fenced code block
+#: content/preferences-settings/import.md
+#, no-wrap
+msgid ""
+"$(HOME)              the home folder as defined by the system\n"
+"$(PICTURES_FOLDER)   the pictures folder as defined by the system (usually “$HOME/Pictures”)\n"
+"$(DESKTOP)           the desktop folder as defined by the system (usually “$HOME/Desktop”)\n"
+"$(USERNAME)          your user account name on the system\n"
+"$(FILE_NAME)         basename of the imported image\n"
+"$(FILE_EXTENSION)    extension of the imported image\n"
+"$(JOBCODE)           unique identifier of the import job\n"
+"$(SEQUENCE)          a sequence number within the import job\n"
+"$(MAX_WIDTH)         maximum image width to limit within export session\n"
+"$(MAX_HEIGHT)        maximum image height to limit within export session\n"
+"$(ID)                unique identification number of the image in darktable's database\n"
+"$(YEAR)              year at the date of import\n"
+"$(MONTH)             month at the date of import\n"
+"$(DAY)               day at the date of import\n"
+"$(HOUR)              hour at the time of import\n"
+"$(MINUTE)            minute at the time of import\n"
+"$(SECOND)            second at the time of import\n"
+"$(EXIF_YEAR)         year the photo was taken (from Exif data)\n"
+"$(EXIF_MONTH)        month the photo was taken (from Exif data)\n"
+"$(EXIF_DAY)          day the photo was taken (from Exif data)\n"
+"$(EXIF_HOUR)         hour the photo was taken (from Exif data)\n"
+"$(EXIF_MINUTE)       minute the photo was taken (from Exif data)\n"
+"$(EXIF_SECOND)       seconds the photo was taken (from Exif data)\n"
+"$(EXIF_ISO)          ISO value of the photo (from Exif data)\n"
+msgstr ""
+
 #. type: Plain text
 #: content/preferences-settings/import.md
 #, markdown-text, no-wrap
@@ -1186,193 +821,6 @@ msgstr ""
 msgid ""
 "file naming pattern\n"
 ": The file name part of the naming pattern (default `$(YEAR)$(MONTH)$(DAY)_$(SEQUENCE).$(FILE_EXTENSION`).\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/preferences-settings/overview.fr-fr.md
-#: content/print/overview.fr-fr.md
-#, no-wrap
-msgid "présentation"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "darktable est livré avec un certain nombre de préférences configurables par l'utilisateur. Celles-ci peuvent être ajustées dans la boîte de dialogue des préférences, accessible en cliquant sur l'icône d'engrenage à droite du [panneau supérieur](../overview/user-interface/top-panel.md). Les préférences sont séparées en onglets, dont chacun est décrit plus en détail dans les sections suivantes.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Lorsqu'il est ouvert depuis les vues table lumineuse ou chambre noire, l'onglet approprié sera chargé par défaut pour vous permettre de modifier les paramètres de cette vue.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Tous les paramètres modifiés (c'est-à-dire ceux qui diffèrent de leur état par défaut) sont mis en évidence par une puce à côté de leur label. Si vous modifiez un paramètre qui nécessite un redémarrage pour prendre effet, un message apparaîtra comme rappel quand vous quitterez la boîte de dialogue des préférences.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Double-cliquez sur l'étiquette d'un paramètre pour réinitialiser sa valeur par défaut.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La boîte de dialogue des préférences peut être fermée en cliquant sur le bouton Fermer de votre gestionnaire de fenêtres ou en appuyant sur la touche Échap.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, no-wrap
-msgid "divers"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#: content/preferences-settings/miscellaneous.md
-#, markdown-text, no-wrap
-msgid "interface"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"trier les préréglages internes en premier\n"
-": Choisir comment le menu des préréglages est trié. Si cette option est activée, les préréglages internes sont montrés en premier. Si cette option est désactivée, les préréglages de l'utilisateur sont montrés en premier (activée par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"déplacement des panneaux latéraux avec la molette\n"
-": Lorsqu'elle est activée, par défaut, la molette de la souris fait défiler les panneaux latéraux et Ctrl+Alt+molette fait défiler les champs de saisie de données. Lorsqu'elle est désactivée, ce comportement est inversé (désactivée par défaut) \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"toujours montrer les ascenseurs des panneaux\n"
-": Définit si les barres de défilement du panneau doivent être toujours visibles ou activées uniquement en fonction du contenu du panneau (activé par défaut). (nécessite un redémarrage) \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#: content/preferences-settings/miscellaneous.md
-#, markdown-text, no-wrap
-msgid ""
-"method to use for getting the display profile\n"
-": This option allows the user to force darktable to use a specific method to obtain the current display profile for [color management](../special-topics/color-management/_index.md). In the default setting “all”, darktable will choose to query the X display server's xatom or the colord system service. You can set this option to “xatom” or “colord” to enforce a specific method if the two methods give different results. You can run the [darktable-cmstest](../special-topics/program-invocation/darktable-cmstest.md) binary to examine your color management subsystem.\n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid "mots clés"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"ignorer la hiérarchie des mots-clés\n"
-": Lors de l'exportation d'images, les mots-clés hiérarchiques sont également ajoutés sous la forme d'une simple liste de mots-clés non hiérarchiques pour les rendre visibles par d'autres programmes. Lorsque cette option est cochée, darktable n'inclura que la dernière partie de la hiérarchie et ignorera le reste. Donc `foo | bar | baz` ajoutera seulement` baz` \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"désactiver l'auto-complétion\n"
-": l'auto-complétion est utile pour ceux qui saisissent des mots-clés uniquement au clavier. Pour les autres, l'auto-complétion peut être embarrassante (désactivée par défaut). (nécessite un redémarrage) \n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid "raccourcis clavier avec instances multiples"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Il est possible de créer plusieurs instances de nombreux modules de traitement. Dans ce scénario, il n'est pas toujours évident de savoir quelle instance doit être contrôlée par des opérations de raccourci clavier. Les options suivantes contrôlent les règles qui sont appliquées (dans l'ordre) pour décider à quelle instance les raccourcis clavier doivent être appliqués.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Ces règles sont également utilisées lorsque, pour modifier l'exposition, vous cliquez et faites glisser sur l'histogramme.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"préférence aux instances développées\n"
-": si des instances du module sont dépliées, ignore les instances repliées (désactivée par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"préférence aux instances actives\n"
-": Après avoir appliqué la règle ci-dessus, si les instances restantes du module sont actives, ignorez les instances inactives (désactivée par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"préférence aux instances visibles\n"
-": Après avoir appliqué les règles ci-dessus, si les instances restantes du module sont visibles, ignorez les instances cachées (désactivée par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"ordre de sélection\n"
-": Après avoir appliqué les règles ci-dessus, appliquez le raccourci à la première ou à la dernière instance restante (\"dernière instance\" par défaut).\n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid "autre"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"ne pas afficher le jeu du 1er avril\n"
-": Ne pas afficher de jeu lors de l'ouverture de darktable le 1er avril (activé par défaut). \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#: content/preferences-settings/miscellaneous.md
-#, markdown-text, no-wrap
-msgid ""
-"password storage backend to use\n"
-": The backend to use for password storage. Options: “auto” (default), “none”, “libsecret”, “kwallet”. \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/miscellaneous.fr-fr.md
-#: content/preferences-settings/miscellaneous.md
-#, markdown-text, no-wrap
-msgid ""
-"executable for playing audio files\n"
-": Define an external program which is used in the lighttable view to play audio files that some cameras record to keep notes for images (default “aplay”). \n"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -1439,6 +887,12 @@ msgid ""
 ": Number of snapshots to keep after creating a new snapshot, not counting database backups taken when moving between darktable versions. Enter \"-1\" to store an unlimited number of snapshots. (default 10)\n"
 msgstr ""
 
+#. type: Title #
+#: content/preferences-settings/storage.md
+#, markdown-text, no-wrap
+msgid "xmp"
+msgstr ""
+
 #. type: Plain text
 #: content/preferences-settings/storage.md
 #, markdown-text, no-wrap
@@ -1447,57 +901,24 @@ msgid ""
 ": XMP files provide a redundant method of saving the changes you have made to an image, independently of darktable's database. XMP files can later be re-imported into a different database, preserving your changes to the image. It's strongly recommended that you leave this option activated so that you don't lose data if your database becomes corrupted. Backing up your raw file plus the accompanying XMP file will allow you to fully restore your work (default on).\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/preferences-settings/other-views.fr-fr.md
-#, no-wrap
-msgid "autres vues"
-msgstr ""
-
 #. type: Plain text
-#: content/preferences-settings/other-views.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les options suivantes contrôlent les fonctionnalités dans les vues [carte](../map/_index.md) et [diaporama](../slideshow/_index.md).\n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/other-views.fr-fr.md
-#, markdown-text, no-wrap
-msgid "carte/géolocalisation"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/other-views.fr-fr.md
+#: content/preferences-settings/storage.md
 #, markdown-text, no-wrap
 msgid ""
-"nombre maximum d'images affichées sur la carte\n"
-": Le nombre maximum d'images géolocalisées dessinées sur la carte. L'augmentation de ce nombre peut ralentir l'affichage de la carte. Nécessite un redémarrage en cas de modification (par défaut 100).\n"
+"store xmp tags in compressed format\n"
+": Entries in XMP tags can get rather large and may exceed the available space to store the history stack in some output files on export. This option allows binary XMP tags to be compressed in order to save space. Available options are “never”, “always”, and “only large entries” (default).\n"
 msgstr ""
 
 #. type: Plain text
-#: content/preferences-settings/other-views.fr-fr.md
+#: content/preferences-settings/storage.md
 #, markdown-text, no-wrap
 msgid ""
-"affichage plus clair de la localisation d'image\n"
-": Afficher une représentation plus lisible de la géolocalisation dans le module [informations de l'image](../module-reference/utility-modules/shared/image-information.md) (activé par défaut). \n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/other-views.fr-fr.md
-#, markdown-text, no-wrap
-msgid "diaporama"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/other-views.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"temporisation entre chaque image du diaporama\n"
-": Le nombre de secondes avant d'afficher l'image suivante (5 par défaut). \n"
+"look for updated xmp files on startup\n"
+": Scan all XMP files on startup and check if any have been updated in the meantime by some other software. If updated XMP files are found, a menu is opened for the user to choose which of the XMP files to reload (replacing darktable's database entries by the XMP file contents) and which of the XMP to overwrite from darktable's database. Activating this option also causes darktable to check for text sidecar files that have been added after import time – see [preferences > lighttable > overlay txt sidecar over zoomed images](./lighttable.md) (default off). \n"
 msgstr ""
 
 #. type: YAML Front Matter: title
 #: content/preferences-settings/processing.md
-#: content/preferences-settings/processing.fr-fr.md
 #, no-wrap
 msgid "processing"
 msgstr ""
@@ -1519,7 +940,6 @@ msgstr ""
 
 #. type: Plain text
 #: content/preferences-settings/processing.md
-#: content/preferences-settings/processing.fr-fr.md
 #, markdown-text, no-wrap
 msgid ""
 "pixel interpolator\n"
@@ -1604,103 +1024,16 @@ msgid ""
 ": Enable this to analyse images during import and tag them with the `darkroom|mode|monochrome` tag if they are found to be monochrome. The analysis is based on the preview image embedded within the imported file. This makes for a more convenient workflow when working with monochrome images, but it slows down the import, so this setting is disabled by default.\n"
 msgstr ""
 
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les options suivantes contrôlent le traitement des images.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"toujours utiliser LittleCMS 2 pour le profile couleur de sortie\n"
-": Si cette option est activée, darktable utilisera la bibliothèque système LittleCMS 2 pour appliquer le profil couleur de sortie au lieu de ses propres routines internes. Ceci est nettement plus lent que la valeur par défaut, mais peut donner des résultats plus précis dans certains cas.\n"
-": Si l'ICC donné est basé sur une LUT ou contient à la fois une LUT et une matrice, darktable utilisera LittleCMS 2 pour rendre les couleurs quelle que soit la valeur de ce paramètre de configuration (désactivé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"répertoire 3D lut racine\n"
-": Définir le répertoire racine (et les sous-répertoires) contenant les fichiers Lut utilisés par le module [_lut 3D_](../module-reference/processing-modules/lut-3D.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"appliquer l'adaptation chromatique par défaut\n"
-": Choisissez le module chargé d'effectuer les ajustements de balance des blancs (adaptation chromatique) par défaut. Sélectionnez \"originel\" (par défaut) pour effectuer une adaptation chromatique de base en utilisant uniquement le module [_balance des blancs_](../module-reference/processing-modules/white-balance.md). Sélectionnez \"moderne\" pour utiliser une combinaison des modules _balance des blancs_ et [_calibration des couleurs_](../module-reference/processing-modules/color-calibration.md) pour effectuer une adaptation chromatique moderne avec une science des couleurs améliorée. Ces paramètres sont appliqués par défaut aux nouveaux développements et n'auront aucun impact sur les anciens.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"flux de travail par défaut appliqué automatiquement\n"
-": Choisissez les modules et l'ordre des modules à appliquer par défaut aux nouvelles images :\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid "_relatif à la scène_ est le flux de travail basé sur des modules RVB linéaires. Sélectionner cette option activera automatiquement les modules [_filmique rvb_](../module-reference/processing-modules/filmic-rgb.md) et [_exposition_](../module-reference/processing-modules/exposure.md). L'ordre d'application des modules sera alors celui qui a été défini pour darktable à partir de la version 3.0. \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid "  Le module _exposition_ ajoutera automatiquement +0,5 IL à l'exposition pour que le gris moyen corresponde à celui de la majorité des appareils photo SLR. Cet ajout peut être remplacé par un préréglage appliqué automatiquement si cette valeur par défaut produit constamment des images sombres pour votre appareil. \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid "  Enfin, ce paramètre active automatiquement l'option «compenser exposition boîtier» dans le module _exposition_ pour ajuster la luminosité globale de manière appropriée quand la molette de compensation d'exposition du boîtier a été utilisée pour protéger les hautes lumières de l'image ou quand l'option \"Exposez à droite (ETTR)\" a été sélectionnée lors de la prise de vue pour utiliser de façon optimale la plage dynamique du capteur.\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid "_relatif à l'affichage_ (par défaut) est le flux de travail basé sur des modules Lab. C’est le flux de travail originel de darktable jusqu'à la version 2.6. Sélectionner cette option activera automatiquement le module [_courbe de base_](../module-reference/processing-modules/base-curve.md). L'ordre d'application des modules dans le pipeline graphique sera alors celui qui était utilisé par défaut jusqu'à la version 2.6.\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid "_aucun_ n'activera aucun module par défaut et l'ordre d'application des modules dans le pipeline graphique sera celui défini pour darktable à partir de la version 3.0 (relatif à la scène).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"applique le préréglage de la courbe de base pour le boîtier\n"
-": Applique la courbe de base spécifique au boîtier à la place de celle, générique à la marque, si elle est disponible. Cela ne doit être utilisé qu'en conjonction avec le flux de travail _relatif à l'affichage_ défini ci-dessus (désactivé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"applique automatiquement de la netteté\n"
-": Appliquer automatiquement le module netteté aux nouvelles images. Cette option n'est pas recommandée pour les boîtiers n'ayant pas de filtre passe-bas. (activé par défaut, nécessite un redémarrage si modifié).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/processing.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"détecter les miniatures monochromes\n"
-": Activez cette option pour analyser les images lors de l'importation et les étiqueter avec le mot-clé `chambre noire|mode|monochrome` si elles sont monochromes. L'analyse est basée sur l'aperçu intégré dans le fichier importé. Cela permet un flux de travail plus pratique lorsque vous travaillez avec des images monochromes, mais cela ralentit l'importation, ce paramètre est donc désactivé par défaut.\n"
-msgstr ""
-
 #. type: YAML Front Matter: title
 #: content/preferences-settings/miscellaneous.md
 #, no-wrap
 msgid "miscellaneous"
+msgstr ""
+
+#. type: Title #
+#: content/preferences-settings/miscellaneous.md
+#, markdown-text, no-wrap
+msgid "interface"
 msgstr ""
 
 #. type: Plain text
@@ -1725,6 +1058,14 @@ msgstr ""
 msgid ""
 "always show panels' scrollbars\n"
 ": Defines whether the panel scrollbars should be always visible or activated only depending on the panel content (default on). (needs a restart) \n"
+msgstr ""
+
+#. type: Plain text
+#: content/preferences-settings/miscellaneous.md
+#, markdown-text, no-wrap
+msgid ""
+"method to use for getting the display profile\n"
+": This option allows the user to force darktable to use a specific method to obtain the current display profile for [color management](../special-topics/color-management/_index.md). In the default setting “all”, darktable will choose to query the X display server's xatom or the colord system service. You can set this option to “xatom” or “colord” to enforce a specific method if the two methods give different results. You can run the [darktable-cmstest](../special-topics/program-invocation/darktable-cmstest.md) binary to examine your color management subsystem.\n"
 msgstr ""
 
 #. type: Title #
@@ -1811,6 +1152,22 @@ msgstr ""
 msgid ""
 "do not show april 1st game\n"
 ": Don't show a game when opening darktable on April 1st (default on). \n"
+msgstr ""
+
+#. type: Plain text
+#: content/preferences-settings/miscellaneous.md
+#, markdown-text, no-wrap
+msgid ""
+"password storage backend to use\n"
+": The backend to use for password storage. Options: “auto” (default), “none”, “libsecret”, “kwallet”. \n"
+msgstr ""
+
+#. type: Plain text
+#: content/preferences-settings/miscellaneous.md
+#, markdown-text, no-wrap
+msgid ""
+"executable for playing audio files\n"
+": Define an external program which is used in the lighttable view to play audio files that some cameras record to keep notes for images (default “aplay”). \n"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -2201,334 +1558,6 @@ msgstr ""
 #: content/preferences-settings/shortcuts.md
 #, markdown-text, no-wrap
 msgid "Some of the above actions may not be available for all utility modules.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/preferences-settings/security.fr-fr.md
-#, no-wrap
-msgid "sécurité"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les options suivantes permettent à l'utilisateur d'activer les avertissements lorsque certaines activités sont entreprises.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"demander avant d'enlever des images de la base de données\n"
-": Toujours demander à l'utilisateur avant de supprimer une image de la base de données (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"demander avant de supprimer des images du disque\n"
-": Toujours demander à l'utilisateur avant de supprimer des images du disque (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"demander avant de supprimer l'historique\n"
-": Toujours demander à l'utilisateur avant de supprimer l'historique d'une image 'activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"déplace les fichiers vers la poubelle lors de l'effacement\n"
-": Au lieu de supprimer physiquement les images du disque, les placer dans la corbeille du système (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"demander avant de déplacer des images d'un dossier pellicule\n"
-": Toujours demander à l'utilisateur avant de déplacer un fichier image (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"demander avant de copier des images dans un nouveau dossier pellicule\n"
-": Toujours demander à l'utilisateur avant de copier un fichier image (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"demander avant de supprimer un mot-clé\n"
-": Toujours demander à l'utilisateur avant de supprimer un mot-clé d'une image (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"demander avant de supprimer un style\n"
-": Toujours demander à l'utilisateur avant de supprimer un style (activé par défaut). \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/security.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"demander avant de supprimer un préréglage\n"
-": Toujours demander à l'utilisateur avant de supprimer un préréglage (activé par défaut). \n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/preferences-settings/lua-options.fr-fr.md
-#, no-wrap
-msgid "options lua"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/lua-options.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"ne plus montrer l'installeur de scripts lua\n"
-": Cochez cette case pour masquer dans la table lumineuse le [programme d'installation des scripts lua](../module-reference/utility-modules/lighttable/lua-scripts-installer.md) si aucun script lua n'est installé.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/preferences-settings/darkroom.fr-fr.md
-#: content/module-reference/utility-modules/darkroom/_index.fr-fr.md
-#, no-wrap
-msgid "chambre noire"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les options suivantes contrôlent les fonctionnalités de la vue [chambre noire](../darkroom/_index.md) et des modules associés.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"lissage du pinceau\n"
-": Définit le niveau de lissage des traits de pinceau du [masque dessiné](../darkroom/masking-and-blending/masks/drawn.md). Un lissage plus fort entraîne moins de nœuds et une édition plus facile au détriment d'une précision moindre.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"format de la ligne d'information sur l'image\n"
-": Définit les informations à afficher dans [ligne d'information de l'image](../module-reference/utility-modules/darkroom/image-info-line.md). Vous pouvez utiliser toute variable définie dans la section [substitution de variable](../special-topics/variables.md) ainsi que `$(NL)` pour une nouvelle ligne.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"bordure autour de l'image dans la vue chambre noire\n"
-": Traiter l'image centrale en mode chambre noire avec une bordure du nombre de pixels donné (par défaut 20). \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"affiche les barres de défilement de la zone centrale\n"
-": Définit si les barres de défilement doivent être affichées dans la vue centrale de la chambre noire (désactivé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"méthode de dématriçage pour la vue chambre noire\n"
-": Choisir la méthode pour dématricer les images de la vue chambre noire qui ne sont pas affichées à l'échelle de zoom 1:1\n"
-": - _toujours bilinéaire (rapide)_ est la plus rapide, mais donne des résultats peu netste\n"
-": - _au mieux PPG (raisonnable)_ utilise PPG plus les modes d'interpolation\n"
-": - _full (possibly slow)_ utilise exactement les paramètres définis pour l'exportation en taille réelle\n"
-": (par défaut \"_au mieux PPG (raisonnable)_\"). \n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"réduire la résolution de la pré-visualisation\n"
-": Réduire la résolution de l'image de [prévisualisation dans la navigation](../module-reference/utility-modules/darkroom/navigation.md) (choisir la taille entre \"original\", \"1/2\", \"1/3\" ou \"1/4\"). Cela peut améliorer la vitesse du rendu, mais attention car cela peut également gêner la sélection précise des couleurs et le masquage (\"original\" par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"affichage des boutons sur la droite des modules de développement\n"
-": Choisissez d'afficher les trois boutons (instances multiples, réinitialiser, préréglages) sur le côté droit [de l'entête](../darkroom/interacting-with-modules/module-header.md) des modules de traitement. Ces boutons apparaîtront toujours lorsque la souris survolera le module. D'autres fois, ils seront affichés ou masqués selon le choix fait entre :\n"
-": - _toujours_ : toujours afficher tous les boutons,\n"
-": - _actif_ : n'afficher les boutons que lorsque la souris est au-dessus du module,\n"
-": - _atténué_ : les boutons sont grisés lorsque la souris est éloignée,\n"
-": - _auto_ : masquer les boutons lorsque le panneau est étroit,\n"
-": - _estompé_ : atténuer tous les boutons quand le panneau est étroit,\n"
-": - _ajusté_ : masquer tous les boutons si le nom du module n'a pas assez de place,\n"
-": - _doux_ : atténuer tous les boutons d'un module simultanément,\n"
-": - _glisser_ : cacher progressivement les boutons lorsque nécessaire.\n"
-": (par défault _toujours_).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"cacher les préréglages internes des modules de développement\n"
-": Si cette option est activée, seuls les préréglages définis par l'utilisateur seront affichés dans le menu des préréglages pour le traitement des modules -- les préréglages intégrés seront masqués (désactivée par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"déplier un seul module de développement à la fois\n"
-": Contrôle comment sont dépliés les [modules de développement](../module-reference/processing-modules) dans la chambre noire. Si cette option est activée, développer un module en cliquant dessus replie tout module actuellement déplié. Si vous souhaitez déplier un module sans replier les autres, vous pouvez le faire avec Maj+clic. La désactivation de cette option inverse la signification de Clic et Maj+clic (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"replier les modules du groupe actuel seulement\n"
-": Lorsque vous choisissez de déplier un seul module de développement à la fois (en utilisant la logique définie dans le paramètre précédent), ne replie que les autres modules apparaissant dans le groupe visible actuel. Désactivez cette option pour vous assurer que les modules des groupes non visibles sont également repliés (activé par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"déplier le module quand il est activé, et le replier quand il est désactivé\n"
-": Sélectionnez cette option pour que darktable déplie ou replie automatiquement [les modules de développemnt](../module-reference/processing-modules) selon qu'ils sont activés ou désactivés (désactivée par défaut)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"positionne les modules de développement lorsqu'ils sont dépliés/repliés\n"
-": Lorsque cette option est activée darktable essaiera de positionner un [module de développement](../module-reference/processing-modules) pour qu'il soit entièrement visible (activée par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"couleurs du curseur de balance des blancs\n"
-": Contrôle l'apparence des curseurs dans le module [balance des blancs](../module-reference/processing-modules/white-balance.md).\n"
-": - _sans couleur_ : l'arrière-plan des curseurs n'est pas du tout coloré,\n"
-": - _couleur de l'illuminant_ : les couleurs du curseur représentent la couleur de la source lumineuse, c'est-à-dire la couleur que vous ajustez pour obtenir un blanc neutre,\n"
-": - _effet d'émulation_ : les couleurs du curseur représentent l'effet que l'ajustement aurait eu sur la scène. C'est ainsi que la plupart des autres processeurs de fichiers RAW affichent les couleurs des curseurs de température/teinte.\n"
-": (_sans couleur_ par défaut)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/darkroom.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"disposition des contrôles du module balance couleur\n"
-": Contrôle l'apparence des sections ombres/tons moyens/hautes lumières dans le module [balance couleur](../module-reference/processing-modules/color-balance.md).\n"
-": - _liste_ : tous les curseurs sont affichés dans une longue liste (avec en-têtes),\n"
-": - _onglets_ : utiliser les onglets pour basculer entre les blocs de curseurs,\n"
-": - _colonnes_ : les blocs de curseurs sont affichés les uns à côté des autres (dans des colonnes étroites).\n"
-": (_liste_ par défaut)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les préférences de cet onglet contrôlent l'aspect général de darktable.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"langue pour l'interface\n"
-": Définissez la langue de l'interface utilisateur. La valeur par défaut du système est marquée d'un * (nécessite un redémarrage)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"thème\n"
-": Définissez le thème de l'interface utilisateur. Indépendamment de toute considération esthétique, la couleur d'interface recommandée pour l'évaluation des couleurs est le gris moyen. En effet, la perception visuelle est affectée par la luminosité ambiante, et une faible luminosité de l'interface provoque toutes sortes d'illusions. Utiliser une interface sombre pour retoucher les photos peut donc conduire à des retouches excessives (abus de contraste et de saturation) et à une photo trop sombre une fois imprimée. Il est donc fortement recommandé d'utiliser l'un des thèmes \"gris\" pour les travaux de retouche car ils sont conçus pour que l'interface utilisateur se rapproche du gris moyen (\"darktable\" par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"favoriser la performance à la qualité\n"
-": Activez cette option pour afficher les miniatures et les aperçus avec une qualité inférieure. Cela augmente la vitesse de rendu d'un facteur 4, et est utile lorsque vous travaillez sur des ordinateurs plus lents (désactivé par défaut). Cela améliore également les performances du rendu d'image du diaporama.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"utiliser la taille de la police système\n"
-": Sélectionnez cette option pour utiliser la taille de police définie par votre système. Si elle n'est pas cochée, vous pouvez saisir une taille de police personnalisée dans la case ci-dessous (activée par défaut).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"taille de la police en points\n"
-": Si l'option «utiliser la taille de la police système» est désactivée, entrez une taille de police (en points) que darktable doit utiliser. La taille de la police sera modifiée immédiatement.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"contrôles et texte DPI\n"
-": Ajustez la résolution globale de l'interface graphique pour redimensionner les contrôles, les boutons, les étiquettes, etc. Augmentez pour une interface graphique agrandie, diminuez pour ajuster plus de contenu dans la fenêtre. Défini sur -1 pour utiliser la résolution globale définie par le système. La valeur par défaut est 96 PPP sur la plupart des systèmes. (nécessite un redémarrage)\n"
-msgstr ""
-
-#. type: Title #
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid "modifier le thème via les ajustements CSS ci-dessous"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid "En plus de sélectionner un thème pré-construit vous pouvez également appliquer vos propres personnalisations CSS pour modifier l'aspect général de darktable. Une zone de saisie de texte est prévue à cet effet.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Lorsque vous avez terminé de saisir vos modifications CSS, cliquez sur le bouton «sauvegarder et appliquer». Cela enregistrera votre CSS dans un fichier (`$HOME/.config/darktable/user.css`) et l'appliquera immédiatement à la session actuelle de darktable.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Si vos modifications posent des problèmes, vous pouvez décocher la case \"modifier le thème via les ajustements CSS ci-dessous\". Cela restaurera immédiatement le thème de base, mais laissera vos réglages dans l'éditeur afin que vous puissiez rééditer et réessayer. Appuyez simplement sur \"sauvegarder et appliquer\" à nouveau lorsque vous êtes prêt à réessayer. Cela revérifiera automatiquement la case à cocher \"modifier le thème via les ajustements CSS ci-dessous\" et appliquera le nouveau CSS.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/preferences-settings/general.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Si vous rencontrez des problèmes avec darktable, veuillez réessayer avec cette option décochée pour être certain qu'ils n'ont été causés par l'une de vos modifications.\n"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -7055,18 +6084,6 @@ msgid ""
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: content/overview/_index.fr-fr.md
-#, no-wrap
-msgid "Présentation"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/workflow/_index.fr-fr.md
-#, no-wrap
-msgid "flux de travail de base"
-msgstr ""
-
-#. type: YAML Front Matter: title
 #: content/overview/workflow/edit-overview.md
 #, no-wrap
 msgid "editing an image: workflow overview"
@@ -7086,7 +6103,6 @@ msgstr ""
 
 #. type: Plain text
 #: content/overview/workflow/edit-overview.md
-#: content/overview/workflow/edit-overview.fr-fr.md
 #, markdown-text, no-wrap
 msgid "Each change you make to the image in the darkroom is turned into a history stack item. The history is stored in a database and in an XMP sidecar file for that image. All changes are stored automatically when you switch images or go from one darktable view to another. You can safely leave darkroom mode or quit darktable at any time and come back later to continue your work. For this reason darktable does not need a “save” button and it does not have one.\n"
 msgstr ""
@@ -7117,7 +6133,6 @@ msgstr ""
 
 #. type: Plain text
 #: content/overview/workflow/edit-overview.md
-#: content/overview/workflow/edit-overview.fr-fr.md
 #, markdown-text, no-wrap
 msgid "![edit-overview](./edit-overview/edit-overview.png#w100)\n"
 msgstr ""
@@ -7218,769 +6233,6 @@ msgstr ""
 #: content/overview/workflow/_index.md
 #, no-wrap
 msgid "basic workflow"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/workflow/import-rate-tag.fr-fr.md
-#, no-wrap
-msgid "importation, évaluation et labels de couleur"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/import-rate-tag.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Quand vous souhaitez développer de nouvelles images dans darktable, la première étape est de les [importer](../../module-reference/utility-modules/lighttable/import.md). Ceci créera des entrées pour les nouvelles images importées dans la base de données de darktable. Il pourra ainsi suivre les modifications que vous leurs apporterez. Il existe deux méthodes principales pour importer des images :\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/import-rate-tag.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"importer des images depuis le système de fichiers\n"
-": Vous pouvez importer depuis le système de fichier une seule image ou un dossier contenant des images (optionnellement importer les dossiers récursivement). Quand il importe des images, darktable lit les métadonnées qu'elles contiennent et tous les [fichiers liés xmp](../../overview/sidecar-files/_index.md) qui, éventuellement, les accompagnent. Si une image a déjà été importée, elle sera ignorée (bien que toute mise à jour du fichier lié sera chargée). L'emplacement de chaque image est enregistré dans la base de données, mais darktable ne copiera ni ne déplacera les fichiers. Si vous souhaitez un programme qui copie des fichiers dans un dossier spécifique, vous pouvez utiliser un programme comme [rapid photo downloader](https://damonlynch.net/rapid/) pour faire cela.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/import-rate-tag.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"importer des images depuis un boîtier\n"
-": Pour importer des images depuis un boîtier, connectez tout d'abord votre boîtier à votre système avec un câble USB. Si votre système essaie de monter automatiquement les fichiers du boîtier, vous devez interrompre cette opération, sinon le boîtier ne sera pas accessible depuis darktable. Si votre boîtier n'apparaît pas dans la liste du module importation, presser le bouton \"chercher un appareil\". Une fois votre appareil photo détecté, le module d'importation devrait offrir la possibilité d'_importer_ des images ou de _capturer_ votre appareil photo pendant la prise de vue. Contrairement à l'importation d'images à partir du système de fichiers, darktable copiera physiquement les fichiers importés du boîtier dans un répertoire spécifié en suivant le modèle de dénomination de fichier défini dans [préférences > importer](../../preferences-settings/import.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/import-rate-tag.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Une fois les images importées, elles apparaîtront dans la vue table lumineuse. Par défaut, les images recevront toutes une note d'une étoile.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/import-rate-tag.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Il existe de nombreuses façons de gérer un ensemble de photos récemment importées, par exemple en leur attribuant des labels et en ajustant leurs évaluations. Veuillez vous référer à la section [lighttable](../../lighttable/_index.md) de ce guide pour une liste exhaustive des fonctionnalités de _gestion des acquisitions numériques_.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/import-rate-tag.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"Un exemple de flux de travail pourrait être :\n"
-"1. Réglez la vue table lumineuse pour afficher les photos avec exactement une note de 1 étoile.\n"
-"2. Effectuez une première visualisation rapide de vos photos. Si des photos sont très floues ou inutiles, rejetez-les avec la touche R ou attribuez-leur une note de 0 étoile. Si une photo semble raisonnable et doit passer à la phase suivante, appuyez sur 2 pour lui attribuer une note de 2 étoiles. Toutes les photos qui ne sont plus classées 1 étoile disparaîtront automatiquement de la vue. Continuez de cette manière jusqu'à ce que vous ayez terminé le premier niveau d'évaluation.\n"
-"3. Réglez maintenant la vue de la table lumineuse pour n'afficher que les photos avec exactement une note de 2 étoiles. Parcourez ces photos plus attentivement et décidez si vous souhaitez les promouvoir avec une note de 3 étoiles, ou leur redonner une note de 1 étoile ou les rejeter.\n"
-"4. Vous pouvez maintenant passer du temps à effectuer un développement rapide de vos photos 3 étoiles, pour voir si elles valent la peine d'être conservées. Si vous êtes satisfait des résultats pour une photo, vous pouvez créer un label pour elle et la promouvoir avec une note de 4 ou même 5 étoiles.\n"
-"5. Parcourez vos photos 4 et 5 étoiles, effectuez les derniers développements. Imprimez-les, publiez-les sur le site de votre portfolio, etc. et appréciez les nombreuses acclamations critiques que vous recevrez !\n"
-"6. Si votre espace disque est limité, vous envisagerez peut-être de supprimer définitivement vos images rejetées ou notées 0 étoiles. Sélectionnez ces images dans la vue table lumineuse et utilisez l'option «corbeille» dans l'onglet [images sélectionnées](../../module-reference/utility-modules/lighttable/selected-image.md). Vous ne devriez probablement le faire que pour des photos dont vous êtes certain de ne plus jamais avoir besoin (mal mises au point, significativement surexposées, etc.).\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, no-wrap
-msgid "développer une image : flux de travail relatif à la scène"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Le flux de travail _relatif à la scène_ met l'accent sur l'exécution du traitement d'image dans la partie linéaire relative à la scène du pipeline graphique. Cela permet de réduire les artefacts et les décalages de couleur qui peuvent résulter du traitement des valeurs non linéaires des pixels. En découplant le traitement d'image des caractéristiques d'un écran spécifique, il sera plus facile d'adapter ultérieurement votre travail à de nouveaux supports d'affichage, tels que les affichages à plage dynamique élevée.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Ceci étant la méthode recommandée pour traiter les images dans les versions 3.0 et supérieures, cette section fournira un aperçu beaucoup plus complet que la section suivante sur le flux de travail _relatif à l'affichage_.\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "étapes basiques"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Le traitement de base d'une image dans le flux de travail relatif à la scène demande, au minimum, de prendre en compte les étapes suivantes pour rendre à l'écran une image correcte :\n"
-msgstr ""
-
-#. type: Bullet: '1. '
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Prenez une photo\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "   Utilisez votre appareil photo pour prendre une photo correctement exposée. Normalement, vous pouvez compter sur les fonctions de mesure et d'exposition automatiques du boîtier. Cependant, pour certaines scènes, vous devrez peut-être utiliser la molette de compensation d'exposition du boîtier ou les réglages manuels pour obtenir une exposition optimale. En général, vous souhaitez rendre l'exposition de l'appareil photo aussi lumineuse que possible sans tronquer les hautes lumières. Ceci est connu sous le nom d '\"exposition à droite\" (ETTR) et vous permet de tirer le meilleur parti de la plage dynamique du capteur. De nombreux appareils photo ont des fonctionnalités telles que \"zébrures\" ou \"clignotements\" pour vous avertir lorsque vous êtes en danger d'écrêtage.\n"
-msgstr ""
-
-#. type: Bullet: '2. '
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Ajustez les tons-moyens en utilisant le module [_exposition_](../../module-reference/processing-modules/exposure.md)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "   Utilisez le curseur exposition pour régler les tons-moyens de l'image à un niveau de luminosité approprié. À ce stade, ne vous inquiétez pas des hautes lumières et des ombres - elles seront traitées plus tard.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "   Le module _exposition_ est activé par défaut. Il inclura une augmentation d'exposition initiale de +0,5&nbsp;IL pour imiter le traitement standard de la plupart des boîtiers fournissant des JPEG intégrés. Les systèmes de mesure des boîtiers varient et certains modèles peuvent nécessiter une augmentation d'exposition légèrement plus importante (par exemple +0,8&nbsp;IL à +1,5&nbsp;IL), auquel cas vous pouvez créer un  [préréglage](../../darkroom/interacting-with-modules/presets.md) automatique adéquat. Le module _exposition_ détectera si la molette de compensation d'exposition du boîtier a été utilisée (voir les remarques ci-dessus sur l'ETTR) et réajustera l'exposition en conséquence.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "   Vous _pouvez_ modifier le niveau de noir dans le module _exposition_ pour fournir plus de contraste, mais vous devez faire très attention en faisant cela car vous pouvez vous retrouver avec des valeurs RVB négatives, ce qui peut entraîner un dysfonctionnement du module _filmique rvb_.\n"
-msgstr ""
-
-#. type: Bullet: '3. '
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Ajustez la [_balance des blancs_](../../module-reference/processing-modules/white-balance.md)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "   Il est important que la balance des blancs soit correctement réglée pour fournir une base solide au traitement ultérieur. Le boîtier stockera normalement dans les métadonnées du fichier RAW, le réglage de la balance des blancs sélectionnée et darktable l'utilisera comme point de départ. Pour obtenir une balance des blancs plus précise, vous pouvez soit utiliser la pipette à couleurs pour sélectionner dans l'image un ton de gris neutre, soit, le cas échéant, passer à un autre préréglage de la balance des blancs de votre boîtier. Des ajustements fins de la balance des blancs globale sont effectués à l'aide du curseur _température_ et, moins souvent, du curseur _teinte_. Déplacer le curseur _température_ vers la gauche rend l'image plus froide (plus bleue), et le déplacer vers la droite la rend plus chaude (plus orange).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "   Le module _balance des blancs_ ne peut effectuer que des réglages _globaux_ de la balance des blancs de l'image. Le module [_balance couleur_](../../module-reference/processing-modules/color-balance.md), entre autres, vous donne plus de contrôle dans les cas où une scène a été éclairée par plusieurs sources de lumière avec différentes températures de couleur.\n"
-msgstr ""
-
-#. type: Bullet: '4. '
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Ajustez le point blanc et le point noir en utilisant le module [_filmique rvb_](../../module-reference/processing-modules/filmic-rgb.md)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "   Ce module effectue un mappage avec compression des tonalités de la plage dynamique élevée de l'image capturée vers la plage dynamique moins élevée du support d'affichage. Le niveau de ton gris moyen a déjà été réglé (ci-dessus) avec le module _exposition_. Filmique proposera, sur son onglet _scène_, un point blanc et un point noir appropriés pour l'image - vous devrez peut-être les ajuster pour une scène particulière. Sur l'onglet _look_, vous pouvez ajuster les paramètres de contraste et de saturation des tons moyens si nécessaire.\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "autres modules recommandés"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "En plus des modules de base décrits ci-dessus, vous pouvez envisager d'utiliser les modules suivants pour rendre votre image encore plus jolie. Ces modules sont connus pour fonctionner correctement avec le flux de travail relatif à la scène :\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_recadrer et pivoter_](../../module-reference/processing-modules/crop-rotate.md) / [_correction de perspective_](../../module-reference/processing-modules/perspective-correction.md)\n"
-": Très souvent, vous souhaitez afficher uniquement une partie de la scène capturée dans votre image, par exemple pour enlever des détails dérangeants près de son pourtour. Dans d'autres cas, l'horizon de l'image peut nécessiter une mise à niveau ou il peut y avoir des distorsions de perspective. Tout cela peut être corrigé avec un contrôle manuel complet dans le module _recadrer et pivoter_. Pour une correction entièrement automatique des distorsions de perspective, vous pouvez également visiter le module _correction de perspective_.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_retouche_](../../module-reference/processing-modules/retouch.md) / [_correction des taches_](../../module-reference/processing-modules/spot-removal.md) / [_pixels chauds_](../../module-reference/processing-modules/hot-pixels.md)\n"
-": Parfois, vous devrez supprimer les taches causées par les poussières du capteur. Le nouveau module _retouche_ et l'ancien module _correction des taches_ sont faits pour cela et peuvent également corriger d'autres éléments perturbants comme les imperfections cutanées. Si votre appareil photo a des pixels défectueux ou a tendance à produire des pixels chauds à des valeurs ISO élevées ou pour des temps d'exposition plus longs, jetez un œil au module _pixels chauds_ pour une correction automatique.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_balance couleur_](../../module-reference/processing-modules/color-balance.md)\n"
-": Il s'agit d'un module polyvalent qui peut être utilisé pour ajuster davantage le contraste et la saturation d'une image. Il peut également être utilisé pour effectuer un étalonnage des couleurs (par exemple, émuler l'étalonnage \"orange et bleu sarcelle\" (Orange&Teal) utilisé dans les films hollywoodiens, supprimer les rougeurs dans les tons de peau, régler une balance des couleurs inégale dans les ombres/demi-tons/hautes lumières, etc.). Le module [_zone de couleurs_](../../module-reference/processing-modules/color-zones.md) peut également être utile dans les cas où vous ne pouvez pas obtenir l'effet souhaité en utilisant le module _balance couleur_.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_égaliseur de ton_](../../module-reference/processing-modules/tone-equalizer.md)\n"
-": Utilisez ce module pour effectuer des opérations «éclaircir et assombrir» (dodging and burning) et récupérer des détails dans les ombres et les hautes lumières. Ce module génère un masque pour faire la moyenne de la luminance dans différentes parties de l'image, et l'égaliseur vous permet d'augmenter et de diminuer sélectivement les niveaux de luminance à l'aide de ce masque. Il est recommandé de vérifier d'abord que le masque est correctement configuré, puis vous pouvez utiliser les curseurs ou la courbe spline pour ajuster les différents niveaux de luminosité. Vous pouvez également placer le curseur de la souris sur différentes parties de l'image pour voir le niveau IL du masque à ce point, puis utiliser la molette de la souris pour ajuster la luminosité de ce niveau IL en conséquence.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_contraste local_](../../module-reference/processing-modules/local-contrast.md)\n"
-": Ce module peut mettre l'accent sur les détails et améliorer la clarté, et constitue un bon moyen d'améliorer la netteté générale d'une image. Il est recommandé d'utiliser ce module en mode _filtre laplacien local_.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Une technique plus polyvalente mais aussi plus complexe consiste à utiliser le module [_contrast equalizer_](../../module-reference/processing-modules/contrast-equalizer.md) . Il est très utile pour faire des ajustements où la dimension spatiale joue un rôle. Il a un certain nombre de préréglages qui peuvent être utiles comme point de départ pour comprendre ce module.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#: content/overview/workflow/edit-scene-referred.md
-#, markdown-text, no-wrap
-msgid ""
-"[_denoise (profiled)_](../../module-reference/processing-modules/denoise-profiled.md)\n"
-": The _denoise (profiled)_ module is usually your best option for reducing noise in an image. This module offers an almost “single-click” solution to remove noise. From a user perspective the effect only depends on camera type and ISO value, both derived from Exif data. All other settings are taken from a database of noise profiles that the darktable team has collected -- now covering well above 300 popular camera models. The simplest way to use this module is _non-local means (auto)_ mode. The wavelet feature of this module is also quite effective against color noise. It is recommended that you use this module at 100% zoom so that you can accurately see the effects of your changes.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": D'autres modules qui permettent le débruitage d'image incluent [_réduction du bruit RAW_](../../module-reference/processing-modules/raw-denoise.mf), [_flou de surface_](../../module-reference/processing-modules/surface-blur.md), [_réduction du bruit photo astro_](../../module-reference/processing-modules/astrophoto-denoise.md), et le module [_égaliseur de contraste_](../../module-reference/processing-modules/contrast-equalizer.md), qui est basé sur les ondelettes. Si votre boîtier n'est pas encore pris en charge par le module _réduction du bruit (profil)_, alors le module _réduction du bruit photo astro_ est probablement l'alternative la plus pratique, car elle vous permet de traiter séparément le bruit de couleur et de luminance.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_suppression de la brume_](../../module-reference/processing-modules/haze-removal.md)\n"
-": Ce module fait exactement ce que son nom indique -- il élimine la brume atmosphérique.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_calibration des couleurs_](../../module-reference/processing-modules/color-calibration.md)\n"
-": Ce module propose une gamme de préréglages pour créer des images noir et blanc imitant un film classique. Il peut également être utilisé pour modifier vos matrices de profils de couleurs, par exemple, pour résoudre les problèmes de gamut.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_correction des objectifs_](../../module-reference/processing-modules/lens-correction.md)\n"
-": Si votre combinaison boîtier/objectif est prise en charge, utilisez ce module pour corriger les distorsions d'objectif standard, lorsque les corrections n'ont pas déjà été effectuées par le boîtier. Les modules [_recadrer et pivoter_](../../module-reference/processing-modules/crop-rotate.md) et [_correction de perspective_](../../module-reference/processing-modules/perspective-correction.md) peuvent également être utilisés pour simuler les effets d'un objectif à bascule et décentrement.\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "modules à utiliser avec précaution"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Il y a certains modules pour lesquels il n'existe pas encore d'alternative bien adaptée au flux de travail relatif à la scène. Si nécessaire, ces modules doivent être utilisés avec parcimonie et prudence.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_vibrance_](../../module-reference/processing-modules/vibrance.md)\n"
-": A tendance à assombrir les couleurs. Pour plus de contrôle, pensez à utiliser le module [_zones de couleurs_](../../module-reference/processing-modules/color-zones.md) avec un masque paramétrique de saturation.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_zones de couleurs_](../../module-reference/processing-modules/color-zones.md)\n"
-": Les transitions peuvent ne pas être gracieuses. Une alternative peut être d'utiliser le module [_balance couleur_](../../module-reference/processing-modules/color-balance.md) avec un masque paramétrique.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_vignetage_](../../module-reference/processing-modules/vignetting.md)\n"
-": Ce module peut produire des résultats d'apparence non naturelle avec une décroissance trop brutale. Vous feriez peut-être mieux d'utiliser le module [_exposition_](../../module-reference/processing-modules/exposure.md) avec un masque elliptique ayant une grande zone de transition, et peut-être en activant en plus le module [_balance couleur_](../../module-reference/processing-modules/color-balance.md) avec le même masque pour réduire la saturation sur les bords.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "**Remarque :** En utilisant les [modes de fusion](../../darkroom/masking-and-blending/blend-modes.md) sur n'importe quel module, vous devez savoir que de nombreux modes de fusion sont optimisés pour l'espace relatif à l'affichage et supposent une valeur de gris moyen de 50%. Pour l'espace linéaire relatif à la scène, respectez les modes de fusion basés sur des opérations arithmétiques (addition, multiplication, division, soustraction, moyenne), sur des comparaisons maximum/minimum (écran) ou sur des séparations de canaux (teinte, couleur, chroma, etc.).\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "autres modules à effets artistiques"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Il existe également un certain nombre de modules d'effets artistiques disponibles dans darktable. Pour en nommer quelques uns :\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Utilisez le module [_filigrane_](../../module-reference/processing-modules/watermark.md) pour ajouter un filigrane à votre image.\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Utilisez le module [_grain_](../../module-reference/processing-modules/grain.md) pour simuler le bruit typique des photos analogiques.\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Utilisez le module [_mappage des couleurs_](../../module-reference/processing-modules/color-mapping.md) pour transférer l'apparence d'une image couleur sur une autre.\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Utilisez le module [_faible lumière_](../../module-reference/processing-modules/lowlight-vision.md) pour simuler la vision de nuit humaine en rapprochant de la réalité les images en basse lumière.\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Utilisez le module [_filtre dégradé_](../../module-reference/processing-modules/graduated-density.md) pour ajouter un dégradé neutre ou coloré à votre image pour corriger l'exposition et les couleurs.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Veuillez consulter [la référence des modules de traitement](../../module-reference/processing-modules/_index.md) pour une liste des modules disponibles.\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "modules à éviter"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Il existe un certain nombre de modules qui ne sont plus recommandés pour une utilisation dans un flux de travail relatif à la scène. Cela ne signifie pas qu'ils ne peuvent pas être utilisés, mais ils peuvent produire des effets indésirables lorsque leurs curseurs sont poussés trop loin, et il existe de meilleures alternatives. Dans chaque cas, le module alternatif préférable est répertorié avec une brève explication.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_mappage local des tonalités (déprécié)_](../../module-reference/processing-modules/tone-mapping.md)\n"
-": _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Ce module applique un flou bilatéral sur un mappage non linéaire (log) qui peut provoquer des halos et des franges. C'est un problème courant pour les modules exécutant des flous et des occlusions qui opèrent sur un codage non linéaire.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_mappage global des tonalités (déprécié)_](../../module-reference/processing-modules/global-tonemap.md)\n"
-": _préférez [filmique rvb](../../module-reference/processing-modules/filmic-rgb.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Ce module tente de traiter les images HDR en utilisant l'espace colorimétrique Lab, qui n'est pas bien adapté aux grandes plages dynamiques. Le module _filmique rvb_ fonctionne dans un espace linéaire et peut facilement traiter une large plage de valeurs d'entrée provenant de la scène et les adapter aux plages dynamiques moins grandes exigées par les dispositifs d'affichage et d'impression.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_ombres et hautes lumières_](../../module-reference/processing-modules/shadows-and-highlights.md)\n"
-": _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Ce module utilise des flous dans l'espace colorimétrique Lab, ce qui entraîne des problèmes tels que des halos, un contraste local élevé dans les hautes lumières et des décalages de teinte vers le bleu dans les ombres.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_filtre passe-bas_](../../module-reference/processing-modules/lowpass.md)\n"
-": _préférez [égaliseur de contraste](../../module-reference/processing-modules/contrast-equalizer.md) ou [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Un autre module faisant des flous dans l'espace Lab. Préférez l'_égaliseur de contraste_ pour le flou, ou l'_égaliseur de ton_ si la compression de la plage dynamique locale est nécessaire.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_filtre passe-haut_](../../module-reference/processing-modules/highpass.md)\n"
-": _préférez [égaliseur de contraste](../../module-reference/processing-modules/contrast-equalizer.md) ou [contraste local](../../module-reference/processing-modules/local-contrast.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Ce module utilise un flou qu'il réalise dans l'espace colorimétrique Lab. Il en résulte les mêmes problèmes qu'avec le module [_filtre passe-bas_](../../module-reference/processing-modules/lowpass.md). Utilisez _égaliseur de contraste_ pour une netteté fine, ou _contraste local_ pour une netteté générale.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_renforcer la netteté_](../../module-reference/processing-modules/sharpen.md)\n"
-": _préférez [égaliseur de contraste](../../module-reference/processing-modules/contrast-equalizer.md) ou [contraste local](../../module-reference/processing-modules/local-contrast.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": L'algorithme USM (UnSharp Mask) utilisé dans le module _renforcer la netteté_ souffre des mêmes problèmes que le module _filtre passe-haut_, et peut facilement provoquer des artefacts. Utilisez les préréglages fournis par le module _égaliseur de contraste_ pour atténuer le flou, ou _contraste local_ pour une netteté générale.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_monochrome_](../../module-reference/processing-modules/monochrome.md)\n"
-": _préférez [calibration des couleurs](../../module-reference/processing-modules/color-calibration.md) (ou [balance couleur](../../module-reference/processing-modules/color-balance.md))_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Le module _monochrome_ peut être assez compliqué à utiliser. Les préréglages du module _calibration des couleurs_ émulent mieux ce qui se passe physiquement avec un film. Vous pouvez aussi définir à 0 le curseur _saturation en sortie_ du module _balance couleur_ pour une approche plus perceptuelle.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_lumière d'appoint (déprécié)_](../../module-reference/processing-modules/fill-light.md)\n"
-": _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md) (ou [exposition](../../module-reference/processing-modules/exposure.md))_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Utilisé pour ajouter de la lumière à une scène, ce module utilise à nouveau des flous dans l'espace Lab. L'_égaliseur de ton_ lui fonctionne dans un espace linéaire. Vous pouvez également obtenir un effet similaire en utilisant le module _exposition_ avec un [masque dessiné](../../darkroom/masking-and-blending/masks/drawn.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_lumière d'arrière plan_](../../module-reference/processing-modules/bloom.md)\n"
-": _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md) (ou [exposure](../../module-reference/processing-modules/exposure.md))_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Encore une fois, ce module utilise des flous dans l'espace Lab. Utilisez soit le module _égaliseur de ton_, soit le module _exposition_ avec un [masque paramétrique](../../darkroom/masking-and-blending/masks/parametric.md). Ces deux modules fonctionnent avec des encodages linéaires.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_zones (déprécié)_](../../module-reference/processing-modules/zone-system.md)\n"
-": _préférez [égaliseur de ton](../../module-reference/processing-modules/tone-equalizer.md) (ou [exposition](../../module-reference/processing-modules/exposure.md))_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Ce module fonctionne à nouveau dans l'espace Lab, et devient problématique si vous le poussez trop loin. Il est préférable d'utiliser l '_égaliseur de ton_ ou plusieurs instances du module _exposition_ avec des masques paramétriques pour définir une zone.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_correction des couleurs_](../../module-reference/processing-modules/color-correction.md)\n"
-": _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Préférez le module _balance couleur_, qui fonctionne dans l'espace colorimétrique RVB et permet un réglage facile de la balance des blancs dans les ombres (_offset_), les demi-tons (_power_) et les hautes lumières (_slope_). Notez que les paramètres _offset_, _power_ et _slope_ que nous utilisons normalement dans les espaces linéaires correspondent à peu près aux paramètres _lift_, _gamma_ et _gain_ utilisés dans les espaces non linéaires à encodage gamma.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_velvia_](../../module-reference/processing-modules/velvia.md)\n"
-": _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Le curseur _saturation en sortie_ du module _balance couleur_ utilise une logique similaire à celle du module _velvia_, mais sans les décalages de teinte et de luminosité qui peuvent être difficile à gérer.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_niveaux_](../../module-reference/processing-modules/levels.md)/[niveaux rvb](../../module-reference/processing-modules/rgb-levels.md)\n"
-": _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Ces modules implémentent essentiellement un sous-ensemble des fonctions du module _balance couleur_, ce qui les rend à peu près redondants.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_courbe des tonalités_](../../module-reference/processing-modules/tone-curve.md)/[courbe rvb](../../module-reference/processing-modules/rgb-curve.md)\n"
-": _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Ces modules sont normalement utilisés pour régler le contraste. Leur interface utilisateur suppose que le niveau de gris moyen est d'environ 50%, mais dans l'espace linéaire relatif à une scène, le gris moyen est beaucoup plus bas à environ 18%. Il est préférable d'ajuster le contraste dans le module _balance couleur_, où le point de référence gris moyen peut être défini avec le curseur _pivot du contraste_.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[_contraste luminosité saturation_](../../module-reference/processing-modules/contrast-brightness-saturation.md)\n"
-": _préférez [balance couleur](../../module-reference/processing-modules/color-balance.md)_\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-scene-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Ce module fonctionne dans l'espace colorimétrique Lab (avec les limitations que cela implique) et duplique essentiellement les fonctions déjà fournies par le module _color balance_.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, no-wrap
-msgid "développer une image : flux de travail relatif à l'affichage"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Ceci est un mode traditionnel. Il est conservé pour fournir une rétrocompatibilité avec les développements effectués dans les anciennes versions de darktable et pour permettre aux utilisateurs de continuer avec leur ancienne méthode de travail sans les forcer à utiliser le nouveau flux de travail _relatif à la scène_. \n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Le flux de travail _relatif à l'affichage_ met davantage l'accent sur l'exécution du traitement d'image dans la partie non-linéaire _relatif à l'affichage_ du [pipeline graphique](../../darkroom/processing-modules-and-pixelpipe/_index.md). Par défaut il utilise le module [_courbe de base_](../../module-reference/processing-modules/base-curve.md) pour mapper les images de l'espace linéaire _relatif à la scène_ vers l'espace _relatif à l'affichage_, bien que d'autres outils de mappage des tonalités (tel que le module [_courbe des tonalités_](../../module-reference/processing-modules/tone-curve)) puissent aussi être utilisés. De nombreux modules sont déplacés plus tard dans le pipeline graphique (après ce mappage des tonalités) de telle sorte qu'ils travaillent avec des valeurs de pixel (_relatives à l'affichage_) gamma-encodées plutôt qu'avec des valeurs de pixel linéairement-encodées (_relatives à la scène_). \n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La plupart des étapes de base requises pour développer des images dans le cadre du flux de travail _relatif à l'affichage_ sont assez similaires à celles requises pour le flux de travail _relatif à la scène_. Les principales différences résident dans le choix des modules et dans leur ordre d'apparition dans le pipeline graphique. Pour voir la différence dans l'ordre des modules entre flux de travail _relatif à l'affichage_ et flux de travail _relatif à la scène_, veuillez vous référer à la section [ordre des modules](../../special-topics/module-order.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid "**Remarque :** Cette section décrit un certain nombre de modules originels qui ne sont plus recommandés pour une utilisation dans le flux de travail relatif à la scène. Il est recommandé aux nouveaux utilisateurs de se référer à la section [développement d'une image : flux de travail relatif à la scène](./edit-scene-referred.md) pour obtenir un guide sur la meilleure façon de traiter les images dans darktable.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"balance des blancs\n"
-": Le module [_balance des blancs_](../../module-reference/processing-modules/white-balance.md) travaille de la même façon que dans le flux de travail _relatif à la scène_, par défaut, il utilise les coefficients de balance des blancs fournis par le boîtier. Si cela ne donne pas de résultats acceptables, utilisez les préréglages du boîtier ou déterminer la balance des blancs à partir d'un point neutre de votre image. Le curseur de température peut être utilisé pour rendre l'image \"plus chaude\" ou \"plus froide\". Un étalonnage des couleurs plus avancé est laissé à d'autres modules, comme indiqué plus loin.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"correction exposition\n"
-": Le module [_exposition_](../../module-reference/processing-modules/exposure.md) travaille de la même façon que dans le mode _relatif à la scène_, mais la façon dont vous l'utilisez est un peu différente. Dans le mode _relatif à l'affichage_, vous devez vous assurer de ne pas trop affaiblir vos hautes lumières, et utiliser le module [_courbe de base_](../../module-reference/processing-modules/base-curve.md) pour ajuster les tons moyens si nécessaire.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ": Bien que vous puissiez utiliser le module _exposition_ pour ajuster le niveau de noir pour fournir plus de contraste, vous devez faire très attention en faisant cela car vous pouvez vous retrouver avec des valeurs RVB négatives. Il est préférable d'augmenter le contraste en ajustant le pied de la _courbe de base_, cependant cela peut être un peu délicat et c'est l'une des raisons pour lesquelles le module [_filmique rvb_](../../module-reference/processing-modules/filmic-rgb.md) a été introduit dans darktable. \n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"réduction du bruit\n"
-": Comme pour le flux de travail _relatif à la scène_, le meilleur point de départ pour la réduction du bruit est le module [_réduction du bruit (profil)_](../../module-reference/processing-modules/denoise-profiled.md).  De même, vous pouvez aussi choisir d'utiliser les modules [_réduction du bruit RAW_](../../module-reference/processing-modules/raw-denoise.mf), [_flou de surface_](../../module-reference/processing-modules/surface-blur.md), [_réduction du bruit astro photo_](../../module-reference/processing-modules/astrophoto-denoise.md), ou le module [_égaliseur de contraste_](../../module-reference/processing-modules/contrast-equalizer.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"correction des taches\n"
-": Comme pour le flux de travail _relatif à la scène_, vous pouvez utiliser les modules [_retouche_](../../module-reference/processing-modules/retouch.md), [_correction des taches_](../../module-reference/processing-modules/spot-removal.md) et [_pixels chauds_](../../module-reference/processing-modules/hot-pixels.md) pour corriger les artefacts dans votre image.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"corrections géométriques\n"
-": Comme pour le flux de travail _relatif à la scène_ vous pouvez utiliser les modules [_recadrer et pivoter_](../../module-reference/processing-modules/crop-rotate.md), [_correction de perspective_](../../module-reference/processing-modules/perspective-correction.md) et [_correction des objectifs_](../../module-reference/processing-modules/lens-correction.md) pour corriger les distorsions et recadrer votre image.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"récupérer des détails\n"
-": Les images RAW contiennent souvent plus d'informations que vous ne pouvez en voir à première vue, en particulier dans les ombres. Le module [_ombres et hautes lumières_](../../module-reference/processing-modules/shadows-and-highlights.md) aide à ramener ces détails dans des valeurs de tonalité visibles. De par la nature du capteur numérique, les détails structurels dans les hautes lumières totalement brûlées ne peuvent pas être récupérés. Cependant, vous pouvez corriger les dominantes de couleurs inopportunes dans ces zones avec le module [_reconstruire hautes lumières_](../../module-reference/processing-modules/highlight-reconstruction.md). Le module [_reconstruction des couleurs_](../../module-reference/processing-modules/color-reconstruction.md) est capable de remplir les zones surexposées avec des couleurs appropriées basées sur leur environnement. Le module [_filmique rvb_](../../module-reference/processing-modules/filmic-rgb.md) offre aussi une reconstruction des hautes lumières, mais veillez à désactiver tout d'abord le module [_courbe de base_](../../module-reference/processing-modules/base-curve.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"ajustement des tonalités\n"
-": Presque tous les flux de travail sont susceptibles d'inclure l'ajustement de la plage des tonalités de l'image et darktable propose plusieurs modules pour aider à faire cela. Le plus basique est le module [_contraste luminosité saturation_](../../module-reference/processing-modules/contrast-brightness-saturation.md). Dans le module [_courbe des tonalités_](../../module-reference/processing-modules/tone-curve.md), les tonalités sont ajustées en construisant une courbe. Les modules [_niveaux_](../../module-reference/processing-modules/levels.md) et [_niveaux rvb_](../../module-reference/processing-modules/rgb-levels.md) proposent une interface concise, avec trois marqueurs dans un histogramme. Et bien sûr, rien ne vous empêche d'utiliser le module [_filmique rvb_](../../module-reference/processing-modules/filmic-rgb.md) dans un flux de travail _relatif à l'affichage_ si vous le souhaitez (après avoir désactivé le module [_courbe de base_](../../module-reference/processing-modules/base-curve.md)).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"amélioration du contraste local\n"
-": L'amélioration du contraste local peut accentuer les détails et la clarté de votre image. Utilisé avec soin, il peut donner à votre photographie le bon piqué. Plusieurs modules sont disponibles pour cette tâche. Le module [_contraste local_](../../module-reference/processing-modules/local-contrast.md) est aisé à manipuler, avec juste quelques paramètres. Une technique beaucoup plus polyvalente, mais aussi plus complexe, est offerte par le module [_égaliseur de contraste_](../../module-reference/processing-modules/contrast-equalizer.md). Jetez un œil à ses préréglages pour avoir une idée de son fonctionnement. Le module _égaliseur de contraste_ est le \"couteau suisse\" de darktable pour de nombreux ajustements où la dimension spatiale joue un rôle. Notez que l'emplacement de ce module dans le pipeline graphique diffère significativement entre les flux de travail _relatif à la scène_ et _relatif à l'affichage_.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"ajustements des couleurs\n"
-": darktable propose de nombreux modules pour ajuster les couleurs d'une image. Une technique très simple est implémentée dans le module [_correction des couleurs_](../../module-reference/processing-modules/color-correction.md). Utilisez ce module pour donner à l'image une teinte globale ou pour ajuster la saturation globale des couleurs. Le module [_zones de couleurs_](../../module-reference/processing-modules/color-zones.md) offre un contrôle beaucoup plus fin pour ajuster la saturation, la luminosité et la teinte dans les zones définies par l'utilisateur. Le module [_courbe des tonalités_](../../module-reference/processing-modules/tone-curve.md) -- en plus de l'ajustement classique des tonalités -- vous donne un contrôle précis des couleurs d'une image. Enfin, si vous avez l'intention de convertir une image en noir et blanc, un bon point de départ, avec une interface utilisateur simple d'utilisation et intuitive, vous est proposé par le module [_monochrome_](../../module-reference/processing-modules/monochrome.md). Vous pouvez également envisager d'utiliser le module [_calibration des couleurs_](../../module-reference/processing-modules/color-calibration.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"netteté\n"
-": Si vous démarrez votre flux de travail à partir d'une image RAW, vous devrez augmenter la netteté de la sortie finale. Le module [_renforcer la netteté_](../../module-reference/processing-modules/sharpen.md) peut le faire avec l'approche classique USM (unsharp mask), disponible dans la plupart des logiciels de traitement d'image. Un autre moyen très polyvalent d'améliorer les bords d'une image est offert par le module [_filtre passe-haut_](../../module-reference/processing-modules/highpass.md), en combinaison avec le riche ensemble d'opérateurs de [_fusion_](../../darkroom/masking-and-blending/blend-modes.md) de darktable.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-display-referred.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"effets artistiques\n"
-": darktable est livré avec un riche ensemble de modules d'effets artistiques. Par exemple, vous pouvez utiliser le module [_filigrane_](../../module-reference/processing-modules/watermark.md) pour ajouter un filigrane à votre image. Le module [_grain_](../../module-reference/processing-modules/grain.md) simule le bruit typique des images analogiques classiques. Utilisez le module [_mappage des couleurs_](../../module-reference/processing-modules/color-mapping.md) pour transférer l'aspect et le ressenti d'une image couleur sur une autre. Le module [_faible lumière_](../../module-reference/processing-modules/lowlight-vision.md) vous permet de simuler la vision humaine pour rendre les images en faible luminosité plus proches de la réalité. Le module [_filtre dégradé_](../../module-reference/processing-modules/graduated-density.md) ajoute un dégradé neutre ou coloré à votre image pour l'exposition et la correction des couleurs.  \n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, no-wrap
-msgid "développer une image : aperçu d'un flux de travail"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Cette section va vous guider à travers les bases du développement d'une image dans la vue [chambre noire](../../darkroom/_index.md), où un arsenal de modules est à votre disposition pour vous aider à atteindre vos objectifs créatifs.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Pour commencer, ouvrez une image dans la chambre noire en double-cliquant sur la miniature d'une image dans la vue [table lumineuse](../../lighttable/_index.md). \n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "En mode chambre noire, sur le panneau de gauche se trouve l'[historique](../../module-reference/utility-modules/darkroom/history-stack.md). Il liste les modifications que vous avez apportées, en commençant par le bas -- chaque modification ajoute un nouvel élément au sommet de l'historique. À des fins de comparaison entre les modifications, vous pouvez sélectionner, en cliquant dessus, un point quelconque de cet historique pour voir à quoi ressemblait l'image en ce point. L'historique peut être compressé pour supprimer les points intermédiaires redondants dans votre développement. Lorsque vous êtes satisfait de ce que vous avez fait, compressez simplement l'historique. Notez que lors de la compression de l'historique, sont définitivement supprimées toutes les modifications situées au-dessus de l'entrée d'historique sélectionnée.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Un grand nombre de [modules de traitement](../../module-reference/processing-modules/_index.md) sont fournis avec darktable. Ils sont organisés en [groupes de modules](../../darkroom/interacting-with-modules/search-and-group.md). Ces groupes sont accessibles via les boutons-bascule en haut du panneau de droite, juste en dessous de l'[histogramme](../../module-reference/utility-modules/shared/histogram.md).\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "choisir un flux de travail"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Lors du traitement d'une image, nous appliquons une séquence de modules, connue sous le nom de [pipeline graphique](../../darkroom/processing-modules-and-pixelpipe/_index.md). \n"
-msgstr ""
-
-#. type: Bullet: '1. '
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les modules _relatif à la scène_ sont destinés à traiter des valeurs de pixels proportionnelles à la quantité de lumière collectée par le boîtier dans la scène. La plage dynamique d'une image dans la section _relative à la scène_ du pipeline graphique est souvent plus grande que celle du support d'affichage. \n"
-msgstr ""
-
-#. type: Bullet: '2. '
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "À un moment donné dans le pipeline graphique, ces valeurs de pixels sont compressées par un module de mappage des tonalités dans une plage dynamique plus petite mieux appropriée à l'affichage sur un moniteur ou une impression papier.\n"
-msgstr ""
-
-#. type: Bullet: '3. '
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les modules restants opèrent dans la section _relative à l'affichage_, non-linéaire pour produire l'image de sortie finale.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"Il existe deux flux de travail standard proposés dans darktable (ceci peut être modifié dans [préférences > traitement > flux de travail par défaut](../../preferences-settings/processing.md)) :\n"
-"* [_flux de travail relatif à la scène_](edit-scene-referred.md) : Ici, l'accent est mis sur la réalisation, autant que possible, du traitement dans la partie du pipeline graphique _relative à la scène_, et la réalisation, le plus tard possible, de la compression de la plage dynamique vers l'espace _relatif à l'affichage_. Il s'agit du flux de travail recommandé. Il utilise le module [_filmique rvb_](../../module-reference/processing-modules/filmic-rgb.md) pour effectuer le mappage de compression des tonalités.\n"
-"* [_le flux de travail relatif à l'affichage_](edit-display-referred.md) : Il s'agit du flux de travail originel. C'est toujours le paramètre par défaut lors de la première installation de darktable. Il effectue le mappage de compression des tonalités beaucoup plus tôt dans le pipeline graphique. De nombreux modules fonctionnent donc dans l'espace _relatif à l'affichage_. Il utilise le module [_courbe de base_](../../module-reference/processing-modules/base-curve.md) pour effectuer le mappage de compression des tonalités.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Une troisième option consiste à définir l'option de préréglages du flux de travail par défaut sur _aucun_. Dans ce cas, l'ordre des modules du flux de travail _relatif à la scène_ sera utilisé par défaut mais aucun des modules ci-dessus ne sera automatiquement appliqué. Il appartient à l'utilisateur d'organiser un mappage des tonalités approprié et de réorganiser les modules si nécessaire.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/edit-overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "**Remarque :** lors d'une modification du flux de travail par défaut dans les préférences de darktable, le nouveau paramètre ne s'appliquera qu'aux images nouvellement importées. Si vous avez déjà importé une image en utilisant un paramètre de flux de travail différent, accédez à l'[_historique_](../../module-reference/utility-modules/darkroom/history-stack.md) dans la vue chambre noire, sélectionnez \"original\", et cliquez \"compresser l'historique\". Cela supprimera toutes les modifications et réinitialisera le flux de travail pour cette image.\n"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -8259,6 +6511,14 @@ msgstr ""
 #: content/overview/workflow/edit-scene-referred.md
 #, markdown-text, no-wrap
 msgid ": A more versatile but also more complex technique is to use the [_contrast equalizer_](../../module-reference/processing-modules/contrast-equalizer.md) module, which is very useful for making adjustments where spatial dimension plays a role. It has a number of pre-defined presets that may be helpful as a starting point in understanding this module.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/overview/workflow/edit-scene-referred.md
+#, markdown-text, no-wrap
+msgid ""
+"[_denoise (profiled)_](../../module-reference/processing-modules/denoise-profiled.md)\n"
+": The _denoise (profiled)_ module is usually your best option for reducing noise in an image. This module offers an almost “single-click” solution to remove noise. From a user perspective the effect only depends on camera type and ISO value, both derived from Exif data. All other settings are taken from a database of noise profiles that the darktable team has collected -- now covering well above 300 popular camera models. The simplest way to use this module is _non-local means (auto)_ mode. The wavelet feature of this module is also quite effective against color noise. It is recommended that you use this module at 100% zoom so that you can accurately see the effects of your changes.\n"
 msgstr ""
 
 #. type: Plain text
@@ -8670,149 +6930,9 @@ msgid "By default, an image will be saved to local disk as a high-quality JPEG a
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, no-wrap
-msgid "exportation et téléchargement d'images avec métadonnées"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les modifications apportées à une image ne sont pas enregistrées directement dans le fichier image contrairement à un éditeur d'image classique. Au contraire, darktable est un éditeur non destructif, ce qui signifie que toutes les modifications sont enregistrées dans la base de données de la bibliothèque de darktable et que l'image d'origine reste intacte. Par conséquent, vous devez exporter des images afin de sauvegarder vos options de traitement et les modifications de métadonnées dans un fichier de sortie qui peut être distribué en dehors de darktable.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les images sont exportées à partir de la vue table lumineuse, en utilisant l'onglet [exporter sélection](../../module-reference/utility-modules/lighttable/export-selected.md) du panneau droit. Ce module offre de nombreuses options, mais l'utilisation de loin la plus courante est \"sauvegarder mon image raw développée au format JPEG\".\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Dans darktable, lors de l'exportation d'images, vous devez répondre à deux questions fondamentales :\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "_Où dois-je envoyer les images exportées?_ Le plus souvent, vous choisirez d'écrire les fichiers dans un dossier de votre disque local, mais d'autres options incluent leur écriture dans un modèle de livre photo LaTeX ou leur envoi vers un autre programme tel que [Hugin](http://hugin.sourceforge.net/) (pour l'assemblage panoramique) ou [GIMP](https://www.gimp.org/) (pour un développement ultérieur).\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "_Dans quel format dois-je enregistrer les images exportées?_ Cela couvre non seulement le format du fichier image (JPEG, PNG, TIFF, OpenEXR etc.) mais également la qualité, la compression, la résolution, les paramètres de profil d'image et quelles métadonnées intégrer dans l'image exportée.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les étapes les plus courantes seraient donc :\n"
-msgstr ""
-
-#. type: Bullet: '1.  '
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Sélectionnez une ou plusieurs images dans la vue table lumineuse\n"
-msgstr ""
-
-#. type: Bullet: '2.  '
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Choisissez le stockage cible et le format de fichier\n"
-msgstr ""
-
-#. type: Bullet: '3.  '
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Définissez les dimensions limites de l'image en largeur et en hauteur. Laissez les limites de largeur et de hauteur à zéro pour exporter en pleine résolution.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/workflow/export-metadata-upload.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Par défaut, une image sera enregistrée sur le disque local en tant que JPEG de haute qualité à pleine résolution. Pour plus d'informations sur toutes les options d'exportation disponibles, veuillez consulter la référence [exporter sélection](../../module-reference/utility-modules/lighttable/export-selected.md)\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/supported-file-formats.fr-fr.md
-#, no-wrap
-msgid "formats de fichier supportés"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/supported-file-formats.fr-fr.md
-#: content/overview/supported-file-formats.md
-#, markdown-text, no-wrap
-msgid "darktable supports a huge number of file formats from various camera manufacturers. In addition darktable can read specific low dynamic range and high dynamic range images – mainly for data exchange between darktable and other software.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/supported-file-formats.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Pour que darktable puisse importer un fichier, il doit avoir l’une des extensions suivantes (la casse n’a pas d’importance) : `3FR, ARI, ARW, BAY, BMQ, CAP, CINE, CR2, CRW, CS1, DC2, DCR, DNG, GPR, ERF, FFF, EXR, IA, IIQ, JPEG, JPG, K25, KC2, KDC, MDC, MEF, MOS, MRW, NEF, NRW, ORF, PEF, PFM, PNG, PXN, QTK, RAF, RAW, RDC, RW1, RW2, SR2, SRF, SRW, STI, TIF, TIFF, X3F`\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/supported-file-formats.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Si darktable a été compilé avec la prise en charge de JPEG2000, les extensions suivantes sont aussi reconnues : `J2C, J2K, JP2, JPC`.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/supported-file-formats.fr-fr.md
-#, markdown-text, no-wrap
-msgid "En plus de celles qui sont standard, les extensions suivantes sont reconnues si darktable a été compilé avec la prise en charge de GraphicsMagick : `BMP, DCM, GIF, JNG, JPC, JP2, MIFF, MNG, PBM, PGM, PNM, PPM`.\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/supported-file-formats.fr-fr.md
-#, markdown-text, no-wrap
-msgid "fichier RAW de l'appareil"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/supported-file-formats.fr-fr.md
-#, markdown-text, no-wrap
-msgid "darktable lit les fichiers RAW en utilisant la bibliothèque open source [RawSpeed](https://github.com/darktable-org/rawspeed), originellement développée par Klaus Post et maintenue à présent dans le projet darktable lui-même. Le nombre d’appareils et de formats de fichier pris en charge est en constante augmentation. La plupart des appareils modernes sont pris en charge et la tendance est d'ajouter les nouveaux très rapidement. En donner la liste exhaustive dépasse le cadre de ce manuel.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/supported-file-formats.fr-fr.md
-#, markdown-text, no-wrap
-msgid "À l'exception des appareils Fujifilm X-Trans, darktable ne décode pas les images provenant d'appareils n'ayant pas un capteur Bayer (ex. les appareils Sigma avec le capteur Foveon X3).\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/supported-file-formats.fr-fr.md
-#, markdown-text, no-wrap
-msgid "autres fichiers image"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/supported-file-formats.fr-fr.md
-#: content/overview/supported-file-formats.md
-#, markdown-text, no-wrap
-msgid "darktable natively reads “ordinary” images in JPEG, 8-bit/16-bit PNG and 8-bit/16-bit TIFF format, as well as 16-bit/32-bit floating point TIFF formats. JPEG2000 is also supported if the required libraries are present at compile time. Similarly, if darktable was compiled with GraphicsMagick support, there are further supported formats, such as GIF, Dicom DCM, additional \"exotic\" TIFF formats, and some of Sun's “portable xyz-map” family.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/supported-file-formats.fr-fr.md
-#, markdown-text, no-wrap
-msgid "darktable lit aussi les images à grande plage dynamique dans les formats OpenEXR, RVBE et PFM.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
 #: content/overview/_index.md
 #, no-wrap
 msgid "Overview"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/sidecar-files/_index.fr-fr.md
-#, no-wrap
-msgid "fichiers liés et édition non destructive"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -8967,7 +7087,6 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: content/overview/sidecar-files/sidecar-import.md
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
 #, markdown-text, no-wrap
 msgid "grain ([_grain_](../../module-reference/processing-modules/grain.md))\n"
 msgstr ""
@@ -8976,163 +7095,6 @@ msgstr ""
 #: content/overview/sidecar-files/sidecar-import.md
 #, markdown-text, no-wrap
 msgid "spot removal ([_spot removal_](../../module-reference/processing-modules/spot-removal.md))\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/sidecar-files/local-copies.fr-fr.md
-#, no-wrap
-msgid "copies locales"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/local-copies.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Assez souvent les utilisateurs ont d'énormes collections d’images qu'ils stockent sur des disques durs supplémentaires de leur ordinateur de bureau ou sur un support externe comme un NAS en RAID, etc.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/local-copies.fr-fr.md
-#: content/overview/sidecar-files/local-copies.md
-#, markdown-text, no-wrap
-msgid "It is a common requirement to be able to develop a number of images while travelling using a laptop and then later synchronize them back to the original storage medium. However, copying images manually from the main storage to the laptop and back is cumbersome and prone to errors. The “local copies” feature of darktable has been designed to directly support these use cases. \n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/local-copies.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Vous pouvez créer sur le disque local de votre ordinateur une copie locale des images sélectionnées dans la table lumineuse. Cette copie locale est toujours utilisée quand elle est présente, donnant accès aux images lorsque le stockage externe n'est plus connecté. Ultérieurement, lorsque votre support de stockage principal est de nouveau connecté, vous pouvez synchroniser les fichiers XMP liés et supprimer la copie locale de vos images d'entrée. Ces opérations se trouvent dans le panneau [images sélectionnées](../../module-reference/utility-modules/lighttable/selected-image.md) de la table lumineuse.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/local-copies.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Pour des raisons de sécurité, s’il existe des copies locales et que le stockage externe est disponible, alors les fichiers liés XMP locaux seront automatiquement synchronisés au démarrage.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/local-copies.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les copies locales sont enregistrées dans le répertoire `HOME/.cache/darktable` et s’appellent `img-<SIGNATURE>.<EXT>` (où `SIGNATURE` est une signature de hachage (MD5) du chemin complet et `EXT` est l'extension du fichier d'origine.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/local-copies.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Une copie locale est identifiée dans la vue table lumineuse par une marque blanche dans le coin supérieur droit de la miniature. De plus toutes les copies locales possèdent le mot-clé `darktable|local-copy` pour pouvoir être sélectionnées rapidement.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, no-wrap
-msgid "importer des fichiers liés générés par d'autres applications"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid " Lorsqu'il importe une image, darktable teste automatiquement s'il est accompagné d'un fichier lié. En plus de rechercher les fichiers nommés `<basename>.<extension>.xmp` et `<basename>_nn.<extension>.xmp` (les formats de dénomination des fichiers XMP de darktable), il vérifie également la présence d'un fichier sous la forme `<basename> .xmp` (le format de dénomination des fichiers lié XMP de Lighroom). Les fichiers avec ce dernier format de dénomination seront lus par darktable mais il n'y écrira pas. Une fois l'image importée, darktable générera un fichier XMP supplémentaire en utilisant sa propre convention de dénomination.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "À ce jour, pendant la phase d'importation, à partir de fichiers liés générés par Lightroom, darktable est capable de traiter les métadonnées suivantes :\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "mots-clés (y compris les mots-clés hiérarchiques)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "les labels de couleurs\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "les évaluations\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "les informations GPS\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "De plus, darktable a été conçu pour faciliter la migration d'opérations de développement des images provenant de certaines applications. L'objectif n’est pas de faire de darktable un remplaçant direct de tout autre logiciel ; il s'agit plutôt de vous aider à récupérer une partie du travail investi dans votre image si vous décidez de migrer vers darktable. Il est important de comprendre que ce processus d’importation ne donnera jamais des résultats identiques. Les moteurs de développement sous-jacents sont très différents d’une application à l’autre et dépendent en outre beaucoup de l’image concernée. Dans certains cas les résultats obtenus seront probablement proches mais dans d’autres le développement nécessitera un ajustement manuel dans darktable.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La migration est automatique lorsqu’on entre dans la vue chambre noire à condition qu’un fichier lié XMP soit trouvé.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "À ce jour, darktable est capable de prendre en charge les étapes de développement suivantes des fichiers XMP générés par Lightroom (module correspondant de darktable entre parenthèses) :\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "recadrer et pivoter ([_recadrer et pivoter_](../../module-reference/processing-modules/crop-rotate.md))\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "niveau de noir ([_exposition_](../../module-reference/processing-modules/exposure.md))\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "exposition ([_exposition_](../../module-reference/processing-modules/exposure.md))\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "vignettage ([_vignettage_](../../module-reference/processing-modules/vignetting.md))\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "clarté ([_contraste local_](../../module-reference/processing-modules/local-contrast.md))\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "courbes des tonalités ([_courbe des tonalités_](../../module-reference/processing-modules/tone-curve.md))\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "TSL ([_zones de couleur_](../../module-reference/processing-modules/color-zones.md))\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "virage partiel ([_virage partiel_](../../module-reference/processing-modules/split-toning.md))\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/overview/sidecar-files/sidecar-import.fr-fr.md
-#, markdown-text, no-wrap
-msgid "correction des taches ([_correction des taches_](../../module-reference/processing-modules/spot-removal.md))\n"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -9145,6 +7107,12 @@ msgstr ""
 #: content/overview/sidecar-files/local-copies.md
 #, markdown-text, no-wrap
 msgid "Many users have huge image collections stored on extra hard drives in their desktop computer, or on an external storage medium like a RAID NAS, etc.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/overview/sidecar-files/local-copies.md
+#, markdown-text, no-wrap
+msgid "It is a common requirement to be able to develop a number of images while travelling using a laptop and then later synchronize them back to the original storage medium. However, copying images manually from the main storage to the laptop and back is cumbersome and prone to errors. The “local copies” feature of darktable has been designed to directly support these use cases. \n"
 msgstr ""
 
 #. type: Plain text
@@ -9175,6 +7143,12 @@ msgstr ""
 #: content/overview/supported-file-formats.md
 #, no-wrap
 msgid "supported file formats"
+msgstr ""
+
+#. type: Plain text
+#: content/overview/supported-file-formats.md
+#, markdown-text, no-wrap
+msgid "darktable supports a huge number of file formats from various camera manufacturers. In addition darktable can read specific low dynamic range and high dynamic range images – mainly for data exchange between darktable and other software.\n"
 msgstr ""
 
 #. type: Plain text
@@ -9222,91 +7196,13 @@ msgstr ""
 #. type: Plain text
 #: content/overview/supported-file-formats.md
 #, markdown-text, no-wrap
+msgid "darktable natively reads “ordinary” images in JPEG, 8-bit/16-bit PNG and 8-bit/16-bit TIFF format, as well as 16-bit/32-bit floating point TIFF formats. JPEG2000 is also supported if the required libraries are present at compile time. Similarly, if darktable was compiled with GraphicsMagick support, there are further supported formats, such as GIF, Dicom DCM, additional \"exotic\" TIFF formats, and some of Sun's “portable xyz-map” family.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/overview/supported-file-formats.md
+#, markdown-text, no-wrap
 msgid "darktable also reads high dynamic range images in OpenEXR, RGBE and PFM formats.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/user-interface/_index.fr-fr.md
-#, no-wrap
-msgid "interface utilisateur"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/user-interface/views.fr-fr.md
-#, no-wrap
-msgid "vues"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/views.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Il y a six vues différentes disponibles dans darktable :\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/views.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[table lumineuse](../../lighttable/_index.md)\n"
-": Gérer les images et les collections.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/views.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[chambre noire](../../darkroom/_index.md)\n"
-": Développer une seule image.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/views.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[carte](../../map/_index.md)\n"
-": Montrer sur une carte les images contenant des données de géolocalisation et des nouvelles images géolocalisées manuellement.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/views.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[impression](../../print/_index.md)\n"
-": Envoyer des images à votre imprimante.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/views.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[diaporama](../../slideshow/_index.md)\n"
-": Affichez les images sous forme de diaporama, en les traitant à la volée.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/views.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[capture](../../tethering/_index.md)\n"
-": Capturez à distance et enregistrer des images prises avec un appareil photo connecté.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/views.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Vous pouvez basculer entre les vues en cliquant sur le nom de la vue en haut du panneau de droite (la vue actuellement active est mise en surbrillance) ou en utilisant l'un des raccourcis clavier suivants :\n"
-msgstr ""
-
-#. type: Fenced code block
-#: content/overview/user-interface/views.fr-fr.md
-#, no-wrap
-msgid ""
-"L \tbasculer vers table lumineuse\n"
-"D \tbasculer vers chambre noire\n"
-"M \tbasculer vers carte\n"
-"P \tbasculer vers impression\n"
-"S \tbasculer vers diaporama\n"
-"T \tbasculer vers capture\n"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -9340,119 +7236,6 @@ msgstr ""
 msgid "See the [filmstrip](../../module-reference/utility-modules/shared/filmstrip.md) module documentation for more information.\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, no-wrap
-msgid "panneau supérieur"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Le panneau supérieur est commun à toutes les vues darktable et fournit un certain nombre de fonctions utilitaires courantes.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/top-panel.fr-fr.md
-#: content/overview/user-interface/top-panel.md
-#, markdown-text, no-wrap
-msgid "![top-panel](./top-panel/top-panel.png#w100)\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Sur le côté gauche"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"afficher\n"
-": Choisir les images à afficher dans la table lumineuse/la pellicule, en fonction du nombre d'étoiles et du statut de rejet.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"trier par\n"
-": Choisir le critère de tri dans la liste déroulante.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"![top-panel_sort-order icon](./top-panel/top-panel_sort-order.png#icon) ordre de tri\n"
-": Changer l'ordre de tri (croissant/décroissant) avec la bascule flèche.\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Sur le côté droit"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"![top panel_grouping icon](./top-panel/top-panel_grouping.png#icon) groupement\n"
-": Montrer ou cacher les images groupées\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"![top panel_overlays icon](./top-panel/top-panel_overlays.png#icon) surimpression des miniatures\n"
-": Définir les informations à afficher en surimpression sur les miniatures dans la table lumineuse / la pellicule.\n"
-": Vous pouvez définir différents paramètres en fonction de la taille des miniatures dans [préférences > table lumineuse](../../preferences-settings/lighttable.md)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"![top panel_help icon](./top-panel/top-panel_help.png#icon) aide contextuelle\n"
-": Cliquez sur cette icône puis sur un élément de contrôle pour être dirigé vers la page d'aide en ligne correspondante\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/top-panel.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"![top panel_preferences icon](./top-panel/top-panel_preferences.png#icon) préférences\n"
-": Ouvrir la boîte de dialogue [préférences](../../preferences-settings/_index.md)\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/user-interface/filmstrip.fr-fr.md
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
-#, no-wrap
-msgid "pellicule"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La pellicule, lorsqu'elle est activée, est affichée en bas de l'écran ; sauf dans la vue table lumineuse, où elle est remplacée par le module [chronologie](../../module-reference/utility-modules/lighttable/timeline.md). Elle affiche les images de la collection actuellement sélectionnée dans la vue table lumineuse. Vous pouvez naviguer le long de la pellicule en faisant défiler avec la molette de la souris. \n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La pellicule vous permet d'interagir avec les images lorsque vous n'êtes pas dans la vue table lumineuse. Par exemple, lors du développement d'une image en mode chambre noire, vous pouvez passer à une autre image en cliquant sur sa miniature dans la pellicule. Vous pouvez également évaluer et classer par couleur les images comme vous le faites dans la vue table lumineuse, ainsi que copier et coller la pile de l'historique à l'aide de raccourcis clavier.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Voir la documentation du module [pellicule](../../module-reference/utility-modules/shared/filmstrip.md) pour de plus amples informations.\n"
-msgstr ""
-
 #. type: Title #
 #: content/overview/user-interface/keyboard-shortcuts.md
 #: content/darkroom/processing-modules/module-controls.md
@@ -9470,24 +7253,6 @@ msgstr ""
 #: content/overview/user-interface/keyboard-shortcuts.md
 #, markdown-text, no-wrap
 msgid "Press the H key (for help) in any darktable view to show a list of all shortcuts that are applicable to the current view.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/overview/user-interface/keyboard-shortcuts.fr-fr.md
-#, no-wrap
-msgid "raccourcis clavier"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/keyboard-shortcuts.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La plupart des fonctionnalités de darktable peuvent être contrôlées via des raccourcis clavier qui peuvent être personnalisés dans [préférences>raccourcis clavier](../../preferences-settings/shortcuts.md).\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/keyboard-shortcuts.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Appuyez sur la touche H (pour obtenir de l'aide) dans n'importe quelle vue de darktable pour afficher une liste de tous les raccourcis applicables à cette vue.\n"
 msgstr ""
 
 #. type: Plain text
@@ -9563,121 +7328,6 @@ msgid ""
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, no-wrap
-msgid "disposition de l'affichage"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La disposition de l'affichage est la même pour toutes les vues. Elle consiste en une zone centrale bordée par des panneaux : \n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#: content/overview/user-interface/screen-layout.md
-#, markdown-text, no-wrap
-msgid "![screen-layout](./screen-layout/screen-layout.png#w100)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"1. zone centrale\n"
-": Contient des informations et la fonctionnalité spécifique de la vue actuelle.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"2. panneau gauche\n"
-": Contient des modules principalement utilisés pour fournir des informations.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"3. panneau droit\n"
-" : Contient des modules principalement utilisés pour le traitement d'image.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"4. bannière supérieure\n"
-": Contient des informations sur la version actuelle de darktable et vous permet de basculer entre les vues. Également utilisé par certains modules pour afficher des conseils et des messages.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"5. [panneau supérieur](./top-panel.md)\n"
-": Fournit l'accès aux paramètres globaux et aux raccourcis.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"6. panneau inférieur\n"
-" : Permet d'accéder aux paramètres et raccourcis spécifiques à la vue.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"7. panneau [pellicule](../../module-reference/utility-modules/shared/filmstrip.md)/[timeline](../../module-reference/utility-modules/lighttable/timeline.md)\n"
-": Un panneau facultatif qui peut être activé en bas de l'écran pour afficher une chronologie (dans la vue table lumineuse) ou une pellicule (dans d'autres vues) des images de la collection actuelle.\n"
-msgstr ""
-
-#. type: Title #
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid "taille d'un panneau et sa visibilité"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les panneaux gauche, droit et pellicule/chronologie peuvent être redimensionnés en faisant glisser leurs bordures intérieures. \n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Chacun de ces panneaux peut être affiché ou masqué en appuyant sur un triangle situé sur le bord extérieur du panneau. La visibilité du panneau peut également être ajustée à l'aide de raccourcis clavier, comme suit :\n"
-msgstr ""
-
-#. type: Fenced code block
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, no-wrap
-msgid ""
-"TAB             Étendre temporairement la vue centrale pour remplir toute la fenêtre.\n"
-"                Appuyez à nouveau pour revenir à la vue précédente\n"
-"F11             Basculer en mode plein écran\n"
-"Shift+Ctrl+t    Afficher/masquer le panneau supérieur (entre l'image et la bannière du haut)\n"
-"Shift+Ctrl+b    Afficher/masquer le panneau inférieur (entre l'image et le panneau pellicule / chronologie s'il est affiché)\n"
-"Shift+Ctrl+l    Afficher/masquer le panneau gauche\n"
-"Shift+Ctrl+r    Afficher/masquer le panneau droit\n"
-"Ctrl+f          Afficher/masquer le panneau pellicule / chronologie\n"
-"Ctrl+h          Afficher/masquer la bannière supérieure\n"
-"b               Afficher/masquer tous les bords et les contrôles de réduction des panneaux\n"
-msgstr ""
-
-#. type: Plain text
-#: content/overview/user-interface/screen-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid "**Remarque :** La taille et la visibilité des panneaux sont stockées indépendamment pour chaque vue.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
 #: content/overview/user-interface/top-panel.md
 #, no-wrap
 msgid "top panel"
@@ -9687,6 +7337,12 @@ msgstr ""
 #: content/overview/user-interface/top-panel.md
 #, markdown-text, no-wrap
 msgid "The top panel is common to all darktable views and provides a number of common utility functions.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/overview/user-interface/top-panel.md
+#, markdown-text, no-wrap
+msgid "![top-panel](./top-panel/top-panel.png#w100)\n"
 msgstr ""
 
 #. type: Title #
@@ -9768,6 +7424,12 @@ msgstr ""
 #: content/overview/user-interface/screen-layout.md
 #, markdown-text, no-wrap
 msgid "The layout of all views is similar and consists of a center area with panels at the edges: \n"
+msgstr ""
+
+#. type: Plain text
+#: content/overview/user-interface/screen-layout.md
+#, markdown-text, no-wrap
+msgid "![screen-layout](./screen-layout/screen-layout.png#w100)\n"
 msgstr ""
 
 #. type: Plain text
@@ -10604,12 +8266,6 @@ msgstr ""
 msgid "Also note that the call to require returns a function that can be called only once and allows you to set darktable's command line parameter. The `:memory:` parameter to `--library` is useful here if you don't want to work on your personal library.\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/print/_index.fr-fr.md
-#, no-wrap
-msgid "Impression"
-msgstr ""
-
 #. type: Plain text
 #: content/print/overview.md
 #, markdown-text, no-wrap
@@ -10675,244 +8331,6 @@ msgid ""
 msgstr ""
 
 #. type: YAML Front Matter: title
-#: content/print/print-view-layout.fr-fr.md
-#, no-wrap
-msgid "disposition de la vue impression"
-msgstr ""
-
-#. type: Plain text
-#: content/print/print-view-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La zone centrale affiche la disposition de l'image sur le papier (la zone blanche). Des bordures grises peuvent être affichées autour de l'image pour représenter la zone imprimable (la page moins les bordures) non remplie par l'image.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/print/print-view-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La [pellicule](../module-reference/utility-modules/shared/filmstrip.md) sous l'image vous permet de sélectionner plus d'images.\n"
-msgstr ""
-
-#. type: Title #
-#: content/print/print-view-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid "panneau gauche"
-msgstr ""
-
-#. type: Plain text
-#: content/print/print-view-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[filtres de collection](../module-reference/utility-modules/shared/collect-images.md) \n"
-" : Filtrer la liste des images affichées dans la table lumineuse.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/print/print-view-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[informations de l'image](../module-reference/utility-modules/shared/image-information.md) \n"
-": Afficher les informations de l'image\n"
-msgstr ""
-
-#. type: Title #
-#: content/print/print-view-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid "panneau droit"
-msgstr ""
-
-#. type: Plain text
-#: content/print/print-view-layout.fr-fr.md
-#, markdown-text, no-wrap
-msgid ""
-"[paramètres d'impression](../module-reference/utility-modules/print/print-settings.md)\n"
-": Ajuster les paramètres d'impression et initialiser l'impression.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/print/overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Cette vue concerne l'impression. Parce qu'imprimer n'est pas aisé, de nombreux aspects techniques doivent être pris en compte.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/print/overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Après avoir sélectionné une image dans la [table lumineuse](../lighttable/_index.md) on peut entrer dans le module [paramètres d'impression](../module-reference/utility-modules/print/print-settings.md) pour ajuster les paramètres d'impression et lancer l'impression.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/print/overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Ce module prend en charge le profil ICC de l'imprimante, ce qui est quelque peu obligatoire si vous souhaitez obtenir une impression de haute qualité proche de l'image affichée à l'écran.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/print/overview.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Il est important de noter que les profils ICC fournis par les fabricants de papier et/ou d'imprimante ne peuvent pas être utilisés sous GNU/Linux car ils dépendent des pilotes d'imprimante. Le module impression de darktable utilise CUPS et il n'y a pas de profils ICC prêts à l'emploi pour ce pilote.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/guides-tutorials/_index.fr-fr.md
-#, no-wrap
-msgid "Guides & Tutoriaux"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/guides-tutorials/other-resources.fr-fr.md
-#, no-wrap
-msgid "autres ressources"
-msgstr ""
-
-#. type: Plain text
-#: content/guides-tutorials/other-resources.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les sites officiels pour obtenir des informations concernant darktable sont les suivants :\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[darktable.org](https://darktable.org/)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[GitHub wiki](https://github.com/darktable-org/darktable/wiki)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/guides-tutorials/other-resources.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les articles suivants fournissent des informations générales utiles sur le flux de travail relatif à la scène de darktable :\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[darktable 3.0 for dummies in 3 modules](https://discuss.pixls.us/t/darktable-3-0-for-dummies-in-3-modules/15849)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[darktable 3.0 for dummies -- hardcore edition](https://discuss.pixls.us/t/darktable-3-0-for-dummies-hardcore-edition/15864)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#, markdown-text, no-wrap
-msgid "[darktable 3.0 : RGB or Lab ? Which modules ? Help !](https ://pixls.us/articles/darktable-3-rgb-or-lab-which-modules-help/)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[darktable's filmic FAQ](https://discuss.pixls.us/t/darktables-filmic-faq/20138)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Introducing color calibration module](https://discuss.pixls.us/t/introducing-color-calibration-module-formerly-known-as-channel-mixer-rgb/21227)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/guides-tutorials/other-resources.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les ressources suivantes peuvent fournir une compréhension plus approfondie des fonctionnalités de certains modules de traitement spécifiques :\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Image processing and the pixel pipeline in darktable 3.0](https://youtu.be/3FFU-Ltvm0I)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Filmic RGB v3: remapping any dynamic range in darktable 3.0](https://youtu.be/zbPj_TqTF88)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Filmic RGB v4: highlights reconstruction in darktable 3.2](https://youtu.be/leZVK2s68QA)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Dodging and burning with tone equalizer in darktable 3.0](https://youtu.be/kzACn3l49HM)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Noise reduction (profiled) with non-local means in darktable 3.0](https://youtu.be/InsCJAPSdjI)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Noise reduction (profiled) with wavelets in darktable 3.0](https://youtu.be/7ZhbeXpx2W8)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Contrast equalizer modules in darktable](https://youtu.be/zzVXK4eAM5E)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/guides-tutorials/other-resources.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Certaines autres chaînes YouTube avec du contenu récent sur l'utilisation de darktable sont :\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Bruce Williams Photography](https://www.youtube.com/user/audio2u)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Rico Richardson](https://www.youtube.com/channel/UC126kKAgMILMnVIi7HvQGlw)\n"
-msgstr ""
-
-#. type: Bullet: '- '
-#: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
-#, markdown-text, no-wrap
-msgid "[Boris Hajdukovic](https://www.youtube.com/user/s7habo)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/guides-tutorials/other-resources.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Pour une aide et un support, vous pouvez aussi poser une question sur les forums de discussion à [discuss.pixls.us](https://discuss.pixls.us/)\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
 #: content/guides-tutorials/_index.md
 #, no-wrap
 msgid "Guides & Tutorials"
@@ -10930,6 +8348,18 @@ msgstr ""
 msgid "The official places to obtain information concerning darktable are the following:\n"
 msgstr ""
 
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[darktable.org](https://darktable.org/)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[GitHub wiki](https://github.com/darktable-org/darktable/wiki)\n"
+msgstr ""
+
 #. type: Plain text
 #: content/guides-tutorials/other-resources.md
 #, markdown-text, no-wrap
@@ -10939,7 +8369,31 @@ msgstr ""
 #. type: Bullet: '- '
 #: content/guides-tutorials/other-resources.md
 #, markdown-text, no-wrap
+msgid "[darktable 3.0 for dummies in 3 modules](https://discuss.pixls.us/t/darktable-3-0-for-dummies-in-3-modules/15849)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[darktable 3.0 for dummies -- hardcore edition](https://discuss.pixls.us/t/darktable-3-0-for-dummies-hardcore-edition/15864)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
 msgid "[darktable 3.0: RGB or Lab? Which modules? Help!](https://pixls.us/articles/darktable-3-rgb-or-lab-which-modules-help/)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[darktable's filmic FAQ](https://discuss.pixls.us/t/darktables-filmic-faq/20138)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Introducing color calibration module](https://discuss.pixls.us/t/introducing-color-calibration-module-formerly-known-as-channel-mixer-rgb/21227)\n"
 msgstr ""
 
 #. type: Plain text
@@ -10948,10 +8402,70 @@ msgstr ""
 msgid "The following resources can provide a deeper understanding of the functionality of some specific processing modules:\n"
 msgstr ""
 
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Image processing and the pixel pipeline in darktable 3.0](https://youtu.be/3FFU-Ltvm0I)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Filmic RGB v3: remapping any dynamic range in darktable 3.0](https://youtu.be/zbPj_TqTF88)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Filmic RGB v4: highlights reconstruction in darktable 3.2](https://youtu.be/leZVK2s68QA)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Dodging and burning with tone equalizer in darktable 3.0](https://youtu.be/kzACn3l49HM)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Noise reduction (profiled) with non-local means in darktable 3.0](https://youtu.be/InsCJAPSdjI)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Noise reduction (profiled) with wavelets in darktable 3.0](https://youtu.be/7ZhbeXpx2W8)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Contrast equalizer modules in darktable](https://youtu.be/zzVXK4eAM5E)\n"
+msgstr ""
+
 #. type: Plain text
 #: content/guides-tutorials/other-resources.md
 #, markdown-text, no-wrap
 msgid "Some other YouTube channels with recent content on using darktable are:\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Bruce Williams Photography](https://www.youtube.com/user/audio2u)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Rico Richardson](https://www.youtube.com/channel/UC126kKAgMILMnVIi7HvQGlw)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Boris Hajdukovic](https://www.youtube.com/user/s7habo)\n"
 msgstr ""
 
 #. type: Plain text
@@ -12488,7 +10002,6 @@ msgstr ""
 
 #. type: Plain text
 #: content/module-reference/utility-modules/shared/filmstrip.md
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
 #, markdown-text, no-wrap
 msgid "![filmstrip](./filmstrip/filmstrip.png)\n"
 msgstr ""
@@ -12525,7 +10038,6 @@ msgstr ""
 
 #. type: Fenced code block
 #: content/module-reference/utility-modules/shared/filmstrip.md
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
 #, no-wrap
 msgid ""
 "Ctrl+A         select all images in the filmstrip\n"
@@ -13197,48 +10709,6 @@ msgstr ""
 #: content/module-reference/utility-modules/shared/image-information.md
 #, markdown-text, no-wrap
 msgid "Press the module's reset button to make all available information visible and displayed in its default order.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La pellicule peut être utilisée pour basculer rapidement entre les images dans n'importe quelle vue de darktable. Les images dont les miniatures sont affichées dans la pellicules sont les mêmes que celles qui sont affichées dans la vue table lumineuse et sont définies par la collection actuellement sélectionnée.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "La pellicule peut être activée et désactivée à l'aide du raccourci Ctrl+F. La hauteur du panneau de la pellicule peut être modifiée en cliquant et en faisant glisser sa bordure supérieure.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Parcourez rapidement les miniatures de la pellicule en faisant défiler avec la souris. Dans la chambre noire, vous pouvez changer de photo en cours de traitement en cliquant sur une autre miniature de la pellicule.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Dans la vue chambre noire, la miniature de l'image en cours de traitement est sélectionnée et mise en surbrillance. Survolez la pellicule avec la souris pour sélectionner une autre miniature (afin d'agir sur l'image correspondante à l'aide d'un raccourci clavier) sans changer l'image en cours de traitement.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Si vous souhaitez sélectionner plusieurs miniatures dans la pellicule, utilisez Alt+clic pour sélectionner la première, puis Ctrl+clic pour ajouter ou supprimer de la sélection d'autres miniatures ou Maj+clic pour sélectionner une plage de miniatures.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Les raccourcis suivants sont disponibles pour sélectionner des miniatures dans la pellicule ou pour effectuer des actions sur les images correspondant aux miniatures sélectionnées :\n"
-msgstr ""
-
-#. type: Plain text
-#: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
-#, markdown-text, no-wrap
-msgid "Voir la documentation de l'[historique](../lighttable/history-stack.md) pour plus de détails sur les fonctionnalités du copier-coller.\n"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -14402,12 +11872,6 @@ msgstr ""
 #: content/module-reference/utility-modules/lighttable/timeline.md
 #, markdown-text, no-wrap
 msgid "You can also use timeline to select images by date range with mouse click+drag.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/module-reference/utility-modules/print/_index.fr-fr.md
-#, no-wrap
-msgid "impression"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -17947,7 +15411,13 @@ msgstr ""
 #. type: Plain text
 #: content/module-reference/processing-modules/crop-rotate.md
 #, markdown-text, no-wrap
-msgid ": You can also select any other ratio after opening the combobox and typing it in the form of “x:y” or as a decimal (e.g. \"0.5\" to apply a ratio of 2:1). If you want to add an aspect ratio to the pre-defined drop-down list you can do this by including a line of the form \"`plugins/darkroom/clipping/extra_aspect_ratios/foo=x:y`\" in darktable's configuration file `$HOME/.config/darktable/darktablerc`. Here “`foo`” defines the name of the new aspect ratio and “`x`” and “`y`” the corresponding numerical values.\n"
+msgid ": You can also enter any other ratio after opening the combobox by typing it in the form of “x:y” or as a decimal (e.g. \"0.5\" to apply a ratio of 2:1). \n"
+msgstr ""
+
+#. type: Plain text
+#: content/module-reference/processing-modules/crop-rotate.md
+#, markdown-text, no-wrap
+msgid ": If you want to add an aspect ratio to the pre-defined drop-down list you can do this by including a line of the form \"`plugins/darkroom/clipping/extra_aspect_ratios/foo=x:y`\" in darktable's configuration file `$HOME/.config/darktable/darktablerc`. Here “`foo`” defines the name of the new aspect ratio and “`x`” and “`y`” the corresponding numerical values (`x` and `y` must be integers).\n"
 msgstr ""
 
 #. type: Plain text
@@ -26538,8 +24008,8 @@ msgstr ""
 #: content/darkroom/processing-modules/module-header.md
 #, markdown-text, no-wrap
 msgid ""
-"mask indicator\n"
-": This indicator will appear in the header whenever a [mask](../masking-and-blending/masks/_index.md) is active on a module. This option can be switched off in [preferences > darkroom > show mask indicator in module headers](../../preferences-settings/darkroom.md#modules).\n"
+"mask toggle\n"
+": This icon will appear in the header whenever a [mask](../masking-and-blending/masks/_index.md) is active on a module. Click on this icon to display the current mask as a yellow overlay over a black-and-white version of the image. Solid yellow indicates an opacity of 100%; a fully visible gray background image (without yellow overlay) indicates an opacity of 0%. This toggle button can be disabled in [preferences > darkroom > show mask indicator in module headers](../../preferences-settings/darkroom.md#modules). \n"
 msgstr ""
 
 #. type: Plain text
@@ -26576,6 +24046,12 @@ msgstr ""
 #: content/darkroom/processing-modules/presets.md
 #, markdown-text, no-wrap
 msgid "Presets allow you to store commonly used module settings for future use. Some modules already come with pre-defined presets and you may also define your own. Both internal and user-defined presets can be shown by clicking the _presets menu_ in the [module header](./module-header.md).\n"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/presets.md
+#, markdown-text, no-wrap
+msgid "Most of the functionality described here applies to processing modules only. However, presets can also be used with some utility modules. When used with utility modules, the functionality to auto-apply or auto-show presets based on image Exif data is not available.\n"
 msgstr ""
 
 #. type: Title #
@@ -26680,7 +24156,7 @@ msgstr ""
 #: content/darkroom/processing-modules/presets.md
 #, markdown-text, no-wrap
 msgid ""
-"auto apply this preset to matching images\n"
+"auto apply this preset to matching images _(processing modules only)_\n"
 ": Check this box to automatically apply this preset to matching images when they are opened in the darkroom for the first time (you can reapply such automatic presets by Ctrl+clicking on the _reset_ button in the [module header](./module-header.md)). Additional controls will appear to allow you to define which images the preset will be applied to based on image Exif data (see below).\n"
 msgstr ""
 
@@ -26706,8 +24182,20 @@ msgstr ""
 #: content/darkroom/processing-modules/presets.md
 #, markdown-text, no-wrap
 msgid ""
-"only show this preset for matching images\n"
+"only show this preset for matching images _(processing modules only)_\n"
 ": Check this box to automatically show the preset in the preset menu, using the same set of filters.\n"
+msgstr ""
+
+#. type: Title #
+#: content/darkroom/processing-modules/presets.md
+#, markdown-text, no-wrap
+msgid "filter criteria"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/presets.md
+#, markdown-text, no-wrap
+msgid "The following criteria can be used to auto-apply or auto-show presets for processing modules.\n"
 msgstr ""
 
 #. type: Plain text
@@ -27340,7 +24828,7 @@ msgstr ""
 #. type: Plain text
 #: content/darkroom/processing-modules/module-controls.md
 #, markdown-text, no-wrap
-msgid "Click on a combobox to open a list of available options which you can click to select. Occasionally the selection list will open close to the bottom or top of the screen meaning that only some of the items are visible -- simply scroll with your mouse wheel to bring up the full list. Alternatively, you can also use the mouse wheel and keyboard arrow keys to select an option.\n"
+msgid "Click on a combobox to open a list of available options which you can click to select. Occasionally the selection list will open close to the bottom or top of the screen meaning that only some of the items are visible -- simply scroll with your mouse wheel to bring up the full list. Alternatively, you can also use the mouse wheel and keyboard arrow keys to select an option, or start typing to filter the combobox entries.\n"
 msgstr ""
 
 #. type: Plain text
