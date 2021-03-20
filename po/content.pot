@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-16 18:14+0100\n"
+"POT-Creation-Date: 2021-03-20 23:48+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1190,6 +1190,7 @@ msgstr ""
 
 #. type: YAML Front Matter: title
 #: content/preferences-settings/overview.fr-fr.md
+#: content/special-topics/color-management/overview.fr-fr.md
 #: content/print/overview.fr-fr.md
 #, no-wrap
 msgid "présentation"
@@ -2537,6 +2538,12 @@ msgid "Si vous rencontrez des problèmes avec darktable, veuillez réessayer ave
 msgstr ""
 
 #. type: YAML Front Matter: title
+#: content/special-topics/_index.fr-fr.md
+#, no-wrap
+msgid "Sujets spéciaux"
+msgstr ""
+
+#. type: YAML Front Matter: title
 #: content/special-topics/translating.md
 #, no-wrap
 msgid "translating dtdocs"
@@ -2722,9 +2729,163 @@ msgid "Repeat the last four steps for the other theme, `themes/hugo-darktable-do
 msgstr ""
 
 #. type: YAML Front Matter: title
+#: content/special-topics/variables.fr-fr.md
 #: content/special-topics/variables.md
 #, no-wrap
 msgid "variables"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "darktable prend en charge la substitution de variables dans un certain nombre de modules et dans les préférences. Par exemple :\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Définition des noms de fichiers dans le module [exporter sélection](../module-reference/utility-modules/shared/export.md)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Affichage des informations de l'image dans la [ligne d'informations de l'image](../module-reference/utility-modules/darkroom/image-info-line.md) de la chambre noire\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Affichage des informations de l'image dans les superpositions et les info-bulles de la table lumineuse (voir [préférences > table lumineuse](../preferences-settings/lighttable.md))\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Placement de texte sur une image dans le module [_filigrane_](../module-reference/processing-modules/watermark.md).\n"
+msgstr ""
+
+#. type: Title #
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "variables disponibles"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Les variables suivantes sont disponibles, bien qu'elles ne le soient pas dans certains contextes.\n"
+msgstr ""
+
+#. type: Fenced code block
+#: content/special-topics/variables.fr-fr.md
+#, no-wrap
+msgid ""
+"$(ROLL_NAME)               pellicule de l’image en entrée\n"
+"$(FILE_FOLDER)             répertoire contenant l’image en entrée\n"
+"$(FILE_NAME)               nom de base de l’image en entrée\n"
+"$(FILE_EXTENSION)          extension du fichier de l’image en entrée\n"
+"$(ID)                      id de l’image\n"
+"$(VERSION)                 numéro de version de l'image clonée\n"
+"$(VERSION_IF_MULTI)        identique à $(VERSION) mais chaîne vide si une seule version existe\n"
+"$(VERSION_NAME)            nom de version des métadonnées\n"
+"$(SEQUENCE)                nombre séquentiel dans la tâche d’exportation\n"
+"$(MAX_WIDTH)               largeur maximale d'une image lors de la session d'exportation\n"
+"$(MAX_HEIGHT)              hauteur maximale d'une image lors de la session d'exportation\n"
+"$(YEAR)                    année de la date d’exportation\n"
+"$(MONTH)                   mois de la date d’exportation\n"
+"$(DAY)                     jour de la date d’exportation\n"
+"$(HOUR)                    heure de la date d’exportation\n"
+"$(MINUTE)                  minutes de l’heure d’exportation\n"
+"$(SECOND)                  secondes de l’heure d’exportation\n"
+"$(EXIF_YEAR)               année Exif\n"
+"$(EXIF_MONTH)              mois Exif\n"
+"$(EXIF_DAY)                jour Exif\n"
+"$(EXIF_HOUR)               heure Exif\n"
+"$(EXIF_MINUTE)             minute Exif\n"
+"$(EXIF_SECOND)             seconde Exif\n"
+"$(EXIF_ISO)                valeur ISO\n"
+"$(EXIF_EXPOSURE)           exposition Exif\n"
+"$(EXIF_EXPOSURE_BIAS)      biais d'exposition Exif\n"
+"$(EXIF_APERTURE)           ouverture Exif\n"
+"$(EXIF_FOCAL_LENGTH)       longueur focale Exif\n"
+"$(EXIF_FOCUS_DISTANCE)     distance focale Exif\n"
+"$(LONGITUDE)               longitude\n"
+"$(LATITUDE)                latitude\n"
+"$(ELEVATION)               élévation\n"
+"$(STARS)                   évaluation par étoiles (nombre)\n"
+"$(RATING_ICONS)            évaluation par étoiles avec des caractères étoiles\n"
+"$(LABELS)                  étiquettes de couleur (texte seulement)\n"
+"$(LABELS_ICONS)            étiquettes de couleur (puces caractères colorés)\n"
+"$(LABELS_COLORICONS)       étiquettes de couleur (icônes colorées)\n"
+"$(MAKER)                   fabricant du boîtier\n"
+"$(MODEL)                   modèle du boîtier\n"
+"$(LENS)                    objectif\n"
+"$(TITLE)                   titre d'après les métadonnées\n"
+"$(DESCRIPTION)             description d'après les métadonnées\n"
+"$(CREATOR)                 créateur d'après les métadonnées\n"
+"$(PUBLISHER)               éditeur d'après les métadonnées\n"
+"$(RIGHTS)                  droits d'après les métadonnées\n"
+"$(TAGS)                    liste de mots-clés (Xmp.dc.Subject)\n"
+"$(CATEGORYn(category))     nom du mot-clé de niveau n [0,9] de la catégorie sélectionnée (ou mot-clé)\n"
+"$(SIDECAR_TEXT)            contenu texte du fichier lié s'il existe\n"
+"$(PICTURES_FOLDER)         répertoire des images\n"
+"$(HOME)                    répertoire de l'utilisateur\n"
+"$(DESKTOP)                 répertoire du bureau\n"
+"$(OPENCL_ACTIVATED)        si OpenCL est activé\n"
+"$(USERNAME)                nom de l'utilisateur défini par le système\n"
+"$(NL)                      caractère nouvelle ligne\n"
+"$(JOBCODE)                 code interne du travail courant\n"
+msgstr ""
+
+#. type: Title #
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "substitution de varaible"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Toutes les variables supportent la substitution de chaîne de base inspirée de bash, bien que certains détails diffèrent. \n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Tous les modèles sont traités comme de simples comparaisons de chaînes de caractères. Il n'y a pas de support des expressions régulières. \n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/variables.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Les fonctions suivantes de remplacement de chaînes sont fournies, où `var` est l'une des variables répertoriées ci-dessus :\n"
+msgstr ""
+
+#. type: Fenced code block
+#: content/special-topics/variables.fr-fr.md
+#, no-wrap
+msgid ""
+"$(var-default)                   Si var est vide, renvoie \"défaut\"\n"
+"$(var+alt_value)                 Si var est défini, renvoie \"alt_value\" sinon renvoie une chaîne vide\n"
+"$(var:offset)                    Renvoie la partie de var commençant à offset \n"
+"                                 Si offset est négatif on compte à partir de la fin de la chaîne\n"
+"$(var:offset:length)             À partir de offset, renvoie au plus lenght caractères de var\n"
+"                                 Si offset est négatif lenght est compté à partir de la fin de var\n"
+"                                 Si length est négatif,  il indique la fin du résultat, \n"
+"                                 compté à partir de la fin de var et non une longueur réelle\n"
+"$(var#pattern)                   Supprime \"pattern\" au début de var \n"
+"$(var%pattern)                   Supprime \"pattern\" à la fin de var \n"
+"$(var/pattern/replacement)       Remplace par \"replacement\", la première occurrence de \"pattern\" dans var\n"
+"                                 Si \"replacement\" est vide alors \"pattern\" sera supprimé. \n"
+"$(var//pattern/replacement)      Remplace par \"replacement\", toutes les occurrences de \"pattern\" dans var\n"
+"                                 Si \"replacement\" est vide alors \"pattern\" sera supprimé\n"
+"$(var/#pattern/replacement)      Si var commence par \"pattern\" alors \"pattern\" est remplacé par \"replacement\"\n"
+"$(var/%pattern/replacement)      Si var se termine par \"pattern\" alors \"pattern\" est remplacé par \"replacement\"\n"
+"$(var^)                          Met en majuscule le premier caractère de var\n"
+"$(var^^)                         Met en majuscule tous les caractères de var\n"
+"$(var,)                          Met en minuscule le premier caractère de var\n"
+"$(var,,)                         Met en minuscule tous les caractères de var\n"
 msgstr ""
 
 #. type: Plain text
@@ -2887,6 +3048,36 @@ msgid "Special Topics"
 msgstr ""
 
 #. type: YAML Front Matter: title
+#: content/special-topics/color-management/_index.fr-fr.md
+#, no-wrap
+msgid "gestion de la couleur"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/special-topics/color-management/color-artifacts.fr-fr.md
+#, no-wrap
+msgid "artefacts de couleur possibles"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-artifacts.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Il existe quelques situations rares qui peuvent encore conduire à des résultats problématiques à moins que l'utilisateur ne prenne des mesures. Pour certains modules de l'espace colorimétrique Lab, comme [_niveaux_](../../module-reference/processing-modules/levels.md) et [_monochrome_](../../module-reference/processing-modules/monochrome.md), il faut tenir compte du fait que les canaux L transportent toutes les informations de clarté, les canaux a et b représentant, quant à eux, purement la chrominance et la teinte. Les couleurs non bornées avec des valeurs L négatives sont particulièrement problématiques pour ces modules et peuvent conduire à des artefacts de pixels noirs.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-artifacts.fr-fr.md
+#, markdown-text, no-wrap
+msgid "On a constaté que des sources de lumière bleue hautement saturées dans l'image sont des candidats probables pour des pixels ayant des valeurs de L négatives. Si vous êtes engagé dans la photographie de spectacle, vous devez prêter une attention particulière à ces lumières apparaissant dans les images.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-artifacts.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Afin d'atténuer ce problème, le module [_profil de couleur d'entrée_](../../module-reference/processing-modules/input-color-profile.md) a une option d'écrêtage du gamut. Cette option est désactivée par défaut mais peut être activée si des artefacts sont observés. En fonction des paramètres, les couleurs seront limitées à l'un des gamuts RVB disponibles. En effet, les artefacts de pixels noirs sont évités au prix d'un rétrécissement de la plage des couleurs.\n"
+msgstr ""
+
+#. type: YAML Front Matter: title
 #: content/special-topics/color-management/color-artifacts.md
 #, no-wrap
 msgid "possible color artifacts"
@@ -3001,6 +3192,66 @@ msgid "A poorly made display profile will be more harmful than sticking to the d
 msgstr ""
 
 #. type: YAML Front Matter: title
+#: content/special-topics/color-management/display-profile.fr-fr.md
+#, no-wrap
+msgid "profil d'affichage"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/display-profile.fr-fr.md
+#, markdown-text, no-wrap
+msgid " Pour que darktable rende fidèlement les couleurs à l'écran, il doit trouver le profil d'affichage correct pour votre moniteur. En général, cela nécessite que votre moniteur soit correctement calibré et profilé, et il a besoin que le profil soit correctement installé sur votre système. darktable interroge le xatom de votre serveur d'affichage X ainsi que le service colord du système (si disponible) pour le bon profil. Si nécessaire, vous pouvez appliquer une méthode spécifique dans [préférences>divers](../../preferences-settings/miscellaneous.md).\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/display-profile.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Pour examiner la configuration de votre profil d'affichage, vous pouvez exécuter le binaire [darktable-cmstest](../program-invocation/darktable-cmstest.md) (Linux uniquement) qui affiche des informations utiles (par exemple le nom du profil par moniteur) et vous indique si le système est correctement configuré.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/display-profile.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Dans de rares cas, vous devrez peut-être sélectionner manuellement le profil d'affichage. Ceci est possible à partir de l'[épreuvage écran](../../module-reference/utility-modules/darkroom/soft-proof.md) et de la [vérification de gamut](../../module-reference/utility-modules/darkroom/gamut.md) dans la vue chambre noire et dans la boîte de dialogue de profil d'affichage dans la vue table lumineuse.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/display-profile.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Gardez à l'esprit que les écrans grand public de haut niveau n'ont pas besoin d'un profil d'affichage personnalisé, sauf si vous devez effectuer un épreuvage écran avec des attentes professionnelles, car ils sont correctement calibrés en usine pour sRGB.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/display-profile.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Un profil d'affichage mal conçu sera plus nocif que de s'en tenir au profil sRGB par défaut, car la valeur par défaut peut être légèrement inexacte mais sera au moins fiable. Il est conseillé aux utilisateurs avancés et professionnels de procéder à la production de profils d'affichage personnalisés uniquement s'ils ont la formation nécessaire pour évaluer la qualité du profil résultant et la compréhension des options de profilage.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/overview.fr-fr.md
+#, markdown-text, no-wrap
+msgid " darktable utilise un flux de travail entièrement géré par la couleur :\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/special-topics/color-management/overview.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Les spécifications de couleur d'entrée proviennent de profils ICC intégrés ou fournis par l'utilisateur ou, dans le cas de fichiers raw, d'une bibliothèque de matrices de couleurs spécifiques à l'appareil photo.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/special-topics/color-management/overview.fr-fr.md
+#, markdown-text, no-wrap
+msgid "darktable lit automatiquement le profil d'affichage de votre moniteur (s'il est correctement configuré) pour un rendu précis des couleurs à l'écran. Les configurations multi-écrans sont entièrement prises en charge tant qu'un service système tel que colord est en place et correctement configuré pour informer darktable du profil correct des moniteurs.\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/special-topics/color-management/overview.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Les fichiers de sortie peuvent être encodés dans l'un des profils intégrés de darktable, y compris sRVB et Adobe RVB, ou dans un espace colorimétrique fourni par l'utilisateur en tant que profil ICC.\n"
+msgstr ""
+
+#. type: YAML Front Matter: title
 #: content/special-topics/color-management/color-spaces.md
 #, no-wrap
 msgid "darktable's color spaces"
@@ -3074,6 +3325,7 @@ msgstr ""
 
 #. type: Plain text
 #: content/special-topics/color-management/color-spaces.md
+#: content/special-topics/color-management/color-spaces.fr-fr.md
 #, markdown-text, no-wrap
 msgid "Most of darktable's actual image processing takes place in a large RGB \"working profile\" space, with some (mostly older) modules internally working in the CIELab 1976 color space (often just called “Lab”). The final output of the image processing pipeline is once again in an RGB space shaped for either the monitor display or the output file.\n"
 msgstr ""
@@ -3215,6 +3467,190 @@ msgid "However, at all times in the pipeline, you must ensure that you do not cr
 msgstr ""
 
 #. type: YAML Front Matter: title
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, no-wrap
+msgid "espaces colorimétriques de darktable"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Les images d'entrée de darktable sont des fichiers RVB (comme des JPEG ou des TIFF) ou des fichiers RAW de l'appareil photo. Les deux stockent des informations visuelles sous la forme d'une combinaison de couleurs primaires (telles que le rouge, le vert et le bleu) qui décrivent ensemble une émission de lumière à recréer ultérieurement par un écran.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "L'image suivante illustre ce concept.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "![Décomposition spectrale d'une émission lumineuse en 3 intensités RVB](./color-spaces/spectral-decomposition.png#w100)\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Sur le côté gauche de l'image se trouve une lumière colorée que nous devons représenter numériquement. En utilisant trois filtres de couleur idéaux, nous pouvons décomposer cette lumière en trois lumières de couleur primaire à différentes intensités. Afin de recréer la lumière colorée d'origine à partir de notre décomposition idéale, comme illustré au centre de l'image, nous devons simplement recombiner ces trois lumières de couleur primaire par addition.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Il devrait être possible de reproduire cette lumière originale en prenant une combinaison de lumières blanches aux intensités correctes et en projetant cette lumière à travers des filtres de couleur appropriée. Cette expérience peut être réalisée à la maison en utilisant des gels et des ampoules blanches à intensité variable. C'est à peu près ce que faisaient les anciens écrans CRT couleur et c'est encore comment fonctionnent les vidéoprojecteurs.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "En photographie, l'étape de décomposition initiale est effectuée par le réseau de filtres couleur qui se trouve au-dessus du capteur de votre appareil photo. Cette décomposition n'est pas idéale, il n'est donc pas possible de recréer l'émission d'origine directement par une simple addition. Au lieu de cela, nous devons fournir une mise à l'échelle intermédiaire pour ajuster les trois intensités. \n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Sur les écrans, les ampoules LED sont atténuées proportionnellement à chaque intensité, et les émissions des trois lumières sont physiquement ajoutées pour reconstituer l'émission d'origine. Les images numériques stockent les intensités de ces lumières primaires sous la forme d'un ensemble de trois nombres pour chaque pixel, représentés à droite de l'image ci-dessus sous forme de nuances de gris.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Alors qu'un ensemble d'intensités d'affichage peut être facilement combiné pour recréer une lumière originale sur un écran (par exemple, si nous avons créé une image de synthèse avec l'ordinateur), l'ensemble des intensités capturées par un capteur nécessite une mise à l'échelle pour que l'addition de ces intensités à l'écran reproduise raisonnablement l'émission lumineuse d'origine. Cela signifie que chaque ensemble d'intensités, exprimé sous la forme d'un ensemble de valeurs RVB, doit être lié à un ensemble de filtres (ou de couleurs primaires de LED) définissant un _espace colorimétrique_ -- tout ensemble RVB n'a de sens qu'en référence à un espace colorimétrique. \n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Nous devons donc adapter les intensités capturées pour les rendre à nouveau sommables. Mais si nous devons aussi recomposer la lumière d'origine sur un écran qui n'a pas les mêmes filtres colorés ou primaires que l'espace auquel notre ensemble de valeurs RVB appartient, alors, ces intensités doivent être mises à l'échelle pour prendre en compte les filtres différents de l'écran. Le mécanisme de cette mise à l'échelle est décrit dans les _ profils de couleur_, généralement stockés dans des fichiers .icc.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "** Remarque ** : La couleur n'est pas une propriété physique de la lumière. Elle n'existe que dans le cerveau humain. Elle résulte de la décomposition d'une émission de lumière par les cellules coniques de la rétine. Le principe de cette décomposition est très similaire à celui du filtrage de l'exemple précédent. Une valeur «RVB» doit être comprise comme «une émission lumineuse codée par trois canaux connectés à trois primaires». Mais les primaires elles-mêmes peuvent être différentes de ce que les humains appellent «rouge», «vert» ou «bleu».\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Pour résumer, les filtres décrits ici sont des filtres passe-bande qui se chevauchent. Puisqu'ils se chevauchent, additionner leurs valeurs ne préserverait pas l'énergie du spectre d'origine. Donc, pour faire court, nous devons recomposer ces valeurs en prenant en compte la réponse des cônes de la rétine.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Ce processus implique que le pipeline graphique comporte deux étapes fixes de conversion de couleur : [_profil de couleur d'entrée_](../../module-reference/processing-modules/input-color-profile.md) et [_profil de couleur de sortie_](../../module-reference/processing-modules/output-color-profile.md). De plus, il y a l'étape [_dématriçage_](../../module-reference/processing-modules/demosaic.md) pour les images raw, où les couleurs de chaque pixel sont reconstruites par interpolation.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Chaque module a une position dans le pipeline graphique qui vous indique dans quel espace colorimétrique le module travaille :\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"- jusqu'à [_dématriçage_](../../module-reference/processing-modules/demosaic.md)\n"
+": Les informations d'image raw ne constituent pas encore une \"image\" mais simplement des \"données\" concernant la lumière capturée par le boîtier. Chaque pixel porte une intensité pour chaque couleur primaire, et les couleurs primaires du boîtier sont très différentes de celles utilisées dans les modèles de vision humaine. Gardez à l'esprit que certains des modules de cette partie du pipeline peuvent également agir sur des images d'entrée non raw au format RVB ayant des informations complètes sur les trois canaux de couleur.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"- entre [_dématriçage _](../../module-reference/processing-modules/demosaic.md) et [_profil de couleur d'entrée_](../../module-reference/processing-modules/input-color-profile.md)\n"
+": L'image est au format RVB dans l'espace colorimétrique du boîtier ou du fichier d'entrée spécifique.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"- entre [_profil de couleur d'entrée_](../../module-reference/processing-modules/input-color-profile.md) et [_profil de couleur de sortie_](../../module-reference/processing-modules/output-color-profile.md)\n"
+": L'image se trouve dans l'espace défini par le profil de travail sélectionné (linéaire Rec2020 RVB par défaut). Comme darktable traite les images dans des tampons à virgule flottante 4x32 bits, nous pouvons gérer de grands espaces colorimétriques de travail sans risquer des bandes ou des coupures tonales.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/color-spaces.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"- après [_profil de couleur de sortie_](../../module-reference/processing-modules/output-color-profile.md)\n"
+": L'image est au format RVB tel que défini par l'affichage sélectionné ou le profil ICC de sortie.\n"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/special-topics/color-management/rendering-intent.fr-fr.md
+#, no-wrap
+msgid "intention de rendu"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/rendering-intent.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Si le rendu avec LittleCMS2 est activé (voir [méthode de rendu](./rendering-method.md)), vous pouvez définir comment les couleurs hors gamut sont gérées lors de la conversion entre les espaces colorimétriques. Une boîte de sélection dans le module [exporter]((../../module-reference/utility-modules/shared/export.md)), le module [_profil de couleur de sortie_](../../module-reference/processing-modules/output-color-profile.md) et le module [épreuvage écran](../../module-reference/utility-modules/darkroom/soft-proof.md) vous donnent le choix entre les intentions de rendu suivants :\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/rendering-intent.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"perceptif\n"
+": Convient aux photographies car il maintient la position relative des couleurs. C'est généralement le meilleur choix.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/rendering-intent.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"colorimétrique relative\n"
+": Les couleurs hors gamut sont converties en couleurs ayant la même clarté, mais une saturation différente. Les autres couleurs restent inchangées.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/rendering-intent.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"saturation\n"
+": La saturation est conservée mais la luminosité est légèrement modifiée.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/rendering-intent.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"colorimétrique absolue\n"
+": Garder le point blanc. \n"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/special-topics/color-management/rendering-method.fr-fr.md
+#, no-wrap
+msgid "méthode de rendu"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/rendering-method.fr-fr.md
+#, markdown-text, no-wrap
+msgid "darktable peut rendre les couleurs soit avec ses algorithmes internes, soit en utilisant la bibliothèque externe LittleCMS2. La méthode interne de darktable est plus rapide, d'un ordre de grandeur, que la méthode externe. L'option externe vous donne le choix de l'intention rendu et peut offrir une précision légèrement supérieure dans certains cas.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/rendering-method.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Vous pouvez changer la méthode par défaut dans [préférences> traitement>toujours utiliser LittleCMS 2 pour le profil de couleur de sortie](../../preferences-settings/processing.md)\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-management/rendering-method.fr-fr.md
+#, markdown-text, no-wrap
+msgid "** Remarque : ** Si l'ICC donné est basé sur une LUT ou contient à la fois une LUT et une matrice, darktable utilisera LittleCMS2 pour rendre les couleurs quelle que soit la valeur du paramètre de configuration.\n"
+msgstr ""
+
+#. type: YAML Front Matter: title
 #: content/special-topics/program-invocation/darktable-cmstest.fr-fr.md
 #: content/special-topics/program-invocation/darktable-cmstest.md
 #, no-wrap
@@ -3230,13 +3666,264 @@ msgstr ""
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-cmstest.fr-fr.md
 #, markdown-text, no-wrap
-msgid "`darktable-cmstest`est appelé sans paramètre sur la ligne de commande.\n"
+msgid "`darktable-cmstest` est appelé sans paramètre sur la ligne de commande.\n"
 msgstr ""
 
 #. type: YAML Front Matter: title
 #: content/special-topics/program-invocation/_index.fr-fr.md
 #, no-wrap
 msgid "appel du programme"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#: content/special-topics/program-invocation/darktable-cli.md
+#, no-wrap
+msgid "darktable-cli"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid "L'exécutable `darktable-cli` lance la variante en ligne de commande de l’interface de darktable qui permet l’exportation d’images.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#: content/special-topics/program-invocation/darktable-cli.md
+#, markdown-text, no-wrap
+msgid "This variant does not open any display -- it works in pure console mode without launching a GUI. This mode is particularly useful for servers running background jobs.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid "`darktable-cli` peut être appelé avec les paramètres suivants de la ligne de commande :\n"
+msgstr ""
+
+#. type: Fenced code block
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#: content/special-topics/program-invocation/darktable-cli.md
+#, no-wrap
+msgid ""
+"darktable-cli [<input file or folder>]\n"
+"              [<xmp file>]\n"
+"              <output file or folder>\n"
+"              [--width <max width>]\n"
+"              [--height <max height>]\n"
+"              [--bpp <bpp>]\n"
+"              [--hq <0|1|true|false>]\n"
+"              [--upscale <0|1|true|false>]\n"
+"              [--style <style name>]\n"
+"              [--style-overwrite]\n"
+"              [--apply-custom-presets <0|1|false|true>]\n"
+"              [--out-ext <extension>]\n"
+"              [--import <file or dir>]\n"
+"              [--icc-type <type>]\n"
+"              [--icc-file <file>]\n"
+"              [--icc-intent <intent>]\n"
+"              [--verbose]\n"
+"              [--help [option]]\n"
+"              [--core <darktable options>]\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid "L’utilisateur doit fournir un nom de fichier d’entrée et un nom de fichier de sortie. Tous les autres paramètres sont optionnels.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`<input file or folder>`\n"
+": le nom du fichier en entrée ou du répertoire (contenant des images) à exporter. Si vous souhaitez développer plusieurs images ou plusieurs répertoires utilisez plutôt l'option `--import`.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`<xmp file>`\n"
+": Nom optionnel d’un fichier lié XMP qui contient les données de l’historique de développement qui sera appliqué lors de l’exportation. Si cette option n’est pas donnée, darktable recherchera un fichier XMP appartenant au(x) fichier(s) d’entrée indiqué(s).\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`<output file or folder>`\n"
+": Le nom du fichier de sortie ou le répertoire de destination. Le format du fichier de sortie est dérivé de son extension ou de l'option `--out-ext` . Vous pouvez aussi utiliser des [variables de substitution](../variables.md) dans le nom du fichier de sortie. Pour des raisons évidentes ceci est obligatoire si vous utilisez le programme pour un répertoire contenant de nombreuses images. Si vous spécifiez le répertoire de sortie, il est recommandé de spécifier également le format de fichier avec `--out-ext`.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--width <max width>`\n"
+": Ce paramètre permet de limiter la largeur de l’image exportée au nombre de pixels indiqué.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--height <max height>`\n"
+": Ce paramètre permet de limiter la hauteur de l’image exportée au nombre de pixels indiqué.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--bpp <bpp>`\n"
+": Ce paramètre définit la profondeur de bits de l’image exportée. Les valeurs autorisées dépendent du format de fichier. \n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid "**Remarque ** Actuellement, cette option n’est pas encore fonctionnelle. Si vous devez définir la profondeur de bits, vous devez utiliser la solution suivante :\n"
+msgstr ""
+
+#. type: Fenced code block
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#: content/special-topics/program-invocation/darktable-cli.md
+#, no-wrap
+msgid ""
+"    --core\n"
+"    --conf plugins/imageio/format/<FORMAT>/bpp=<VALUE>\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid "où`<FORMAT>` est le nom du format de sortie sélectionné.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--hq <0|1|true|false>`\n"
+": Indicateur définissant s’il faut utiliser un ré-échantillonnage de haute qualité lors de l’exportation (voir le module [exporter sélection](../../module-reference/utility-modules/shared/export.md) pour plus de détails). Vrai par défaut.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--upscale <0|1|true|false>`\n"
+": Indicateur définissant s’il faut utiliser un ré-échantillonnage de haute qualité lors de l’exportation Faux par défaut.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--style <style name>`\n"
+": Spécifiez le nom d'un style à appliquer lors de l'exportation. Si un style est spécifié, le chemin d'accès au répertoire de configuration darktable doit également être spécifié (c'est-à-dire `--core --configdir ~/.config/darktable`). Par défaut, aucun style n'est spécifié.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--style-overwrite`\n"
+": Le style spécifié remplace l'historique au lieu d'y être ajouté.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--apply-custom-presets <0|1|false|true>`\n"
+": S'il faut charger `data.db` qui contient des préréglages et des styles. Désactiver cette option vous permet de lancer plusieurs instances de `darktable-cli` au prix de ne pas pouvoir utiliser l'option `--style`. La valeur par défaut est vrai.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--out-ext <extension>`\n"
+": Définissez l'extension de sortie à utiliser. Si elle est spécifiée, elle est prioritaire sur celle du `<fichier de sortie>`. Par défaut, elle est extraite du nom du `<fichier de sortie>`. La valeur par défaut est `jpg` si un ` <répertoire de sortie> `est spécifié.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--import <file or dir>`\n"
+": Spécifiez le fichier ou le répertoire d'entrée, peut être utilisé plusieurs fois. Cette option ne peut pas être combinée avec `<input file or folder>`.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--icc-type <type>`\n"
+": Spécifiez le type de profil ICC, ce qui revient à spécifier le `profil de sortie` dans le module `profil de couleur de sortie`. La valeur par défaut est \"image spécifiée\". Utilisez`--help icc-type` pour obtenir une liste des types pris en charge. Voir [profil couleur de sortie](../../module-reference/processing-modules/output-color-profile) pour une description plus détaillée des options disponibles.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--icc-file <file>` \n"
+": Spécifiez le nom de fichier du profil ICC. Par défaut, un nom de fichier vide.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--icc-intent <intent>` \n"
+": Spécifiez l'intention de rendu. Utilisez `--help icc-intent` pour obtenir une liste des modes de rendu pris en charge. Voir [intention de rendu](../../special-topics/color-management/rendering-intent) pour une description plus détaillée des options disponibles.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--verbose`\n"
+": Activer la sortie verbeuse.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--help [option]`\n"
+": Donne les paramètres d'usage et quitte. Si `option` est spécifié, donne en plus les paramètres de l'option donnée.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cli.fr-fr.md
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--core <darktable options>`\n"
+": Tous les paramètres de la ligne de commande suivant `--core` sont passés au noyau de darktable et manipulés comme des paramètres standards. Voir la section [Exécutable darktable](./darktable.md) pour une description détaillée.\n"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/special-topics/program-invocation/darktable-cltest.fr-fr.md
+#: content/special-topics/program-invocation/darktable-cltest.md
+#, no-wrap
+msgid "darktable-cltest"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cltest.fr-fr.md
+#, markdown-text, no-wrap
+msgid "L'exécutable `darktable-cltest` vérifie s'il y a sur votre système un environnement OpenCL utilisable par darktable. Il émet une sortie de débogage équivalente à celle qu'on obtient par l'appel `darktable -d opencl` et puis s'arrête.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-cltest.fr-fr.md
+#, markdown-text, no-wrap
+msgid "`darktable-cltest` est appelé sans paramètre sur la ligne de commande.\n"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -3434,12 +4121,6 @@ msgid ""
 ": limit number of openmp threads to use in openmp parallel sections\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/special-topics/program-invocation/darktable-cli.md
-#, no-wrap
-msgid "darktable-cli"
-msgstr ""
-
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-cli.md
 #, markdown-text, no-wrap
@@ -3449,38 +4130,7 @@ msgstr ""
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-cli.md
 #, markdown-text, no-wrap
-msgid "This variant does not open any display -- it works in pure console mode without launching a GUI. This mode is particularly useful for servers running background jobs.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/special-topics/program-invocation/darktable-cli.md
-#, markdown-text, no-wrap
 msgid "`darktable-cli` can be called with the following command line parameters:\n"
-msgstr ""
-
-#. type: Fenced code block
-#: content/special-topics/program-invocation/darktable-cli.md
-#, no-wrap
-msgid ""
-"darktable-cli [<input file or folder>]\n"
-"              [<xmp file>]\n"
-"              <output file or folder>\n"
-"              [--width <max width>]\n"
-"              [--height <max height>]\n"
-"              [--bpp <bpp>]\n"
-"              [--hq <0|1|true|false>]\n"
-"              [--upscale <0|1|true|false>]\n"
-"              [--style <style name>]\n"
-"              [--style-overwrite]\n"
-"              [--apply-custom-presets <0|1|false|true>]\n"
-"              [--out-ext <extension>]\n"
-"              [--import <file or dir>]\n"
-"              [--icc-type <type>]\n"
-"              [--icc-file <file>]\n"
-"              [--icc-intent <intent>]\n"
-"              [--verbose]\n"
-"              [--help [option]]\n"
-"              [--core <darktable options>]\n"
 msgstr ""
 
 #. type: Plain text
@@ -3541,14 +4191,6 @@ msgstr ""
 #: content/special-topics/program-invocation/darktable-cli.md
 #, markdown-text, no-wrap
 msgid "**Note:** This option is not currently functional. If you need to define the bit depth you need to use the following workaround:\n"
-msgstr ""
-
-#. type: Fenced code block
-#: content/special-topics/program-invocation/darktable-cli.md
-#, no-wrap
-msgid ""
-"    --core\n"
-"    --conf plugins/imageio/format/<FORMAT>/bpp=<VALUE>\n"
 msgstr ""
 
 #. type: Plain text
@@ -3663,9 +4305,190 @@ msgid ""
 msgstr ""
 
 #. type: YAML Front Matter: title
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#: content/special-topics/program-invocation/darktable-chart.md
+#, no-wrap
+msgid "darktable-chart"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Cet exécutable est un utilitaire dédié à la création de styles à partir de paires d'images telles que RAW+JPEG fournies par le boîtier. Des détails de son utilisation peuvent être trouvés dans la section [utiliser darktable-chart](../darktable-chart/_index.md)\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid "`darktable-chart` soit démarre une interface graphique soit est utilisé comme programme en ligne de commande.\n"
+msgstr ""
+
+#. type: Fenced code block
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#: content/special-topics/program-invocation/darktable-chart.md
+#, no-wrap
+msgid ""
+"darktable-chart\n"
+"              [--help]\n"
+"              [<input Lab pfm file>]\n"
+"              [<cht file>]\n"
+"              [<reference cgats/it8 or Lab pfm file>]\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Tous les paramètres sont optionnels, cependant, si vous voulez fournir le deuxième nom de fichier vous devez aussi fournir le premier, etc. Démarrer darktable-chart de cette manière ouvre une interface graphique spéciale (des détails peuvent être trouvés dans la section [utiliser darktable-chart](../darktable-chart/_index.md)).\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--help`\n"
+": Donne des informations d'utilisation et s'arrête.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`<input Lab pfm file>`\n"
+": Ouvre l'utilitaire avec le fichier donné comme image source. Le fichier en entrée doit être au format Lab Portable Float Map.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`<cht file>`\n"
+": Spécifie un fichier décrivant la disposition du diagramme de références couleur.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`<reference cgats/it8 or Lab pfm file>`\n"
+": Spécifie les valeurs de référence, soit comme valeurs mesurées en fonction du standard CGATS, soit comme image de référence dans le format Lab Portable Float Map.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Alternativement `darktable-chart` peut être utilisé comme un programme en ligne de commande pour générer des fichiers de style à partir de fichiers CVS précédemment sauvegardés.\n"
+msgstr ""
+
+#. type: Fenced code block
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#: content/special-topics/program-invocation/darktable-chart.md
+#, no-wrap
+msgid ""
+"darktable-chart\n"
+"              --csv\n"
+"              <csv file>\n"
+"              <number patches>\n"
+"              <output dtstyle file>\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Tous les paramètres sont obligatoires.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`<csv file>`\n"
+": Un fichier CSV précédemment sauvegardé avec darktable-chart.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`<number patches>`\n"
+": Le nombre de pastilles de couleur à utiliser dans le paramétrage de la table correspondance couleurs du style créé.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-chart.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`<output dtstyle file>`\n"
+": Nom du fichier de style qui doit être créé.\n"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
 #: content/special-topics/program-invocation/darktable-generate-cache.md
 #, no-wrap
 msgid "darktable-generate-cache"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
+#, markdown-text, no-wrap
+msgid "L'exécutable `darktable-generate-cache` met à jour le cache des miniatures. Vous pouvez lancer ce programme, en arrière-plan quand votre ordinateur est inactif, pour générer toutes les miniatures manquantes .\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
+#, markdown-text, no-wrap
+msgid "`darktable-generate-cache` est appelé avec les paramètres suivants de la ligne de commande :\n"
+msgstr ""
+
+#. type: Fenced code block
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
+#: content/special-topics/program-invocation/darktable-generate-cache.md
+#, no-wrap
+msgid ""
+"darktable-generate-cache\n"
+"              [-h, --help]\n"
+"              [--version]\n"
+"              [--min-mip <0-7>] [-m, --max-mip <0 - 7>]\n"
+"              [--min-imgid <N>] [--max-imgid <N>]\n"
+"              [--core <darktable options>]\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Tous les paramètres sont optionnels. S'il est démarré sans paramètre `darktable-generate-cache` utilise des valeurs par défaut raisonnables.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`-h, --help`\n"
+": Donne des informations d'utilisation et s'arrête.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--version`\n"
+": Donne des informations de version et de copyright et s'arrête.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--min-mip <0 - 7>, -m, --max-mip <0 - 7>`\n"
+": darktable peut gérer et stocker, pour chaque image, des miniatures ayant jusqu'à huit niveaux différents de résolution. Ces paramètres définissent la résolution maximale qui doit être générée (valeur par défaut dans une plage de 0 à 2). Il n'est normalement pas nécessaire de générer ici toutes les résolutions possibles ; celles qui manquent seront générées automatiquement par darktable au moment où elles seront nécessaires. Quand on demande la génération de plusieurs résolutions à la fois, les images de plus basse résolution sont rapidement sous-échantillonnées à partir de l'image de la plus haute résolution.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/program-invocation/darktable-generate-cache.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"`--min-imgid <N>, --max-imgid <N>`\n"
+": Spécifie la plage d'IDs des images de la base de données sur laquelle il faut travailler. Si aucune plage n'est donnée, `darktable-generate-cache` générera le cache de toutes les images de la collection.\n"
 msgstr ""
 
 #. type: Plain text
@@ -3678,18 +4501,6 @@ msgstr ""
 #: content/special-topics/program-invocation/darktable-generate-cache.md
 #, markdown-text, no-wrap
 msgid "`darktable-generate-cache` can be called with the following command line parameters:\n"
-msgstr ""
-
-#. type: Fenced code block
-#: content/special-topics/program-invocation/darktable-generate-cache.md
-#, no-wrap
-msgid ""
-"darktable-generate-cache\n"
-"              [-h, --help]\n"
-"              [--version]\n"
-"              [--min-mip <0-7>] [-m, --max-mip <0 - 7>]\n"
-"              [--min-imgid <N>] [--max-imgid <N>]\n"
-"              [--core <darktable options>]\n"
 msgstr ""
 
 #. type: Plain text
@@ -3730,12 +4541,6 @@ msgid ""
 ": Specifies the range of internal image IDs from the database to work on. If no range is given, `darktable-generate-cache` will process all images.\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/special-topics/program-invocation/darktable-chart.md
-#, no-wrap
-msgid "darktable-chart"
-msgstr ""
-
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-chart.md
 #, markdown-text, no-wrap
@@ -3746,17 +4551,6 @@ msgstr ""
 #: content/special-topics/program-invocation/darktable-chart.md
 #, markdown-text, no-wrap
 msgid "`darktable-chart` can either start a GUI or be used as a command-line program.\n"
-msgstr ""
-
-#. type: Fenced code block
-#: content/special-topics/program-invocation/darktable-chart.md
-#, no-wrap
-msgid ""
-"darktable-chart\n"
-"              [--help]\n"
-"              [<input Lab pfm file>]\n"
-"              [<cht file>]\n"
-"              [<reference cgats/it8 or Lab pfm file>]\n"
 msgstr ""
 
 #. type: Plain text
@@ -3803,17 +4597,6 @@ msgstr ""
 msgid "Alternatively `darktable-chart` can be used as a command line program to generate darktable style files out of previously saved CSV files.\n"
 msgstr ""
 
-#. type: Fenced code block
-#: content/special-topics/program-invocation/darktable-chart.md
-#, no-wrap
-msgid ""
-"darktable-chart\n"
-"              --csv\n"
-"              <csv file>\n"
-"              <number patches>\n"
-"              <output dtstyle file>\n"
-msgstr ""
-
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-chart.md
 #, markdown-text, no-wrap
@@ -3854,12 +4637,6 @@ msgstr ""
 #: content/special-topics/program-invocation/darktable-cmstest.md
 #, markdown-text, no-wrap
 msgid "`darktable-cmstest` is called without command line parameters.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/special-topics/program-invocation/darktable-cltest.md
-#, no-wrap
-msgid "darktable-cltest"
 msgstr ""
 
 #. type: Plain text
@@ -3990,6 +4767,7 @@ msgstr ""
 
 #. type: Bullet: '2. '
 #: content/special-topics/module-order.md
+#: content/special-topics/module-order.fr-fr.md
 #, markdown-text, no-wrap
 msgid "[**orientation**](../module-reference/processing-modules/orientation.md)\n"
 msgstr ""
@@ -4230,12 +5008,14 @@ msgstr ""
 
 #. type: Bullet: '2. '
 #: content/special-topics/module-order.md
+#: content/special-topics/module-order.fr-fr.md
 #, markdown-text, no-wrap
 msgid "[velvia](../module-reference/processing-modules/velvia.md)\n"
 msgstr ""
 
 #. type: Bullet: '2. '
 #: content/special-topics/module-order.md
+#: content/special-topics/module-order.fr-fr.md
 #, markdown-text, no-wrap
 msgid "[vibrance](../module-reference/processing-modules/vibrance.md)\n"
 msgstr ""
@@ -4266,12 +5046,14 @@ msgstr ""
 
 #. type: Bullet: '2. '
 #: content/special-topics/module-order.md
+#: content/special-topics/module-order.fr-fr.md
 #, markdown-text, no-wrap
 msgid "[_monochrome_](../module-reference/processing-modules/monochrome.md)\n"
 msgstr ""
 
 #. type: Bullet: '2. '
 #: content/special-topics/module-order.md
+#: content/special-topics/module-order.fr-fr.md
 #, markdown-text, no-wrap
 msgid "[grain](../module-reference/processing-modules/grain.md)\n"
 msgstr ""
@@ -4371,6 +5153,7 @@ msgstr ""
 
 #. type: Bullet: '2. '
 #: content/special-topics/module-order.md
+#: content/special-topics/module-order.fr-fr.md
 #, markdown-text, no-wrap
 msgid "[orientation](../module-reference/processing-modules/orientation.md)\n"
 msgstr ""
@@ -4419,6 +5202,7 @@ msgstr ""
 
 #. type: Bullet: '2. '
 #: content/special-topics/module-order.md
+#: content/special-topics/module-order.fr-fr.md
 #, markdown-text, no-wrap
 msgid "[monochrome](../module-reference/processing-modules/monochrome.md)\n"
 msgstr ""
@@ -5240,6 +6024,713 @@ msgstr ""
 msgid ""
 "scene-referred\n"
 ": Pixel values are expected to be greater than zero up to +infinity. The meaning of specific pixel values needs to be defined at runtime by the user. Scene-referred values don't automatically imply a linear, radiometrically scaled, encoding.\n"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/special-topics/module-order.fr-fr.md
+#, no-wrap
+msgid "ordre des modules par défaut"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Les sections suivantes décrivent l'ordre des modules par défaut dans le nouveau flux de travail relatif à la scène et le flux de travail originel relatif à l'affichage. Notez que dans les sections suivantes, l'ordre des modules va du haut (fichier d'entrée) au bas (image de sortie).\n"
+msgstr ""
+
+#. type: Title #
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "ordre des modules relatif à la scène"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "L'ordre par défaut des modules lors de l'utilisation du nouveau flux de travail relatif à la scène est le suivant :\n"
+msgstr ""
+
+#. type: Bullet: '1. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[**point noir/blanc raw**](../module-reference/processing-modules/raw-black-white-point.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[inverser (déprécié)](../module-reference/processing-modules/invert.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[**balance des blancs**](../module-reference/processing-modules/white-balance.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[**reconstruire hautes lumières**](../module-reference/processing-modules/highlight-reconstruction.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[aberrations chromatiques](../module-reference/processing-modules/chromatic-aberrations.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[pixels chauds](../module-reference/processing-modules/hot-pixels.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_réduction du bruit raw_](../module-reference/processing-modules/raw-denoise.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[dématriçage](../module-reference/processing-modules/demosaic.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[réduction du bruit (profil)](../module-reference/processing-modules/denoise-profiled.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_flou de surface_](../module-reference/processing-modules/surface-blur.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_rotation des pixels_](../module-reference/processing-modules/rotate-pixels.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_mise à l'échelle des pixels_](../module-reference/processing-modules/scale-pixels.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[correction des objectifs](../module-reference/processing-modules/lens-correction.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[suppression de la brume](../module-reference/processing-modules/haze-removal.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[correction de perspective](../module-reference/processing-modules/perspective-correction.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[recadrer et pivoter](../module-reference/processing-modules/crop-rotate.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[liquéfier](../module-reference/processing-modules/liquify.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[correction des taches](../module-reference/processing-modules/spot-removal.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[retouche](../module-reference/processing-modules/retouch.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[**exposition**](../module-reference/processing-modules/exposure.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[mappage des tonalités (déprécié)](../module-reference/processing-modules/tone-mapping.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[égaliseur de ton](../module-reference/processing-modules/tone-equalizer.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[filtre dégradé](../module-reference/processing-modules/graduated-density.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[correction du profil d'entrée](../module-reference/processing-modules/unbreak-input-profile.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "_égaliseur originel_\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[**profil de couleur d'entrée**](../module-reference/processing-modules/input-color-profile.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[docteur néga](../module-reference/processing-modules/negadoctor.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_réduction du bruit photo astro_](../module-reference/processing-modules/astrophoto-denoise.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[table correspondance couleurs](../module-reference/processing-modules/color-look-up-table.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[suppression des franges](../module-reference/processing-modules/defringe.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[égaliseur de contraste](../module-reference/processing-modules/contrast-equalizer.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[filtre passe-bas](../module-reference/processing-modules/lowpass.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[filtre passe-haut](../module-reference/processing-modules/highpass.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[renforcer la netteté](../module-reference/processing-modules/sharpen.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[3D lut](../module-reference/processing-modules/lut-3D.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[mappage des couleurs](../module-reference/processing-modules/color-mapping.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[mixeur de canaux (déprécié)](../module-reference/processing-modules/channel-mixer.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[ajustement de base](../module-reference/processing-modules/basic-adjustments.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[balance couleur](../module-reference/processing-modules/color-balance.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_courbe rvb_](../module-reference/processing-modules/rgb-curve.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_niveaux rvb_](../module-reference/processing-modules/rgb-levels.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_courbe de base_](../module-reference/processing-modules/base-curve.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "_filmique (originel)_\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[**filmique rvb**](../module-reference/processing-modules/filmic-rgb.md) -- passage de l'espace relatif à la scène à l'espace relatif à l'affichage\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_contraste lum. saturation_](../module-reference/processing-modules/contrast-brightness-saturation.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_courbe des tonalités_](../module-reference/processing-modules/tone-curve.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_niveaux_](../module-reference/processing-modules/levels.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_ombres et hautes lumières_](../module-reference/processing-modules/shadows-and-highlights.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_zones (déprécié)_](../module-reference/processing-modules/zone-system.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_mappage global des tonalités (deprecated)_](../module-reference/processing-modules/global-tonemap.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_lumière d'appoint (déprécié)_](../module-reference/processing-modules/fill-light.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[contraste local](../module-reference/processing-modules/local-contrast.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_correction des couleurs_](../module-reference/processing-modules/color-correction.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_contraste de couleur_](../module-reference/processing-modules/color-contrast.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[zones de couleurs](../module-reference/processing-modules/color-zones.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[_lumière d'arrière-plan_](../module-reference/processing-modules/bloom.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[coloriser](../module-reference/processing-modules/colorize.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[faible lumière](../module-reference/processing-modules/lowlight-vision.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[effet Orton (adoucir)](../module-reference/processing-modules/soften.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[virage partiel](../module-reference/processing-modules/split-toning.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[vignetage](../module-reference/processing-modules/vignetting.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[reconstruction des couleurs](../module-reference/processing-modules/color-reconstruction.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[**profil de couleur de sortie**](../module-reference/processing-modules/output-color-profile.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[ homogénéisation](../module-reference/processing-modules/dithering.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[cadre décoratif](../module-reference/processing-modules/framing.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[filigrane](../module-reference/processing-modules/watermark.md)\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"**key :**\n"
+"* _italic_ : non recommandé pour le flux de travail relatif à la scène\n"
+"* **bold** : module activé par défaut\n"
+msgstr ""
+
+#. type: Title #
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "ordre des modules originel/relatif à l'affichage"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "L'ordre par défaut des modules lors de l'utilisation de l'ancien flux de travail relatif à l'affichage est le suivant :\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[réduction du bruit raw](../module-reference/processing-modules/raw-denoise.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[exposition](../module-reference/processing-modules/exposure.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[rotation des pixels](../module-reference/processing-modules/rotate-pixels.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[mise à l'échelle des pixels](../module-reference/processing-modules/scale-pixels.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[**courbe de base**](../module-reference/processing-modules/base-curve.md)  -- transition par défaut entre l'espace relatif à la scène et l'espace relatif à l'affichage\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[flou de surface](../module-reference/processing-modules/surface-blur.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "égaliseur originel\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[lumière d'arrière-plan](../module-reference/processing-modules/bloom.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[réduction du bruit photo astro ](../module-reference/processing-modules/astrophoto-denoise.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[mappage global des tonalités (déprécié)](../module-reference/processing-modules/global-tonemap.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[ombre et hautes lumières](../module-reference/processing-modules/shadows-and-highlights.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "filmique (originel)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[filmique rvb](../module-reference/processing-modules/filmic-rgb.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[contraste lum. saturation](../module-reference/processing-modules/contrast-brightness-saturation.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[zones (déprécié)](../module-reference/processing-modules/zone-system.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[courbe des tonalités](../module-reference/processing-modules/tone-curve.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[niveaux](../module-reference/processing-modules/levels.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[niveaux rvb](../module-reference/processing-modules/rgb-levels.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[courbe rvb](../module-reference/processing-modules/rgb-curve.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[lumière d'appoint (déprécié)](../module-reference/processing-modules/fill-light.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[correction des couleurs](../module-reference/processing-modules/color-correction.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[**renforcer la netteté**](../module-reference/processing-modules/sharpen.md)\n"
+msgstr ""
+
+#. type: Bullet: '2. '
+#: content/special-topics/module-order.fr-fr.md
+#, markdown-text, no-wrap
+msgid "[contraste de couleur](../module-reference/processing-modules/color-contrast.md)\n"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/special-topics/color-pipeline.fr-fr.md
+#, no-wrap
+msgid "pipeline graphique de darktable"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "La plupart des applications de traitement d'image proviennent des années 90 et/ou héritent d'un flux de travail des années 90. Ces applications traitaient des images codées avec des entiers non signés de 8 bits car c'était plus efficace en termes de mémoire et de calcul. Cependant, en raison de l'utilisation d'un format entier (qui implique des erreurs d'arrondi), elles ont dû appliquer un \"gamma\" (essentiellement une fonction de transfert appliquant une puissance 1/2,2 ou 1/2,4 pour encoder les valeurs RVB). Elles ont aussi dû augmenter la profondeur de bit afin de réduire les erreurs d'arrondi dans les basses lumières (les humains sont très sensibles aux détails de faible luminosité). Les formats d'entiers 8 bits sont également techniquement limités à la plage 0-255. Toute valeur qui ne se trouve pas dans cette plage est tronquée.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Ces flux de travail, utilisant des représentations RVB bornées et éventuellement des transformations non linéaires pour coder des signaux RVB, sont appelés \"relatifs à l'affichage\". Ils reposent sur l'hypothèse que l'image a été préparée pour l'affichage à un stade précoce du pipeline graphique et intègrent des hypothèses codées en dur sur les valeurs RVB du noir, du gris moyen et du blanc. La plupart des algorithmes de traitement d'image utilisés dans ces flux de travail ont été ajustés autour de ces hypothèses. Par exemple, les modes de fusion assombrir et éclaircir s'attendent à un gris moyen codé à 50% (ou 128 en codage entier).\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Malheureusement, la mise à l'échelle non linéaire, qui est obligatoire pour faire fonctionner le codage entier, rompt les relations naturelles entre les valeurs de pixel. La teinte et la saturation changent de manière imprévisible, et les relations de valeur entre les pixels voisins sont dilatées ou compressées de sorte que les dégradés sont également modifiés de manière imprévisible.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Les pipelines graphiques relatifs à l'affichage cassent donc l'effet des filtres optiques (flou ou correction du flou d'un objectif), la simulation de transparence (qui repose sur des définitions optiques et géométriques de l'occultation), les couleurs et les dégradés (relations locales entre chrominance et luminance des pixels). Ils ne s'adaptent pas bien non plus aux images HDR, ce qui a conduit au développement de nombreuses méthodes discutables de mappage local et global des tonalités et au fameux «look HDR» des années 2010.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Les ordinateurs modernes ne sont pas assujettis aux mêmes limitations de calcul que ceux des années 1990 et peuvent travailler sur des pixels aux valeurs illimitées (de 0 à + infini) et encodées en nombres réels (en utilisant des formats à virgule flottante). Ces possibilités permettent ce que nous appelons un flux de travail \"relatif à la scène\", dans lequel les pixels peuvent conserver leurs relations radiométriques d'origine presque tout le long du pipeline graphique. Dans le flux de travail relatif à la scène, les pixels sont préparés pour l'affichage uniquement à la dernière étape du pipeline, dans la transformation d'affichage. Cela signifie que les valeurs RVB des pixels sont maintenues proportionnelles à l'intensité de l'émission de lumière enregistrée par la caméra dans la scène, permettant une simulation de transparence précise et des émulations de filtre optique, tout en s'adaptant à n'importe quelle plage dynamique via le même algorithme (SDR aussi bien que HDR).\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Cependant, les pipelines graphiques relatifs à la scène perdent les valeurs fixes pratiques du blanc, du gris moyen et du noir qui caractérisaient les pipelines relatifs à l'affichage. Le réglage de ces valeurs, en fonction de la scène et des conditions de prise de vue, incombe désormais à l'utilisateur. Cela nécessite une interface utilisateur plus complexe.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "De plus, comme les valeurs relatives à la scène sont supposées avoir une signification physique, les pixels ne peuvent pas avoir une intensité nulle. Cela signifierait qu'ils n'ont pas de lumière du tout et que l'existence d'une lumière nulle casse de nombreux algorithmes physiquement précis. En fait, le blanc et le noir ne signifient rien par rapport à la scène originale, qui n'est qu'un ensemble de luminances à des intensités variables. Le flux de travail relatif à la scène vise simplement à mapper certaines luminances arbitraires de la scène sur ce qui apparaîtra en blanc ou en noir sur le support de sortie.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Les versions de darktable antérieures à 2.6 avaient un pipeline relatif à l'affichage non linéaire, supposant qu'une transformation non linéaire avait lieu au début du pipeline et que le gris moyen était par la suite codé à 50%. Cependant, tous les modules et filtres ne tronquaient pas les valeurs de pixels supérieures à 100%, laissant ouverte la possibilité de récupérer ces valeurs plus tard dans le pipeline.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "La transformation de vue du module _filmique_, introduit dans darktable 2.6, était la première étape vers un pipeline relatif à la scène. Elle a reporté la préparation, obligatoire, non linéaire, de l'affichage à la fin du pipeline. Elle a aussi donné la possibilité de définir des valeurs personnalisées de noir, de gris et de blanc. Le module _balance couleur_ a ensuite introduit un moyen de traiter une définition variable du gris moyen.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "À partir de darktable 3.2, les utilisateurs pouvaient choisir entre deux flux de travail qui définissaient des paramètres par défaut cohérents, un choix de modules et leur ordre dans le pipeline graphique, à la fois, pour le traitement _relatif à l'affichage_ et pour le traitement _relatif à la scène_.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Dans darktable 3.4, une option complète de masquage et de fusion relative à la scène a été introduite, permettant de définir des masques pour des valeurs de pixel supérieures à 100% et utilisant uniquement des opérateurs de fusion non bornés.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Le passage à _relatif à la scène_ est un saut cognitif pour les utilisateurs les plus expérimentés, qui sont habitués à penser _relatif à l'affichage_. Dans un flux de travail _relatif à l'affichage_, il est habituel d'ancrer la valeur du blanc et de laisser les réglages de ton tourner autour de ce point, en essayant de maximiser la luminosité tout en évitant l'écrêtage. Dans un flux de travail _relatif à la scène_, les valeurs du blanc et du noir sont libres et adaptées au support de sortie. Il est conseillé aux utilisateurs d'ancrer le gris moyen (qui sera conservé tel quel pour tout support de sortie) et de laisser la transformation de vue (_filmique_) dilater ou contracter la plage dynamique autour de ce point. Étant donné que le blanc HDR 10 bits est 4 fois plus brillant que le blanc SDR 8 bits, toute définition rigide du «blanc» devient non pertinente. Mais l'ancrage du gris moyen est en fait plus pratique, car il maintient la luminosité moyenne de l'image inchangée pendant la transformation de la vue.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Certains modules (_niveaux_, _niveaux rvb_, _courbe des tonalités_, _courbe rvb_) sont intrinsèquement incompatibles avec un flux de travail _relatif à la scène_, car leur interface graphique suggère implicitement des valeurs RVB limitées dans la plage de 0 à 100%. Les opérations sur les pixels qu'ils exécutent sont non bornées en interne et peuvent être utilisées dans des flux de travail _relatif à la scène_ ou _relatif à l'affichage_. Mais leur interface de contrôle ne permet pas que des pixels soient sélectionnés en dehors de la plage de 0 à 100%.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "De même, les modes de fusion tels que superposer, lumière linéaire, lumière douce, lumière dure, assombrir, éclaircir, etc. ont tous des seuils codés en dur qui attendent en interne un codage non linéaire _relatif à l'affichage_.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid "Dans darktable 3.4, le fait de placer le curseur sur un en-tête de module affiche une info-bulle détaillant les espaces colorimétriques, les plages et les encodages que le module attend, utilise et produit. Voici les définitions des termes utilisés :\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"linéaire\n"
+": Les valeurs de pixel sont proportionnelles à l'émission radiométrique de la scène, de manière à permettre une émulation précise des filtres physiques.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"non linéaire\n"
+": Les valeurs de pixel sont redimensionnées de telle sorte que les basses lumières reçoivent une plage de codage plus large, généralement pour que le gris moyen de référence de 18,45% ait alors une valeur comprise entre 46 et 50%.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"relatif à l'affichage\n"
+": Les valeurs de pixel sont censées se situer entre 0 et 100% de la plage d'affichage, où 100% est considéré comme la luminance d'une surface blanche réfléchissante à 20% (la pastille blanche d'un Color Checker) et 0% est compris comme densité maximale du support de sortie (encre noire saturée ou rétroéclairage minimum du panneau LED).\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/color-pipeline.fr-fr.md
+#, markdown-text, no-wrap
+msgid ""
+"relatif à la scène\n"
+": Les valeurs de pixel doivent être strictement supérieures à zéro et aller jusqu'à + infini. La signification des valeurs spécifiques des pixels doit être définie par l'utilisateur lors de l'exécution. Les valeurs relatives à la scène n'impliquent pas automatiquement un codage linéaire, mis à l'échelle dans le cadre de la radiométrie.\n"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -10843,9 +12334,8 @@ msgstr ""
 
 #. type: Bullet: '- '
 #: content/guides-tutorials/other-resources.fr-fr.md
-#: content/guides-tutorials/other-resources.md
 #, markdown-text, no-wrap
-msgid "[Introducing color calibration module](https://discuss.pixls.us/t/introducing-color-calibration-module-formerly-known-as-channel-mixer-rgb/21227)\n"
+msgid "[Introduction au module calibration des couleurs](https://discuss.pixls.us/t/introducing-color-calibration-module-formerly-known-as-channel-mixer-rgb/21227)\n"
 msgstr ""
 
 #. type: Plain text
@@ -10964,6 +12454,12 @@ msgstr ""
 #: content/guides-tutorials/other-resources.md
 #, markdown-text, no-wrap
 msgid "[darktable 3.0: RGB or Lab? Which modules? Help!](https://pixls.us/articles/darktable-3-rgb-or-lab-which-modules-help/)\n"
+msgstr ""
+
+#. type: Bullet: '- '
+#: content/guides-tutorials/other-resources.md
+#, markdown-text, no-wrap
+msgid "[Introducing color calibration module](https://discuss.pixls.us/t/introducing-color-calibration-module-formerly-known-as-channel-mixer-rgb/21227)\n"
 msgstr ""
 
 #. type: Plain text
