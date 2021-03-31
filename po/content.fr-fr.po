@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: French (darktable)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-29 22:07+0200\n"
+"POT-Creation-Date: 2021-03-30 23:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: French <https://weblate.pixls.us/projects/darktable/dtdocs/fr/"
@@ -123,16 +123,6 @@ msgstr ""
 msgid ""
 "method\n"
 ": Choose the method for highlight reconstruction (see above)\n"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"![display icon](./lighttable-view-layout/lighttable-bottom-panel_display."
-"png#icon) [set display profile](../special-topics/color-management/display-"
-"profile.md)\n"
-": Click to choose display profiles\n"
 msgstr ""
 
 #. type: Fenced code block
@@ -403,18 +393,6 @@ msgid "center map view"
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[collect images](../module-reference/utility-modules/shared/collect-images."
-"md)\n"
-": Filter the images displayed in the lighttable center panel -- also used to "
-"control the images displayed in the [filmstrip](../module-reference/"
-"utility-modules/shared/filmstrip.md) and [timeline](../../module-reference/"
-"utility-modules/lighttable/timeline.md) modules.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/special-topics/program-invocation/darktable.md
 #, no-wrap
 msgid ""
@@ -677,6 +655,18 @@ msgid ""
 "![contrast-equalizer-edge](./contrast-equalizer/contrast-equalizer-edge."
 "png#w75)\n"
 msgstr ""
+
+#. type: Plain text
+#: content/map/overview.md,
+#: content/lighttable/undo-redo.md,
+#: content/darkroom/pixelpipe/undo-redo.md
+#, no-wrap
+msgid ""
+"Press Ctrl+Z to undo the last modification and Ctrl+Y to redo the last "
+"undone modification (if any).\n"
+msgstr ""
+"Tapez Ctrl+Z pour annuler la dernière modification et Ctrl+Y pour refaire la "
+"dernière modification annulée (s'il y en a une).\n"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/dithering.md
@@ -1532,6 +1522,18 @@ msgstr ""
 "exporter. Si vous souhaitez développer plusieurs images ou plusieurs "
 "répertoires utilisez plutôt l'option `--import`.\n"
 
+#. type: Plain text
+#: content/tethering/tethering-view-layout.md,
+#: content/map/map-view-layout.md,
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[tagging](../module-reference/utility-modules/shared/tagging.md)\n"
+": Tag selected images.\n"
+msgstr ""
+"[mots-clés](../module-reference/utility-modules/shared/tagging.md)\n"
+": Étiqueter les images sélectionnées.\n"
+
 #. type: Bullet: '2. '
 #: content/special-topics/module-order.md
 #, no-wrap
@@ -1916,6 +1918,22 @@ msgid ""
 "channel downwards gives a blue tint.\n"
 msgstr ""
 
+#. type: Plain text
+#: content/lighttable/lighttable-modes/zoomable-lighttable.md
+#, no-wrap
+msgid ""
+"**Hint:** you may find that the images are slow to load when zooming quickly "
+"through a large collection. One way to speed up the navigation is to "
+"generate a cache containing all the thumbnails using the [`darktable-"
+"generate-cache`](../../special-topics/program-invocation/darktable-generate-"
+"cache.md) command.\n"
+msgstr ""
+"**Conseil :** vous constaterez peut-être que le chargement des images est "
+"lent lorsque vous effectuez un zoom rapide sur une grande collection. Une "
+"façon d'accélérer la navigation consiste à générer un cache contenant toutes "
+"les miniatures à l'aide de la commande [`darktable-generate-cache"
+"`](../../special-topics/program-invocation/darktable-generate-cache.md).\n"
+
 #. type: Title ##
 #: content/darkroom/masking-and-blending/masks/parametric.md
 #, no-wrap
@@ -2036,6 +2054,16 @@ msgid ""
 "rotate\n"
 ": The rotation angle of the watermark.\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[mode selector](./lighttable-modes/_index.md)\n"
+": Choose lighttable mode using the dropdown\n"
+msgstr ""
+"[sélecteur du mode](./lighttable-modes/_index.md)\n"
+": Choisir le mode de la table lumineuse en utilisant le menu déroulant\n"
 
 #. type: Plain text
 #: content/special-topics/contributing.md
@@ -2452,6 +2480,34 @@ msgstr ""
 "et ne sont normalement pas visibles par l’utilisateur (ou par l’application)"
 ". Le code OpenCL compilé est chargé dans votre GPU et -- avec certains "
 "appels d’API -- il est prêt à effectuer des calculs pour vous. \n"
+
+#. type: Fenced code block
+#: content/lighttable/overview.md
+#, no-wrap
+msgid ""
+"0  5      set the rating of the image \n"
+"           if an image has 1 star and you hit the 1 key, the image will "
+"become unrated \n"
+"R          rate the image as \"rejected\"\n"
+"F1  F5    set a color label\n"
+"Ctrl+C     copy the history stack\n"
+"Ctrl+V     paste the copied history stack\n"
+"D          open in darkroom view for developing\n"
+"W          fully zoom into the current image while the key is pressed\n"
+"Ctrl+W     fully zoom into the current image and show areas in focus\n"
+msgstr ""
+"0  5      définir l'évaluation de l'image \n"
+"           si une image a 1 étoile et si vous appuyez sur la touche 1, "
+"l'image devient non évaluée \n"
+"R          évaluer l'image comme \"rejetée\"\n"
+"F1  F5    définir un label de couleur\n"
+"Ctrl+C     copier l'historique\n"
+"Ctrl+V     coller l'historique copié\n"
+"D          ouvrir la vue chambre noire pour développer\n"
+"W          zoomer complètement l'image actuelle tant que la touche est "
+"enfoncée\n"
+"Ctrl+W     zoomer complètement l'image actuelle et afficher les zones de "
+"mise au point\n"
 
 #. type: Plain text
 #: content/overview/sidecar-files/local-copies.md
@@ -3154,16 +3210,6 @@ msgstr ""
 "appellent «rouge», «vert» ou «bleu».\n"
 
 #. type: Plain text
-#: content/tethering/tethering-view-layout.md,
-#: content/map/map-view-layout.md,
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[tagging](../module-reference/utility-modules/shared/tagging.md)\n"
-": Tag selected images.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/overview/workflow/edit-display-referred.md
 #, no-wrap
 msgid ""
@@ -3597,6 +3643,37 @@ msgid ""
 msgstr ""
 
 #. type: Fenced code block
+#: content/module-reference/utility-modules/shared/filmstrip.md
+#, no-wrap
+msgid ""
+"Ctrl+A         select all images in the filmstrip\n"
+"Ctrl+Shift+A   deselect all images\n"
+"Ctrl+I         invert the current selection\n"
+"\n"
+"F1  F5        toggle color label (red, yellow, green, blue, purple)\n"
+"0  5          set/change image rating\n"
+"R              reject image\n"
+"Ctrl+D         duplicate image\n"
+"Ctrl+C         copy the full history stack\n"
+"Ctrl+V         paste all of the copied history stack\n"
+"Alt+Ctrl+C     selectively copy the history stack\n"
+"Alt+Ctrl+V     selectively paste from the copied history stack\n"
+msgstr ""
+"Ctrl+A         sélectionner toutes les miniatures de la pellicule\n"
+"Ctrl+Maj+A   désélectionner toutes les miniatures\n"
+"Ctrl+I         inverser la sélection actuelle\n"
+"\n"
+"F1  F5        basculer d'une étiquette de couleur à une autre (rouge, jaune, "
+"vert, bleu, violet)\n"
+"0  5          définir/changer l'évaluation d'une image\n"
+"R              rejeter une image\n"
+"Ctrl+D         cloner une image\n"
+"Ctrl+C         copier tout l'historique\n"
+"Ctrl+V         coller tout l'historique copié\n"
+"Alt+Ctrl+C     copier l'historique de manière sélective\n"
+"Alt+Ctrl+V     coller l'historique copié de manière sélective\n"
+
+#. type: Fenced code block
 #: content/lua/simple-shortcut.md
 #, no-wrap
 msgid ""
@@ -3733,6 +3810,12 @@ msgid ""
 "negative curve.\n"
 msgstr ""
 
+#. type: YAML Front Matter: title
+#: content/lighttable/lighttable-modes/full-preview.md
+#, no-wrap
+msgid "full preview"
+msgstr "aperçu complet"
+
 #. type: Plain text
 #: content/module-reference/processing-modules/contrast-equalizer.md
 #, no-wrap
@@ -3831,15 +3914,6 @@ msgid ""
 "[camera settings](../module-reference/utility-modules/tethering/camera-"
 "settings.md)\n"
 ": Camera settings\n"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[styles](../module-reference/utility-modules/lighttable/styles.md)\n"
-": Store an image's history stack as a named style and apply it to other "
-"images.\n"
 msgstr ""
 
 #. type: Plain text
@@ -4350,6 +4424,12 @@ msgstr ""
 msgid ": ![radial shrinking](./liquify/liquify_ex3.png#w33)\n"
 msgstr ""
 
+#. type: YAML Front Matter: title
+#: content/lighttable/lighttable-modes/_index.md
+#, no-wrap
+msgid "lighttable modes"
+msgstr "modes de la table lumineuse"
+
 #. type: Plain text
 #: content/lua/a-simple-example.md
 #, no-wrap
@@ -4464,6 +4544,17 @@ msgid ""
 msgstr ""
 "Si vous souhaitez présenter une remarque importante à l'utilisateur, "
 "utilisez le format suivant :\n"
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[import](../module-reference/utility-modules/lighttable/import.md)\n"
+": Import images from the filesystem or a connected camera.\n"
+msgstr ""
+"[importer](../module-reference/utility-modules/lighttable/import.md)\n"
+": Importer des images depuis le système de fichiers ou depuis un boîtier "
+"connecté.\n"
 
 #. type: Title #
 #: content/special-topics/memory.md
@@ -5226,17 +5317,6 @@ msgstr ""
 msgid "Add a solid layer of color to the image.\n"
 msgstr ""
 
-#. type: Plain text
-#: content/lighttable/lighttable-modes/zoomable-lighttable.md
-#, no-wrap
-msgid ""
-"**Hint:** you may find that the images are slow to load when zooming quickly "
-"through a large collection. One way to speed up the navigation is to "
-"generate a cache containing all the thumbnails using the [`darktable-"
-"generate-cache`](../../special-topics/program-invocation/darktable-generate-"
-"cache.md) command.\n"
-msgstr ""
-
 #. type: YAML Front Matter: title
 #: content/map/map-view-layout.md
 #, no-wrap
@@ -5290,12 +5370,6 @@ msgid ""
 "Before the _Y0U0V0 color mode_, wavelet-based denoising could only be "
 "performed directly on the _R_, _G_ and _B_ channels, either all together in "
 "one go, or on an individual channel basis.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid "lighttable view layout"
 msgstr ""
 
 #. type: Plain text
@@ -5516,12 +5590,6 @@ msgid ""
 "shortcuts.md)) while in either lighttable or darkroom view.\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/lighttable/_index.md
-#, no-wrap
-msgid "Lighttable"
-msgstr ""
-
 #. type: Plain text
 #: content/darkroom/masking-and-blending/overview.md
 #, no-wrap
@@ -5529,14 +5597,6 @@ msgid ""
 "By default each module takes its input from the preceding module in the "
 "pixelpipe, performs its operation on the image data, and hands the output "
 "over to the next module in the pixelpipe. \n"
-msgstr ""
-
-#. type: Plain text
-#: content/tethering/tethering-view-layout.md,
-#: content/lighttable/lighttable-view-layout.md,
-#: content/darkroom/darkroom-view-layout.md
-#, no-wrap
-msgid "From top to bottom:\n"
 msgstr ""
 
 #. type: Fenced code block
@@ -6352,16 +6412,6 @@ msgstr ""
 "moyen est en fait plus pratique, car il maintient la luminosité moyenne de "
 "l'image inchangée pendant la transformation de la vue.\n"
 
-#. type: Plain text
-#: content/lighttable/lighttable-modes/filemanager.md
-#, no-wrap
-msgid ""
-"zoom\n"
-": The number of images in each row can be altered using the slider in the "
-"bottom panel, or by holding Ctrl while scrolling over the center view with "
-"your mouse.\n"
-msgstr ""
-
 #. type: Bullet: '- '
 #: content/module-reference/processing-modules/retouch.md
 #, no-wrap
@@ -6488,16 +6538,6 @@ msgstr ""
 "autoriser des allocations mémoire aussi importantes que 1 Go sur votre carte "
 "AMD/ATI. Le problème est que cela tend à faire planter darktable tôt ou tard."
 "\n"
-
-#. type: Plain text
-#: content/map/overview.md,
-#: content/lighttable/undo-redo.md,
-#: content/darkroom/pixelpipe/undo-redo.md
-#, no-wrap
-msgid ""
-"Press Ctrl+Z to undo the last modification and Ctrl+Y to redo the last "
-"undone modification (if any).\n"
-msgstr ""
 
 #. type: Plain text
 #: content/module-reference/utility-modules/darkroom/global-color-picker.md
@@ -6987,12 +7027,6 @@ msgid ""
 "numbers that are put in the GUI to quantify the strength of the effects.\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/lighttable/lighttable-modes/zoomable-lighttable.md
-#, no-wrap
-msgid "zoomable lighttable"
-msgstr ""
-
 #. type: Plain text
 #: content/module-reference/utility-modules/lighttable/styles.md
 #, no-wrap
@@ -7132,12 +7166,6 @@ msgstr ""
 "relatif dans ce contexte : tous les CPU AMD ou Intel introduits depuis 2003 "
 "et 2004 respectivement, offrent un mode 64-bits. Linux 64-bits est "
 "disponible depuis de nombreuses années.\n"
-
-#. type: Fenced code block
-#: content/special-topics/darktable-chart/making-input-images.md
-#, fuzzy, no-wrap
-msgid "darktable --conf allow_lab_output=true\n"
-msgstr "darktable --conf allow_lab_output=true\n"
 
 #. type: Title #
 #: content/module-reference/processing-modules/demosaic.md
@@ -7681,6 +7709,12 @@ msgid ""
 "This module applies the required scaling.\n"
 msgstr ""
 
+#. type: Fenced code block
+#: content/special-topics/darktable-chart/making-input-images.md
+#, no-wrap
+msgid "darktable --conf allow_lab_output=true\n"
+msgstr "darktable --conf allow_lab_output=true\n"
+
 #. type: Plain text
 #: content/module-reference/utility-modules/print/print-settings.md
 #, no-wrap
@@ -7696,6 +7730,15 @@ msgstr ""
 #, no-wrap
 msgid "camera settings"
 msgstr ""
+
+#. type: Title #
+#: content/tethering/tethering-view-layout.md,
+#: content/map/map-view-layout.md,
+#: content/lighttable/lighttable-view-layout.md,
+#: content/darkroom/darkroom-view-layout.md
+#, no-wrap
+msgid "bottom panel"
+msgstr "panneau inférieur"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/white-balance.md
@@ -7937,14 +7980,6 @@ msgstr ""
 #: content/module-reference/processing-modules/white-balance.md
 #, no-wrap
 msgid "white balance"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[select](../module-reference/utility-modules/lighttable/select.md)\n"
-": Select images in the lighttable using simple criteria.\n"
 msgstr ""
 
 #. type: Plain text
@@ -8992,15 +9027,6 @@ msgid ""
 "offset, and the GPX data, to matching images on selected tracks.\n"
 msgstr ""
 
-#. type: Title #
-#: content/tethering/tethering-view-layout.md,
-#: content/map/map-view-layout.md,
-#: content/lighttable/lighttable-view-layout.md,
-#: content/darkroom/darkroom-view-layout.md
-#, no-wrap
-msgid "bottom panel"
-msgstr ""
-
 #. type: YAML Front Matter: title
 #: content/module-reference/processing-modules/astrophoto-denoise.md
 #, no-wrap
@@ -9677,6 +9703,23 @@ msgid "tagging"
 msgstr ""
 
 #. type: Plain text
+#: content/lighttable/lighttable-modes/filemanager.md
+#, no-wrap
+msgid ""
+"navigate\n"
+": You can navigate through the images using the arrow keys (///) or by "
+"scrolling with your mouse. Press the Home key to scroll to the top of the "
+"collection, the End key to scroll to the bottom, and PageUp/PageDown to "
+"scroll up/down by a page.\n"
+msgstr ""
+"naviguer\n"
+": Vous pouvez naviguer dans les images à l'aide des touches fléchées "
+"(←/→/↑/↓) ou en faisant défiler avec votre souris. Appuyez sur la touche "
+"Début pour faire défiler vers le haut de la collection, la touche Fin pour "
+"faire défiler vers le bas et PageUp/PageDown pour faire défiler d'une page "
+"vers le haut/bas.\n"
+
+#. type: Plain text
 #: content/special-topics/contributing.md
 #, no-wrap
 msgid ""
@@ -9721,6 +9764,14 @@ msgstr ""
 #, no-wrap
 msgid "graphic display"
 msgstr ""
+
+#. type: Title #
+#: content/lighttable/lighttable-modes/zoomable-lighttable.md,
+#: content/lighttable/lighttable-modes/culling.md,
+#: content/lighttable/lighttable-modes/filemanager.md
+#, no-wrap
+msgid "controls"
+msgstr "contrôles"
 
 #. type: YAML Front Matter: title
 #: content/special-topics/color-management/unbounded-colors.md
@@ -10260,6 +10311,25 @@ msgid "![histogram-waveform](./histogram/histogram-waveform.png#w33)\n"
 msgstr ""
 
 #. type: Plain text
+#: content/lighttable/lighttable-modes/filemanager.md
+#, no-wrap
+msgid ""
+"select\n"
+": You can select the image under the pointer by clicking on its thumbnail or "
+"by pressing Enter. A range of images can be selected by clicking on the "
+"first image and then Shift+clicking on the last one. Images can be added or "
+"removed from a selection by Ctrl+clicking on their thumbnails or by pressing "
+"Spacebar.\n"
+msgstr ""
+"sélectionner\n"
+": Vous pouvez sélectionner l'image sous le pointeur en cliquant sur sa "
+"miniature ou en appuyant sur Entrée. Une plage d'images peut être "
+"sélectionnée en cliquant sur la première image, puis en faisant un Maj+clic "
+"sur la dernière. Les images peuvent être ajoutées ou supprimées d'une "
+"sélection en faisant un Ctrl+clic sur leurs miniatures ou en appuyant sur la "
+"barre d'espace.\n"
+
+#. type: Plain text
 #: content/preferences-settings/import.md
 #, no-wrap
 msgid ""
@@ -10504,6 +10574,18 @@ msgid ""
 "[color labels](../lighttable/digital-asset-management/star-color.md)\n"
 ": Apply color categories to images\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md,
+#: content/darkroom/darkroom-view-layout.md
+#, no-wrap
+msgid ""
+"[export](../module-reference/utility-modules/shared/export.md)\n"
+": Export selected images to local files or external services.\n"
+msgstr ""
+"[exporter sélection](../module-reference/utility-modules/shared/export.md)\n"
+": Exporter les images sélectionnées vers des fichiers locaux ou des services "
+"externes.\n"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/colorize.md
@@ -11036,13 +11118,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/overview.md
-#, no-wrap
-msgid ""
-"The lighttable view allows you to view and manage your image collection.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/darkroom/masking-and-blending/masks/refinement-controls.md
 #, no-wrap
 msgid ""
@@ -11296,14 +11371,6 @@ msgstr ""
 msgid ""
 "navigate\n"
 ": Use the mouse wheel or arrow keys (/) to scroll through your collection.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/overview.md
-#, no-wrap
-msgid ""
-"The centre view contains thumbnails of your images -- how they are displayed "
-"depends on which [mode](./lighttable-modes/_index.md) you are working in.\n"
 msgstr ""
 
 #. type: Plain text
@@ -11594,6 +11661,16 @@ msgid ""
 "hide the histogram entirely with a keyboard shortcut (default Ctrl+Shift+H)."
 "\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-modes/filemanager.md
+#, no-wrap
+msgid ""
+"In the default mode images are displayed in a grid with an adjustable number "
+"of images per row.\n"
+msgstr ""
+"Dans le mode par défaut, les images sont affichées dans une grille avec un "
+"nombre réglable d'images par ligne.\n"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/demosaic.md
@@ -12197,6 +12274,15 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+#: content/lighttable/overview.md
+#, no-wrap
+msgid ""
+"The lighttable view allows you to view and manage your image collection.\n"
+msgstr ""
+"La vue de la table lumineuse vous permet de visualiser et de gérer votre "
+"collection d'images.\n"
+
+#. type: Plain text
 #: content/tethering/overview.md
 #, no-wrap
 msgid ""
@@ -12746,14 +12832,6 @@ msgid ""
 msgstr ""
 "[_correction des couleurs_](../module-reference/processing-modules/color-"
 "correction.md)\n"
-
-#. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[star ratings](./digital-asset-management/star-color.md)\n"
-": Apply star ratings to images\n"
-msgstr ""
 
 #. type: Plain text
 #: content/module-reference/processing-modules/monochrome.md
@@ -13323,16 +13401,6 @@ msgid "view currently assigned shortcuts"
 msgstr "afficher les raccourcis actuellement attribués"
 
 #. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"![focus icon](./lighttable-view-layout/lighttable-bottom-panel_focus."
-"png#icon) enable [focus-peaking](../module-reference/utility-modules/shared/"
-"focus-peaking.md) mode\n"
-": Click to enable focus-peaking mode\n"
-msgstr ""
-
-#. type: Plain text
 #: content/module-reference/utility-modules/darkroom/snapshots.md
 #, no-wrap
 msgid ""
@@ -13750,6 +13818,12 @@ msgstr ""
 "Utilisez le module [_grain_](../../module-reference/processing-modules/grain."
 "md) pour simuler le bruit typique des photos analogiques.\n"
 
+#. type: YAML Front Matter: title
+#: content/module-reference/utility-modules/shared/metadata-editor.md
+#, no-wrap
+msgid "metadata editor"
+msgstr "éditeur de métadonnées"
+
 #. type: Bullet: '- '
 #: content/module-reference/processing-modules/color-calibration.md
 #, no-wrap
@@ -13896,15 +13970,6 @@ msgid "exporting images with lua"
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[selected images(s)](../module-reference/utility-modules/lighttable/selected-"
-"image.md)\n"
-": Perform actions on selected images.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/tethering/examples.md
 #, no-wrap
 msgid ""
@@ -13958,13 +14023,24 @@ msgstr ""
 msgid "darktable on 64-bit systems"
 msgstr "darktable sur les systèmes 64-bits"
 
-#. type: Plain text
-#: content/lighttable/lighttable-modes/zoomable-lighttable.md
+#. type: Bullet: '- '
+#: content/special-topics/contributing.md
 #, no-wrap
 msgid ""
-"The _zoomable lighttable_ mode provides a different way to navigate large "
-"collections of images. \n"
+"`_index.md` files do not contain any content (they contain metadata only) "
+"and are used to render section headers and ToC entries. In the above example "
+"`example-chapter/_index.md` defines the title of the example chapter and the "
+"order in which it appears in the main table of contents. Similarly `example-"
+"chapter/section1-with-subsections/_index.md` defines metadata for the first "
+"section of the chapter.\n"
 msgstr ""
+"Les fichiers `_index.md` ne contiennent aucun contenu (ils contiennent "
+"uniquement des métadonnées) et sont utilisés pour rendre les en-têtes de "
+"section et les entrées de la table des matières. Dans l'exemple ci-dessus, "
+"`example-chapter/_index.md` définit le titre de l'exemple de chapitre et "
+"l'ordre dans lequel il apparaît dans la table des matières principale. De "
+"même, `example-chapter/section1-with-subsections/_index.md` définit les "
+"métadonnées pour la première section du chapitre.\n"
 
 #. type: Plain text
 #: content/special-topics/opencl/setting-up.md
@@ -14380,6 +14456,24 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+#: content/lighttable/lighttable-modes/zoomable-lighttable.md
+#, no-wrap
+msgid ""
+"zoom\n"
+": Scroll with the mouse wheel to zoom in and out of the lighttable (compared "
+"to Ctrl+scroll in [filemanager](./filemanager.md) mode).\n"
+": Zooming the thumbnails does not change the number of thumbnails per row, "
+"so the lighttable can exceed the visible area on all sides.\n"
+msgstr ""
+"zoomer\n"
+": Faites défiler avec la molette de la souris pour effectuer un zoom avant "
+"et arrière de la table lumineuse (à comparer à Ctrl+défilement dans le mode ["
+"navigateur de fichiers](./filemanager.md)\n"
+": Le zoom des miniatures ne modifie pas le nombre de miniatures par ligne, "
+"de sorte que la table lumineuse peut dépasser la zone visible de tous les "
+"côtés.\n"
+
+#. type: Plain text
 #: content/module-reference/processing-modules/negadoctor.md
 #, no-wrap
 msgid ""
@@ -14709,6 +14803,24 @@ msgid "linear / log mode"
 msgstr ""
 
 #. type: Plain text
+#: content/darkroom/pixelpipe/undo-redo.md
+#, no-wrap
+msgid ""
+"While you are editing your image, darktable records all of the modifications "
+"you make to that image. Thanks to this recording process it is possible to "
+"undo and redo changes to recover a previous editing state. Note that the "
+"undo/redo facility is unlimited in the number of steps while editing an "
+"image, but is reset each time the darkroom is switched to a new image.\n"
+msgstr ""
+"Pendant que vous modifiez votre image, darktable enregistre toutes les "
+"modifications que vous apportez à cette image. Grâce à ce processus "
+"d'enregistrement, il est possible d'annuler et de refaire des modifications "
+"pour récupérer un état d'édition précédent. Notez que la fonction annuler/"
+"refaire est illimitée dans le nombre d'étapes lors de l'édition d'une image, "
+"mais est réinitialisée chaque fois que la chambre noire passe à une nouvelle "
+"image.\n"
+
+#. type: Plain text
 #: content/module-reference/processing-modules/raw-denoise.md
 #, no-wrap
 msgid ""
@@ -14950,6 +15062,17 @@ msgid ""
 ": - _mark with solid color_: Mark clipped areas with a user defined solid "
 "color (see below) independent of the affected color channels. \n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/overview.md
+#, no-wrap
+msgid ""
+"The centre view contains thumbnails of your images -- how they are displayed "
+"depends on which [mode](./lighttable-modes/_index.md) you are working in.\n"
+msgstr ""
+"La zone centrale contient des miniatures de vos images -- la manière dont "
+"elles sont affichées dépend du [mode](./lighttable-modes/_index.md) dans "
+"lequel vous travaillez.\n"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/denoise-profiled.md
@@ -15613,6 +15736,12 @@ msgstr ""
 "_réduction du bruit photo astro_ est probablement l'alternative la plus "
 "pratique, car elle vous permet de traiter séparément le bruit de couleur et "
 "de luminance.\n"
+
+#. type: YAML Front Matter: title
+#: content/lighttable/lighttable-modes/zoomable-lighttable.md
+#, no-wrap
+msgid "zoomable lighttable"
+msgstr "table lumineuse zoomable"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/tone-equalizer.md
@@ -16765,14 +16894,6 @@ msgid "global controls"
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[mode selector](./lighttable-modes/_index.md)\n"
-": Choose lighttable mode using the dropdown\n"
-msgstr ""
-
-#. type: Plain text
 #: content/darkroom/pixelpipe/the-pixelpipe-and-module-order.md
 #, no-wrap
 msgid ""
@@ -17295,14 +17416,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[zoom](./lighttable-modes/filemanager.md)\n"
-": Use the slider to change the size of thumbnails\n"
-msgstr ""
-
-#. type: Plain text
 #: content/overview/user-interface/top-panel.md
 #, no-wrap
 msgid ""
@@ -17676,6 +17789,18 @@ msgstr ""
 msgid "[darktable.org](https://darktable.org/)\n"
 msgstr "[darktable.org](https://darktable.org/)\n"
 
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[recently used collections](../module-reference/utility-modules/shared/"
+"recent-collections.md)\n"
+": View recently used collections of images\n"
+msgstr ""
+"[collections récentes](../module-reference/utility-modules/shared/recent-"
+"collections.md)\n"
+": Montrer les collections d'images récemment utilisées\n"
+
 #. type: Bullet: '2. '
 #: content/special-topics/module-order.md
 #, no-wrap
@@ -17824,17 +17949,6 @@ msgid "views"
 msgstr "vues"
 
 #. type: Plain text
-#: content/lighttable/lighttable-modes/filemanager.md
-#, no-wrap
-msgid ""
-"navigate\n"
-": You can navigate through the images using the arrow keys (///) or by "
-"scrolling with your mouse. Press the Home key to scroll to the top of the "
-"collection, the End key to scroll to the bottom, and PageUp/PageDown to "
-"scroll up/down by a page.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/preferences-settings/darkroom.md
 #, no-wrap
 msgid ""
@@ -17866,14 +17980,6 @@ msgid "[Bruce Williams Photography](https://www.youtube.com/user/audio2u)\n"
 msgstr "[Bruce Williams Photography](https://www.youtube.com/user/audio2u)\n"
 
 #. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[geotagging](../module-reference/utility-modules/shared/geotagging.md)\n"
-": Import and apply GPX track data to selected images.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/lua/building-ui-elements.md
 #, no-wrap
 msgid ""
@@ -17881,6 +17987,13 @@ msgid ""
 "preference for the export path wasn't very nice. We can do better than that "
 "by adding elements to the user interface in the export dialog.\n"
 msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/map/overview.md,
+#: content/lighttable/undo-redo.md
+#, no-wrap
+msgid "undo/redo"
+msgstr "annuler/refaire"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/filmic-rgb.md
@@ -18300,6 +18413,16 @@ msgid ""
 "longer be used for new edits. Please use the [quick access panel](../../"
 "darkroom/organization/quick-access-panel.md) instead.**\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[zoom](./lighttable-modes/filemanager.md)\n"
+": Use the slider to change the size of thumbnails\n"
+msgstr ""
+"[zoom](./lighttable-modes/filemanager.md)\n"
+": Utiliser le curseur pour modifier la taille des miniatures\n"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/retouch.md
@@ -18807,6 +18930,17 @@ msgstr ""
 "activée par défaut).\n"
 
 #. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[select](../module-reference/utility-modules/lighttable/select.md)\n"
+": Select images in the lighttable using simple criteria.\n"
+msgstr ""
+"[sélection](../module-reference/utility-modules/lighttable/select.md)\n"
+": Sélectionner des images de la table lumineuse en utilisant des critères "
+"simples.\n"
+
+#. type: Plain text
 #: content/lighttable/digital-asset-management/film-rolls.md
 #, no-wrap
 msgid ""
@@ -18829,6 +18963,19 @@ msgid ""
 ": Control handles are always moved together. This mode is depicted by a "
 "square symbol in the node center.\n"
 msgstr ""
+
+#. type: Plain text
+#: content/tethering/tethering-view-layout.md,
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[metadata editor](../module-reference/utility-modules/shared/metadata-editor."
+"md)\n"
+": Edit metadata for selected images.\n"
+msgstr ""
+"[éditeur de métadonnées](../module-reference/utility-modules/shared/metadata-"
+"editor.md)\n"
+": Éditer les métadonnées des images sélectionnées.\n"
 
 #. type: Plain text
 #: content/special-topics/darktable-chart/source-image.md
@@ -19620,6 +19767,16 @@ msgid ""
 "on your personal library.\n"
 msgstr ""
 
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"![lighttable-bottom-panel](./lighttable-view-layout/lighttable-bottom-panel."
+"png#w100)\n"
+msgstr ""
+"![lighttable-bottom-panel](./lighttable-view-layout/lighttable-bottom-panel."
+"png#w100)\n"
+
 #. type: Bullet: '- '
 #: content/module-reference/processing-modules/color-calibration.md
 #, no-wrap
@@ -19926,6 +20083,25 @@ msgstr ""
 #, no-wrap
 msgid ": ![bauhaus](./module-controls/bauhaus.png#w33)\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[collect images](../module-reference/utility-modules/shared/collect-images."
+"md)\n"
+": Filter the images displayed in the lighttable center panel -- also used to "
+"control the images displayed in the [filmstrip](../module-reference/"
+"utility-modules/shared/filmstrip.md) and [timeline](../../module-reference/"
+"utility-modules/lighttable/timeline.md) modules.\n"
+msgstr ""
+"[filtres de collection](../module-reference/utility-modules/shared/collect-"
+"images.md)\n"
+": Filtrer les images affichées dans le panneau central de la table lumineuse "
+"-- aussi utilisé pour contrôler les images affichées dans les modules "
+"[pellicule](../module-reference/utility-modules/shared/filmstrip.md) et "
+"[chronologie](../../module-reference/utility-modules/lighttable/timeline.md)."
+"\n"
 
 #. type: Plain text
 #: content/special-topics/memory.md
@@ -20343,13 +20519,6 @@ msgid ""
 "after the second pass of the gaussian blur. Adding noise can fake details in "
 "the blurred regions and make content detection more difficult for artificial "
 "intelligence algorithms.\n"
-msgstr ""
-
-#. type: YAML Front Matter: title
-#: content/map/overview.md,
-#: content/lighttable/undo-redo.md
-#, no-wrap
-msgid "undo/redo"
 msgstr ""
 
 #. type: Plain text
@@ -21252,6 +21421,18 @@ msgid "printer"
 msgstr "imprimante"
 
 #. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[history stack](../module-reference/utility-modules/lighttable/history-stack."
+"md)\n"
+": Manipulate the history stack of selected images.\n"
+msgstr ""
+"[développement](../module-reference/utility-modules/lighttable/history-stack."
+"md)\n"
+": Manipuler le développement des images sélectionnées.\n"
+
+#. type: Plain text
 #: content/module-reference/processing-modules/defringe.md
 #, no-wrap
 msgid ""
@@ -21310,17 +21491,6 @@ msgid ""
 "utility-modules/darkroom/mask-manager.md) or from within the drawn mask of "
 "another module). If that shape or group is used elsewhere, any changes you "
 "make will be reflected everywhere the shape or group is used.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/lighttable-modes/zoomable-lighttable.md
-#, no-wrap
-msgid ""
-"zoom\n"
-": Scroll with the mouse wheel to zoom in and out of the lighttable (compared "
-"to Ctrl+scroll in [filemanager](./filemanager.md) mode).\n"
-": Zooming the thumbnails does not change the number of thumbnails per row, "
-"so the lighttable can exceed the visible area on all sides.\n"
 msgstr ""
 
 #. type: Plain text
@@ -21871,6 +22041,14 @@ msgid ""
 "that image:\n"
 msgstr ""
 
+#. type: Plain text
+#: content/tethering/tethering-view-layout.md,
+#: content/lighttable/lighttable-view-layout.md,
+#: content/darkroom/darkroom-view-layout.md
+#, no-wrap
+msgid "From top to bottom:\n"
+msgstr "De haut en bas :\n"
+
 #. type: Title ##
 #: content/module-reference/processing-modules/tone-equalizer.md
 #, no-wrap
@@ -21996,20 +22174,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: content/special-topics/contributing.md
-#, no-wrap
-msgid ""
-"id\n"
-": This is the id used to identify the page by Hugo. It should usually be the "
-"same name as the file (for content files) or the parent directory (for "
-"`_index.md` files).\n"
-msgstr ""
-"id\n"
-": C'est l'identifiant utilisé pour identifier la page par Hugo. Il doit "
-"généralement avoir le même nom que le fichier (pour les fichiers de contenu) "
-"ou le répertoire parent (pour les fichiers `_index.md_`).\n"
-
-#. type: Plain text
 #: content/preferences-settings/security.md
 #, no-wrap
 msgid ""
@@ -22083,6 +22247,12 @@ msgid ""
 msgstr ""
 "À ce jour, pendant la phase d'importation, à partir de fichiers liés générés "
 "par Lightroom, darktable est capable de traiter les métadonnées suivantes :\n"
+
+#. type: YAML Front Matter: title
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid "lighttable view layout"
+msgstr "disposition de la vue table lumineuse"
 
 #. type: Plain text
 #: content/darkroom/pixelpipe/history-stack.md
@@ -22447,6 +22617,25 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+#: content/lighttable/lighttable-modes/zoomable-lighttable.md
+#, no-wrap
+msgid ""
+"select\n"
+": As with the filemanager mode, you can select the image under the pointer "
+"by clicking on its thumbnail or by pressing Enter. A range of images can be "
+"selected by clicking on the first image and then Shift+clicking on the last "
+"one. Images can be added or removed from a selection by Ctrl+clicking on "
+"their thumbnails or by pressing Spacebar.\n"
+msgstr ""
+"sélectionner\n"
+": Comme dans le mode gestionnaire de fichiers, vous pouvez sélectionner "
+"l'image sous le pointeur en cliquant sur sa miniature ou en appuyant sur "
+"Entrée. Une plage d'images peut être sélectionnée en cliquant sur la "
+"première image, puis en faisant un Maj+clic sur la dernière. Les images "
+"peuvent être ajoutées ou supprimées d'une sélection en appuyant sur Ctrl+"
+"clic sur leurs miniatures ou en appuyant sur la barre d'espace.\n"
+
+#. type: Plain text
 #: content/special-topics/opencl/setting-up.md
 #, no-wrap
 msgid ""
@@ -22455,6 +22644,16 @@ msgid ""
 msgstr ""
 "Méfiez-vous que les numéros majeurs/mineurs (par exemple `250/0` pour `/dev/"
 "nvidia-uvm` dans cet exemple) peuvent varier en fonction de votre système. \n"
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[geotagging](../module-reference/utility-modules/shared/geotagging.md)\n"
+": Import and apply GPX track data to selected images.\n"
+msgstr ""
+"[géolocalisation](../module-reference/utility-modules/shared/geotagging.md)\n"
+": Importer et appliquer les données de suivi GPX aux images sélectionnées.\n"
 
 #. type: Plain text
 #: content/_index.md
@@ -22747,6 +22946,12 @@ msgid ""
 "pattern. Pixels with values lower than the defined level are considered not "
 "to contain valid data.\n"
 msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/lighttable/lighttable-modes/filemanager.md
+#, no-wrap
+msgid "filemanager"
+msgstr "navigateur de fichiers"
 
 #. type: Bullet: '- '
 #: content/module-reference/processing-modules/tone-equalizer.md
@@ -23370,6 +23575,26 @@ msgid ""
 "illuminant with only a slight adjustment of the white balance.\n"
 msgstr ""
 
+#. type: Plain text
+#: content/lighttable/undo-redo.md
+#, no-wrap
+msgid ""
+"Most changes made within the lighttable are recorded and can be reverted to "
+"a previous state. This includes modifications to color labels, ratings, geo-"
+"localization, tags, metadata, orientation, copy/paste of history, or "
+"application of a style. Note that the facility to undo/redo actions is "
+"unlimited in the number of steps while in the lighttable view, but it is "
+"reset each time you switch to a different view.\n"
+msgstr ""
+"La plupart des modifications de la table lumineuse sont enregistrées et "
+"peuvent être annulées. Cela inclut les modifications apportées aux "
+"étiquettes de couleur, aux évaluations, à la géolocalisation, aux mots-clés, "
+"aux métadonnées, à l'orientation, au copier/coller de l'historique ou à "
+"l'application d'un style. Notez que cette fonction annuler/refaire accepte "
+"un nombre illimité d'enregistrements d'états tant qu'on reste dans la table "
+"lumineuse, mais elle est réinitialisée à chaque fois que vous passez à une "
+"autre vue.\n"
+
 #. type: Bullet: '4. '
 #: content/darkroom/pixelpipe/the-anatomy-of-a-module.md
 #, no-wrap
@@ -23382,6 +23607,16 @@ msgid ""
 "input_ proportionally. The _final output_ is passed to the next module for "
 "further processing.\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-modes/zoomable-lighttable.md
+#, no-wrap
+msgid ""
+"The _zoomable lighttable_ mode provides a different way to navigate large "
+"collections of images. \n"
+msgstr ""
+"Le mode _table lumineuse zoomable_ fournit une manière différente de "
+"parcourir de grandes collections d'images. \n"
 
 #. type: Plain text
 #: content/darkroom/organization/quick-access-panel.md
@@ -23629,12 +23864,6 @@ msgid ""
 msgstr ""
 "Ajustez les tons-moyens en utilisant le module [_exposition_](../../module-"
 "reference/processing-modules/exposure.md)\n"
-
-#. type: YAML Front Matter: title
-#: content/lighttable/lighttable-modes/filemanager.md
-#, no-wrap
-msgid "filemanager"
-msgstr ""
 
 #. type: Plain text
 #: content/module-reference/processing-modules/tone-curve.md
@@ -23945,15 +24174,6 @@ msgid ""
 "detail (all operators)\n"
 ": This parameter controls how much detail is preserved from the original "
 "input image and transferred back into the output image after tonemapping.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[recently used collections](../module-reference/utility-modules/shared/"
-"recent-collections.md)\n"
-": View recently used collections of images\n"
 msgstr ""
 
 #. type: Plain text
@@ -24867,12 +25087,6 @@ msgid ""
 "_illuminant_ to \"same as pipeline (D50)\" in the CAT tab.\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/lighttable/lighttable-modes/full-preview.md
-#, no-wrap
-msgid "full preview"
-msgstr ""
-
 #. type: Plain text
 #: content/special-topics/program-invocation/darktable-chart.md
 #, no-wrap
@@ -25194,6 +25408,18 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
+#: content/lighttable/lighttable-modes/zoomable-lighttable.md
+#, no-wrap
+msgid ""
+"navigate\n"
+": Hold down the left mouse button to drag the images around on the "
+"lighttable to navigate through your collection.\n"
+msgstr ""
+"naviguer\n"
+": Pour parcourir votre collection, maintenez le bouton gauche de la souris "
+"enfoncé pour faire glisser les images sur la table lumineuse.\n"
+
+#. type: Plain text
 #: content/module-reference/utility-modules/shared/geotagging.md
 #, no-wrap
 msgid ""
@@ -25281,36 +25507,6 @@ msgstr ""
 "Vous pouvez soit utiliser l'interface utilisateur Web de Weblate pour "
 "traduire la documentation, soit télécharger la traduction de Weblate sur "
 "votre ordinateur, la modifier, puis téléverser les modifications.\n"
-
-#. type: Fenced code block
-#: content/module-reference/utility-modules/shared/filmstrip.md
-#, no-wrap
-msgid ""
-"Ctrl+A         select all images in the filmstrip\n"
-"Ctrl+Shift+A   deselect all images\n"
-"Ctrl+I         invert the current selection\n"
-"\n"
-"F1  F5        toggle color label (red, yellow, green, blue, purple)\n"
-"0  5          set/change image rating\n"
-"R              reject image\n"
-"Ctrl+D         duplicate image\n"
-"Ctrl+C         copy the full history stack\n"
-"Ctrl+V         paste all of the copied history stack\n"
-"Alt+Ctrl+C     selectively copy the history stack\n"
-"Alt+Ctrl+V     selectively paste from the copied history stack\n"
-msgstr ""
-"Ctrl+A         sélectionner toutes les miniatures de la pellicule\n"
-"Ctrl+Shift+A   désélectionner toutes les miniatures\n"
-"Ctrl+I         inverser la sélection actuelle\n"
-"F1  F5        basculer d'une étiquette de couleur à une autre (rouge, jaune, "
-"vert, bleu, violet)\n"
-"0  5          définir/ changer l'évaluation d'une image\n"
-"R              rejeter une image\n"
-"Ctrl+D         cloner une image\n"
-"Ctrl+C         copier tout l'historique\n"
-"Ctrl+V         coller tout l'historique copié\n"
-"Alt+Ctrl+C     copier l'historique de manière sélective\n"
-"Alt+Ctrl+V     coller l'historique copié de manière sélective\n"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/color-calibration.md
@@ -25454,14 +25650,6 @@ msgid ""
 "histogram.\n"
 msgstr ""
 
-#. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"![lighttable-bottom-panel](./lighttable-view-layout/lighttable-bottom-panel."
-"png#w100)\n"
-msgstr ""
-
 #. type: YAML Front Matter: title
 #: content/darkroom/masking-and-blending/blend-modes.md
 #, no-wrap
@@ -25474,14 +25662,6 @@ msgstr ""
 msgid ""
 "mode\n"
 ": Choose how to mark clipped areas:\n"
-msgstr ""
-
-#. type: Plain text
-#: content/tethering/tethering-view-layout.md,
-#: content/lighttable/lighttable-view-layout.md,
-#: content/darkroom/darkroom-view-layout.md
-#, no-wrap
-msgid "From left to right:\n"
 msgstr ""
 
 #. type: Plain text
@@ -25821,12 +26001,6 @@ msgid ""
 "buttons beside the group headers.\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/module-reference/utility-modules/shared/metadata-editor.md
-#, no-wrap
-msgid "metadata editor"
-msgstr ""
-
 #. type: Plain text
 #: content/module-reference/processing-modules/tone-equalizer.md
 #, no-wrap
@@ -25839,15 +26013,6 @@ msgid ""
 "eyedropper icon to the right of the slider to set the exposure compensation "
 "such that the average of the mask's histogram will coincide with the central "
 "-4EV control point. The slider can then be fine tuned as required.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/lighttable-modes/zoomable-lighttable.md
-#, no-wrap
-msgid ""
-"navigate\n"
-": Hold down the left mouse button to drag the images around on the "
-"lighttable to navigate through your collection.\n"
 msgstr ""
 
 #. type: Title #
@@ -25897,14 +26062,6 @@ msgstr ""
 "survole les miniatures d'image. Ce patron peut utiliser n'importe laquelle "
 "des variables définies dans la section [substitution de variable](../special-"
 "topics/variables.md).\n"
-
-#. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[import](../module-reference/utility-modules/lighttable/import.md)\n"
-": Import images from the filesystem or a connected camera.\n"
-msgstr ""
 
 #. type: Plain text
 #: content/module-reference/processing-modules/levels.md
@@ -26285,22 +26442,6 @@ msgid ""
 "contrast compression to have stronger effects on image details.\n"
 msgstr ""
 
-#. type: Fenced code block
-#: content/lighttable/overview.md
-#, no-wrap
-msgid ""
-"0  5      set the rating of the image \n"
-"           if an image has 1 star and you hit the 1 key, the image will "
-"become unrated \n"
-"R          rate the image as \"rejected\"\n"
-"F1  F5    set a color label\n"
-"Ctrl+C     copy the history stack\n"
-"Ctrl+V     paste the copied history stack\n"
-"D          open in darkroom view for developing\n"
-"W          fully zoom into the current image while the key is pressed\n"
-"Ctrl+W     fully zoom into the current image and show areas in focus\n"
-msgstr ""
-
 #. type: Plain text
 #: content/preferences-settings/shortcuts.md
 #, no-wrap
@@ -26374,22 +26515,18 @@ msgstr ""
 msgid "Tethering"
 msgstr ""
 
+#. type: Plain text
+#: content/tethering/tethering-view-layout.md,
+#: content/lighttable/lighttable-view-layout.md,
+#: content/darkroom/darkroom-view-layout.md
+#, no-wrap
+msgid "From left to right:\n"
+msgstr "De gauche à droite :\n"
+
 #. type: YAML Front Matter: title
 #: content/module-reference/utility-modules/darkroom/raw-overexposed.md
 #, no-wrap
 msgid "raw overexposed warning"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/lighttable-modes/filemanager.md
-#, no-wrap
-msgid ""
-"select\n"
-": You can select the image under the pointer by clicking on its thumbnail or "
-"by pressing Enter. A range of images can be selected by clicking on the "
-"first image and then Shift+clicking on the last one. Images can be added or "
-"removed from a selection by Ctrl+clicking on their thumbnails or by pressing "
-"Spacebar.\n"
 msgstr ""
 
 #. type: Title #
@@ -26451,6 +26588,20 @@ msgid ""
 "    end\n"
 "end,\"Increase the rating of an image\")\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"![focus icon](./lighttable-view-layout/lighttable-bottom-panel_focus."
+"png#icon) enable [focus-peaking](../module-reference/utility-modules/shared/"
+"focus-peaking.md) mode\n"
+": Click to enable focus-peaking mode\n"
+msgstr ""
+"![icône focus](./lighttable-view-layout/lighttable-bottom-panel_focus."
+"png#icon) active le mode [détection de mise au point](../module-reference/"
+"utility-modules/shared/focus-peaking.md)\n"
+": Cliquer pour activer le mode de détection de mise au point\n"
 
 #. type: Bullet: '- '
 #: content/module-reference/processing-modules/negadoctor.md
@@ -26692,14 +26843,6 @@ msgid ""
 "_skin and soil colors_, _foliage colors_, _sky and water colors_:Give "
 "priority to the chosen hue range. This is useful if the subject of your "
 "pictures is clearly defined and has a typical color.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[color labels](./digital-asset-management/star-color.md)\n"
-": Apply color categories to images\n"
 msgstr ""
 
 #. type: Plain text
@@ -27894,6 +28037,20 @@ msgstr ""
 "problèmes de gamut.\n"
 
 #. type: Plain text
+#: content/special-topics/contributing.md
+#, no-wrap
+msgid ""
+"id\n"
+": This is the id used to identify the page by Hugo. It should usually be the "
+"same name as the file (for content files) or the parent directory (for "
+"`_index.md` files).\n"
+msgstr ""
+"id\n"
+": C'est l'identifiant utilisé pour identifier la page par Hugo. Il doit "
+"généralement avoir le même nom que le fichier (pour les fichiers de contenu) "
+"ou le répertoire parent (pour les fichiers `_index.md`).\n"
+
+#. type: Plain text
 #: content/lighttable/lighttable-modes/full-preview.md
 #, no-wrap
 msgid ""
@@ -28371,18 +28528,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/lighttable-modes/zoomable-lighttable.md
-#, no-wrap
-msgid ""
-"select\n"
-": As with the filemanager mode, you can select the image under the pointer "
-"by clicking on its thumbnail or by pressing Enter. A range of images can be "
-"selected by clicking on the first image and then Shift+clicking on the last "
-"one. Images can be added or removed from a selection by Ctrl+clicking on "
-"their thumbnails or by pressing Spacebar.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/special-topics/color-management/rendering-intent.md
 #, no-wrap
 msgid ""
@@ -28427,6 +28572,20 @@ msgid ""
 "down the Shift key and keep the left or right mouse button pressed while "
 "dragging to select or deselect all lines in the chosen rectangular area.\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-modes/filemanager.md
+#, no-wrap
+msgid ""
+"zoom\n"
+": The number of images in each row can be altered using the slider in the "
+"bottom panel, or by holding Ctrl while scrolling over the center view with "
+"your mouse.\n"
+msgstr ""
+"zoomer\n"
+": Le nombre d'images dans chaque ligne peut être modifié à l'aide du curseur "
+"dans le panneau inférieur ou en maintenant la touche Ctrl enfoncée tout en "
+"faisant défiler la vue centrale avec votre souris.\n"
 
 #. type: Plain text
 #: content/darkroom/pixelpipe/the-pixelpipe-and-module-order.md
@@ -29575,6 +29734,16 @@ msgstr ""
 ": Il est possible de régler séparément chaque marge ou de toutes les régler "
 "simultanément en cliquant le bouton central sync.\n"
 
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[color labels](./digital-asset-management/star-color.md)\n"
+": Apply color categories to images\n"
+msgstr ""
+"[labels de couleur](./digital-asset-management/star-color.md)\n"
+": Appliquer des catégories de couleurs aux images\n"
+
 #. type: Bullet: '- '
 #: content/module-reference/processing-modules/color-calibration.md
 #, no-wrap
@@ -30489,14 +30658,6 @@ msgstr ""
 "variable](../special-topics/variables.md) ainsi que `$(NL)` pour une "
 "nouvelle ligne.\n"
 
-#. type: Title #
-#: content/lighttable/lighttable-modes/zoomable-lighttable.md,
-#: content/lighttable/lighttable-modes/culling.md,
-#: content/lighttable/lighttable-modes/filemanager.md
-#, no-wrap
-msgid "controls"
-msgstr ""
-
 #. type: Plain text
 #: content/module-reference/processing-modules/shadows-and-highlights.md
 #, no-wrap
@@ -30735,6 +30896,18 @@ msgid ""
 "image group again in darkroom, only the group head will be altered. The "
 "underlying duplicate remains unchanged.\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[lua scripts installer](../module-reference/utility-modules/lighttable/lua-"
+"scripts-installer.md) (optional)\n"
+": Install lua scripts\n"
+msgstr ""
+"[installer les scripts lua](../module-reference/utility-modules/lighttable/"
+"lua-scripts-installer.md) (optionnel)\n"
+": Installer les scripts lua\n"
 
 #. type: Plain text
 #: content/special-topics/opencl/multiple-devices.md
@@ -31499,14 +31672,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/lighttable-modes/filemanager.md
-#, no-wrap
-msgid ""
-"In the default mode images are displayed in a grid with an adjustable number "
-"of images per row.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/lighttable/digital-asset-management/star-color.md
 #, no-wrap
 msgid ""
@@ -31602,6 +31767,12 @@ msgid ""
 "are linked together. There are four modes which correspond to different ways "
 "of handling the steepness of the bezier curve using control handles: \n"
 msgstr ""
+
+#. type: YAML Front Matter: title
+#: content/lighttable/_index.md
+#, no-wrap
+msgid "Lighttable"
+msgstr "Table lumineuse"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/white-balance.md
@@ -32610,15 +32781,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[history stack](../module-reference/utility-modules/lighttable/history-stack."
-"md)\n"
-": Manipulate the history stack of selected images.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/module-reference/processing-modules/tone-mapping.md
 #, no-wrap
 msgid ""
@@ -32969,17 +33131,6 @@ msgstr ""
 #, no-wrap
 msgid "session"
 msgstr "session"
-
-#. type: Plain text
-#: content/darkroom/pixelpipe/undo-redo.md
-#, no-wrap
-msgid ""
-"While you are editing your image, darktable records all of the modifications "
-"you make to that image. Thanks to this recording process it is possible to "
-"undo and redo changes to recover a previous editing state. Note that the "
-"undo/redo facility is unlimited in the number of steps while editing an "
-"image, but is reset each time the darkroom is switched to a new image.\n"
-msgstr ""
 
 #. type: Plain text
 #: content/module-reference/utility-modules/lighttable/import.md
@@ -33413,6 +33564,16 @@ msgstr ""
 msgid "Import and apply GPX track data to a selection of images.\n"
 msgstr ""
 
+#. type: Plain text
+#: content/lighttable/overview.md
+#, no-wrap
+msgid ""
+"While the mouse is over an image thumbnail or images are selected, there are "
+"a number of actions you can perform:\n"
+msgstr ""
+"Lorsque la souris se trouve sur une miniature d'image ou lorsque des images "
+"sont sélectionnées, vous pouvez effectuer un certain nombre d'actions :\n"
+
 #. type: Fenced code block
 #: content/module-reference/utility-modules/shared/tagging.md
 #, no-wrap
@@ -33542,15 +33703,6 @@ msgstr ""
 msgid ""
 "exif data\n"
 ": Export the source image's exif data\n"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[lua scripts installer](../module-reference/utility-modules/lighttable/lua-"
-"scripts-installer.md) (optional)\n"
-": Install lua scripts\n"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -33817,14 +33969,6 @@ msgid "display-referred workflow"
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/overview.md
-#, no-wrap
-msgid ""
-"While the mouse is over an image thumbnail or images are selected, there are "
-"a number of actions you can perform:\n"
-msgstr ""
-
-#. type: Plain text
 #: content/darkroom/processing-modules/presets.md
 #, no-wrap
 msgid ""
@@ -33863,6 +34007,18 @@ msgstr ""
 "en constante augmentation. La plupart des appareils modernes sont pris en "
 "charge et la tendance est d'ajouter les nouveaux très rapidement. En donner "
 "la liste exhaustive dépasse le cadre de ce manuel.\n"
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[styles](../module-reference/utility-modules/lighttable/styles.md)\n"
+": Store an image's history stack as a named style and apply it to other "
+"images.\n"
+msgstr ""
+"[styles](../module-reference/utility-modules/lighttable/styles.md)\n"
+": Stocker l'historique d'une image en tant que style nommé et l'appliquer à "
+"d'autres images.\n"
 
 #. type: Plain text
 #: content/darkroom/pixelpipe/the-pixelpipe-and-module-order.md
@@ -34309,18 +34465,6 @@ msgid ""
 "uses a norm (N), divides all the three components by that norm, and applies "
 "the S-curve to N. This way, the relationship between the channels is "
 "preserved.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/lighttable/undo-redo.md
-#, no-wrap
-msgid ""
-"Most changes made within the lighttable are recorded and can be reverted to "
-"a previous state. This includes modifications to color labels, ratings, geo-"
-"localization, tags, metadata, orientation, copy/paste of history, or "
-"application of a style. Note that the facility to undo/redo actions is "
-"unlimited in the number of steps while in the lighttable view, but it is "
-"reset each time you switch to a different view.\n"
 msgstr ""
 
 #. type: Plain text
@@ -34905,6 +35049,18 @@ msgid ""
 "size\n"
 ": The spacial extent of the bloom effect\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[selected images(s)](../module-reference/utility-modules/lighttable/selected-"
+"image.md)\n"
+": Perform actions on selected images.\n"
+msgstr ""
+"[images sélectionnées](../module-reference/utility-modules/lighttable/"
+"selected-image.md)\n"
+": Effectuer des actions sur les images sélectionnées.\n"
 
 #. type: Plain text
 #: content/special-topics/opencl/activate-opencl.md
@@ -35718,15 +35874,6 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: content/lighttable/lighttable-view-layout.md,
-#: content/darkroom/darkroom-view-layout.md
-#, no-wrap
-msgid ""
-"[export](../module-reference/utility-modules/shared/export.md)\n"
-": Export selected images to local files or external services.\n"
-msgstr ""
-
-#. type: Plain text
 #: content/module-reference/processing-modules/tone-equalizer.md
 #, no-wrap
 msgid ""
@@ -35779,16 +35926,6 @@ msgstr ""
 ": Définit si les barres de défilement du panneau doivent être toujours "
 "visibles ou activées uniquement en fonction du contenu du panneau (activé "
 "par défaut). (nécessite un redémarrage) \n"
-
-#. type: Bullet: '- '
-#: content/special-topics/contributing.md
-#, no-wrap
-msgid ""
-"Link to a top level section by referencing the `_index.md` file, e.g. ["
-"module reference](../module-reference/_index.md)\n"
-msgstr ""
-"Lien vers une section de niveau supérieur en référençant le fichier `_index."
-"md_`, par ex. [référence des modules](../module-reference/_index.md_)\n"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/tone-equalizer.md
@@ -36083,12 +36220,6 @@ msgid ""
 "color editing settings with a consistent final look,\n"
 msgstr ""
 
-#. type: YAML Front Matter: title
-#: content/lighttable/lighttable-modes/_index.md
-#, no-wrap
-msgid "lighttable modes"
-msgstr ""
-
 #. type: Plain text
 #: content/module-reference/utility-modules/darkroom/clipping.md
 #, no-wrap
@@ -36099,25 +36230,6 @@ msgid ""
 "this is common for a device profile), then colors which are outside of the "
 "gamut of the display profile will clip or distort.\n"
 msgstr ""
-
-#. type: Bullet: '- '
-#: content/special-topics/contributing.md
-#, no-wrap
-msgid ""
-"`_index.md` files do not contain any content (they contain metadata only) "
-"and are used to render section headers and ToC entries. In the above example "
-"`example-chapter/_index.md` defines the title of the example chapter and the "
-"order in which it appears in the main table of contents. Similarly `example-"
-"chapter/section1-with-subsections/_index.md` defines metadata for the first "
-"section of the chapter.\n"
-msgstr ""
-"Les fichiers `_index.md_` ne contiennent aucun contenu (ils contiennent "
-"uniquement des métadonnées) et sont utilisés pour rendre les en-têtes de "
-"section et les entrées de la table des matières. Dans l'exemple ci-dessus, "
-"`example-chapter/_index.md_` définit le titre de l'exemple de chapitre et "
-"l'ordre dans lequel il apparaît dans la table des matières principale. De "
-"même, `example-chapter/section1-with-subsections/_index.md_` définit les "
-"métadonnées pour la première section du chapitre.\n"
 
 #. type: Plain text
 #: content/module-reference/processing-modules/lens-correction.md
@@ -36229,6 +36341,16 @@ msgid ""
 "depending on the destination of the images. Tags and Categories are "
 "displayed separately in image information.\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"[star ratings](./digital-asset-management/star-color.md)\n"
+": Apply star ratings to images\n"
+msgstr ""
+"[évaluation par étoiles](./digital-asset-management/star-color.md)\n"
+": Appliquer des notes par étoiles aux images\n"
 
 #. type: Plain text
 #: content/module-reference/utility-modules/map/map-settings.md
@@ -36405,6 +36527,20 @@ msgid ""
 "saturation\n"
 ": The saturation of the overexposed image.\n"
 msgstr ""
+
+#. type: Plain text
+#: content/lighttable/lighttable-view-layout.md
+#, no-wrap
+msgid ""
+"![display icon](./lighttable-view-layout/lighttable-bottom-panel_display."
+"png#icon) [set display profile](../special-topics/color-management/display-"
+"profile.md)\n"
+": Click to choose display profiles\n"
+msgstr ""
+"![icône écran](./lighttable-view-layout/lighttable-bottom-panel_display."
+"png#icon) [définir le profil écran](../special-topics/color-management/"
+"display-profile.md)\n"
+": Cliquer pour choisir le profil écran\n"
 
 #. type: Bullet: '- '
 #: content/guides-tutorials/monochrome.md
@@ -36967,6 +37103,16 @@ msgstr ""
 "fichiers xmp, car ils sont nécessaires pour reconstruire entièrement votre "
 "travail en cas de catastrophe.\n"
 
+#. type: Bullet: '- '
+#: content/special-topics/contributing.md
+#, no-wrap
+msgid ""
+"Link to a top level section by referencing the `_index.md` file, e.g. ["
+"module reference](../module-reference/_index.md)\n"
+msgstr ""
+"Lien vers une section de niveau supérieur en référençant le fichier `_index."
+"md`, par ex. [référence des modules](../module-reference/_index.md)\n"
+
 #. type: Plain text
 #: content/module-reference/processing-modules/vignetting.md
 #, no-wrap
@@ -36975,16 +37121,6 @@ msgid ""
 "of the image in a specified shape. Many of the parameters listed below can "
 "also be modified with a graphical control that overlays the image when the "
 "module has focus, showing the shape and extent of the effect.\n"
-msgstr ""
-
-#. type: Plain text
-#: content/tethering/tethering-view-layout.md,
-#: content/lighttable/lighttable-view-layout.md
-#, no-wrap
-msgid ""
-"[metadata editor](../module-reference/utility-modules/shared/metadata-editor."
-"md)\n"
-": Edit metadata for selected images.\n"
 msgstr ""
 
 #. type: Plain text
