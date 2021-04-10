@@ -1,8 +1,8 @@
 ---
-title: darktable
+author: people
+draft: 'false'
 id: user-manual
-draft: false
-author: "people"
+title: darktable
 ---
 
 
@@ -10,7 +10,7 @@ author: "people"
 
 darktable is an open source photography workflow application and raw developer -- a virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop and enhance your raw images.
 
-The source repository for this documentation may be found at [https://github.com/darktable-org/dtdocs.git](https://github.com/darktable-org/dtdocs.git). Any feedback relating to this documentation can be provided by creating a [ticket](https://github.com/darktable-org/dtdocs/issues/new) or a pull request against this repository.
+Le dépôt source de cette documentation peut être trouvé à [https://github.com/darktable-org/dtdocs.git](https://github.com/darktable-org/dtdocs.git). Tout commentaire relatif à cette documentation peut être fourni en créant un [ticket](https://github.com/darktable-org/dtdocs/issues/new) ou une pull request sur ce dépôt.
 
 
 You can also click on the following links to download the manual in [PDF](darktable_user_manual.pdf) or [epub](darktable_user_manual.epub) format.</span>

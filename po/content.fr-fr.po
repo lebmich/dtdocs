@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: French (darktable)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-09 09:03+0200\n"
+"POT-Creation-Date: 2021-04-10 19:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: French <https://weblate.pixls.us/projects/darktable/dtdocs/fr/>\n"
@@ -25,17 +25,16 @@ msgstr ""
 
 #. type: Plain text
 #: content/_index.fr-fr.md content/_index.md
-#, fuzzy, no-wrap
-#| msgid "![](./darktable-logo.png#w50)\n"
-msgid "<span class=\"webonly\">![](./darktable-logo.png#w50)</span>\n"
-msgstr "![](./darktable-logo.png#w50)\n"
+#, no-wrap
+msgid "<span class=\\\"webonly\\\">![](./darktable-logo.png#w50)</span>![](./darktable-logo.png#w50)</span>\n"
+msgstr ""
 
 #. type: Plain text
 #: content/_index.fr-fr.md content/_index.md
 #, fuzzy, no-wrap
 #| msgid "darktable is an open source photography workflow application and raw developer  a virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop and enhance your raw images.\n"
-msgid "darktable is an open source photography workflow application and raw developer — a virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop and enhance your raw images.\n"
-msgstr "darktable est une application open source qui offre un flux de travail pour le traitement des photographies. C'est un développeur de fichier raw ;  une table lumineuse et une chambre noire virtuelles. Il gère vos négatifs  numériques dans une base de données, vous les laisse voir au travers d'une  table lumineuse zoomable et vous permet de développer et d'améliorer vos  images raw.\n"
+msgid "darktable is an open source photography workflow application and raw developer -- a virtual lighttable and darkroom for photographers. It manages your digital negatives in a database, lets you view them through a zoomable lighttable and enables you to develop and enhance your raw images.\n"
+msgstr "darktable est une application open source qui offre un flux de travail pour le traitement des photographies. C'est un développeur de fichier raw -- une table lumineuse et une chambre noire virtuelles. Il gère vos négatifs  numériques dans une base de données, vous les laisse voir au travers d'une  table lumineuse zoomable et vous permet de développer et d'améliorer vos  images raw.\n"
 
 #. type: Plain text
 #: content/_index.fr-fr.md
@@ -46,10 +45,9 @@ msgstr "Le dépôt source de cette documentation peut être trouvé à [https://
 
 #. type: Plain text
 #: content/_index.fr-fr.md content/_index.md
-#, fuzzy, no-wrap
-#| msgid "<span class=\"webonly\">You can obtain this manual in PDF format [here](darktable_user_manual.pdf).</span>\n"
-msgid "<span class=\"webonly\">You can also click on the following links to download the manual in [PDF](darktable_user_manual.pdf) or [epub](darktable_user_manual.epub) format.</span>\n"
-msgstr "<span class=\"webonly\">Vous pouvez obtenir ce manuel au format PDF [ici](darktable_user_manual.pdf).</span>\n"
+#, no-wrap
+msgid "You can also click on the following links to download the manual in [PDF](darktable_user_manual.pdf) or [epub](darktable_user_manual.epub) format.</span>\n"
+msgstr ""
 
 #. type: YAML Front Matter: title
 #: content/preferences-settings/storage.fr-fr.md
@@ -485,16 +483,12 @@ msgstr ""
 
 #. type: YAML Front Matter: title
 #: content/preferences-settings/presets.md
-#: content/preferences-settings/presets.fr-fr.md
 #: content/module-reference/processing-modules/tone-equalizer.md
-#: content/module-reference/processing-modules/tone-equalizer.fr-fr.md
-#: content/module-reference/processing-modules/color-balance.fr-fr.md
 #: content/module-reference/processing-modules/color-balance.md
 #: content/darkroom/processing-modules/presets.md
-#: content/darkroom/processing-modules/presets.fr-fr.md
 #, no-wrap
 msgid "presets"
-msgstr ""
+msgstr "préréglages"
 
 #. type: Plain text
 #: content/preferences-settings/presets.md
@@ -1479,6 +1473,15 @@ msgstr ""
 ": La partie nom de fichier du modèle de nommage (par défaut `$(YEAR)$(MONTH)$(DAY)_$(SEQUENCE).$(FILE_EXTENSION`).\n"
 
 #. type: YAML Front Matter: title
+#: content/preferences-settings/presets.fr-fr.md
+#: content/module-reference/processing-modules/tone-equalizer.fr-fr.md
+#: content/module-reference/processing-modules/color-balance.fr-fr.md
+#: content/darkroom/processing-modules/presets.fr-fr.md
+#, no-wrap
+msgid "préréglages"
+msgstr ""
+
+#. type: YAML Front Matter: title
 #: content/preferences-settings/overview.fr-fr.md
 #: content/special-topics/color-management/overview.fr-fr.md
 #: content/special-topics/darktable-chart/overview.fr-fr.md
@@ -2051,11 +2054,10 @@ msgstr ""
 
 #. type: Plain text
 #: content/preferences-settings/shortcuts.fr-fr.md
-#: content/preferences-settings/shortcuts.md
 #, no-wrap
 msgid ""
-"show preset menu\n"
-": Show the presets menu for the module\n"
+"afficher le menu des préréglages\n"
+": Afficher le menu des préréglages du module\n"
 msgstr ""
 
 #. type: Plain text
@@ -2252,11 +2254,10 @@ msgstr ""
 
 #. type: Plain text
 #: content/preferences-settings/shortcuts.fr-fr.md
-#: content/preferences-settings/shortcuts.md
 #, no-wrap
 msgid ""
-"show preset menu\n"
-": Show the presets menu for the module.\n"
+"afficher le menu des préréglages\n"
+": Afficher le menu des préréglages du module.\n"
 msgstr ""
 
 #. type: Plain text
@@ -2766,6 +2767,26 @@ msgstr "catégories de raccourci"
 msgid "views"
 msgstr "vues"
 
+#. type: Plain text
+#: content/preferences-settings/shortcuts.md
+#, no-wrap
+msgid ""
+"show preset menu\n"
+": Show the presets menu for the module\n"
+msgstr ""
+"afficher le menu des préréglages\n"
+": Afficher le menu des préréglages du module\n"
+
+#. type: Plain text
+#: content/preferences-settings/shortcuts.md
+#, no-wrap
+msgid ""
+"show preset menu\n"
+": Show the presets menu for the module.\n"
+msgstr ""
+"afficher le menu des préréglages\n"
+": Afficher le menu des préréglages du module.\n"
+
 #. type: YAML Front Matter: title
 #: content/preferences-settings/security.fr-fr.md
 #, fuzzy, no-wrap
@@ -3133,38 +3154,35 @@ msgstr "La page est incluse dans le manuel de l'utilisateur afin que vous puissi
 
 #. type: Plain text
 #: content/special-topics/contributing.fr-fr.md
-#: content/special-topics/contributing.md
 #, no-wrap
 msgid ""
 "The manual structure and content have been carefully considered based on the following critera:\n"
 "1. The manual should be comprehensive -- it should describe all of the functionality available in darktable\n"
-"1. It should have a consistent and logical structure and every piece of functionality should have its own logical place within that structure\n"
-"1. It should be as long as necessary but as short as possible -- brevity is a must\n"
-"1. It should be objective\n"
-"1. Functionality should be explained once and only once (with the exception of the basic workflow guidelines in the overview section)\n"
-"1. Images should be included only where necessary to improve understanding of key principles and should not contain text unless it is unavoidable\n"
+"2. It should have a consistent and logical structure and every piece of functionality should have its own logical place within that structure\n"
+"3. It should be as long as necessary but as short as possible -- brevity is a must\n"
+"4. It should be objective\n"
+"5. Functionality should be explained once and only once (with the exception of the basic workflow guidelines in the overview section)\n"
+"6. Images should be included only where necessary to improve understanding of key principles and should not contain text unless it is unavoidable\n"
 msgstr ""
 
 #. type: Plain text
 #: content/special-topics/contributing.fr-fr.md
-#: content/special-topics/contributing.md
 #, no-wrap
 msgid ""
 "We are generally **not** interested in:\n"
-"1. Restructuring the manual \n"
-"1. Switching markup languages\n"
-"1. Detailed workflow tutorials (though we are interested in publishing those on the blogs of either darktable.org or pixls.us)\n"
+"1. Restructuring the manual\n"
+"2. Switching markup languages\n"
+"3. Detailed workflow tutorials (though we are interested in publishing those on the blogs of either darktable.org or pixls.us)\n"
 msgstr ""
 
 #. type: Plain text
 #: content/special-topics/contributing.fr-fr.md
-#: content/special-topics/contributing.md
 #, no-wrap
 msgid ""
-"We **are** interested in \n"
-"1. Spelling and grammar corrections \n"
-"1. Clarification of text \n"
-"1. Documentation for new features\n"
+"We **are** interested in\n"
+"1. Spelling and grammar corrections\n"
+"2. Clarification of text\n"
+"3. Documentation for new features\n"
 msgstr ""
 
 #. type: Plain text
@@ -3243,7 +3261,7 @@ msgstr ""
 #. type: Plain text
 #: content/special-topics/contributing.fr-fr.md
 #, no-wrap
-msgid "Quelques notes sur la structure ci-dessus : \n"
+msgid "Quelques notes sur la structure ci-dessus :\n"
 msgstr ""
 
 #. type: Bullet: '- '
@@ -3427,7 +3445,7 @@ msgstr ""
 #. type: Plain text
 #: content/special-topics/contributing.fr-fr.md
 #, no-wrap
-msgid "La méthode standard de présentation des informations concernant les contrôles des modules de darktable consiste à utiliser des listes de définitions. \n"
+msgid "La méthode standard de présentation des informations concernant les contrôles des modules de darktable consiste à utiliser des listes de définitions.\n"
 msgstr ""
 
 #. type: Plain text
@@ -3626,7 +3644,7 @@ msgstr ""
 msgid ""
 "en ligne\n"
 ": À l'exception des icônes, les images sont incluses en tant qu'éléments de bloc par défaut. Vous pouvez remplacer cela en incluant `#inline` après le nom de l'image. Cela peut être combiné avec le paramètre de largeur comme suit.\n"
-": `![squirrel](./contributing/squirrel.png#w25#inline)` affiche ![squirrel](./contributing/squirrel.png#w25#inline) \n"
+": `![squirrel](./contributing/squirrel.png#w25#inline)` affiche ![squirrel](./contributing/squirrel.png#w25#inline)\n"
 msgstr ""
 "en ligne\n"
 ": À l'exception des icônes, les images sont incluses en tant qu'éléments de bloc par défaut. Vous pouvez remplacer cela en incluant `#inline` après le nom de l'image. Cela peut être combiné avec le paramètre de largeur comme suit.\n"
@@ -7553,6 +7571,39 @@ msgstr "Cette page définit le guide de style pour dtdocs et donne des informati
 #, no-wrap
 msgid "It is included in the user manual so that you can see how the page is rendered as well as how it is written. Please go to [GitHub](https://raw.githubusercontent.com/darktable-org/dtdocs/master/content/special-topics/contributing.md) to see the source for this page.\n"
 msgstr "La page est incluse dans le manuel de l'utilisateur afin que vous puissiez voir comment elle est écrite et rendue. Veuillez aller sur [GitHub](https://raw.githubusercontent.com/darktable-org/dtdocs/master/content/special-topics/contributing.md) pour voir la source de cette page.\n"
+
+#. type: Plain text
+#: content/special-topics/contributing.md
+#, no-wrap
+msgid ""
+"The manual structure and content have been carefully considered based on the following critera:\n"
+"1. The manual should be comprehensive -- it should describe all of the functionality available in darktable\n"
+"1. It should have a consistent and logical structure and every piece of functionality should have its own logical place within that structure\n"
+"1. It should be as long as necessary but as short as possible -- brevity is a must\n"
+"1. It should be objective\n"
+"1. Functionality should be explained once and only once (with the exception of the basic workflow guidelines in the overview section)\n"
+"1. Images should be included only where necessary to improve understanding of key principles and should not contain text unless it is unavoidable\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/contributing.md
+#, no-wrap
+msgid ""
+"We are generally **not** interested in:\n"
+"1. Restructuring the manual \n"
+"1. Switching markup languages\n"
+"1. Detailed workflow tutorials (though we are interested in publishing those on the blogs of either darktable.org or pixls.us)\n"
+msgstr ""
+
+#. type: Plain text
+#: content/special-topics/contributing.md
+#, no-wrap
+msgid ""
+"We **are** interested in \n"
+"1. Spelling and grammar corrections \n"
+"1. Clarification of text \n"
+"1. Documentation for new features\n"
+msgstr ""
 
 #. type: Plain text
 #: content/special-topics/contributing.md
@@ -18500,9 +18551,8 @@ msgstr ""
 
 #. type: Plain text
 #: content/module-reference/utility-modules/shared/image-information.fr-fr.md
-#: content/module-reference/utility-modules/shared/image-information.md
 #, no-wrap
-msgid "These preferences can be saved as module presets.\n"
+msgid "Ces préférences peuvent être enregistrées en tant que préréglages de module.\n"
 msgstr ""
 
 #. type: Plain text
@@ -19816,6 +19866,12 @@ msgstr "Voir la documentation de l'[historique](../lighttable/history-stack.md) 
 #, no-wrap
 msgid "image information"
 msgstr "informations de l'image"
+
+#. type: Plain text
+#: content/module-reference/utility-modules/shared/image-information.md
+#, no-wrap
+msgid "These preferences can be saved as module presets.\n"
+msgstr "Ces préférences peuvent être enregistrées en tant que préréglages de module.\n"
 
 #. type: Plain text
 #: content/module-reference/utility-modules/shared/filmstrip.fr-fr.md
@@ -22225,10 +22281,9 @@ msgstr ""
 
 #. type: Plain text
 #: content/module-reference/utility-modules/darkroom/module-order.md
-#: content/module-reference/utility-modules/darkroom/module-order.fr-fr.md
 #, no-wrap
 msgid "Change the order of the [processing modules](../../processing-modules/_index.md) in the darkroom using presets.\n"
-msgstr ""
+msgstr "Changer l'ordre des [modules de traitement](../../processing-modules/_index.md) dans la chambre noire à l'aide des préréglages.\n"
 
 #. type: Plain text
 #: content/module-reference/utility-modules/darkroom/module-order.md
@@ -22412,6 +22467,13 @@ msgid "The displayed name is stored in the _version name_ metadata tag, which ca
 msgstr ""
 
 #. type: Plain text
+#: content/module-reference/utility-modules/darkroom/module-order.fr-fr.md
+#, fuzzy, no-wrap
+#| msgid "Change the order of the [processing modules](../../processing-modules/_index.md) in the darkroom using presets.\n"
+msgid "Changer l'ordre des [modules de traitement](../../processing-modules/_index.md) dans la chambre noire à l'aide des préréglages.\n"
+msgstr "Changer l'ordre des [modules de traitement](../../processing-modules/_index.md) dans la chambre noire à l'aide des préréglages.\n"
+
+#. type: Plain text
 #: content/module-reference/overview.md
 #: content/module-reference/overview.fr-fr.md
 #, no-wrap
@@ -22448,7 +22510,7 @@ msgstr ""
 #: content/darkroom/processing-modules/module-header.md
 #, no-wrap
 msgid "module header"
-msgstr "entête de module"
+msgstr "entête d'un module"
 
 #. type: Plain text
 #: content/module-reference/overview.md
@@ -22509,7 +22571,7 @@ msgstr ""
 #: content/module-reference/overview.fr-fr.md
 #: content/darkroom/processing-modules/module-header.fr-fr.md
 #, no-wrap
-msgid "entête de module"
+msgid "entête d'un module"
 msgstr ""
 
 #. type: YAML Front Matter: title
@@ -23281,9 +23343,8 @@ msgstr ""
 
 #. type: Title ##
 #: content/module-reference/processing-modules/white-balance.fr-fr.md
-#: content/module-reference/processing-modules/white-balance.md
 #, no-wrap
-msgid "white balance presets"
+msgid "préréglages de la balance des blancs"
 msgstr ""
 
 #. type: Plain text
@@ -31781,6 +31842,12 @@ msgid ""
 ": The strength of the overlighting for the effect\n"
 msgstr ""
 
+#. type: Title ##
+#: content/module-reference/processing-modules/white-balance.md
+#, no-wrap
+msgid "white balance presets"
+msgstr "préréglages de la balance des blancs"
+
 #. type: YAML Front Matter: title
 #: content/module-reference/processing-modules/global-tonemap.md
 #: content/module-reference/processing-modules/global-tonemap.fr-fr.md
@@ -32594,10 +32661,10 @@ msgstr ""
 #| ": Quick access menu for module presets. You can manage the contents of this menu by selecting \"manage quick presets list...\"\n"
 msgid ""
 "[préréglages](./processing-modules/presets.md)\n"
-": Menu d'accès rapide aux préréglages du module. Vous pouvez gérer le contenu de ce menu en sélectionnant _gérer préréglages  ..._\n"
+": Menu d'accès rapide aux préréglages du module. Vous pouvez gérer le contenu de ce menu en sélectionnant _gérer préréglages ..._\n"
 msgstr ""
 "[préréglages](./processing-modules/presets.md)\n"
-": Menu d'accès rapide aux préréglages du module. Vous pouvez gérer le contenu de ce menu en sélectionnant _gérer préréglages  ..._\n"
+": Menu d'accès rapide aux préréglages du module. Vous pouvez gérer le contenu de ce menu en sélectionnant _gérer préréglages ..._\n"
 
 #. type: Plain text
 #: content/darkroom/darkroom-view-layout.fr-fr.md
@@ -34611,12 +34678,10 @@ msgstr ""
 
 #. type: Title #
 #: content/darkroom/masking-and-blending/masks/drawn-and-parametric.md
-#: content/darkroom/masking-and-blending/masks/drawn-and-parametric.fr-fr.md
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid "typical use cases"
-msgstr ""
+msgstr "cas typiques d’utilisation"
 
 #. type: Plain text
 #: content/darkroom/masking-and-blending/masks/drawn-and-parametric.md
@@ -35134,6 +35199,13 @@ msgstr ""
 msgid "You can choose a raster mask from the combobox. Raster masks can be identified by the name of the module against which they were originally generated. Raster masks can only be selected from modules that are currently active in the pixelpipe. If a module is subsequently deactivated its raster mask can no longer be used.\n"
 msgstr ""
 
+#. type: Title #
+#: content/darkroom/masking-and-blending/masks/drawn-and-parametric.fr-fr.md
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid "cas typiques d’utilisation"
+msgstr ""
+
 #. type: YAML Front Matter: title
 #: content/darkroom/masking-and-blending/masks/parametric.md
 #: content/darkroom/masking-and-blending/masks/parametric.fr-fr.md
@@ -35551,7 +35623,7 @@ msgid ""
 ": Quick access menu for module presets. You can manage the contents of this menu by selecting \"manage quick presets list...\"\n"
 msgstr ""
 "[préréglages](./processing-modules/presets.md)\n"
-": Menu d'accès rapide aux préréglages du module. Vous pouvez gérer le contenu de ce menu en sélectionnant _gérer préréglages  ..._\n"
+": Menu d'accès rapide aux préréglages du module. Vous pouvez gérer le contenu de ce menu en sélectionnant _gérer préréglages ..._\n"
 
 #. type: Plain text
 #: content/darkroom/darkroom-view-layout.md
@@ -35653,13 +35725,13 @@ msgstr "Vous pouvez aussi activé le module [pellicule](../module-reference/util
 #: content/darkroom/processing-modules/module-header.md
 #, no-wrap
 msgid "At the top of each processing module is the _module header_. \n"
-msgstr "En haut de chaque module de traitement se trouve l'_en-tête du module_. \n"
+msgstr "En haut de chaque module de traitement se trouve l'_entête du module_. \n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/module-header.md
 #, no-wrap
 msgid "![module header](./module-header/module-header.png#w33)\n"
-msgstr "![entête de module](./module-header/module-header.png#w33)\n"
+msgstr "![entête d'un module](./module-header/module-header.png#w33)\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/module-header.md
@@ -35671,7 +35743,7 @@ msgstr "Cliquez sur le nom du module pour développer le module et afficher les 
 #: content/darkroom/processing-modules/module-header.md
 #, no-wrap
 msgid "By default darktable will only allow one processing module to be expanded at a time -- if you click the header of another module, the previously-opened module's controls are collapsed. If you want to expand more than one module, you may expand further modules by Shift+clicking on the header and all previously expanded modules will remain open. This behaviour can be reversed via a setting in [preferences > darkroom](../../../preferences-settings/darkroom.md).\n"
-msgstr "Par défaut, darktable n'autorisera qu'un seul module de traitement à être déplié à la fois -- si vous cliquez sur l'en-tête d'un autre module, le module précédemment ouvert sera replié. Si vous souhaitez déplier plus d'un module, vous pouvez le faire en Shift+cliquant sur les entêtes d'autres modules et tous ceux qui ont été précédemment dépliés le resteront. Ce comportement peut être inversé via un paramètre dans les [préférences > chambre noire](../../../preferences-settings/darkroom.md).\n"
+msgstr "Par défaut, darktable n'autorisera qu'un seul module de traitement à être déplié à la fois -- si vous cliquez sur l'entête d'un autre module, le module précédemment ouvert sera replié. Si vous souhaitez déplier plus d'un module, vous pouvez le faire en Shift+cliquant sur les entêtes d'autres modules et tous ceux qui ont été précédemment dépliés le resteront. Ce comportement peut être inversé via un paramètre dans les [préférences > chambre noire](../../../preferences-settings/darkroom.md).\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/module-header.md
@@ -35776,15 +35848,15 @@ msgstr "La visibilité des trois icônes à droite du nom du module peut être c
 #. type: Plain text
 #: content/darkroom/processing-modules/module-header.fr-fr.md
 #, no-wrap
-msgid "En haut de chaque module de traitement se trouve l'_en-tête du module_. \n"
+msgid "En haut de chaque module de traitement se trouve l'_entête du module_. \n"
 msgstr ""
 
 #. type: Plain text
 #: content/darkroom/processing-modules/module-header.fr-fr.md
 #, fuzzy, no-wrap
 #| msgid "![module header](./module-header/module-header.png#w33)\n"
-msgid "![entête de module](./module-header/module-header.png#w33)\n"
-msgstr "![entête de module](./module-header/module-header.png#w33)\n"
+msgid "![entête d'un module](./module-header/module-header.png#w33)\n"
+msgstr "![entête d'un module](./module-header/module-header.png#w33)\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/module-header.fr-fr.md
@@ -35795,7 +35867,7 @@ msgstr ""
 #. type: Plain text
 #: content/darkroom/processing-modules/module-header.fr-fr.md
 #, no-wrap
-msgid "Par défaut, darktable n'autorisera qu'un seul module de traitement à être déplié à la fois -- si vous cliquez sur l'en-tête d'un autre module, le module précédemment ouvert sera replié. Si vous souhaitez déplier plus d'un module, vous pouvez le faire en Shift+cliquant sur les entêtes d'autres modules et tous ceux qui ont été précédemment dépliés le resteront. Ce comportement peut être inversé via un paramètre dans les [préférences > chambre noire](../../../preferences-settings/darkroom.md).\n"
+msgid "Par défaut, darktable n'autorisera qu'un seul module de traitement à être déplié à la fois -- si vous cliquez sur l'entête d'un autre module, le module précédemment ouvert sera replié. Si vous souhaitez déplier plus d'un module, vous pouvez le faire en Shift+cliquant sur les entêtes d'autres modules et tous ceux qui ont été précédemment dépliés le resteront. Ce comportement peut être inversé via un paramètre dans les [préférences > chambre noire](../../../preferences-settings/darkroom.md).\n"
 msgstr ""
 
 #. type: Plain text
@@ -36131,10 +36203,9 @@ msgstr ""
 
 #. type: Title #
 #: content/darkroom/processing-modules/presets.md
-#: content/darkroom/processing-modules/presets.fr-fr.md
 #, no-wrap
 msgid "the presets menu"
-msgstr ""
+msgstr "le menu des préréglages"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/presets.md
@@ -36197,24 +36268,21 @@ msgstr ""
 
 #. type: Title #
 #: content/darkroom/processing-modules/presets.md
-#: content/darkroom/processing-modules/presets.fr-fr.md
 #, no-wrap
 msgid "creating and editing presets"
-msgstr ""
+msgstr "créer et modifier des préréglages"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/presets.md
-#: content/darkroom/processing-modules/presets.fr-fr.md
 #, no-wrap
 msgid "When creating or editing presets, the following dialog is shown:\n"
-msgstr ""
+msgstr "Lors de la création ou de la modification des préréglages, la boîte de dialogue suivante s'affiche :\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/presets.md
-#: content/darkroom/processing-modules/presets.fr-fr.md
 #, no-wrap
 msgid "![new preset](./presets/new_preset.png#w33)\n"
-msgstr ""
+msgstr "![nouveau préréglage](./presets/new_preset.png#w33)\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/presets.md
@@ -36369,17 +36437,15 @@ msgstr ""
 
 #. type: Title #
 #: content/darkroom/processing-modules/presets.md
-#: content/darkroom/processing-modules/presets.fr-fr.md
 #, no-wrap
 msgid "managing presets"
-msgstr ""
+msgstr "gérer les préréglages"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/presets.md
-#: content/darkroom/processing-modules/presets.fr-fr.md
 #, no-wrap
 msgid "Both user-created and pre-defined presets can be viewed and managed from within [preferences > presets](../../../preferences-settings/presets.md).\n"
-msgstr ""
+msgstr "Les préréglages créés par l'utilisateur et les préréglages prédéfinis peuvent être visualisés et gérés à partir de [préférences > préréglages](../../../preferences-settings/presets.md).\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/presets.md
@@ -36534,120 +36600,246 @@ msgstr ""
 msgid ": Increase the 'scale for graph' slider to set the base of the logarithm used to scale the axes. This allows you to control the amount of compression/dilation operated by the scale. If you draw purely exponential or logarithmic functions from identity lines, setting this value defines the base of such functions.\n"
 msgstr ""
 
+#. type: Title #
+#: content/darkroom/processing-modules/presets.fr-fr.md
+#, no-wrap
+msgid "le menu des préréglages"
+msgstr ""
+
+#. type: Title #
+#: content/darkroom/processing-modules/presets.fr-fr.md
+#, no-wrap
+msgid "créer et modifier des préréglages"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/presets.fr-fr.md
+#, no-wrap
+msgid "Lors de la création ou de la modification des préréglages, la boîte de dialogue suivante s'affiche :\n"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/presets.fr-fr.md
+#, fuzzy, no-wrap
+#| msgid "![new preset](./presets/new_preset.png#w33)\n"
+msgid "![nouveau préréglage](./presets/new_preset.png#w33)\n"
+msgstr "![nouveau préréglage](./presets/new_preset.png#w33)\n"
+
+#. type: Title #
+#: content/darkroom/processing-modules/presets.fr-fr.md
+#, no-wrap
+msgid "gérer les préréglages"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/presets.fr-fr.md
+#, no-wrap
+msgid "Les préréglages créés par l'utilisateur et les préréglages prédéfinis peuvent être visualisés et gérés à partir de [préférences > préréglages](../../../preferences-settings/presets.md).\n"
+msgstr ""
+
 #. type: YAML Front Matter: title
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid "multiple instances"
-msgstr ""
+msgstr "instances multiples"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid "Many of darktable's modules can be applied more than once in the pixelpipe. Each instance of a module behaves independently, taking its input from the module below in the pixelpipe delivering its output to the module above.\n"
-msgstr ""
+msgstr "De nombreux modules de darktable peuvent être appliqués plus d'une fois dans le pipeline graphique. Chaque instance d'un module se comporte de manière indépendante, obtenant son entrée du module qui le précède dans le pipeline graphique et délivrant sa sortie au module qui le suit.\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid "As with the base instance of a module, all instances can be moved independently within the pixelpipe either by holding Ctrl+Shift while dragging & dropping or by choosing \"move up\" or \"move down\" in the _multiple instances_ drop-down menu.\n"
-msgstr ""
+msgstr "Comme pour l'instance de base d'un module, toutes les instances peuvent être déplacées indépendamment dans le pipeline graphique soit en maintenant Ctrl+Maj pendant le glisser-déposer, soit en choisissant _monter_ ou _descendre_ dans le menu déroulant _multiples instances_.\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid "Instances can be renamed by Ctrl+clicking on the module header.\n"
-msgstr ""
+msgstr "Les instances peuvent être renommées en faisant un Ctrl+clic sur l'entête du module.\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid "There are many occasions where it makes sense to have a module apply more than once in the pixelpipe. Here are some typical use cases.\n"
-msgstr ""
+msgstr "Il y a de nombreuses occasions où il est judicieux de faire appliquer un module plus d'une fois dans le pipeline graphique. Voici quelques cas d'utilisation typiques.\n"
 
 #. type: Bullet: ' - '
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid "The [_exposure_](../../../module-reference/processing-modules/exposure.md) module can be used in combination with [masks](../masking-and-blending/masks/_index.md) to lighten or darken parts of an image. A separate instance may be created to modify each part of the image.\n"
-msgstr ""
+msgstr "Le module [_exposition_](../../../module-reference/processing-modules/exposure.md) peut être utilisé en combinaison avec des [masques](../masking-and-blending/masks/_index.md) pour éclaircir ou assombrir certaines parties d'une image. Une instance distincte peut être créée pour modifier chaque partie de l'image.\n"
 
 #. type: Bullet: '- '
 #: content/darkroom/processing-modules/multiple-instances.md
 #: content/darkroom/processing-modules/multiple-instances.fr-fr.md
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid "You may wish to handle luma and chroma noise independently. This can be accomplished by generating two instances of your chosen denoising module and using the first one only on luma (by selecting [blend mode](../masking-and-blending/blend-modes.md) lightness) and the second one only on chroma (by selecting blend mode color).\n"
 msgid "You may wish to handle luma and chroma noise independently. This can be accomplished by generating two instances of your chosen denoising module and using the first one only on luma (by selecting [blend mode](../masking-and-blending/blend-modes.md) “lightness”) and the second one only on chroma (by selecting blend mode “color”).\n"
-msgstr ""
+msgstr "Vous souhaiterez peut-être gérer indépendamment les bruits de luminance et de chrominance. Cela peut être accompli en générant deux instances du module de réduction du bruit que vous avez choisi et en utilisant la première uniquement pour luminance (en sélectionnant le [mode de fusion](../masking-and-blending/blend-modes.md) clarté) et la seconde uniquement pour la chrominance (en sélectionnant le mode de fusion couleur).\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
 #: content/darkroom/processing-modules/multiple-instances.fr-fr.md
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid "**Note:** Each instance also adds to the workload of your pixelpipe. Generating too many instances  especially of the more demanding modules  will cause noticeable slow-down.\n"
 msgid "**Note:** Each instance also adds to the workload of your pixelpipe. Generating too many instances – especially of the more demanding modules – will cause noticeable slow-down.\n"
-msgstr ""
+msgstr "**Remarque :** Chaque instance augmente la charge de travail de votre pipeline graphique. Générer trop d'instances, en particulier celles des modules les plus exigeants, entraînera un ralentissement notable.\n"
 
 #. type: Title #
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid "managing multiple instances"
-msgstr ""
+msgstr "gérer les instances multiples"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
 #: content/darkroom/processing-modules/multiple-instances.fr-fr.md
-#, no-wrap
+#, fuzzy, no-wrap
+#| msgid "_Click_ on the _multiple instance menu_ in the [module header](./module-header.md) to display a drop-down menu, with the following options.\n"
 msgid "Click on the _multiple instance menu_ in the [module header](./module-header.md) to display a drop-down menu, with the following options. Right-click on the menu icon to create a new instance directly (same action as clicking on the \"new instance\" option of the menu).\n"
-msgstr ""
+msgstr "_Cliquez_ sur le _menu instances multiples_ dans [l'entête du module](./module-header.md) pour afficher un menu déroulant, avec les options suivantes.\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid ""
 "new instance\n"
 ": Create a new instance of the current module with all of its parameters reset to default. The 'instance name' is automatically set to a unique integer so that it can be distinguished from its parent.\n"
 msgstr ""
+"nouvelle instance\n"
+": Créez une nouvelle instance du module actuel avec tous ses paramètres réinitialisés par défaut. Un numéro est ajouté au nom de base du module pour la distinguer.\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid ""
 "duplicate instance\n"
 ": Create a new instance of the current module with all of its parameters inherited from its parent. As with 'new instance' the 'instance name' is automatically set to a unique integer.\n"
 msgstr ""
+"cloner l'instance\n"
+": Crée une nouvelle instance du module actuel avec tous ses paramètres hérités de son parent. Un numéro est ajouté au nom de base du module pour la distinguer.\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid ""
 "move up/down\n"
 ": Move the instance up or down in the pixelpipe\n"
 msgstr ""
+"monter/descendre\n"
+": monter ou descendre l'instance dans le pipeline graphique\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid ""
 "delete\n"
 ": Remove the current instance. This option is not available if only one instance is present.\n"
 msgstr ""
+"supprimer\n"
+": Supprimer l'instance actuelle. Cette option n'est pas disponible si une seule instance est présente.\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/multiple-instances.md
-#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
 #, no-wrap
 msgid ""
 "rename\n"
 ": Rename the current instance. See the [history stack](../../../module-reference/utility-modules/lighttable/history-stack.md) section for more details on how the instance name impacts copying and pasting history stacks.\n"
 msgstr ""
+"renommer\n"
+": Renommez l'instance actuelle. Voir la section [historique](../../../module-reference/utility-modules/lighttable/history-stack.md) pour plus de détails sur l'impact du nom de l'instance sur la copie et le collage des historiques.\n"
+
+#. type: YAML Front Matter: title
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid "instances multiples"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid "De nombreux modules de darktable peuvent être appliqués plus d'une fois dans le pipeline graphique. Chaque instance d'un module se comporte de manière indépendante, obtenant son entrée du module qui le précède dans le pipeline graphique et délivrant sa sortie au module qui le suit.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid "Comme pour l'instance de base d'un module, toutes les instances peuvent être déplacées indépendamment dans le pipeline graphique soit en maintenant Ctrl+Maj pendant le glisser-déposer, soit en choisissant _monter_ ou _descendre_ dans le menu déroulant _multiples instances_.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid "Les instances peuvent être renommées en faisant un Ctrl+clic sur l'entête du module.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid "Il y a de nombreuses occasions où il est judicieux de faire appliquer un module plus d'une fois dans le pipeline graphique. Voici quelques cas d'utilisation typiques.\n"
+msgstr ""
+
+#. type: Bullet: ' - '
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, fuzzy, no-wrap
+#| msgid "The [_exposure_](../../../module-reference/processing-modules/exposure.md) module can be used in combination with [masks](../masking-and-blending/masks/_index.md) to lighten or darken parts of an image. A separate instance may be created to modify each part of the image.\n"
+msgid "Le module [_exposition_](../../../module-reference/processing-modules/exposure.md) peut être utilisé en combinaison avec des [masques](../masking-and-blending/masks/_index.md) pour éclaircir ou assombrir certaines parties d'une image. Une instance distincte peut être créée pour modifier chaque partie de l'image.\n"
+msgstr "Le module [_exposition_](../../../module-reference/processing-modules/exposure.md) peut être utilisé en combinaison avec des [masques](../masking-and-blending/masks/_index.md) pour éclaircir ou assombrir certaines parties d'une image. Une instance distincte peut être créée pour modifier chaque partie de l'image.\n"
+
+#. type: Title #
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid "gérer les instances multiples"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid ""
+"nouvelle instance\n"
+": Créez une nouvelle instance du module actuel avec tous ses paramètres réinitialisés par défaut. Un numéro est ajouté au nom de base du module pour la distinguer.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid ""
+"cloner l'instance\n"
+": Crée une nouvelle instance du module actuel avec tous ses paramètres hérités de son parent. Un numéro est ajouté au nom de base du module pour la distinguer.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid ""
+"monter/descendre\n"
+": monter ou descendre l'instance dans le pipeline graphique\n"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, no-wrap
+msgid ""
+"supprimer\n"
+": Supprimer l'instance actuelle. Cette option n'est pas disponible si une seule instance est présente.\n"
+msgstr ""
+
+#. type: Plain text
+#: content/darkroom/processing-modules/multiple-instances.fr-fr.md
+#, fuzzy, no-wrap
+#| msgid ""
+#| "rename\n"
+#| ": Rename the current instance. See the [history stack](../../../module-reference/utility-modules/lighttable/history-stack.md) section for more details on how the instance name impacts copying and pasting history stacks.\n"
+msgid ""
+"renommer\n"
+": Renommez l'instance actuelle. Voir la section [historique](../../../module-reference/utility-modules/lighttable/history-stack.md) pour plus de détails sur l'impact du nom de l'instance sur la copie et le collage des historiques.\n"
+msgstr ""
+"renommer\n"
+": Renommez l'instance actuelle. Voir la section [historique](../../../module-reference/utility-modules/lighttable/history-stack.md) pour plus de détails sur l'impact du nom de l'instance sur la copie et le collage des historiques.\n"
 
 #. type: Plain text
 #: content/darkroom/processing-modules/module-controls.md
@@ -36779,6 +36971,15 @@ msgstr ""
 #, no-wrap
 msgid "Module parameters can also be amended with keyboard shortcuts. See [preferences > shortcuts](../../preferences-settings/shortcuts.md) for more information.\n"
 msgstr ""
+
+#, fuzzy, no-wrap
+#~| msgid "![](./darktable-logo.png#w50)\n"
+#~ msgid "![](./darktable-logo.png#w50)</span>\n"
+#~ msgstr "![](./darktable-logo.png#w50)\n"
+
+#, no-wrap
+#~ msgid "<span class=\"webonly\">You can obtain this manual in PDF format [here](darktable_user_manual.pdf).</span>\n"
+#~ msgstr "<span class=\"webonly\">Vous pouvez obtenir ce manuel au format PDF [ici](darktable_user_manual.pdf).</span>\n"
 
 #, no-wrap
 #~ msgid ""
