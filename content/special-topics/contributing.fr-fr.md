@@ -30,7 +30,7 @@ Nous **sommes** intéressés par :
 
 Nous sommes toujours extrêmement intéressés de savoir quelles sections du manuel n'ont pas de sens pour vous et *pourquoi*, afin que nous puissions améliorer la documentation.
 
-En général, si vous souhaitez apporter un changement majeur, veuillez ouvrir une "issue" et discutez-en d'abord avec les responsables. C'est pour éviter de faire un travail qui ne serait pas accepté.
+En général, si vous souhaitez apporter un changement majeur, veuillez ouvrir une "issue" et discutez-en d'abord avec les responsables. Cela pour éviter de faire un travail qui ne serait pas accepté.
 
 # format
 
@@ -172,7 +172,7 @@ Les liens internes doivent être relatifs au fichier actuel et doivent pointer v
 
 Lorsque vous prenez des captures d'écran de l'application darktable elle-même, utilisez le thème darktable par défaut.
 
-Plusieurs suffixes de nom de fichier peuvent être utilisés pour contrôler la façon dont une image est rendue.
+Plusieurs suffixes de nom de fichier peuvent être utilisés pour contrôler la façon dont une imagList are not e est rendue.
 
 icône
 : Pour insérer une image sous forme d'icône, incluez `#icon` après le nom de l'image dans le lien. Le markdown `![squirrel icon](./contributing/contributing.png#icon)` affiche ce qui suit : ![squirrel icon](./contributing/squirrel.png#icon)
