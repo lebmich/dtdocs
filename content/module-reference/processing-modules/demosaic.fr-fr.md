@@ -8,7 +8,7 @@ view: darkroom
 working-color-space: 'Not Applicable (RAW)'
 ---
 
-Control how raw files are demosaiced.
+Contrôler comment sont dématricés les fichiers raw
 
 # bayer filters
 

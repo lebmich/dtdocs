@@ -5,7 +5,7 @@ title: préréglages
 weight: 30
 ---
 
-Presets allow you to store commonly used module settings for future use. Some modules already come with pre-defined presets and you may also define your own. Both internal and user-defined presets can be shown by clicking the _presets menu_ in the [module header](./module-header.md).
+Les préréglages vous permettent de stocker pour une utilisation future les paramètres d'un module couramment utilisé. Certains modules sont déjà livrés avec des préréglages prédéfinis et vous pouvez également définir les vôtres. Les préréglages internes et définis par l'utilisateur peuvent être affichés en cliquant sur le _menu des préréglages_ dans [entête du module](./ module-header.md).
 
 Most of the functionality described here applies to processing modules only. However, presets can also be used with some utility modules. When used with utility modules, the functionality to auto-apply or auto-show presets based on image Exif data is not available.
 
@@ -58,7 +58,7 @@ only show this preset for matching images _(processing modules only)_
 
 # filter criteria
 
-The following criteria can be used to auto-apply or auto-show presets for processing modules.
+Les critères suivants peuvent être utilisés pour appliquer ou afficher automatiquement les préréglages des modules de traitement.
 
 model
 : A pattern to be matched against the Exif field that describes your camera model; use % as wildcard.

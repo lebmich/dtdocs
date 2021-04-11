@@ -2,7 +2,7 @@
 applicable-version: 3.2.1
 id: raw-overexposed
 tags: ~
-title: 'raw overexposed warning'
+title: 'avertissement de surexposition raw'
 view: darkroom
 ---
 

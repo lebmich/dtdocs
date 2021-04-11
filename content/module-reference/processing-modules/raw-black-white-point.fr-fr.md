@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: raw-black-white-point
 masking: 'false'
 tags: ~
-title: 'raw black/white point'
+title: 'point noir/blanc raw'
 view: darkroom
 working-color-space: 'Not Applicable (RAW)'
 ---

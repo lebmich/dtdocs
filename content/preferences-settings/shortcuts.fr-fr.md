@@ -49,7 +49,7 @@ If you have created any user-defined styles, these will be available as actions 
 
 A single section is provided for each darktable view. Shortcut actions are only applicable to the selected view.
 
-## processing modules
+## modules de traitement
 
 Shortcut actions for the [processing modules](../module-reference/processing-modules/_index.md) in the darktable view. A section is provided for each processing module.
 

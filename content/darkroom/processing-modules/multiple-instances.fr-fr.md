@@ -17,18 +17,18 @@ Il y a de nombreuses occasions où il est judicieux de faire appliquer un module
 
  - Le module [_exposition_](../../../module-reference/processing-modules/exposure.md) peut être utilisé en combinaison avec des [masques](../masking-and-blending/masks/_index.md) pour éclaircir ou assombrir certaines parties d'une image. Une instance distincte peut être créée pour modifier chaque partie de l'image.
 
-- You may wish to handle luma and chroma noise independently. This can be accomplished by generating two instances of your chosen denoising module and using the first one only on luma (by selecting [blend mode](../masking-and-blending/blend-modes.md) “lightness”) and the second one only on chroma (by selecting blend mode “color”).
+- Vous souhaiterez peut-être gérer indépendamment les bruits de luminance et de chrominance. Cela peut être accompli en générant deux instances du module de réduction du bruit que vous avez choisi et en utilisant la première uniquement pour luminance (en sélectionnant le [mode de fusion](../masking-and-blending/blend-modes.md) clarté) et la seconde uniquement pour la chrominance (en sélectionnant le mode de fusion couleur).
 
 
 ---
 
-**Note:** Each instance also adds to the workload of your pixelpipe. Generating too many instances – especially of the more demanding modules – will cause noticeable slow-down.
+**Remarque :** Chaque instance augmente la charge de travail de votre pipeline graphique. Générer trop d'instances, en particulier celles des modules les plus exigeants, entraînera un ralentissement notable.
 
 ---
 
 # gérer les instances multiples
 
-Click on the _multiple instance menu_ in the [module header](./module-header.md) to display a drop-down menu, with the following options. Right-click on the menu icon to create a new instance directly (same action as clicking on the "new instance" option of the menu).
+_Cliquez_ sur le _menu instances multiples_ dans [l'entête du module](./module-header.md) pour afficher un menu déroulant, avec les options suivantes.
 
 nouvelle instance
 : Créez une nouvelle instance du module actuel avec tous ses paramètres réinitialisés par défaut. Un numéro est ajouté au nom de base du module pour la distinguer.

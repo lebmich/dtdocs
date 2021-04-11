@@ -76,7 +76,7 @@ couleurs du curseur de balance des blancs
 : Contrôle l'apparence des curseurs dans le module [balance des blancs](../module-reference/processing-modules/white-balance.md).
 : - _sans couleur_ : l'arrière-plan des curseurs n'est pas du tout coloré,
 : - _couleur de l'illuminant_ : les couleurs du curseur représentent la couleur de la source lumineuse, c'est-à-dire la couleur que vous ajustez pour obtenir un blanc neutre,
-: - _effet d'émulation_ : les couleurs du curseur représentent l'effet que l'ajustement aurait eu sur la scène. C'est ainsi que la plupart des autres processeurs de fichiers RAW affichent les couleurs des curseurs de température/teinte.
+: - _effet d'émulation_ : les couleurs du curseur représentent l'effet que l'ajustement aurait eu sur la scène. C'est ainsi que la plupart des autres processeurs de fichiers raw affichent les couleurs des curseurs de température/teinte.
 : (_sans couleur_ par défaut)
 
 disposition des contrôles du module balance couleur

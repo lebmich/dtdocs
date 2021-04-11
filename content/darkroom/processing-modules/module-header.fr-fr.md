@@ -43,4 +43,4 @@ réinitialiser les paramètres
 menu des préréglages
 : Ce menu vous permet d'appliquer, de créer et de modifier les préréglages du module. Voir la section [préréglages](./presets.md) pour plus d'informations.
 
-The visibility of the three icons to the right of the module name can be controlled through [preferences > darkroom > show right-side buttons in darkroom module headers](../../preferences-settings/darkroom.md#modules).
+La visibilité des trois icônes à droite du nom du module peut être contrôlée via [préférences > chambre noire> affichage des boutons sur la droite des modules de développement](../../preferences-settings/darkroom.md).

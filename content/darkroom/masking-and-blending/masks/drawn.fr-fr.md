@@ -1,7 +1,7 @@
 ---
 draft: 'false'
 id: drawn
-title: 'drawn masks'
+title: 'masques dessinés'
 weight: 20
 ---
 
@@ -15,7 +15,7 @@ The controls required to create and alter drawn masks may be enabled by selectin
 
 Choose a shape by clicking on the appropriate shape icon (from left to right: circle, ellipse, path, brush, gradient).
 
-![shape icons](./drawn/shape-icons.png)
+![icônes forme](./drawn/shape-icons.png)
 
 This will take you into the creation mode for that shape. Once you have finished drawing your shape you will automatically be taken into edit mode. 
 

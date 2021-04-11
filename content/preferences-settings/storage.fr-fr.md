@@ -24,7 +24,7 @@ nombre de sauvegarde à conserver
 # xmp
 
 écrire un fichier XMP redondant pour chaque image
-: Les fichiers XMP fournissent une méthode redondante pour enregistrer les modifications que vous avez apportées à une image, indépendamment de la base de données de darktable. Les fichiers XMP peuvent être réimportés ultérieurement dans une autre base de données, en préservant les modifications apportées à l'image. Il est fortement recommandé de laisser cette option activée afin de ne pas perdre de données si votre base de données est corrompue. La sauvegarde de votre fichier RAW et du fichier XMP qui l'accompagne vous permettra de restaurer complètement votre travail (activé par défaut).
+: Les fichiers XMP fournissent une méthode redondante pour enregistrer les modifications que vous avez apportées à une image, indépendamment de la base de données de darktable. Les fichiers XMP peuvent être réimportés ultérieurement dans une autre base de données, en préservant les modifications apportées à l'image. Il est fortement recommandé de laisser cette option activée afin de ne pas perdre de données si votre base de données est corrompue. La sauvegarde de votre fichier raw et du fichier XMP qui l'accompagne vous permettra de restaurer complètement votre travail (activé par défaut).
 
 store xmp tags in compressed format
 : Entries in XMP tags can get rather large and may exceed the available space to store the history stack in some output files on export. This option allows binary XMP tags to be compressed in order to save space. Available options are “never”, “always”, and “only large entries” (default).

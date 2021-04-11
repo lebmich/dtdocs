@@ -1,7 +1,7 @@
 ---
 draft: 'false'
 id: drawn-and-parametric
-title: 'combining drawn & parametric masks'
+title: 'combiner les masques dessinés/paramétriques'
 weight: 40
 ---
 

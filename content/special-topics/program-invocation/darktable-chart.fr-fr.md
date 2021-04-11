@@ -6,7 +6,7 @@ title: darktable-chart
 weight: 40
 ---
 
-Cet exécutable est un utilitaire dédié à la création de styles à partir de paires d'images telles que RAW+JPEG fournies par le boîtier. Des détails de son utilisation peuvent être trouvés dans la section [utiliser darktable-chart](../darktable-chart/_index.md)
+Cet exécutable est un utilitaire dédié à la création de styles à partir de paires d'images telles que raw+JPEG fournies par le boîtier. Des détails de son utilisation peuvent être trouvés dans la section [utiliser darktable-chart](../darktable-chart/_index.md)
 
 `darktable-chart` soit démarre une interface graphique soit est utilisé comme programme en ligne de commande.
 

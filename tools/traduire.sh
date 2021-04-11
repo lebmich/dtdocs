@@ -1,2 +1,3 @@
-./generate-translations.sh --rm-translations && ./generate-translations.sh --no-update
+./generate-translations.sh --no-update &&
+./supprimer_traductions.sh
     

@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: raw-denoise
 masking: 'true'
 tags: ~
-title: 'raw denoise'
+title: 'réduction de bruit raw'
 view: darkroom
 working-color-space: 'Not Applicable (RAW)'
 ---

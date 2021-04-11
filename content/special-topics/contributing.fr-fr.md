@@ -10,27 +10,27 @@ Cette page définit le guide de style pour dtdocs et donne des informations sur 
 
 La page est incluse dans le manuel de l'utilisateur afin que vous puissiez voir comment elle est écrite et rendue. Veuillez aller sur [GitHub](https://raw.githubusercontent.com/darktable-org/dtdocs/master/content/special-topics/contributing.md) pour voir la source de cette page.
 
-La structure et le contenu du manuel ont été soigneusement étudiés en fonction des critères suivants :
-1. Le manuel doit être complet -- il doit décrire toutes les fonctionnalités disponibles dans darktable
-2. Il doit avoir une structure cohérente et logique et chaque élément de fonctionnalité doit avoir sa propre place logique dans cette structure
-3. Il devrait être aussi long que nécessaire mais aussi court que possible - la brièveté est un must
-4. Il doit être objectif
-5. La fonctionnalité doit être expliquée une et une seule fois (à l'exception des directives de base des flux de travail dans la section présentation)
-6. Les images ne devraient être incluses que lorsque cela est nécessaire pour améliorer la compréhension des principes clés et ne devraient pas contenir de texte à moins que cela ne soit inévitable
+The manual structure and content have been carefully considered based on the following critera:
+1. The manual should be comprehensive -- it should describe all of the functionality available in darktable
+1. It should have a consistent and logical structure and every piece of functionality should have its own logical place within that structure
+1. It should be as long as necessary but as short as possible -- brevity is a must
+1. It should be objective
+1. Functionality should be explained once and only once (with the exception of the basic workflow guidelines in the overview section)
+1. Images should be included only where necessary to improve understanding of key principles and should not contain text unless it is unavoidable
 
-Nous ne sommes généralement **pas** intéressés par :
-1. Une restructurer du manuel
-2. Un changement du langage de balisage
-3. Des didacticiels détaillés sur le flux de travail (bien que nous souhaitons les publier sur les blogs de darktable.org ou de pixls.us)
+We are generally **not** interested in:
+1. Restructuring the manual 
+1. Switching markup languages
+1. Detailed workflow tutorials (though we are interested in publishing those on the blogs of either darktable.org or pixls.us)
 
-Nous **sommes** intéressés par :
-1. Les corrections orthographiques et grammaticales
-2. La clarification du texte
-3. La documentation des nouvelles fonctionnalités
+We **are** interested in 
+1. Spelling and grammar corrections 
+1. Clarification of text 
+1. Documentation for new features
 
-Nous sommes toujours extrêmement intéressés de savoir quelles sections du manuel n'ont pas de sens pour vous et *pourquoi*, afin que nous puissions améliorer la documentation.
+We are always extremely interested in hearing about which sections of the manual did not make sense to you and *why*, so that we can improve the documentation.
 
-En général, si vous souhaitez apporter un changement majeur, veuillez ouvrir une "issue" et discutez-en d'abord avec les responsables. Cela pour éviter de faire un travail qui ne serait pas accepté.
+In general, if you wish to make a major change, please open an issue and discuss it with the maintainers first. This is to avoid doing work that wouldn't be accepted.
 
 # format
 
@@ -55,7 +55,7 @@ example-chapter/
    section3.md
 ```
 
-Quelques notes sur la structure ci-dessus :
+Quelques notes sur la structure ci-dessus : 
 
 - Les fichiers `_index.md` ne contiennent aucun contenu (ils contiennent uniquement des métadonnées) et sont utilisés pour rendre les en-têtes de section et les entrées de la table des matières. Dans l'exemple ci-dessus, `example-chapter/_index.md` définit le titre de l'exemple de chapitre et l'ordre dans lequel il apparaît dans la table des matières principale. De même, `example-chapter/section1-with-subsections/_index.md` définit les métadonnées pour la première section du chapitre.
 
@@ -120,7 +120,7 @@ weight
 
 ## listes de définitions
 
-La méthode standard de présentation des informations concernant les contrôles des modules de darktable consiste à utiliser des listes de définitions.
+La méthode standard de présentation des informations concernant les contrôles des modules de darktable consiste à utiliser des listes de définitions. 
 
 nom d'un contrôle de l'interface graphique
 : Une déclaration de ce que fait le contrôle. Par exemple "Réglez l'exposition en unités EV"
@@ -172,7 +172,7 @@ Les liens internes doivent être relatifs au fichier actuel et doivent pointer v
 
 Lorsque vous prenez des captures d'écran de l'application darktable elle-même, utilisez le thème darktable par défaut.
 
-Plusieurs suffixes de nom de fichier peuvent être utilisés pour contrôler la façon dont une imagList are not e est rendue.
+Plusieurs suffixes de nom de fichier peuvent être utilisés pour contrôler la façon dont une image est rendue.
 
 icône
 : Pour insérer une image sous forme d'icône, incluez `#icon` après le nom de l'image dans le lien. Le markdown `![squirrel icon](./contributing/contributing.png#icon)` affiche ce qui suit : ![squirrel icon](./contributing/squirrel.png#icon)
@@ -186,8 +186,9 @@ largeur de l'image
 
 en ligne
 : À l'exception des icônes, les images sont incluses en tant qu'éléments de bloc par défaut. Vous pouvez remplacer cela en incluant `#inline` après le nom de l'image. Cela peut être combiné avec le paramètre de largeur comme suit.
-: `![squirrel](./contributing/squirrel.png#w25#inline)` affiche ![squirrel](./contributing/squirrel.png#w25#inline)
+: `![squirrel](./contributing/squirrel.png#w25#inline)` affiche ![squirrel](./contributing/squirrel.png#w25#inline) 
 
 défaut
 : Par défaut, les images sont présentées sous forme d'éléments de bloc avec une largeur de 100%. Donc `![squirrel](./contribution/squirrel.png#w100)` et `![squirrel](./contribution/squirrel.png)` sont équivalents et les deux produisent ce qui suit :
 : ![squirrel](./contributing/squirrel.png)
+
