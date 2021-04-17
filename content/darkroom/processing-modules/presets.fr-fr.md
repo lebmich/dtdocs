@@ -9,6 +9,8 @@ Les préréglages vous permettent de stocker pour une utilisation future les par
 
 Most of the functionality described here applies to processing modules only. However, presets can also be used with some utility modules. When used with utility modules, the functionality to auto-apply or auto-show presets based on image Exif data is not available.
 
+Please note that, for processing modules, the saved preset also includes the active state of the module. You can use this to create your own default settings, which you can activate on-demand. Simply set your desired defaults, disable the module, and save the preset.
+
 # le menu des préréglages
 
 Le menu des préréglages contiendra une ou plusieurs des entrées suivantes en fonction des préréglages définis ou sélectionnés pour le module actuel :

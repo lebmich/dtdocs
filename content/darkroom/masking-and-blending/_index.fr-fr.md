@@ -2,6 +2,6 @@
 author: people
 draft: 'false'
 id: masking-and-blending
-title: 'masking & blending'
+title: 'masquage et fusion'
 weight: 50
 ---

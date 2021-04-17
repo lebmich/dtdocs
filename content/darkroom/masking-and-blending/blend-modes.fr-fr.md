@@ -1,7 +1,7 @@
 ---
 draft: 'false'
 id: blend-modes
-title: 'blend modes'
+title: 'modes de fusion'
 weight: 20
 ---
 
