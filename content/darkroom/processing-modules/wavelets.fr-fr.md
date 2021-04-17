@@ -24,7 +24,7 @@ Une ondelette est une fonction mathématique qui commence à zéro, oscille de h
 
 Ces fonctions d'ondelettes sont utilisées pour parcourir l'image en utilisant une opération mathématique appelée _convolution_. Ceci sélectionne les détails de l'image qui sont à une échelle similaire à la taille d'une ondelette donnée et crée un certain nombre de couches de détails correspondant chacune à une échelle d'ondelettes différente.
 
-Vous trouverez ci-dessous un exemple où des couches de détails ont été extraites de l'image ci-dessus. Dans ce cas, les images ont été produites en utilisant le module [_retouche_](../../module-reference/processing-modules/retouch.md), en divisant l'image en huit couches différentes et en utilisant les contrôles du module pour visualiser le détails présents à chacune de ces échelles d'ondelettes :
+Vous trouverez ci-dessous un exemple où des couches de détails ont été extraites de l'image ci-dessus. Dans ce cas, les images ont été produites en utilisant le module [_retouche_](../../module-reference/processing-modules/retouch.md), en divisant l'image en huit couches différentes et en utilisant les contrôles du module pour visualiser les détails présents à chacune de ces échelles d'ondelettes :
 
 ![ondelettes-retouche-gui](./wavelets/clean-retouch.png#w33)
 

@@ -159,7 +159,7 @@ color
 : _not available in the "RGB (scene)" color space_
 : Mix color (chroma and hue) from the input and output images while taking lightness unaltered from the input image. 
 
-: _Caution: When modules drastically modify hue (e.g. when generating complementary colors) this blend mode can result in strong color noise._
+: _Attention : Lorsque les modules modifient considérablement la teinte (par exemple lors de la génération de couleurs complémentaires), ce mode de fusion peut entraîner un fort bruit de couleur._
 
 coloradjustment
 : _not available in the "RGB (scene)" color space_

@@ -12,7 +12,7 @@ darktable vous permet de stocker des informations supplémentaires concernant vo
 
 Les métadonnées (par exemple, le titre, la description) sont du texte au format libre. Elles sont généralement différentes pour chaque image.
 
-Voir le module [éditeur de métadonnées](../../module-reference/utility-modules/shared/metadata-editor.md)pour plus de détails sur l'ajout de métadonnées aux images.
+Voir le module [éditeur de métadonnées](../../module-reference/utility-modules/shared/metadata-editor.md) pour plus de détails sur l'ajout de métadonnées aux images.
 
 # mots-clés
 

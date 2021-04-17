@@ -26,28 +26,28 @@ uniformly
 : Input and output images are reprocessed to the same extent for all pixels with the extent of the blending controlled by a single opacity slider. Additional controls to choose the blend mode and opacity are displayed. The default blend mode is “normal” with an opacity of 100%.
 
 [masque dessiné](./masks/drawn.md)
-: Le retraitement a lieu avec le mode de fusion et l'opacité choisis en fonction de l'emplacement des pixels dans un masque dessiné. Des contrôles supplémentaires s'affichent pour vous permettre de dessiner un masque en utilisant une ou plusieurs formes. Si aucun élément de masque n'est dessiné, tous les pixels ont la même opacité, celle que définit le curseur d'opacité.
+: Le retraitement a lieu avec le mode de fusion et l'opacité choisie en fonction de l'emplacement des pixels dans un masque dessiné. Des contrôles supplémentaires s'affichent pour vous permettre de dessiner un masque en utilisant une ou plusieurs formes. Si aucun élément de masque n'est dessiné, tous les pixels ont la même opacité, celle que définit le curseur d'opacité.
 
 [masque paramétrique](./masks/parametric.md)
-: Le retraitement a lieu en fonction des propriétés de chacun des pixels en utilisant le mode de fusion et l'opacité choisis. Des contrôles supplémentaires s'affichent pour vous permettre d'ajuster l'opacité, pixel par pixel, en fonction des valeurs des pixels.
+: Le retraitement a lieu avec le mode de fusion et l'opacité choisie en fonction de l'emplacement des pixels dans un masque paramétrique. Des contrôles supplémentaires s'affichent pour vous permettre de définir un masque paramétrique à l'aide de propriétés des pixels.
 
-[drawn & parametric mask](./masks/drawn-and-parametric.md)
-: Reprocessing takes place with the chosen blend mode and opacity based on a combination of a drawn mask parametric mask.
+[masque dessiné et paramétrique](./masks/drawn-and-parametric.md)
+: Le retraitement a lieu avec le mode de fusion et l'opacité choisie en fonction d'une combinaison d'un masque paramétrique et d'un masque dessiné.
 
-[raster mask](./masks/raster.md)
-: Reprocessing takes place with the chosen blend mode and opacity based on a mask that was generated within a different module
+[masque raster](./masks/raster.md)
+: Le retraitement a lieu avec le mode de fusion et l'opacité choisie en fonction d'un masque qui a été généré dans un module différent
 
-blending options
-: Choose which color space to use when calculating the blending mask, and specify whether or not to allow a mask to be generated based on the module's output channels (normally a parametric mask is generated based on the input channels coming into the module). The following options are available:
-: - _reset to default blend colorspace_: Use the default color space for the module to specify the parametric mask.
-: - _Lab_: Use the Lab color space (where available) when specifying the parametric mask.
-: - _RGB (display)_: Use the display-referred RGB/HSL color space to specify the parametric mask.
-: - _RGB (scene)_: Use the scene-referred RGB/J<sub>z</sub>C<sub>z</sub>h<sub>z</sub> color space to specify the parametric mask.
-: - _show output channels_: Show the [parametric mask](./masks/parametric.md) output channel controls, so that the parametric mask can be defined in terms of the module's output channels.
+options de fusion
+: Choisissez l'espace colorimétrique à utiliser lors du calcul du masque de fusion et spécifiez si vous souhaitez autoriser ou non la génération d'un masque en fonction des canaux de sortie du module (normalement, un masque paramétrique est généré en fonction des canaux d'entrée entrant dans le module). Les options suivantes sont disponibles :
+: - _réinitialiser à par défaut l'espace de couleurs de fusion_ : Utiliser l'espace de couleurs par défaut du module pour spécifier le masque paramétrique.
+: - _Lab_ : utiliser l'espace colorimétrique Lab (s'il est disponible) lors de la spécification du masque paramétrique.
+: - _RVB (affichage)_ : utiliser l'espace colorimétrique RVB/TSL relatif à l'affichage pour spécifier le masque paramétrique.
+: - _RVB (scène)_ : utiliser l'espace colorimétrique RVB / J <sub> z </sub> C <sub> z </sub> h <sub> z </sub> relatif à la scène pour spécifier le masque paramétrique.
+: - _afficher les canaux de sortie_ : Afficher les contrôles des canaux de sortie afin que le [masque paramétrique](./masks/parametric.md) puisse être défini en fonction des canaux de sortie du module.
 
 ---
 
-**Note:** Not all of these blend options are available for every module.
+**Remarque :** Toutes ces options de fusion ne sont pas disponibles pour chaque module.
 
 ---
 

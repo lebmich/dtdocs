@@ -1,7 +1,7 @@
 ---
 draft: 'false'
 id: parametric
-title: 'parametric masks'
+title: 'masques paramétriques'
 weight: 30
 ---
 

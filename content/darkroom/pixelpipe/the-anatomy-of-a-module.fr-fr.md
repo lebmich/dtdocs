@@ -31,4 +31,4 @@ Chaque module de traitement s'exécute indépendamment de la même manière :
 
 Les étapes 2 et 3 sont facultatives et ne sont pas prises en charge par tous les modules. Par exemple, le module [dématriçage](../../../module-reference/processing-modules/demosaic.md) doit être appliqué à l'ensemble du fichier raw afin de produire une belle image, il est donc inutile de masquer ou de fusionner sa sortie.
 
-Chacune des étapes ci-dessus est définie plus en détails dans les sections suivantes.
+Chacune des étapes ci-dessus est définie plus en détail dans les sections suivantes.
