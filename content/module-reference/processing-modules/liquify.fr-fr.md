@@ -3,14 +3,14 @@ applicable-version: 3.2.1
 id: liquify
 masking: ~
 tags: ~
-title: liquify
+title: liquéfier
 view: darkroom
 working-color-space: RGB
 ---
 
 Move pixels around by applying freestyle distortions to parts of the image using points, lines and curves.
 
-# nodes
+# nœuds
 
  Each of liquify's tools is based on nodes. A point is given by a single node and a line or curve consists of a set of nodes defining a path.
 
@@ -24,12 +24,12 @@ Click the point icon to activate the point tool and click on the image to place 
 
 A point is formed by a single node. In a point the strength vector has three different modes which are toggled using Ctrl+click over the arrowhead of the strength vector.
 
-## point modes
+## modes point
 
 linear
 : A linear distortion inside the circle, starting from the opposite side of the strength vector and following the vector's direction. This is the default mode.
 
-: ![linear](./liquify/liquify_ex1.png#w33)
+: ![linéaire](./liquify/liquify_ex1.png#w33)
 
 radial growing
 : The strength vector's effect is radial, starting with a strength of 0% in the center and increasing away from the center. This mode is depicted by an additional circle with the arrow pointing outwards.
@@ -41,19 +41,19 @@ radial shrinking
 
 : ![radial shrinking](./liquify/liquify_ex3.png#w33)
 
-## feathering
+## adoucissement
 
 default mode
 : By default the strength varies linearly from 0% to 100% between the center and the radius of the control point. It is possible to modify the feathering effect by clicking on the center of the circle.
 
-: ![default](./liquify/liquify_ex1.png#w33)
+: ![défaut](./liquify/liquify_ex1.png#w33)
 
 feathered mode
 : In "feathered" mode, two control circles are displayed and can be modified independently to feather the strength of the effect. Note that clicking the center of the circle again hides the feathering controls but does _not_ return to the default mode.
 
-: ![feathered](./liquify/liquify_ex2.png#w33)
+: ![adouci](./liquify/liquify_ex2.png#w33)
 
-## removing points
+## suppression de points
 
 A point can be removed by right-clicking on the center of the node.
 
@@ -75,7 +75,7 @@ Ctrl+click on a line or curve segment to add a new control point. Ctrl+right-cli
 
 Right-click on a segment to remove the shape completely. Ctrl+Alt+click on a segment to change that segment from a line to a curve and vice versa.
 
-# link modes
+# modes de liaison
 
 Ctrl+click on the center of a node to change the way the points of a curve are linked together. There are four modes which correspond to different ways of handling the steepness of the bezier curve using control handles: 
 

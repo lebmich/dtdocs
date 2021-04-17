@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: exposure
 masking: 'true'
 tags: ~
-title: exposure
+title: exposition
 view: darkroom
 working-color-space: RGB
 ---

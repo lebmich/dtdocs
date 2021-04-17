@@ -2,7 +2,7 @@
 applicable-version: 3.4
 id: clipping
 tags: ~
-title: 'clipping warning'
+title: "avertissement d'écrêtage"
 view: darkroom
 ---
 
@@ -20,7 +20,7 @@ The "clipping warning" module is used to highlight those pixels that cannot be a
 
 As the clipping warning runs at the end of the preview pixelpipe, it receives data in display color space then converts it to histogram color space. If you are using a display color space which is not "well behaved" (this is common for a device profile), then colors which are outside of the gamut of the display profile will clip or distort.
 
-![clipping-menu](./clipping/clipping-menu.png#w33)
+![menu tronquer](./clipping/clipping-menu.png#w33)
 
 The clipping warning module, described here, deals with clipping caused by image processing and the limitations of the output color space. It should not be confused with the following similar tools:
 

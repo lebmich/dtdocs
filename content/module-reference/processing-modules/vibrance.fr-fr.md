@@ -3,7 +3,7 @@ applicable-version: 3.6
 id: vibrance
 masking: 'true'
 tags: ~
-title: 'vibrance (deprecated)'
+title: 'vibrance (déprécié)'
 view: darkroom
 working-color-space: Lab
 ---

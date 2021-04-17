@@ -2,7 +2,7 @@
 applicable-version: 3.6
 id: export-selected
 tags: ~
-title: export
+title: exporter
 view: lighttable
 ---
 
@@ -12,7 +12,7 @@ Files can be exported to a file on disk, email, various on-line storage location
 
 # les contrôles du module
 
-## storage options
+## options de stockage
 
 target storage
 : The type of location to store your selected images. A number of different back-ends are implemented, including file on disk, a LaTeX book template and various web albums. Depending on the selected target, you will be asked to provide additional information, like filenames, or account name and password.
@@ -32,7 +32,7 @@ on conflict
 
 : - _skip_: Do not export images where the destination filename already exists.
 
-## format options
+## options de format
 
 Options within this section will appear or not depending on the selected _file format_.
 
@@ -54,7 +54,7 @@ compression level
 b&w image
 : For TIFF export format, it is possible to save a monochrome image. This setting controls whether the resulting file encodes the shades of gray as separate RGB channels, or as a single grayscale channel. The latter option will reuslt in smaller files.
 
-## global options
+## options globales
 
 set size
 : Choose how to measure the maximum size of your exported image
@@ -94,15 +94,15 @@ mode
 export
 : Press this button to start a background job to export all selected images. A bar at the bottom of the left hand panel displays the progress of the export job. Furthermore a notification message pops up reporting the completion of each individual export. You may click on the pop-up to make it disappear. You may abort the export job by clicking on the "x" icon located close to the progress bar.
 
-# metadata preferences
+# préférences des métadonnées
 
 The “preferences…” option in the presets menu brings up a dialog where you can configure control what metadata is included within exported files:
 
-![metadata config](./export-selected/metadata-config.png)
+![configuration des métadonnées](./export-selected/metadata-config.png)
 
 The parameters entered into this dialog are saved along with other export parameters to user presets and the last entered values are retained when darktable is closed. The following options can be set:
 
-## général
+## réglages généraux
 
 The left-hand-side of this dialog allows you to choose which groups of metadata are to be exported with the image. The following options are available:
 
@@ -147,7 +147,7 @@ The formulas allow you virtually define all the metadata you need to qualify you
 
 _Remember that a tag set up as a category is never exported._
 
-## examples
+## exemples
 
 example 1
 : A first level tag called places is set as a category, and is followed by four levels of information (or keywords): country, region, city and location (e.g. `places|France|Nord|Lille|rue Nationale`). Each level can be retrieved (when it is defined) by one of the variables `$(CATEGORY0(places))`, `$(CATEGORY1(places))`, `$(CATEGORY2(places))` and `$(CATEGORY3(places))`. In this example, the returned values are "France", "Nord", "Lille" and "rue Nationale", respectively. These keywords can also be retrieved as simple tags by the variable `$(TAGS)`. The last keyword level defined (the leaf) is displayed in [image information](../shared/image-information.md), here "rue Nationale".

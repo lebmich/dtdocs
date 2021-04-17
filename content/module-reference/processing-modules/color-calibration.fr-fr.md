@@ -3,7 +3,7 @@ applicable-version: 3.6
 id: color-calibration
 masking: 'true'
 tags: ~
-title: 'color calibration'
+title: 'calibration des couleurs'
 view: darkroom
 working-color-space: RGB
 ---
@@ -130,7 +130,7 @@ gamut compression
 clip negative RGB from gamut
 : Remove any negative RGB values (set them to zero). This helps to deal with bad black level as well as the blue channel clipping issues that may occur with blue LED lights.
 
-## CAT warnings
+## Avertissements CAT
 
 The chromatic adaptation in this module relies on a number of assumptions about the earlier processing steps in the pipeline in order to work correctly, and it can be easy to inadvertently break these assumptions in subtle ways. To help you to avoid these kind of mistakes, the _color calibration_ module will show warnings in the following circumstances.
 
@@ -146,7 +146,7 @@ The chromatic adaptation modes in _color calibration_ can be disabled by either 
 
 These warnings are intended to prevent common and easy mistakes while using the automatic default presets in the module in a typical RAW editing workflow. When using custom presets and some specific workflows, such as editing film scans or JPEGs, these warnings can and should be ignored.
 
-# channel mixing
+# mixeur de canaux
 
 The remainder of this module is a standard channel mixer, allowing you to adjust the output R, G, B, colorfulness, brightness and gray of the module based on the relative strengths of the R, G and B input channels.
 
@@ -293,7 +293,7 @@ IT7 and IT8 charts are not supported since they are hardly portable and not prac
 
 ---
 
-## prequisites
+## prérequis
 
 In order to use this feature you will need to take a test shot of a supported color checker chart, on-location, under appropriate lighting conditions:
 
@@ -359,17 +359,17 @@ The [CIE delta E 2000](https://en.wikipedia.org/wiki/Color_difference#CIEDE2000)
 
 The quality report tracks the average and maximum ΔE at the input of the module (before anything is done), after the chromatic adaptation step (white balance only), and at the output of the module (white balance and channel mixing). At each step, the ΔE should be lower than at the previous step, if everything goes as planned.
 
-### profile data
+### données du profil
 
 This comprises the RGB 3×3 matrix and the detected illuminant. These are expressed in the CAT _adaptation_ space defined in the _CAT_ tab and are provided in case you want to export these coefficients to other software. If the detected illuminant is _daylight_ or _black body_, the matrix should be fairly generic and re-usable for other _daylight_ and _black body_ illuminants with the addition of a small white balance adjustment.
 
-### normalization values
+### valeurs de normalisation
 
 These are the settings that you should define, as-is, for the _exposure_ and _black level correction_ parameters in the [_exposure_](./exposure.md) module, in order to obtain the lowest possible error in your profile. This step is optional and is useful only when the utmost precision is required, but beware that it can produce negative RGB values that will be clipped in various places in the pipeline.
 
-### overlay
+### superposition
 
-![color checker](./color-calibration/color-checker.png#w75)
+![vérificateur de couleur](./color-calibration/color-checker.png#w75)
 
 The chart overlay displays a disc, in the center of each color patch, that represents the expected reference value of that patch, projected into the display RGB space. This helps you to visually assess the difference between the reference and the actual color without having to bother with ΔE values. This visual clue will be reliable only if you set the _exposure_ module as instructed in the _normalization values_ of the profile report.
 
@@ -407,7 +407,7 @@ No matter what you do, strategies that favor a low average ΔE will usually have
 
 The ease of obtaining a proper calibration depends on the quality of the scene illuminant (daylight and high CRI should always be favored), the quality of the primary _input color profile_, the _black point compensation_ set in the _exposure_ module, but first and foremost on the mathematical properties of the camera sensor's filter array.
 
-## profile checking
+## vérification de profil
 
 It is possible to use the _color space check_ button (first on the left, at the bottom of the module) to perform a single ΔE computation of the color checker reference against the output of the _color calibration_ module. This can be used in the following ways:
 
@@ -416,7 +416,7 @@ It is possible to use the _color space check_ button (first on the left, at the 
 2. To evaluate the performance of any color correction performed earlier in the pipe, by setting the _color calibration_ parameters to values that effectively disable it (CAT _adaptation_ to _none_, everything else set to default), and just use the average ΔE as a performance metric.
 
 
-# caveats
+# mises en garde
 
 The ability to use standard CIE illuminants and CCT-based interfaces to define the illuminant color depends on sound default values for the standard matrix in the _input color profile_ module as well as reasonable RGB coefficients in the _white balance_ module.
 

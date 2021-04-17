@@ -2,6 +2,6 @@
 author: people
 draft: 'false'
 id: slideshow
-title: Slideshow
+title: Diaporama
 weight: 60
 ---

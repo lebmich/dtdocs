@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: color-reconstruction
 masking: 'true'
 tags: ~
-title: 'color reconstruction'
+title: 'reconstruction des couleurs'
 view: darkroom
 working-color-space: Lab
 ---

@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: filmic-rgb
 masking: 'true'
 tags: ~
-title: 'filmic rgb'
+title: 'filmique rvb'
 view: darkroom
 working-color-space: RGB
 ---
@@ -21,7 +21,7 @@ _filmic rgb_ is the successor to the _filmic_ module from darktable 2.6.x. While
 
 ---
 
-# prerequisites
+# prérequis
 
 In order to get the best from this module, your images need some preparation:
 
@@ -80,33 +80,33 @@ In this configuration, filmic will only perform a logarithmic tone mapping betwe
 
 ---
 
-# graphic display
+# affichage graphique
 
 The graphic display of the _filmic rgb_ module now offers multiple views. You can cycle through the different views using the ![view-icon](./filmic-rgb/view-icon.png#icon) icon to the right of the graph display. You can also toggle the labels on the axes on and off using the ![legend-icon](./filmic-rgb/legend-icon.png#icon) icon. The available displays are:
 
 look only
 : This is the traditional graph provided by _filmic rgb_. The main bright curve shows how the dynamic range of scene (in EV) is compressed into the display-referred output range. The orange dot shows the middle gray point, the white dots either side mark out the latitude range, and the organge part of the curve at the bottom indicates an overshoot problem with the spline (the _look_ tab in the _module controls_ section has some controls to deal with this).  The darker curve shows how the color saturation is rolled off in the highlights and shadows extremes.
 
-: ![filmic-rgb-look-only](./filmic-rgb/filmic-look-only.png#w50)
+: ![filmique-rvb-look_seulement](./filmic-rgb/filmic-look-only.png#w50)
 
 look + mapping (linear)
 : This view shows the mapping of input values [0,1] to output values in linear space, including the dynamic range mapping and the output transfer function. Note that in a scene-referred workflow, input values are allowed to exceed 1, however the graph only shows in/out values in the interval [0,1] in order to make the shape of the graph comparable to other tone curve mapping tools such as _base curve_ or _tone curve_. The actual value of the scene white point is shown in brackets on the _X axis_ (expressed as a percentage of an input value of 1).
 
-: ![filmic-rgb-look-mapping-lin](./filmic-rgb/filmic-look-mapping-lin.png#w50)
+: ![filmique-rvb-look-mappage-lin](./filmic-rgb/filmic-look-mapping-lin.png#w50)
 
 look + mapping (log)
 : The same as the previous view, but plotted in log space.
 
-: ![filmic-rgb-look-mapping-lin](./filmic-rgb/filmic-look-mapping-log.png#w50)
+: ![filmique-rvb-look-mapping-lin](./filmic-rgb/filmic-look-mapping-log.png#w50)
 
 dynamic range mapping
 : This view is inspired by the Ansel Adams Zone System, showing how the EV zones in the input scene are mapped to the output. Middle gray from the scene is always mapped to 18% in the output (linear) space, and it shows how the tonal ranges towards the extremes of the scene exposure range are compressed into a smaller number of zones in the display space, leaving more room for the mid-tones to be spread out over the remaining zones. The latitude range is represented by the darker gray portion in the middle.
 
-: ![filmic-rgb-look-mapping-lin](./filmic-rgb/filmic-dynamic-range-map.png#w50)
+: ![filmique-rvb-look-mapping-lin](./filmic-rgb/filmic-dynamic-range-map.png#w50)
 
 # les contrôles du module
 
-## scene
+## scène
 
 The controls of the _scene_ tab are similar in principle to those of the _levels_ module (black, gray, white). The difference is that _levels_ assume display-referred pixels values (between 0 and 100%), while _filmic_ allows you to work on scene-referred pixels (between -infinity EV and + infinity EV), which forces the use of a different interface.
 
@@ -140,13 +140,13 @@ The _scene-referred_ workflow forces a black level correction of -0.0002, in the
 
 ---
 
-## reconstruct
+## reconstruction
 
 This tab provides controls that will help to blend transisitons between unclipped and clipped areas within an image and can also help to reconstruct colors from adjacent pixels. It is designed to deal with spotlights that could not possibly be unclipped when taking the shot (such as naked light bulbs or the sun disc when they are in the frame) and aims at diffusing their edges as film would do. It is not designed to recover large areas of clipped pixels or in-paint missing parts of the image.
 
 Firstly, a mask needs to be set up to identify the areas of the image that will be affected by the highlights reconstruction. Then there are some controls to fine-tune some of the tradeoffs made by the reconstruction algorithm.
 
-### _highlights clipping_
+### _tronquer les hautes lumières_
 
 These controls allow you to choose which areas of the image are impacted by the highlight reconstruction algorithms.
 
@@ -217,7 +217,7 @@ middle tones saturation (previously _extreme luminance saturation_)
 
 : Please note that this desaturation strategy has changed compared to previous versions of _filmic rgb_ which provided a different slider control labelled _extreme luminance saturation_. You can revert to the previous desaturation behaviour by selecting "v3 (2019)" in the _color science_ setting on the _options_ tab.
 
-## display
+## affichage
 
 The parameters in this tab will only rarely require adjustment.
 

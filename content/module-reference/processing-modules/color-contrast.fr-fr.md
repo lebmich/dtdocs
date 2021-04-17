@@ -3,7 +3,7 @@ applicable-version: 3.4
 id: color-contrast
 masking: 'true'
 tags: ~
-title: 'color contrast'
+title: 'contraste de couleur'
 view: darkroom
 working-color-space: Lab
 ---

@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: sharpen
 masking: 'true'
 tags: ~
-title: sharpen
+title: 'renforcer la netteté'
 view: darkroom
 working-color-space: Lab
 ---

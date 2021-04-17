@@ -3,7 +3,7 @@ applicable-version: 3.4
 id: tone-equalizer
 masking: 'true'
 tags: ~
-title: 'tone equalizer'
+title: 'égaliseur de ton'
 view: darkroom
 working-color-space: RGB
 ---
@@ -14,7 +14,7 @@ This module can selectively brighten or darken up to 9 different ranges of lumin
 
 In order to understand how the tone equalizer works, please refer to the following diagram and subsequent explanation:
 
-![tone-equalizer-mask](./tone-equalizer/tone-equalizer-overview.png#w100)
+![égaliseur-tonalités-masque](./tone-equalizer/tone-equalizer-overview.png#w100)
 
 1. Produce a monochrome mask which divides the input image into regions of similar luminosity. The resulting mask should blur the fine details within the image so that pixels within that region are all treated similarly. This will help to preserve local contrast.
 
@@ -43,7 +43,7 @@ This tab provides a set of sliders that control how the module affects the pixel
 -8 EV through to 0 EV
 : Each of these sliders will adjust the brightness of all pixels having that intensity level _in the guided mask_. Sliders towards the top will generally affect the shadows of the image, whereas sliders towards the bottom will generally affect the highlights of the image, assuming the mask's histogram is nicely spread over the entire tonal range (you can check this by referring to the histogram image shown on the _advanced_ tab). 
 
-## advanced
+## avancé
 
 This tab allows you to control the same intensity levels as in the basic tab, though here they are represented as control points on a curve. Behind the curve is a histogram representing the intensity levels of the **_mask_** (not of the input or output image). If the histogram is too bunched up, it means your mask doesn't have a good spread of intensity levels, which makes it harder to independently control the brightness of different parts of your image. It is therefore recommended that the histogram is adjusted so that it extends the entire range, and covers as many control points as possible, thereby providing you with maximum flexibility. You can adjust the mask using the controls in the _masking_ tab.
 
@@ -53,13 +53,13 @@ control points on the curve
 curve smoothing
 : Moving this control to the right will cause the transitions between the control points to become more gradual. However, going past about 0.6 can introduce some instability in the curve, causing oscillations due to the mathematical constraints on the curve. Moving this slider to the left will result in a better behaved curve, but it may result in harsher tone transitions that may damage local contrast.
 
-## masking
+## masque
 
 This tab contains all of the controls required to set up the guided mask. The purpose of the mask is to mark out areas in your image with different tonal ranges so that these areas can be independently brightened or darkened by the tone equalizer. The masking filters are designed to allow sharp edges between these areas to be preserved, while blurring details within a particular tonal range so that the brightness can be adjusted without adversely impacting local contrast. Ideally you want the mask histogram shown in the _advanced_ tab to be nicely spread out across all the control points. 
 
 To avoid having to switch back and forth between the _advanced_ tab and the _masking_ tab, under the "mask post processing" label there is a gray bar which shows a representation of the middle 80% of the histogram. By using the controls mentioned below to centre and spread out this gray bar, you can then expect to have a nicely shaped histogram when you return to the "advanced" tab. If you see orange at either end of the gray bar, it means too much of the histogram has moved off the edge of the screen, and you need to bring it back to centre and/or compress it a bit more.
 
-![tone-equalizer-mask-histogram](./tone-equalizer/tone-equalizer-mask-histogram.png#w33)
+![égaliseur-tonalités-masque-histogramme](./tone-equalizer/tone-equalizer-mask-histogram.png#w33)
 
 When setting up the mask, there are a number of trade-offs to be made to balance the blurring within tonal regions against the preservation of boundaries between these regions.
 
@@ -104,7 +104,7 @@ mask contrast compensation
 ## cursor indicator/control
 When the _tone equalizer_ module is selected, moving the mouse pointer over the preview image reveals a cursor that displays information about the pixel under the mouse pointer. When this cursor is shown, the mouse wheel can be used to brighten or darken areas of your image that match the mask intensity level at that point. This provides a convenient way to quickly brighten or darken specific parts of the image.
 
-![tone-equalizer-simple](./tone-equalizer/tone-equalizer-cursor.png#w25)
+![egaliseur-tonalités-simple](./tone-equalizer/tone-equalizer-cursor.png#w25)
 
 - cross hairs indicate the pixel for which information is being displayed
 

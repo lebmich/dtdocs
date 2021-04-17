@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: defringe
 masking: 'true'
 tags: ~
-title: defringe
+title: 'suppression des franges'
 view: darkroom
 working-color-space: Lab
 ---

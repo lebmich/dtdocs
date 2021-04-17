@@ -16,7 +16,7 @@ The default collection is based on the _film roll_ attribute and displays all im
 
 The images in a collection can be filtered using the following image attributes:
 
-## files
+## fichiers
 
 film roll
 : The name of the film roll to which the image belongs (which is the same as the name of the folder in which the image resides). Click while holding Ctrl+Shift to switch to the corresponding folder. Right-click to remove the collection or tell darktable that its location has changed in the file system.
@@ -56,7 +56,7 @@ color label
 geotagging
 : The geo location of the image (see [locations](../map/locations.md))
 
-## times
+## dates
 
 date taken
 : The date the photo was taken, in the format `YYYY:MM:DD`

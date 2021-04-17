@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: scale-pixels
 masking: 'false'
 tags: ~
-title: 'scale pixels'
+title: "mise à l'échelle des pixels"
 view: darkroom
 working-color-space: RGB
 ---

@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: levels
 masking: 'true'
 tags: ~
-title: levels
+title: niveaux
 view: darkroom
 working-color-space: Lab
 ---

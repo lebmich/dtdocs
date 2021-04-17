@@ -8,7 +8,7 @@ weight: 10
 
 Processing modules are organized and accessed via the right-hand panel in the darkroom:
 
-![organization](./organization/organization.png#w30)
+![organisation](./organization/organization.png#w30)
 
 Click on the icons at the top of this panel to reveal, from left to right, 
 
@@ -28,7 +28,7 @@ Click once on a module group icon (including the active group) to show only the 
 
 You can change which widgets appear in the quick access panel, and which modules appear in the module groups, by right-clicking on the appropriate icon.
 
-# search
+# chercher
 
 Below the module group icons is the search bar, which you can use to access any of the processing modules, regardless of whether they are currently in a group. Some modules have additional tags stored against them, which will also be queried when searching.
 

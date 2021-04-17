@@ -2,6 +2,6 @@
 author: people
 draft: 'false'
 id: masks
-title: masks
+title: masques
 weight: 30
 ---

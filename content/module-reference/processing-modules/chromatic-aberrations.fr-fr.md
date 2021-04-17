@@ -3,7 +3,7 @@ applicable-version: 3.6
 id: chromatic-aberrations
 masking: 'false'
 tags: ~
-title: 'chromatic aberrations'
+title: 'aberrations chromatiques'
 view: darkroom
 working-color-space: 'Not Applicable (RAW)'
 ---

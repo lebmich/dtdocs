@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: color-zones
 masking: 'true'
 tags: ~
-title: 'color zones'
+title: 'zones de couleurs'
 view: darkroom
 working-color-space: Lab
 ---

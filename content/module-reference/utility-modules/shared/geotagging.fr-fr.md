@@ -2,7 +2,7 @@
 applicable-version: 3.6
 id: geotagging
 tags: ~
-title: geotagging
+title: géolocalisation
 view: lighttable
 ---
 
@@ -10,7 +10,7 @@ Import and apply GPX track data to a selection of images.
 
 This module is common to the [lighttable](../../../lighttable/_index.md) and [map](../../../map/_index.md) views. However, an enhanced mode is provided in the map view that allows you to preview the position of the images along the GPS tracks while adjusting the images' date/time (offset) and time zone.
 
-# workflow overview
+# présentation des flux de travail
 
 A GPS receiver calculates its current position based on the information it receives from satellites and records it in a GPX file, together with the current date and time. The Exif data of the images also contains a time stamp defined by the camera settings. The _geotagging_ module takes the time stamp of the image, looks up the position in the GPX file at that time, and stores the appropriate coordinates (latitude/longitude/elevation) in its database and the image's XMP sidecar file.
 

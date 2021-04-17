@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: graduated-density
 masking: 'true'
 tags: ~
-title: 'graduated density'
+title: 'filtre dégradé'
 view: darkroom
 working-color-space: RGB
 ---

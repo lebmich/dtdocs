@@ -2,7 +2,7 @@
 applicable-version: 3.4
 id: locations
 tags: ~
-title: locations
+title: localisation
 view: map
 ---
 

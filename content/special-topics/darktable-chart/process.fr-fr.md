@@ -8,7 +8,7 @@ weight: 50
 
 If all of the required settings in the “source image” and “reference values” tabs are ready you can move on to the “process” tab.
 
-![process](./process/darktable-chart-process.png#w75)
+![processus](./process/darktable-chart-process.png#w75)
 
 First, you need to tell `darktable-chart` which of the patches represents the gray ramp. In the screenshot displayed above, the gray ramp is positioned in the lower part of the color reference chart, denoted as “GS00...GS23”.
 

@@ -81,7 +81,7 @@ For comboboxes and sliders, some standard shortcut actions are provided, as desc
 
 In addition, other module-specific controls will be provided with their own shortcut actions.
 
-### sliders
+### curseurs
 
 All sliders in processing modules can be adjusted via keyboard shortcuts, regardless of whether the module is currently shown or enabled. The following shortcut actions are provided as standard for each slider:
 
@@ -101,7 +101,7 @@ In addition, you can modify the precision of the increase/decrease operations wi
 
 When performing increase/decrease and dynamic operations on sliders a toast message will appear at the top of the image to indicate the current value of the slider.
 
-### comboboxes
+### boîtes déroulantes
 
 As with sliders, all comboboxes in processing modules can be adjusted via keyboard shortcuts. The following shortcut actions are provided as standard for each combobox:
 
@@ -119,7 +119,7 @@ It is possible to create [multiple instances](../darkroom/processing-modules/mul
 
 See [preferences > miscellaneous](./miscellaneous.md) for some additional settings that allow you to control how keyboard shortcuts are handled when multiple instances of a processing module are present.
 
-## utility modules
+## modules techniques
 
 Shortcut actions for the [utility modules](../module-reference/utility-modules/_index.md). These are modules that are not used for image processing and may appear on any panel. Some utility modules can be used in multiple views.
 

@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: rgb-curve
 masking: ~
 tags: ~
-title: 'rgb curve'
+title: 'courbe rvb'
 view: darkroom
 working-color-space: ~
 ---

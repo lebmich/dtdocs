@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: tone-curve
 masking: ~
 tags: ~
-title: 'tone curve'
+title: 'courbe des tonalités'
 view: darkroom
 working-color-space: ~
 ---

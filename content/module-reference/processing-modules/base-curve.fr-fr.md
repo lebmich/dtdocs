@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: base-curve
 masking: 'true'
 tags: ~
-title: 'base curve'
+title: 'courbe de base'
 view: darkroom
 working-color-space: RGB
 ---

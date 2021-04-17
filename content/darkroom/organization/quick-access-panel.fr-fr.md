@@ -8,7 +8,7 @@ weight: 30
 
 The quick access panel allows you to access widgets from a number of processing modules all in one place.
 
-![quick-access-panel](./quick-access-panel/quick-access-panel.png)
+![panneau-accès-rapide](./quick-access-panel/quick-access-panel.png)
 
 You can add new widgets by right-clicking on the icon at the top-left or by using the [manage module layouts](./manage-module-layouts.md) screen.
 

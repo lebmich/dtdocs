@@ -2,7 +2,7 @@
 applicable-version: 3.2.1
 id: selected-image
 tags: ~
-title: 'selected images'
+title: 'images sélectionnées'
 view: lighttable
 ---
 
@@ -12,7 +12,7 @@ Perform actions on images that have been selected in the lighttable view.
 
 The module controls are spread over two tabs, one for manipulating the image files, and the other for manipulating the metadata related to the images.
 
-## images tab
+## onglet images
 
 remove
 : Remove the selected images from the darktable database. Removed images can no longer be viewed or edited within darktable but the image files remain on the filesystem along with any XMP sidecar files. As darktable keeps the XMP files up-to-date with your latest development history, you can later fully restore your work by re-importing the images.
@@ -47,7 +47,7 @@ group
 ungroup
 : Remove selected images from a group (see [image grouping](../../../lighttable/digital-asset-management/grouping.md)).
 
-## metadata tab
+## onglet métadonnées
 
 metadata type checkboxes
 : Choose which types of metadata (ratings, tags, metadata, colors, geo tags) you want to operate on. 

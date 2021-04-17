@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: spot-removal
 masking: ~
 tags: ~
-title: 'spot removal'
+title: 'correction des taches'
 view: darkroom
 working-color-space: ~
 ---

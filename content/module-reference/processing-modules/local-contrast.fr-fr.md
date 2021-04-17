@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: local-contrast
 masking: 'true'
 tags: ~
-title: 'local contrast'
+title: 'contraste local'
 view: darkroom
 working-color-space: Lab
 ---
@@ -16,7 +16,7 @@ This is achieved using either a _local laplacian_ filter (the default mode) or a
 mode
 : Choice of _local laplacian_ filter or _bilateral grid_. The following sections define the controls available for each of these modes.
 
-## bilateral grid
+## grille bilatérale
 
 coarseness
 : Adjust the coarseness of the details to be adjusted.
@@ -27,7 +27,7 @@ contrast
 detail
 : Add or remove detail. Higher values will increase local contrast.
 
-## local laplacian
+## laplacien local
 
 To understand the parameters of the local laplacian filter, one can think of it as applying a curve to the image, similar to the following graph:
 

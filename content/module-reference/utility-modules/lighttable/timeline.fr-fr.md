@@ -8,7 +8,7 @@ view: lighttable
 
 View your images by the date/time they were taken.
 
-![timeline](./timeline/timeline.png)
+![chronologie](./timeline/timeline.png)
 
 In the lighttable filemanager view, you can show/hide the timeline module in the bottom panel with the shortcut Ctrl+F. 
 

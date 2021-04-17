@@ -3,7 +3,7 @@ applicable-version: 3.4
 id: white-blaance
 masking: 'false'
 tags: ~
-title: 'white balance'
+title: 'balance des blancs'
 view: darkroom
 working-color-space: 'not-applicable (RAW)'
 ---
@@ -44,16 +44,16 @@ For convenience the final four modes can also be set by clicking on one of the b
 finetune
 : Finetune a camera-specific white balance preset. This is only shown if it is available for the camera in question. The direction of adjustment is dependent on the provided presets. If your camera doesn't have white balance presets available, check [this guide](https://github.com/darktable-org/darktable/wiki/White-balance-presets) to see how you can submit your own.
 
-## channel coefficients
+## coefficients du canal
 
 By default the RGB channel coefficients are hidden. You can expand/collapse the channel coefficients section by clicking on either the 'channel coefficients' label or the adjacent triangular button.
 
 red/green/blue
 : Set the value of each RGB channel from 0 to 8
 
-# additional functionality
+# fonctionnalité supplémentaire
 
-## colored sliders
+## curseurs colorés
 
 By default the module's sliders are monochrome. However two flavors of colored sliders can be enabled in [preferences > darkroom > white balance slider colors](../../preferences-settings/darkroom.md) or by clicking on the 'scene illuminant temp' label in the module.
 
@@ -66,7 +66,7 @@ illuminant color
 effect emulation
 : The slider colors represent the effect the adjustment would have had on the scene. This is how most other raw processors show temperature/tint sliders colors.
 
-## button bar
+## barre de boutons
 
 The button bar is simple addition to allow one-click access to the internal white balance settings. If desired, you can disable this by editing your `darktablerc` file. Find line that says
 
@@ -80,7 +80,7 @@ and change it to:
 plugins/darkroom/temperature/button_bar=FALSE
 ```
 
-# usage warning
+# avertissement d'utilisation
 
 The only parameters that are used internally by this module's operation are the _rgb channel coefficients_, with the _temperature_ and _tint_ sliders provided merely as more user-friendly ways to adjust those parameters. The relationship between the channel coefficients and temperature/tint sliders depends on camera-specific characteristics. This means that applying the white balance settings from an image made with one camera model to an image made with another model will, in general, not give consistent results.
 

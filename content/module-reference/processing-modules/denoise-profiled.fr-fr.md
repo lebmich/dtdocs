@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: denoise-profiled
 masking: ~
 tags: ~
-title: 'denoise (profiled)'
+title: 'réduction du bruit (profil)'
 view: darkroom
 working-color-space: ~
 ---
@@ -46,7 +46,7 @@ When describing the controls specific to an algorithm, we will first cover the s
 
 Note that sliders are provided with minimum and maximum values by default. However these are only soft limits and, where needed, higher values can be entered by right-clicking on the slider and using the keyboard.
 
-## common controls
+## contrôles communs
 
 profile
 : darktable will automatically determine the camera model and ISO based on Exif data of your raw file. If found in its database, the corresponding noise profile will be used. If your image has an intermediate ISO value, the statistical properties will be interpolated between the two closest datasets in the database, and this interpolated setting will show up as the first line in the combo box. You can also manually override this selection if necessary. Re-selecting the top-most entry in the combo box will return you to the default profile.
@@ -89,7 +89,7 @@ search radius
 scattering (coarse-grain noise)
 : Like the _search radius_, this slider controls how far from a pixel the algorithm will try to find similar patches. However, it does this without increasing the number of patches considered. As such, processing time will stay about the same. Increasing the value will reduce coarse grain noise, but may smooth local contrast. This slider is particularly effective at reducing chroma noise.
 
-## wavelet curves
+## courbes ondelettes
 
 These curves are only available if the “wavelet” mode is selected. The noise in an image usually consists of both fine grain and coarse grain noise, to varying degrees. These curves allow the strength of the denoising to be adjusted depending on the coarseness of the visible noise. The left end of the curve will act on very coarse grain noise, while the right of the curve will act on very fine grain noise. Pushing up the curve will increase the amount of smoothing, whereas pulling it down will decrease the amount of smoothing.
 
@@ -99,13 +99,13 @@ For example, you can preserve very-fine-grain noise by pulling the right-most pa
 
 The preferred way to use wavelets is with the new _Y0U0V0 color mode_. This separates the denoising curves into luminance (_Y0_) and color (_U0V0_) components. You can then use the _Y0_ curve to control the level of luma denoising at different scales, and the _U0V0_ curve to control the level of chroma denoising at different scales.
 
-![denoise-y0u0v0](./denoise-profiled/denoise-y0u0v0.png#w33)
+![réduction du bruit profil-y0u0v0](./denoise-profiled/denoise-y0u0v0.png#w33)
 
 ## wavelets _RGB_ color mode
 
 Before the _Y0U0V0 color mode_, wavelet-based denoising could only be performed directly on the _R_, _G_ and _B_ channels, either all together in one go, or on an individual channel basis.
 
-![denoise-rgb](./denoise-profiled/denoise-rgb.png#w33)
+![réduction du bruit-rvb](./denoise-profiled/denoise-rgb.png#w33)
 
 If you want to denoise the channels separately, the best way to do this is to use an instance of the [_color calibration_](./color-calibration.md) module immediately before the _denoise (profiled)_ module so that it outputs a gray channel based on the _red_ channel only, then denoise that monochrome image using the _red_ wavelet curve. Repeat this procedure for the blue and green channels. This procedure is time-consuming, but gives the best result because looking at the color of a noisy pixel is not a reliable way to determine which channel to adjust (e.g. a noisy red pixel could be due to a noise peak on the red channel, but could also be due to a noise lull on the blue and green channels).
 

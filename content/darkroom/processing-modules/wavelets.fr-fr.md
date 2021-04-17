@@ -1,78 +1,78 @@
 ---
 draft: 'false'
 id: wavelets
-title: wavelets
+title: ondelettes
 weight: 55
 ---
 
-Wavelets are a technique used in image processing to separate (or _decompose_) an image into a number of distinct _layers_, each containing a different level of detail. After decomposing an image in this way, a module can limit its processing to one or more of these detail layers, and then piece the layers back together again at the end to form its output image. This allows us to be surgical about which features in the image we wish to impact when working with a module. 
+Les ondelettes sont une technique utilisée dans le traitement d'image pour séparer (ou décomposer) une image en un certain nombre de couches distinctes, chacune contenant un niveau de détail différent. Après avoir décomposé une image de cette manière, un module peut limiter son traitement à une ou plusieurs de ces couches de détail, puis reconstituer les couches à la fin pour former son image de sortie. Cela nous permet d'avoir une précision chirurgicale sur les caractéristiques de l'image que nous souhaitons impacter lorsque nous travaillons avec un module. 
 
-Some of the operations darktable can perform in this way are:
+Certaines des opérations que darktable peut effectuer de cette manière sont :
 
-- noise removal (in the [_denoise (profiled)_](../../module-reference/processing-modules/denoise-profiled.md), [_raw denoise_](../../module-reference/processing-modules/raw-denoise.md) and [_contrast equalizer_](../../module-reference/processing-modules/contrast-equalizer.md) modules) 
+- réduction du bruit (dans les modules [_réduction bruit (profil)_](../../module-reference/processing-modules/denoise-profiled.md), [_réduction du bruit raw_](../../module-reference/processing-modules/raw-denoise.md) et [_égaliseur de contraste_](../../module-reference/processing-modules/contrast-equalizer.md)) 
 
-- contrast adjustment (in the [_contrast equalizer_](../../module-reference/processing-modules/contrast-equalizer.md) module)
+- ajustement du contraste (dans le module [_égaliseur de contraste_](../../module-reference/processing-modules/contrast-equalizer.md))
 
-- blurring or removal of unwanted detail (in the [_retouch_](../../module-reference/processing-modules/retouch.md) module)
+- flou ou suppression de détails indésirables (dans le module [_retouche_](../../module-reference/processing-modules/retouch.md))
 
 
-# theory
+# théorie
 
-A wavelet is a mathematical function that starts off at zero, oscillates up and down and then settles back to zero. The following diagram shows some simple wavelets of differing sizes.
+Une ondelette est une fonction mathématique qui commence à zéro, oscille de haut en bas, puis revient à zéro. Le diagramme suivant montre quelques ondelettes simples de différentes tailles.
 
-![wavelets-overview](./wavelets/wavelets-overview.png#w50) 
+![présentation-ondelettes](./wavelets/wavelets-overview.png#w50) 
 
-These wavelet functions are used to scan across and down the image using a mathematical operation called _convolution_. This picks out details from the image that are on a similar scale to the size of a given wavelet, and builds a number of detail layers each corresponding to a different wavelet scale.
+Ces fonctions d'ondelettes sont utilisées pour parcourir l'image en utilisant une opération mathématique appelée _convolution_. Ceci sélectionne les détails de l'image qui sont à une échelle similaire à la taille d'une ondelette donnée et crée un certain nombre de couches de détails correspondant chacune à une échelle d'ondelettes différente.
 
-Below is an example where detail layers have been extracted from the image shown above. In this case, the images were produced using the [_retouch_](../../module-reference/processing-modules/retouch.md) module, splitting the image into 8 different layers, and using the module's controls to visualise the details present at each of these wavelet scales:
+Vous trouverez ci-dessous un exemple où des couches de détails ont été extraites de l'image ci-dessus. Dans ce cas, les images ont été produites en utilisant le module [_retouche_](../../module-reference/processing-modules/retouch.md), en divisant l'image en huit couches différentes et en utilisant les contrôles du module pour visualiser le détails présents à chacune de ces échelles d'ondelettes :
 
-![wavelets-retouch-gui](./wavelets/clean-retouch.png#w33)
+![ondelettes-retouche-gui](./wavelets/clean-retouch.png#w33)
 
 The bars in the _wavelet decompose_ section indicate the layers that have been extracted at different wavelet scales. The darkest rectangle at the left represents the entire image (before decomposition) and the gray boxes represent each of the decomposed layers. Clicking on the staircase icon below the bar graph enables the layer visualisation overlay so that you can see what the currently selected layer looks like. 
 
-Let's take a look at some of the layers generated for the above image.
+Jetons un coup d'œil à certaines des couches générées pour l'image ci-dessus.
 
-At scale #2, the image contains only very fine details, including the model's eyebrows, eye lashes and the pores of his skin. It doesn't include the coarser details of the image, because those details have been extracted to other layers:
+À l'échelle n°2, l'image ne contient que des détails très fins, dont les sourcils, les cils et les pores de la peau du mannequin. Elle n'inclut pas les détails plus grossiers de l'image, car ces détails ont été extraits vers d'autres couches :
 
-![wavelets-layer-scale-2](./wavelets/wavelets-layer-scale-2.png#w50)
+![couche-ondelettes-échelle-2](./wavelets/wavelets-layer-scale-2.png#w50)
 
-At scales #5 and #6 we begin to see larger and larger features:
+Aux échelles n°5 et n°6, nous commençons à voir des détails de plus en plus grands :
 
-![wavelets-layer-scale-5](./wavelets/wavelets-layer-scale-5.png#w50) 
+![couches-ondelettes-échelle-5](./wavelets/wavelets-layer-scale-5.png#w50) 
 
-![wavelets-layer-scale-6](./wavelets/wavelets-layer-scale-6.png#w50)
+![couche-ondelettes-échelle-6](./wavelets/wavelets-layer-scale-6.png#w50)
 
-By scale #8 we only see very high-level features such as the overall shape of the model's nose, eye and the cheek:
+À l'échelle n°8, nous ne voyons que des détails de très haut niveau du modèle tels que la forme générale du nez, des yeux et de la joue :
 
-![wavelets-layer-scale-8](./wavelets/wavelets-layer-scale-8.png#w50)
+![couche-ondelettes-échelle-8](./wavelets/wavelets-layer-scale-8.png#w50)
 
-# why use wavelets?
+# pourquoi utiliser des ondelettes ?
 
-Suppose, in the above example, that we wanted to smooth out some of the blotchiness in the model's skin, without losing any of the underlying skin texture. Wavelet decomposition makes this a trivial operation - we can simply use the retouch module to apply a Gaussian blur to only the 'blotchy' detail layer(s), leaving all other detail layers untouched. Once the adjustment is complete, the retouch module simply recombines that adjusted layer with the remaining untouched layers to produce the final image.
+Supposons, dans l'exemple ci-dessus, que nous voulions lisser une partie des taches sur la peau du modèle, sans rien perdre de la texture de peau sous-jacente. Avec la décomposition en ondelettes ceci est une opération triviale -- nous pouvons simplement utiliser le module retouche pour appliquer un flou gaussien uniquement au(x) couche(s) "tachée(s)", laissant toutes les autres couches non modifiées. Une fois l'ajustement terminé, le module retouche recombine simplement la ou les couches modifiées avec les couches non modifiées pour produire l'image finale.
 
-The sequence of images below shows (1) The original image; (2) The layer (scale 5) that we wish to blur; and (3) The final image after the scale 5 layer has been blurred and the layers recombined:
+La séquence d'images ci-dessous montre (1) L'image originale ; (2) La couche (échelle 5) que l'on souhaite flouter ; et (3) L'image finale après que la couche à l'échelle 5 a été floutée et que les différentes couches ont été recombinées :
 
-![wavelets-original](./wavelets/wavelets-original.png#w50) 
+![ondelettes-original](./wavelets/wavelets-original.png#w50) 
 
-![wavelets-layer-scale-5](./wavelets/wavelets-layer-scale-5.png#w50) 
+![couches-ondelettes-échelle-5](./wavelets/wavelets-layer-scale-5.png#w50) 
 
-![wavelets-blur-layered](./wavelets/wavelets-blur-layered.png#w50)
+![ondelettes-flou-couche](./wavelets/wavelets-blur-layered.png#w50)
 
-As you can see, the large-scale skin blotches have been removed, but the smaller-scale details remain untouched.
+Comme vous pouvez le voir, les taches cutanées à grande échelle ont été supprimées, mais les détails à plus petite échelle ont été conservés.
 
-# interacting with wavelet scales
+# interagir avec les échelles d'ondelettes
 
-There are two methods by which processing modules allow you to modify their operation using wavelet scales.
+Les modules de traitement vous permettent de modifier leur fonctionnement à l'aide d'échelles d'ondelettes en utilisant deux méthodes.
 
-## wavelet decomposition
+## la décomposition en ondelettes
 
-As discussed above, the _retouch_ module allows you to choose how many detail levels to split your image into. It decomposes the image into separate layers and allows you to perform operations selectively on each individual layer or on the image as a whole:
+Comme indiqué ci-dessus, le module _retouche_ vous permet de choisir le nombre de niveaux de détails dans lesquels diviser votre image. Il décompose l'image en couches séparées et vous permet d'effectuer des opérations de manière sélective sur chaque couche ou sur l'image dans son ensemble :
 
-![wavelets-retouch-gui](./wavelets/clean-retouch.png#w33)
+![ondelettes-retouche-gui](./wavelets/clean-retouch.png#w33)
 
-See the [_retouch_](../../../module-reference/processing-modules/retouch.md) module documentation for more details.
+Voir la documentation du module [_retouche_](../../../module-reference/processing-modules/retouch.md) pour plus de détails.
 
-## spline controls
+## les contrôles de spline
 
 The [_denoise (profiled)_](../../module-reference/processing-modules/denoise-profiled.md), [_raw denoise_](../../module-reference/processing-modules/raw-denoise.md) and [_contrast equalizer_](../../module-reference/processing-modules/contrast-equalizer.md) modules allow their effects to be applied more or less to different wavelet scales using _splines_.
 

@@ -54,7 +54,7 @@ chercher module
 
 # panneau inférieur
 
-![darkroom-view-layout](./darkroom-view-layout/darkroom-bottom-panel.png#w100)
+![disposition de la vue chambre noire](./darkroom-view-layout/darkroom-bottom-panel.png#w100)
 
 De gauche à droite :
 

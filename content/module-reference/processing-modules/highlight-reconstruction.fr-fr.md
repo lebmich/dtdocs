@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: highlight-reconstruction
 masking: 'true'
 tags: ~
-title: 'highlight reconstruction'
+title: 'reconstruction des hautes lumières'
 view: darkroom
 working-color-space: 'not-applicable (RAW)'
 ---

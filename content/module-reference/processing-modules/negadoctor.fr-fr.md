@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: negadoctor
 masking: ~
 tags: ~
-title: negadoctor
+title: 'docteur néga'
 view: darkroom
 working-color-space: ~
 ---
@@ -12,7 +12,7 @@ Negadoctor allows you to process a scanned film negative.
 
 You can obtain an image of a negative using a film scanner, or by photographing it against a white light (e.g. a light table or computer monitor) or off-camera flash.
 
-# preparation
+# préparation
 
 If the image of the negative was obtained using a digital camera, then in order to obtain accurate colors in the final image, you will need to take the following points into consideration:
 
@@ -52,7 +52,7 @@ When using color pickers, be careful to avoid including dust and scratches, whic
 film stock
 : The first step is to choose "color" or "black and white" in the _film stock_ drop-down. If you select "black and white", any sliders that are only used for color will be hidden from view.
 
-## film properties
+## propriétés du film
 
 This tab contains a number of basic settings. If, after adjusting these settings, your image is still not quite as you would like it, you can make further adjustments on the the _corrections_ tab. These are technical settings, and serve a somewhat similar purpose to the _scene_ tab in the [_filmic rgb_](filmic-rgb.md) module, in that they adjust the black and white points and hence define the dynamic range of the negative.
 
@@ -82,7 +82,7 @@ shadows color cast
 highlights white balance
 : These three sliders allow you to correct the white balance in the highlights by adjusting the _red_, _green_ and _blue_ channels individually. Use the color picker to set the sliders automatically by selecting a neutral gray region in the highlights that is not properly balanced.
 
-## print properties
+## propriétés d'impression
 
 This tab contains settings that mimic the tonal effect of the photochemical papers that would have been used to create the hard copy image if you were not developing the photo digitally. These are creative settings, and serve a similar overall purpose to the creative tone curve settings on the _look_ tab of the [_filmic rgb_](filmic-rgb.md) module.
 

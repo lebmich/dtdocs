@@ -3,7 +3,7 @@ applicable-version: 3.4
 id: surface-blur
 masking: 'true'
 tags: ~
-title: 'surface blur'
+title: 'flou de surface'
 working-color-space: RGB
 ---
 

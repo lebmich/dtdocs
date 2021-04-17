@@ -3,7 +3,7 @@ applicable-version: 3.6
 id: contrast-equalizer
 masking: ~
 tags: ~
-title: 'contrast equalizer'
+title: 'égaliseur de contraste'
 view: darkroom
 working-color-space: ~
 ---
@@ -26,7 +26,7 @@ In the background of the curve you will see a number of alternating light and da
 
 ---
 
-## luma tab
+## onglet luma
 
 The luma tab allows you to adjust the local contrast in the luminance or brightness in the image. It is represented by a white spline that starts off running across the centre of the graph (indicating that no change will be made). Raise or lower the white spline at the left end of the graph to increase or decrease the local contrast of coarse detail in the image. Perform similar adjustments towards the right side of the graph to adjust the local contrast of the fine details in the image. 
 
@@ -34,33 +34,33 @@ When you hover the mouse pointer over the graph, a white circle indicates the ra
 
 Let's look at an example. The following image shows the default state of the contrast equalizer module before any adjustments have been made:
 
-![contrast-equalizer-luma-orig](./contrast-equalizer/contrast-equalizer-luma-orig.png#w66)
+![égaliseur de contraste-luma-orig](./contrast-equalizer/contrast-equalizer-luma-orig.png#w66)
 
 By pushing up the two control points at the right hand end of the graph, you will make the fine details in the eye and feathers of the bird much sharper, but the contrast in the rocks in the background remains largely unaffected. The example below has been purposely exaggerated to better illustrate the effect.
 
-![contrast-equalizer-luma-high](./contrast-equalizer/contrast-equalizer-luma-high.png#w66)
+![égaliseur de contraste-luminance-haute](./contrast-equalizer/contrast-equalizer-luma-high.png#w66)
 
 Increasing the local contrast can also amplify the luma noise in the image. A second spline located at the bottom of the graph can be used used for denoising at selected detail scales. Raise this spline (by clicking just above one of the triangles at the bottom of the graph and dragging the line upwards) to reduce noise at the given wavelet scale. On the example above the dark denoising spline has been pushed up at the fine detail end of the graph.
 
-## chroma tab
+## onglet chroma
 
 The chroma tab allows the color contrast or saturation to be adjusted at the selected wavelet scales. In the example below are some pink flowers:
 
-![contrast-equalizer-chroma-orig](./contrast-equalizer/contrast-equalizer-chroma-orig.png#w66)
+![égaliseur de contraste -chrominance-orig](./contrast-equalizer/contrast-equalizer-chroma-orig.png#w66)
 
 Say you wanted to bring out the green color of the anthers at the end of the stamen in the flowers. The pink petals of the flowers are already quite saturated, but using contrast equalizer you can selectively boost the saturation on the small scale of the anthers without impacting the saturation of the petals. By pushing up the third control point from the right, you can target the saturation of the anthers only:
 
-![contrast-equalizer-chroma-high](./contrast-equalizer/contrast-equalizer-chroma-high.png#w66)
+![égaliseur de contraste-chrominance-haute](./contrast-equalizer/contrast-equalizer-chroma-high.png#w66)
 
 Just like on the luma tab, the chroma tab also has a denoising spline at the bottom of the graph. This can be used to deal with chroma noise at different scales within the image. Chroma denoising can generally be more agressive on larger wavelet scales and has less effect on a smaller scale.
 
-## edge tab
+## onglet contours
 
 The basic wavelet _à trous_ transform has been enhanced in contrast equalizer to be "edge-aware", which can help reduce the gradient reversals and halo artifacts that the basic algorithm can produce. The _edge_ tab does not directly act on edges in an image; rather it adjusts the level of the edge awareness feature of the wavelet transform. If you have not adjusted the luma or chroma splines, adjusting the edge awareness spline will have no effect.
 
 To see the sorts of artifacts that the edge awareness tries to combat, here is an example taken from the paper "Edge-Optimized À-Trous Wavelets for Local Contrast Enhancement with Robust Denoising" (Hanika, Damertz and Lensch 2011). In the image on the left, the edge curve was reduced to a minimum, effectively disabling the edge awareness. You can see that this results in halos. In the middle image, the edge spline was increased too much, and you can see that we get gradient reversals. The image on the right shows an image where the edge spline was placed somewhere in between the two extremes, which results in nice clean edges in the image.
 
-![contrast-equalizer-edge](./contrast-equalizer/contrast-equalizer-edge.png#w75)
+![égaliseur de contraste-bord](./contrast-equalizer/contrast-equalizer-edge.png#w75)
 
 Usually the default central position of the spline is a good starting point, but if there are objectionable artifacts around the edges, this control can be helpful in mitigating them.
 

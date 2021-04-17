@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: soften
 masking: 'true'
 tags: ~
-title: soften
+title: 'adoucir (effet Orton)'
 view: darkroom
 working-color-space: RGB
 ---

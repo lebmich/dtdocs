@@ -67,3 +67,5 @@ wait
 if test -f po/*.en.po; then
     rm -f po/*.en.po
 fi
+
+#find . -name "*fr-fr.fr-fr.md"|xargs rm -f

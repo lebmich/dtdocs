@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: bloom
 masking: 'true'
 tags: ~
-title: bloom
+title: "lumière d'arrière plan"
 view: darkroom
 working-color-space: Lab
 ---
@@ -12,8 +12,8 @@ Create a soft bloom over the image. This module works by blurring the highlights
 
 # les contrôles du module
 
-size
-: The spacial extent of the bloom effect
+taille
+: L'étendue spatiale de l'effet lumière d'arrière plan
 
 threshold
 : The threshold for the increase in brightness

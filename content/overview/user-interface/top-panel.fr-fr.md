@@ -8,7 +8,7 @@ weight: 40
 
 Le panneau supérieur est commun à toutes les vues darktable et fournit un certain nombre de fonctions utilitaires courantes.
 
-![top-panel](./top-panel/top-panel.png#w100)
+![panneau supérieur](./top-panel/top-panel.png#w100)
 
 # Sur le côté gauche
 

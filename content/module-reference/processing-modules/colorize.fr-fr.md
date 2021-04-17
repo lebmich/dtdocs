@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: colorize
 masking: 'true'
 tags: ~
-title: colorize
+title: coloriser
 view: darkroom
 working-color-space: Lab
 ---

@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: lens-correction
 masking: 'false'
 tags: ~
-title: 'lens correction'
+title: 'correction des objectifs'
 view: darkroom
 working-color-space: RGB
 ---

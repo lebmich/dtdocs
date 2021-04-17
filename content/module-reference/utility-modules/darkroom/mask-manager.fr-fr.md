@@ -2,13 +2,13 @@
 applicable-version: 3.2.1
 id: mask-manager
 tags: ~
-title: 'mask manager'
+title: 'gestionnaire des masques'
 view: darkroom
 ---
 
 Manage all masks and shapes for the current image. 
 
-![mask manager](./mask-manager/mask-manager.png#w25)
+![gestionnaire des masques](./mask-manager/mask-manager.png#w25)
 
 This module can be used to create, rename, edit and delete shapes. You can add shapes to and remove shapes from a mask, group shapes together, and combine them using set operators. 
 
@@ -18,7 +18,7 @@ The panel below these buttons displays a list of all masks and individual shapes
 
 Groups of shapes forming a mask are displayed with a headline in the form "grp <module_name>" indicating the module in which they are used, with the component shapes listed below. The list of mask groups is followed by a list of all individual shapes that have been generated in the context of the current image. If a shape is in use by any masks this is indicated by a symbol to the right of the shape name. 
 
-# shapes
+# formes
 
 By default each shape receives an automatically generated name, consisting of the shape type ("brush", "circle", "ellipse", "path", "gradient") and an automatically-incremented integer. You can rename a shape by double-clicking on its current name. It is a good habit to give shapes and groups meaninful names, especially if you are going to use the same selection in different masks.
 
@@ -32,7 +32,7 @@ Right-click on a shape name to show a menu with options to remove the current sh
 
 ---
 
-# masks
+# masques
 
 Masks are constructed by adding shapes in the order that they are listed from top to bottom. Each shape adjusts the existing mask using one of four logical set operators (see below). Because order is important it is also possible to move shapes up and down the list.
 
@@ -54,13 +54,13 @@ mode
 move up/down
 : Move the shape up or down the list
 
-# set operators
+# opérateurs d'ensemble
 
 As an example we will use a mask that combines a gradient followed by a path, to demonstrate the effect of each set operator when applied to the path shape. As a convention we say that a pixel is “selected” in a mask or shape if it has a value higher than zero. 
 
-![gradient](./mask-manager/mask-manager_ex1.png#w33) 
+![dégradé](./mask-manager/mask-manager_ex1.png#w33) 
 
-![path](./mask-manager/mask-manager_ex2.png#w33)
+![chemin](./mask-manager/mask-manager_ex2.png#w33)
 
 union
 : This is the default set operator. It is depicted by the symbol ![union-icon](./mask-manager/masks_union.png#icon) to the left of the shape name. The shape adds to the existing mask in such a way that the resulting mask contains the pixels that are *either* selected in the existing mask *or* in the added shape. In overlapping areas the maximum value is taken: 
@@ -75,7 +75,7 @@ intersection
 difference
 : This set operator is depicted by the symbol ![difference-icon](./mask-manager/masks_difference.png#icon) to the left of the shape name. In the non-overlapping area the existing mask is unchanged. In the resulting mask, pixels are selected only if they are selected in the existing mask but *not* in the added shape. This set operator can be chosen if you want to “cut out” a region from within an existing selection: 
 
-: ![difference](./mask-manager/mask-manager_ex5.png#w33)
+: ![différence](./mask-manager/mask-manager_ex5.png#w33)
 
 exclusion
 : This set operator is depicted by the symbol ![exclusion-icon](./mask-manager/masks_exclusion.png#icon) to the left of the shape name. The resulting mask has all pixels selected that are either selected in the existing mask and not in the added shape or vice versa. This is equivalent to an “exclusive or”: 

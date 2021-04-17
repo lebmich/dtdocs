@@ -2,7 +2,7 @@
 applicable-version: 3.2.1
 id: module-order
 tags: ~
-title: 'module order'
+title: 'ordre des modules'
 view: darkroom
 ---
 

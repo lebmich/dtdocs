@@ -2,7 +2,7 @@
 applicable-version: 3.2.1
 id: select
 tags: ~
-title: select
+title: sélectionner
 view: lighttable
 ---
 

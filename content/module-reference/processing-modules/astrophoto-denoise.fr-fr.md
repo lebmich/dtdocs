@@ -3,7 +3,7 @@ applicable-version: 3.4
 id: astrophoto-denoise
 masking: 'true'
 tags: ~
-title: 'astrophoto denoise'
+title: 'réduction du bruit photo astro'
 view: darkroom
 working-color-space: Lab
 ---

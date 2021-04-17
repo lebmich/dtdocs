@@ -2,7 +2,7 @@
 author: people
 draft: 'false'
 id: troubleshooting
-title: troubleshooting
+title: dépannage
 weight: 40
 ---
 

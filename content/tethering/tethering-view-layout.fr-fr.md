@@ -2,7 +2,7 @@
 author: people
 draft: 'false'
 id: tethering-view-layout
-title: 'tethering view layout'
+title: 'disposition de la vue capture'
 weight: 20
 ---
 

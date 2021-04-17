@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: hot-pixels
 masking: 'true'
 tags: ~
-title: 'hot pixels'
+title: 'pixels chaux'
 view: darkroom
 working-color-space: 'Not Applicable (RAW)'
 ---

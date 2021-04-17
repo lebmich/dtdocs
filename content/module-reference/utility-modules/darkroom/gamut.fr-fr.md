@@ -2,7 +2,7 @@
 applicable-version: 3.2.1
 id: gamut
 tags: ~
-title: 'gamut check'
+title: 'vérification du gamut'
 view: darkroom
 ---
 

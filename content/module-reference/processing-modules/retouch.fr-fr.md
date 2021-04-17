@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: retouch
 masking: ~
 tags: ~
-title: retouch
+title: retoucher
 view: darkroom
 working-color-space: rgb
 ---
@@ -16,15 +16,15 @@ This module extends the capabilities of the [_spot removal_](./spot-removal.md) 
 
 Cloning allows us to hide part of an image by replacing it with an area copied from another part of the image. For example, we may wish to get rid of a small cloud in a blue sky:
 
-![retouch-original](./retouch/rt-original.png#w33)
+![retoucher-original](./retouch/rt-original.png#w33)
 
 The simplest way to do this is with the _basic cloning_ tool (![retouch-clone-icon](./retouch/rt-clone-icon.png#icon)) -- simply take a circle of blue sky next to the cloud, and use it to paint over the cloud we want to hide:
 
-![retouch-clone](./retouch/rt-clone.png#w33)
+![retoucher-clone](./retouch/rt-clone.png#w33)
 
 However, if the sample we take doesn't precisely match the surroundings of the item we want to clone out, the result can look a bit jarring. In our example, the sample of sky we chose to use (the clone "source" patch) was slightly darker than the piece of sky we wanted to replace (the "target" patch):
 
-![retouch-clone-nocontrol](./retouch/rt-clone-nocontrol.png#w33)
+![retoucher-clone-sans-contrôle](./retouch/rt-clone-nocontrol.png#w33)
 
 If we instead use the _heal_ tool (![retouch-heal-icon](./retouch/rt-heal-icon.png#icon)), the color and luma of the sample is blended to fit better with the surroundings. In our example, using _heal_ instead of _clone_ gives a much more uniform-looking result:
 
@@ -78,7 +78,7 @@ Through this method, we could for example use the healing tool to paint over a s
 
 ![retouch-overview](./retouch/rt-overview.png#w33)
 
-## retouch tools
+## outils de retouche
 
 The _retouch tools_ section consists of two items:
 
@@ -94,7 +94,7 @@ shapes
 algorithms
 : Choose a retouching algorithm: clone, heal, fill or blur (see above for details).
 
-## wavelet decompose
+## décomposition par ondelettes
 
 The _wavelet decompose_ section centres around a bar graph showing how the image has been decomposed into different detail (scale) layers. The key features of the bar graph are:
 
@@ -156,7 +156,7 @@ preview single scale
 : Show the target shapes associated with the currently-selected layer with a yellow overlay.
 
 
-## shapes
+## formes
 
 This section allows you to modify settings related to the currently-selected shape:
 

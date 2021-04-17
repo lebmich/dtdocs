@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: perspective-correction
 masking: ~
 tags: ~
-title: 'perspective correction'
+title: 'correction de perspective'
 view: darkroom
 working-color-space: ~
 ---
@@ -83,15 +83,15 @@ get structure
 
 : Click on the ![eye-icon](./perspective-correction/icon-eye.png#icon) icon to toggle the display of line segments identified by any previous structural analysis.
 
-# examples
+# exemples
 
 Here is an image with a skewed horizon and converging lines caused by directing the camera upwards:
 
-![prespective-correction-example-before](./prespective-correction/perspective-correction-example-before.png#w66)
+![correction de perspective-exemple-avant](./prespective-correction/perspective-correction-example-before.png#w66)
 
 Here is the image after having corrected for vertical and horizontal perspective distortions. Note the framing by the automatic cropping feature and the still-visible overlay of structural lines:
 
-![prespective-correction-example-after](./prespective-correction/perspective-correction-example-after.png#w66)
+![correction de perspective-exemple-après](./prespective-correction/perspective-correction-example-after.png#w66)
 
 
 

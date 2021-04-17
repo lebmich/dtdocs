@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: dithering
 masking: 'false'
 tags: ~
-title: dithering
+title: homogénéisation
 view: darkroom
 working-color-space: RGB
 ---

@@ -30,7 +30,7 @@ mask contrast
 
 # example: feathering a drawn mask
 
-![feathering](./refinement-controls/feathering.png#w100)
+![adoussicement](./refinement-controls/feathering.png#w100)
 
 It can be rather tedious to create a drawn mask which precisely covers a particular feature in an image. In this example, we want to enhance the color contrast of the lion sculpture shown in the left image above without affecting the background.
 

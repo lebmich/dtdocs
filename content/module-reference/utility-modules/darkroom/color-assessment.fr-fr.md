@@ -2,7 +2,7 @@
 applicable-version: 3.2.1
 id: 'color assessment'
 tags: ~
-title: 'color assessment'
+title: 'évaluation des couleurs'
 view: darkroom
 ---
 
@@ -17,7 +17,7 @@ When developing an image, the way we perceive brightness, contrast and saturatio
 
 The end result is that the image can end up being too dark, and overly-processed in terms of contrast and color saturation. To avoid this, the "ISO 12646:2008" standard makes some recommendations about the conditions under which the colors of an image should be assessed. The _color assessment_ module in the darkroom places a frame around the image to help the user better assess the colors in the image, along the lines of those recommendations.
 
-![color-assessment-overview](./color-assessment/color-assessment-overview.png#w75)
+![aperçu de l'évaluation des couleurs](./color-assessment/color-assessment-overview.png#w75)
 
 When the lightbulb icon (![bulb-icon](./color-assessment/bulb-icon.png#icon)) is selected in the bottom panel, the image is zoomed out so that a thick mid-gray border appears around the image to act as a reference against which to compare the image's tones. A thinner white border is placed immediately around the image to give the eyes a basis for comparison when looking at parts of the image that are meant to be a bright white.
 

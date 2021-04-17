@@ -2,7 +2,7 @@
 applicable-version: 3.6
 id: soft-proof
 tags: ~
-title: 'soft proof'
+title: 'épreuvage écran'
 view: darkroom
 ---
 

@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: color-mapping
 masking: 'true'
 tags: ~
-title: 'color mapping'
+title: 'mappage des couleurs'
 view: darkroom
 working-color-space: Lab
 ---

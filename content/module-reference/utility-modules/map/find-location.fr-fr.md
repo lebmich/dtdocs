@@ -2,7 +2,7 @@
 applicable-version: 3.2.1
 id: find-location
 tags: ~
-title: 'find location'
+title: 'trouver un emplacement'
 view: map
 ---
 

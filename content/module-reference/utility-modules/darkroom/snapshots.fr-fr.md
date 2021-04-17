@@ -2,7 +2,7 @@
 applicable-version: 3.2.1
 id: snapshots
 tags: ~
-title: snapshots
+title: instantanés
 view: darkroom
 ---
 

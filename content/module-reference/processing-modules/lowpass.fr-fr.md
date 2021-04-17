@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: lowpass
 masking: 'true'
 tags: ~
-title: lowpass
+title: 'filtre passe-bas'
 view: darkroom
 working-color-space: Lab
 ---

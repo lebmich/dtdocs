@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: color-balance
 masking: 'true'
 tags: ~
-title: 'color balance'
+title: 'balance couleur'
 view: darkroom
 working-color-space: Lab
 ---

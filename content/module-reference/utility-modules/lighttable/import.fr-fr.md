@@ -16,7 +16,7 @@ You can import either a single image or a folder of images from the filesystem b
 
 Click on “image” or “folder” to open a file selector dialog. Navigate through the filesystem, and select the item(s) to import.
 
-## parameters
+## paramètres
 
 Click on the "parameters" label or the expander button beside it to display the following additional options related to file import.
 

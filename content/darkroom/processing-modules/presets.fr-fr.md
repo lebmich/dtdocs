@@ -11,22 +11,22 @@ Most of the functionality described here applies to processing modules only. How
 
 # le menu des préréglages
 
-The presets menu will contain one or more of the following entries depending on what presets are defined or selected for the current module:
+Le menu des préréglages contiendra une ou plusieurs des entrées suivantes en fonction des préréglages définis ou sélectionnés pour le module actuel :
 
-preset list
-: A list of the presets available for the current module. The currently selected preset (if any) is shown in **bold**.
+liste des préréglages
+: Une liste des préréglages disponibles pour le module actuel. Le préréglage actuellement sélectionné (le cas échéant) est affiché en **gras**.
 
-edit this preset
-: If a preset has been selected, click to edit that preset (see below)
+modifier ce préréglage
+: Si un préréglage a été sélectionné, cliquez pour modifier ce préréglage (voir ci-dessous)
 
-delete this preset
-: If a preset has been selected, delete that preset.
+supprimer ce préréglage
+: Si un préréglage a été sélectionné, supprimer ce préréglage.
 
-update preset \[name\]
-: Update the named preset to match the module's current parameters.
+mettre à jour le préréglage \[nom\]
+: Mettre à jour le préréglage nommé pour qu'il corresponde aux paramètres actuels du module.
 
-store new preset
-: Create a new preset using the module's current parameters.
+stocker un nouveau préréglage
+: Créer un nouveau préréglage en utilisant les paramètres actuels du module.
 
 Left-click on a preset name to apply the preset to the current instance of the module.  Right-click on a preset name to create a new instance of the module and apply the selected preset to it.  You can also apply a preset at any time while you are in the darkroom by pressing the shortcut key that has been assigned to it (see [preferences > shortcuts](../../preferences-settings/shortcuts.md)).
 
@@ -36,53 +36,53 @@ Lors de la création ou de la modification des préréglages, la boîte de dialo
 
 ![nouveau préréglage](./presets/new_preset.png#w33)
 
-The following options can be set:
+Les options suivantes peuvent être définies :
 
-name
-: The name of the preset
+nom
+: Le nom du préréglage
 
 description
-: A searchable description for the preset (optional)
+: Une description consultable pour le préréglage (facultatif)
 
 auto apply this preset to matching images _(processing modules only)_
 : Check this box to automatically apply this preset to matching images when they are opened in the darkroom for the first time (you can reapply such automatic presets by Ctrl+clicking on the _reset_ button in the [module header](./module-header.md)). Additional controls will appear to allow you to define which images the preset will be applied to based on image Exif data (see below).
 
-: For example, if you want a preset to be applied to all images from a specific camera leave all fields at default values except for the model field. Leave all fields unchanged to auto-apply a preset to all images.
+: Par exemple, si vous souhaitez qu'un préréglage soit appliqué à toutes les images d'un boîtier spécifique, laissez tous les champs aux valeurs par défaut, à l'exception du champ de modèle. Laissez tous les champs inchangés pour appliquer automatiquement un préréglage à toutes les images.
 
-: The example dialog above sets up following rules: if the lens name matches, the aperture is greater than or equal to f/8 and the focal length is between 24 and 35mm the preset will be automatically applied. 
+: L'exemple de boîte de dialogue ci-dessus définit les règles suivantes : si le nom de l'objectif correspond, si l'ouverture est supérieure ou égale à f/8 et si la distance focale est comprise entre 24 et 35 mm, le préréglage sera automatiquement appliqué. 
 
-: _The [image information](../../module-reference/utility-modules/shared/image-information.md) module displays the camera model and lens name for each image. Use this to ensure you have the correct spelling._
+: Le module [_informations de l'image_](../../module-reference/utility-modules/shared/image-information.md) affiche le modèle de boîtier et le nom de l'objectif pour chaque image. Utilisez ceci pour vous assurer que vous avez l'orthographe correcte.
 
 only show this preset for matching images _(processing modules only)_
 : Check this box to automatically show the preset in the preset menu, using the same set of filters.
 
 # filter criteria
 
-Les critères suivants peuvent être utilisés pour appliquer ou afficher automatiquement les préréglages des modules de traitement.
+The following criteria can be used to auto-apply or auto-show presets for processing modules.
 
-model
-: A pattern to be matched against the Exif field that describes your camera model; use % as wildcard.
+patron
+: Un motif à comparer avec le champ Exif qui décrit votre modèle d'appareil photo ; utilisez % comme joker.
 
-maker
-: A pattern to be matched against the Exif field that describes the maker of your camera; use % as wildcard.
+fabricant
+: Un motif à faire correspondre avec le champ Exif qui décrit le fabricant de votre appareil photo ; utilisez % comme joker.
 
-lens
-: A pattern to be matched against the Exif field that describes your lens; use % as wildcard.
+objectif
+: Un motif à comparer avec le champ Exif qui décrit votre objectif ; Utilisez % comme joker.
 
 ISO
-: Only apply the preset if the ISO value of your image lies within the given range.
+: N'appliquer le préréglage que si la valeur ISO de votre image se situe dans la plage donnée.
 
-exposure
-: Only apply the preset if the exposure time of your image lies within the given range; set + as the upper value to match arbitrarily long exposures.
+exposition
+: N'appliquer le préréglage que si le temps d'exposition de votre image se situe dans la plage donnée ; définir + comme valeur supérieure pour correspondre à des expositions arbitrairement longues.
 
-aperture
-: Only apply the preset if the aperture of your image lies within the given range; set f/0 as the lower value to match arbitrarily open apertures; set f/+ as the upper value to match arbitrarily closed apertures.
+ouverture
+: N'appliquer le préréglage que si l'ouverture de votre image se situe dans la plage donnée ; mettez f/0 comme valeur la plus faible, elle correspondra aux valeurs d'ouverture arbitrairement grandes ; mettez f/+ comme valeur supérieure, elle correspondra aux valeurs d'ouverture arbitrairement petites.
 
-focal length
-: Only apply the preset if the focal length of your image lies within the given range (from 0 to 1000). 
+distance focale
+: N'appliquer le préréglage que si la distance focale de votre image se situe dans la plage donnée (de 0 à 1000). 
 
 format
-: Only apply the preset to certain types of image. Choose from "normal images", "raw", "HDR", "monochrome" and "color".
+: N'appliquer le préréglage qu'à certains types d'images. Choisissez parmi «images normales», «raw», «HDR», «monochrome» et «couleur».
 
 # gérer les préréglages
 
@@ -90,9 +90,9 @@ Les préréglages créés par l'utilisateur et les préréglages prédéfinis pe
 
 ---
 
-**Note:** If you create a user-defined preset with the same name as a built-in preset, your preset will override the built-in version, which will no longer be accessible.
+**Remarque :** Si vous créez un préréglage défini par l'utilisateur avec le même nom qu'un préréglage intégré, votre préréglage remplacera la version intégrée, qui ne sera plus accessible.
 
-If you delete a preset that has the same name as one of the built-in presets, then your user preset will be deleted, and that preset name will no longer appear in the preset menu at all. The next time you start darktable, the corresponding built-in preset will once again become visible.
+Si vous supprimez un préréglage qui porte le même nom que l'un des préréglages intégrés, votre préréglage utilisateur sera supprimé et ce nom de préréglage n'apparaîtra plus du tout dans le menu des préréglages. La prochaine fois que vous démarrez darktable, le préréglage intégré correspondant redeviendra visible.
 
 ---
 

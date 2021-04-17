@@ -2,7 +2,7 @@
 applicable-version: 3.2.1
 id: duplicate-manager
 tags: ~
-title: 'duplicate manager'
+title: 'gestionnaire des clones'
 view: darkroom
 ---
 

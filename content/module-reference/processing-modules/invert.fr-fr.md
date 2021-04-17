@@ -3,7 +3,7 @@ applicable-version: 3.4
 id: invert
 masking: 'false'
 tags: ~
-title: 'invert (deprecated)'
+title: 'inverser (déprécié)'
 view: darkroom
 working-color-space: 'Not Applicable (RAW)'
 ---

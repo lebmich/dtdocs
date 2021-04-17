@@ -12,7 +12,7 @@ Crop, rotate, and correct perspective distortions using on-screen guides.
 
 Whenever the user interface of this module is in focus, the full uncropped image will be shown, overlaid with crop handles and optional guiding lines.
 
-![screen controls](./crop-rotate/screen-controls.png#w75)
+![contrôles de l'affichage](./crop-rotate/screen-controls.png#w75)
 
 Resize the crop by dragging the border and corner handles. Move the crop rectangle by clicking and dragging. Constrain movement to the horizontal/vertical axis by holding Ctrl/Shift, respectively while dragging. Commit changes by either giving focus to another module or by double-clicking on the image.
 
@@ -26,7 +26,7 @@ Resize the crop by dragging the border and corner handles. Move the crop rectang
 
 The _crop and rotate_ module controls are split between two tabs as follows:
 
-## main tab
+## onglet principal
 
 flip
 : Flip the image on the horizontal, vertical or both axes.
@@ -74,7 +74,7 @@ guides
 guides flip
 : If the chosen guidelines are not symmetrical relative to the image frame, you can flip them on the horizontal, vertical or both axes.
 
-## margins tab
+## onglet marges
 
 These sliders allow you to directly set how much of the image to crop from each side. They are automatically updated if you move or resize the crop area on the image using the mouse.
 

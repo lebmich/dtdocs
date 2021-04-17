@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: lowlight-vision
 masking: 'true'
 tags: ~
-title: 'lowlight vision'
+title: 'faible lumière'
 view: darkroom
 working-color-space: Lab
 ---

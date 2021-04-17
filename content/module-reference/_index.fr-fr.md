@@ -2,6 +2,6 @@
 author: people
 draft: 'false'
 id: module-reference
-title: 'Module Reference'
+title: 'Références des Modules'
 weight: 80
 ---

@@ -2,7 +2,7 @@
 applicable-version: 3.6
 id: history-staack
 tags: ~
-title: 'history stack'
+title: historique
 view: darkroom
 ---
 

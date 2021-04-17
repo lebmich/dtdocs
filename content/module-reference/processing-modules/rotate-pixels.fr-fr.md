@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: rotate-pixels
 masking: 'false'
 tags: ~
-title: 'rotate pixels'
+title: 'rotation des pixels'
 view: darkroom
 working-color-space: RGB
 ---

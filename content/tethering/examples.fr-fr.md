@@ -2,7 +2,7 @@
 author: people
 draft: 'false'
 id: examples
-title: examples
+title: exemples
 weight: 30
 ---
 

@@ -2,7 +2,7 @@
 applicable-version: 3.6
 id: map-settings
 tags: ~
-title: 'map settings'
+title: 'paramètres de la carte'
 view: map
 ---
 

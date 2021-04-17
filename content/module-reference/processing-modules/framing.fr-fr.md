@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: framing
 masking: 'true'
 tags: ~
-title: framing
+title: 'cadre décorative'
 view: darkroom
 working-color-space: RGB
 ---

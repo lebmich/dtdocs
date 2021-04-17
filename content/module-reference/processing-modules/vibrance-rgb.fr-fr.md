@@ -3,7 +3,7 @@ applicable-version: 3.6
 id: vibrance-rgb
 masking: 'true'
 tags: ~
-title: 'vibrance rgb'
+title: 'vibrance rvb'
 view: darkroom
 working-color-space: RGB
 ---

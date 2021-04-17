@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: haze-removal
 masking: 'true'
 tags: ~
-title: 'haze removal'
+title: 'suppression de la brume'
 view: darkroom
 working-color-space: RGB
 ---

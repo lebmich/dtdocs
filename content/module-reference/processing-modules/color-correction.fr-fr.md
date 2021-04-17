@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: color-correction
 masking: 'true'
 tags: ~
-title: 'color correction'
+title: 'correction des couleurs'
 view: darkroom
 working-color-space: Lab
 ---

@@ -8,7 +8,7 @@ view: 'lighttable, darkroom, tethering, map, print'
 
 La pellicule peut être utilisée pour basculer rapidement entre les images dans n'importe quelle vue de darktable. Les images dont les miniatures sont affichées dans la pellicules sont les mêmes que celles qui sont affichées dans la vue table lumineuse et sont définies par la collection actuellement sélectionnée.
 
-![filmstrip](./filmstrip/filmstrip.png)
+![pellicule](./filmstrip/filmstrip.png)
 
 La pellicule peut être activée et désactivée à l'aide du raccourci Ctrl+F. La hauteur du panneau de la pellicule peut être modifiée en cliquant et en faisant glisser sa bordure supérieure.
 

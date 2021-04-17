@@ -2,6 +2,6 @@
 author: people
 draft: 'false'
 id: tethering
-title: Tethering
+title: Capture
 weight: 40
 ---

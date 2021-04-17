@@ -20,7 +20,7 @@ Un grand nombre de [modules de traitement](../../module-reference/processing-mod
 
 Lors du traitement d'une image, nous appliquons une séquence de modules, connue sous le nom de [pipeline graphique](../../darkroom/processing-modules-and-pixelpipe/_index.md). 
 
-![edit-overview](./edit-overview/edit-overview.png#w100)
+![aperçu-développent](./edit-overview/edit-overview.png#w100)
 
 1. Les modules _relatif à la scène_ sont destinés à traiter des valeurs de pixels proportionnelles à la quantité de lumière collectée par le boîtier dans la scène. La plage dynamique d'une image dans la section _relative à la scène_ du pipeline graphique est souvent plus grande que celle du support d'affichage. 
 

@@ -3,7 +3,7 @@ applicable-version: 3.2.1
 id: split-toning
 masking: 'true'
 tags: ~
-title: split-toning
+title: 'virage partiel'
 view: darkroom
 working-color-space: RGB
 ---

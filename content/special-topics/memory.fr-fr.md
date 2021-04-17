@@ -2,7 +2,7 @@
 author: people
 draft: 'false'
 id: memory
-title: memory
+title: mémoire
 weight: 20
 ---
 
